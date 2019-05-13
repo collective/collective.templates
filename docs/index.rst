@@ -1,0 +1,5 @@
+====================
+collective.templates
+====================
+
+User documentation
