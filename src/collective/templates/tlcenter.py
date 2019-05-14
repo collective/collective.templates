@@ -28,7 +28,7 @@ def validateEmail(value):
 
 
 
-class ITUpCenter(model.Schema):
+class ITLCenter(model.Schema):
     """ A Templates Upload Center.
     """
 
@@ -186,3 +186,57 @@ directives.languageindependent('available_category')
 directives.languageindependent('available_licenses')
 directives.languageindependent('available_versions')
 directives.languageindependent('available_platforms')
+
+
+class TLCenterView(BrowserView):
+
+    def tlprojects(self):
+        context = aq_inner(self.context)
+        catalog = api.portal.get_tool(name='portal_catalog')
+
+        return catalog(object_provides=ITLProject.__identifier__,
+                       path='/'.join(context.getPhysicalPath()),
+                       sort_order='sortable_title')
+
+    def get_latest_program_release(self):
+        versions = list(self.context.available_versions)
+        versions.sort(reverse=True)
+        return versions[0]
+
+    def category_name(self):
+        category = list(self.context.available_category)
+        return category
+
+    def tlproject_count(self):
+        """Return number of projects
+        """
+        context = aq_inner(self.context)
+        catalog = api.portal.get_tool(name='portal_catalog')
+
+        return len(catalog(portal_type=('collective.templates.tlproject'),
+                           review_state='published'))
+
+    def get_most_popular_products(self):
+        catalog = api.portal.get_tool(name='portal_catalog')
+        sort_on = 'positive_ratings'
+        contentFilter = {
+            'sort_on': sort_on,
+            'sort_order': 'reverse',
+            'review_state': 'published',
+            'portal_type': 'collective.templates.tlproject'}
+        return catalog(**contentFilter)
+
+    def get_newest_products(self):
+        self.catalog = api.portal.get_tool(name='portal_catalog')
+        sort_on = 'created'
+        contentFilter = {
+            'sort_on': sort_on,
+            'sort_order': 'reverse',
+            'review_state': 'published',
+            'portal_type': 'collective.templates.tlproject'')
+        }
+
+        results = self.catalog(**contentFilter)
+
+        return results
+
