@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from collective.templates import MessageFactory as _
+from collective.templates import _
 import re
 from zope.interface import Invalid, invariant
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
