@@ -174,9 +174,9 @@ class ITLProject(model.Schema):
             u"is compatible."),
         value_type=schema.Choice(source=vocabAvailPlatforms),
         required=True,
-    )
+        )
 
- directives.mode(filetitlefield='display')
+    directives.mode(filetitlefield='display')
     filetitlefield = schema.TextLine(
         title=_(u"The First File You Want To Upload"),
         description=_(
