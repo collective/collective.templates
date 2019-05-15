@@ -37,11 +37,11 @@ class ITLCenter(model.Schema):
     )
 
     description = schema.Text(
-        description=_(u"Description of the Templates Center"),
+        title=_(u"Description of the Templates Center"),
     )
 
     product_description = schema.Text(
-        description=_(u"Description of the features of templates")
+        title=_(u"Description of the features of templates")
     )
 
     product_title = schema.TextLine(
@@ -239,4 +239,7 @@ class TLCenterView(BrowserView):
         results = self.catalog(**contentFilter)
 
         return results
+
+    def show_search_form(self):
+        return 'getCategories' in self.request.environ['QUERY_STRING']
 
