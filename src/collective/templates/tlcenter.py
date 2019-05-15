@@ -8,7 +8,7 @@ from plone.supermodel import model
 from Products.CMFPlone.browser.search import quote_chars
 from Products.Five import BrowserView
 from Products.ZCTextIndex.ParseTree import ParseError
-from collective.templates import MessageFactory as _
+from collective.templates import _
 from zope import schema
 import re
 from zope.interface import Invalid
@@ -233,7 +233,7 @@ class TLCenterView(BrowserView):
             'sort_on': sort_on,
             'sort_order': 'reverse',
             'review_state': 'published',
-            'portal_type': 'collective.templates.tlproject'')
+            'portal_type': 'collective.templates.tlproject'
         }
 
         results = self.catalog(**contentFilter)
