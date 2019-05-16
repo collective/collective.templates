@@ -14,7 +14,7 @@
     </property>
 
     <!-- schema interface -->
-    <property name="schema">collectivie.templates.tlproject.ITLProject</property>
+    <property name="schema">collective.templates.tlproject.ITLProject</property>
 
     <!-- class used for content items -->
     <property name="klass">plone.dexterity.content.Item</property>
