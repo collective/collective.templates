@@ -77,10 +77,6 @@
                                                 <div class="product-details">
                                                     <span class="product-leadin">
 
-                                                        <span tal:define="LatestReleaseDate project/view/latest_release_date;"
-                                                                tal:replace="python:toLocalizedTime(LatestReleaseDate , long_format=0)">
-                                                            Jan. 22, 2016
-                                                        </span>
 
                                                         <span i18n:translate="">in</span>
                                                         <span tal:replace="python:', '.join(result.getObject().category_choice)"></span>
