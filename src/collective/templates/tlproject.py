@@ -15,7 +15,7 @@ from z3c.form.browser.checkbox import CheckBoxFieldWidget
 from plone.namedfile.field import NamedBlobImage, NamedBlobFile
 from plone import api
 from z3c.form import validator
-from tdf.extensionuploadcenter import quote_chars
+from collective.templates import quote_chars
 from plone.uuid.interfaces import IUUID
 from Products.validation import V_REQUIRED
 from plone.dexterity.browser.view import DefaultView
@@ -44,6 +44,106 @@ def validateEmail(value):
     if not checkEmail(value):
         raise Invalid(_(u"Invalid email address"))
     return True
+
+
+def vocabAvailLicenses(context):
+    """ pick up licenses list from parent """
+    from collective.templates.tlcenter import ITLCenter
+    while context is not None and not ITLCenter.providedBy(context):
+        # context = aq_parent(aq_inner(context))
+        context = context.__parent__
+
+    license_list = []
+    if context is not None and context.available_licenses:
+        license_list = context.available_licenses
+    terms = []
+    for value in license_list:
+        terms.append(SimpleTerm(value, token=value.encode('unicode_escape'),
+                                title=value))
+    return SimpleVocabulary(terms)
+
+
+directlyProvides(vocabAvailLicenses, IContextSourceBinder)
+
+
+
+def vocabCategories(context):
+    # For add forms
+
+    # For other forms edited or displayed
+    from collective.templates.tlcenter import ITLCenter
+    while context is not None and not ITLCenter.providedBy(context):
+        # context = aq_parent(aq_inner(context))
+        context = context.__parent__
+
+    category_list = []
+    if context is not None and context.available_category:
+        category_list = context.available_category
+
+    terms = []
+    for value in category_list:
+        terms.append(SimpleTerm(value, token=value.encode('unicode_escape'),
+                                title=value))
+
+    return SimpleVocabulary(terms)
+
+directlyProvides(vocabCategories, IContextSourceBinder)
+
+
+def vocabAvailVersions(context):
+    """ pick up the program versions list from parent """
+    from collective.templates.tlcenter import ITLCenter
+    while context is not None and not ITLCenter.providedBy(context):
+        # context = aq_parent(aq_inner(context))
+        context = context.__parent__
+
+    versions_list = []
+    if context is not None and context.available_versions:
+        versions_list = context.available_versions
+
+    terms = []
+    for value in versions_list:
+        terms.append(SimpleTerm(value, token=value.encode('unicode_escape'),
+                                title=value))
+    return SimpleVocabulary(terms)
+
+
+directlyProvides(vocabAvailVersions, IContextSourceBinder)
+
+
+def vocabAvailPlatforms(context):
+    """ pick up the list of platforms from parent """
+    from collective.templates.tlcenter import ITLCenter
+    while context is not None and not ITLCenter.providedBy(context):
+        # context = aq_parent(aq_inner(context))
+        context = context.__parent__
+
+    platforms_list = []
+    if context is not None and context.available_platforms:
+        platforms_list = context.available_platforms
+    terms = []
+    for value in platforms_list:
+        terms.append(SimpleTerm(value, token=value.encode('unicode_escape'),
+                                title=value))
+    return SimpleVocabulary(terms)
+
+
+directlyProvides(vocabAvailPlatforms, IContextSourceBinder)
+
+def isNotEmptyCategory(value):
+    if not value:
+        raise Invalid(u'You have to choose at least one category for your '
+                      u'project.')
+    return True
+
+@provider(IContextAwareDefaultFactory)
+def legal_declaration_title(context):
+    return context.title_legaldisclaimer
+
+
+@provider(IContextAwareDefaultFactory)
+def legal_declaration_text(context):
+    return context.legal_disclaimer
 
 
 class ITLProject(model.Schema):
@@ -163,7 +263,6 @@ class ITLProject(model.Schema):
         title=_(u"The first file you want to upload."),
         description=_(u"Please upload your file."),
         required=True,
-        constraint=validateextensionfileextension,
     )
 
     directives.widget(platform_choice=CheckBoxFieldWidget)
@@ -213,7 +312,6 @@ class ITLProject(model.Schema):
         title=_(u"The second file you want to upload (this is optional)"),
         description=_(u"Please upload your file."),
         required=False,
-        constraint=validateextensionfileextension,
     )
 
     directives.mode(filetitlefield2='display')
@@ -238,7 +336,6 @@ class ITLProject(model.Schema):
         title=_(u"The third file you want to upload (this is optional)"),
         description=_(u"Please upload your file."),
         required=False,
-        constraint=validateextensionfileextension,
     )
 
 
@@ -271,3 +368,9 @@ def noOSChosen(data):
         raise Invalid(_(
             u"Please choose a compatible platform for the uploaded file."))
 
+
+
+
+class TLProjectView(DefaultView):
+    def canPublishContent(self):
+        return checkPermission('cmf.ModifyPortalContent', self.context)
