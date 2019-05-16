@@ -7,6 +7,19 @@
   <!-- -*- extra stuff goes here -*- -->
 
 
+    <permission
+        id="collective.templates.AddTemplateCenter"
+        title="collective.templates: Add TemplateCenter"
+        />
+
+    <permission
+        id="collective.templates.AddTemplateProject"
+        title="collective.templates: Add TemplateProject"
+        />
+
+
+
+
   </configure>
 
 </configure>
