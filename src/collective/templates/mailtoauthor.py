@@ -17,6 +17,7 @@ from z3c.form import field
 from plone.formwidget.recaptcha.widget import ReCaptchaFieldWidget
 from Acquisition import aq_inner
 from zope.component import getMultiAdapter
+from zope.interface import implementer
 
 
 checkemail = re.compile(
@@ -93,8 +94,9 @@ class MailToAuthorSchema(interface.Interface):
     )
 
 
+@implementer(MailToAuthorSchema)
 class MailToAuthorAdapter(object):
-    interface.implements(MailToAuthorSchema)
+
     component.adapts(interface.Interface)
 
     def __init__(self, context):
