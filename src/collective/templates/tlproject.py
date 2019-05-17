@@ -370,6 +370,32 @@ def noOSChosen(data):
 
 
 
+class ValidateTLProjectUniqueness(validator.SimpleFieldValidator):
+    # Validate site-wide uniqueness of project titles.
+
+    def validate(self, value):
+        # Perform the standard validation first
+
+        super(ValidateTLProjectUniqueness, self).validate(value)
+        if value is not None:
+            catalog = api.portal.get_tool(name='portal_catalog')
+            results = catalog({'Title': quote_chars(value),
+                                'object_provides':
+                                    ITLProject.__identifier__, })
+            contextUUID = IUUID(self.context, None)
+            for result in results:
+                if result.UID != contextUUID:
+                    raise Invalid(_(u"The project title is already in use."))
+
+
+validator.WidgetValidatorDiscriminators(
+    ValidateTLProjectUniqueness,
+    field=ITLProject['title'],
+)
+
+
+
+
 class TLProjectView(DefaultView):
     def canPublishContent(self):
         return checkPermission('cmf.ModifyPortalContent', self.context)

@@ -61,5 +61,9 @@
       permission="zope2.View"
       />
 
+  <adapter
+    factory="collective.templates.tlproject.ValidateTLProjectUniqueness"
+    />
+
 
 </configure>
