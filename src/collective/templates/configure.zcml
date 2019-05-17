@@ -66,4 +66,21 @@
     />
 
 
+  <adapter factory=".mailtoauthor.MailToAuthorAdapter"/>
+
+  <browser:page
+        for="Products.CMFCore.interfaces.ISiteRoot"
+        name="mail-to-template-author"
+        class=".mailtoauthor.MailToAuthorForm"
+        permission="zope2.View"
+        />
+
+  <adapter
+      factory=".mailtoauthor.ReCaptcha"
+      for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+      provides=".mailtoauthor.IReCaptchaForm"
+   />
+
+
+
 </configure>
