@@ -370,7 +370,31 @@ def noOSChosen(data):
 
 
 
-
 class TLProjectView(DefaultView):
     def canPublishContent(self):
         return checkPermission('cmf.ModifyPortalContent', self.context)
+
+
+    def releaseLicense(self):
+        catalog = api.portal.get_tool(name='portal_catalog')
+        path = "/".join(self.context.getPhysicalPath())
+        idx_data = catalog.getIndexDataForUID(path)
+        licenses = idx_data.get('releaseLicense')
+        return (r for r in licenses)
+
+    def projectCategory(self):
+        catalog = api.portal.get_tool(name='portal_catalog')
+        path = "/".join(self.context.getPhysicalPath())
+        idx_data = catalog.getIndexDataForUID(path)
+        category = idx_data.get('getCategories')
+        return (r for r in category)
+
+
+    def releaseCompatibility(self):
+        catalog = api.portal.get_tool(name='portal_catalog')
+        path = "/".join(self.context.getPhysicalPath())
+        idx_data = catalog.getIndexDataForUID(path)
+        compatibility = idx_data.get('getCompatibility')
+        return (r for r in compatibility)
+
+
