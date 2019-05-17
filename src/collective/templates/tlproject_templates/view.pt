@@ -1,0 +1,143 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="collective.templates">
+
+
+<head>
+    <metal:block fill-slot="top_slot">
+
+        <tal:noborder condition="python:not user.has_permission('Modify portal content', context)">
+            <tal:noborderset tal:define="dummy python:request.set('disable_border', 1)" />
+        </tal:noborder>
+    </metal:block>
+    <metal:block fill-slot="column_one_slot" />
+</head>
+
+<body>
+<metal:main fill-slot="main">
+     <tal:main-macro metal:define-macro="main" tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                                                          is_editable context/@@plone_context_state/is_editable;
+                                                          wf_tool here/portal_workflow;
+                                                          license view/releaseLicense;
+                                                          compatibility view/releaseCompatibility;
+                                                          categories view/projectCategory;
+                                                          review_state python:wf_tool.getInfoFor( here, 'review_state', '');">
+
+        <span tal:replace="structure context/@@authenticator/authenticator"/>
+         <div class="portalinfomessage" tal:condition="python: is_editable and review_state == 'private' ">
+             <p  i18n:translate="">
+                 Please make sure the relevant project information has been entered and
+                 submit your project for approval (publication).
+             </p>
+         </div>
+         <div class="portalinfomessage" tal:condition="python: is_editable and review_state == 'pending' ">
+             <p  i18n:translate="">
+                 Your project has been submitted for publication and will be reviewed now. You will get an email, once the
+                 status of your project changed again.
+             </p>
+         </div>
+
+         <div class="row">
+             <div class="col-xs-12 col-sm-8">
+                 <div class="panetlproject">
+                     <h1 class="documentFirstHeading"><span tal:content="context/title" /></h1>
+                     <div tal:content="structure context/@@rate-if-you-dare" />
+                     <p class="documentDescription"><span tal:content="context/description" /></p>
+                     <h2 tal:condition="context/details" class="documentSecondHeading">Project Description</h2>
+                     <p class="documentDescription" tal:content="structure view/w/details/render" />
+                     <h3 i18n:translate="">Category/Categories</h3>
+                   <p>
+                         <tal:loop repeat="releasecategories categories">
+                             <span tal:content="releasecategories" />,
+                         </tal:loop>
+                     </p>
+                   <h4 class="tlcenterlicense" i18n:translate="">License(s)</h4>
+                     <p>
+                         <tal:loop repeat="releaselicense license">
+                             <span tal:content="releaselicense" />,
+                         </tal:loop></p>
+                     <h4 class="eucentercompatibility" i18n:translate="">Compatibility</h4>
+                     <p>
+                        <tal:loop repeat="releaseCompatibility compatibility">
+                            <span tal:content="releaseCompatibility" />,
+                        </tal:loop>
+                    </p>
+
+                 </div>
+               <div class="visualClear"></div>
+                 <h2 class="tlcenter" i18n:translate="">Available Downloads</h2>
+                 <p tal:condition="context/file">
+                     <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file/filename}">
+                         <img src="++resource++tdf.templateuploadcenter/download_icon.gif" />
+                     </a>
+                     <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file/filename}">
+                         <span tal:content="context/file/filename">The Template file name</span>
+                     </a>
+                     <span class="tupcenterplatform" tal:content="structure view/w/platform_choice/render" /><br />
+                     <span i18n:translate="">File size:</span> <span tal:content="python:context.file.size /1024" /> kb
+                 </p>
+                 <p tal:condition="context/file1">
+                     <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file1/filename}">
+                         <img src="++resource++tdf.templateuploadcenter/download_icon.gif" />
+                     </a>
+                     <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file1/filename}">
+                         <span tal:content="context/file1/filename">The Template file name</span>
+                     </a>
+                     <span class="tupcenterplatform" tal:content="structure view/w/platform_choice1/render" /><br />
+                     <span i18n:translate="">File size:</span> <span tal:content="python:context.file1.size /1024" /> kb
+                 </p>
+                 <p tal:condition="context/file2">
+                     <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file2/filename}">
+                         <img src="++resource++tdf.templateuploadcenter/download_icon.gif" />
+                     </a>
+                     <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file2/filename}">
+                         <span tal:content="context/file2/filename">The Template file name</span>
+                     </a>
+                     <span class="tlcenterplatform" tal:content="structure view/w/platform_choice2/render" /><br />
+                     <span i18n:translate="">File size:</span> <span tal:content="python:context.file2.size /1024" /> kb
+                 </p>
+                 <h4 class="tlcenterlegaldownload" tal:content="structure context/title_legaldownloaddisclaimer" />
+                 <div class="tlcenterlegaldownload" tal:content="structure context/legal_downloaddisclaimer/output" />
+
+             </div>
+           <div class="col-xs-12 col-sm-4">
+                 <div class="sidebar">
+                     <div id="projectresources">
+                         <h2 i18n:translate="">Project Resources</h2>
+                         <div tal:condition="context/screenshot">
+                             <h4 i18n:translate="">Screenshot</h4>
+                             <div class="tlcenterprojectscreenshot" width="250px" tal:define="screenshot nocall:context/screenshot"
+                                      tal:condition="nocall:screenshot">
+                                 <a class="discreet" tal:attributes="href string:${context/absolute_url}/@@images/screenshot/large">
+                                     <img tal:define="scales context/@@images"
+                                              tal:replace="structure python: scales.tag('screenshot',
+                                                     width=250, height=200, direction='down')" />
+                                 </a>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="tlcenterprojectinstallinstructions" tal:condition="context/install_instructions">
+                         <h3 i18n:translate="">Install Instructions</h3>
+                         <span tal:content="structure context/install_instructions/output" />
+                     </div>
+                     <div class="authorcontact">
+                <h2>Contact The Author</h2>
+                <p>You can send a message to the author of the project and
+                    give him feedback by following the following the following
+                    link and fill in your information into the form:<br />
+                    <a class="pointer" tal:attributes="hrefsidebar
+                            string:${context/portal_url}/@@mail-to-template-author">
+                        Get in contact with the project author
+                    </a>.
+                </p>
+            </div>
+         </div>
+           </div>
+     </tal:main-macro>
+</metal:main>
+</body>
+</html>
