@@ -72,7 +72,7 @@
                  <h2 class="tlcenter" i18n:translate="">Available Downloads</h2>
                  <p tal:condition="context/file">
                      <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file/filename}">
-                         <img src="++resource++tdf.templateuploadcenter/download_icon.gif" />
+                         <img src="++resource++collective.templates/download_icon.gif" />
                      </a>
                      <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file/filename}">
                          <span tal:content="context/file/filename">The Template file name</span>
@@ -82,7 +82,7 @@
                  </p>
                  <p tal:condition="context/file1">
                      <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file1/filename}">
-                         <img src="++resource++tdf.templateuploadcenter/download_icon.gif" />
+                         <img src="++resource++colletive.templates/download_icon.gif" />
                      </a>
                      <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file1/filename}">
                          <span tal:content="context/file1/filename">The Template file name</span>
@@ -92,7 +92,7 @@
                  </p>
                  <p tal:condition="context/file2">
                      <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file2/filename}">
-                         <img src="++resource++tdf.templateuploadcenter/download_icon.gif" />
+                         <img src="++resource++collective.templates/download_icon.gif" />
                      </a>
                      <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file2/filename}">
                          <span tal:content="context/file2/filename">The Template file name</span>
