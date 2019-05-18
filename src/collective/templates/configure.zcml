@@ -45,6 +45,10 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+  <browser:resourceDirectory
+      name="collective.templates"
+      directory="resources" />
+
   <browser:page
       name="view"
       for="collective.templates.tlcenter.ITLCenter"
