@@ -70,12 +70,12 @@
     />
 
 
-  <adapter factory=".mailtoauthor.MailToAuthorAdapter"/>
+  <adapter factory="collective.templates.mailtoauthor.MailToAuthorAdapter"/>
 
   <browser:page
         for="Products.CMFCore.interfaces.ISiteRoot"
         name="mail-to-template-author"
-        class=".mailtoauthor.MailToAuthorForm"
+        class="collective.templates.mailtoauthor.MailToAuthorForm"
         permission="zope2.View"
         />
 
