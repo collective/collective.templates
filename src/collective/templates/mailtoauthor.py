@@ -29,6 +29,7 @@ def validateemail(value):
         raise Invalid(_(u"Invalid email address"))
     return True
 
+
 def validateprojectname(value):
     catalog = api.portal.get_tool('portal_catalog')
     project = catalog(
@@ -83,7 +84,7 @@ class MailToAuthorSchema(interface.Interface):
         title=_(u"Project Name"),
         description=_(u"The name of the project, to which author you want "
                       u"to send feedback."),
-        constraint= validateprojectname
+        constraint=validateprojectname
     )
 
     inquiry = schema.Text(
@@ -149,7 +150,7 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
             return
 
         if api.portal.get_registry_record('plone.email_from_address') is not None:
-            contactaddress=api.portal.get_registry_record('plone.email_from_address')
+            contactaddress = api.portal.get_registry_record('plone.email_from_address')
 
         catalog = api.portal.get_tool('portal_catalog')
         project = catalog(
@@ -164,12 +165,12 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
             else:
                 projectemail = contactaddress
 
-        mailrecipient=(u"{}").format(projectemail)
+        mailrecipient = (u"{}").format(projectemail)
         api.portal.send_email(
             recipient=mailrecipient,
             sender=(u"{} {} <{}>").format(data['inquirerfirstname'],
-                                            data['inquirerfamilyname'],
-                                            data['inquireremailaddress']),
+                                          data['inquirerfamilyname'],
+                                          data['inquireremailaddress']),
             subject=(u"Your Project: {}").format(data['projectname']),
             body=(u"{}").format(data['inquiry'])
 
