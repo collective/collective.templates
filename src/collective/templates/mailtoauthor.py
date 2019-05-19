@@ -148,6 +148,9 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
             )
             return
 
+        if api.portal.get_registry_record('plone.email_from_address') is not None:
+            contactaddress=api.portal.get_registry_record('plone.email_from_address')
+
         catalog = api.portal.get_tool('portal_catalog')
         project = catalog(
                       portal_type='collective.templates.tlproject',
@@ -159,7 +162,7 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
                 projectemail = brain.getObject().contactAddress
 
             else:
-                projectemail = 'templates@projects.org'
+                projectemail = contactaddress
 
         mailrecipient=(u"{}").format(projectemail)
         api.portal.send_email(
