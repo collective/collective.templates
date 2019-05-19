@@ -29,24 +29,25 @@ checkfileextensionimage = re.compile(
     r"^.*\.(png|PNG|gif|GIF|jpg|JPG)").match
 
 
-def validateImageextension(value):
+def validateimageextension(value):
     if not checkfileextensionimage(value.filename):
         raise Invalid(
             u"You could only add images in the png, gif or jpg file format "
             u"to your project.")
     return True
 
-checkEmail = re.compile(
+
+checkemail = re.compile(
     r"[a-zA-Z0-9._%-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4}").match
 
 
-def validateEmail(value):
-    if not checkEmail(value):
+def validateemail(value):
+    if not checkemail(value):
         raise Invalid(_(u"Invalid email address"))
     return True
 
 
-def vocabAvailLicenses(context):
+def vocabavaillicenses(context):
     """ pick up licenses list from parent """
     from collective.templates.tlcenter import ITLCenter
     while context is not None and not ITLCenter.providedBy(context):
@@ -63,11 +64,10 @@ def vocabAvailLicenses(context):
     return SimpleVocabulary(terms)
 
 
-directlyProvides(vocabAvailLicenses, IContextSourceBinder)
+directlyProvides(vocabavaillicenses, IContextSourceBinder)
 
 
-
-def vocabCategories(context):
+def vocabcategories(context):
     # For add forms
 
     # For other forms edited or displayed
@@ -87,10 +87,11 @@ def vocabCategories(context):
 
     return SimpleVocabulary(terms)
 
-directlyProvides(vocabCategories, IContextSourceBinder)
+
+directlyProvides(vocabcategories, IContextSourceBinder)
 
 
-def vocabAvailVersions(context):
+def vocabavailversions(context):
     """ pick up the program versions list from parent """
     from collective.templates.tlcenter import ITLCenter
     while context is not None and not ITLCenter.providedBy(context):
@@ -108,10 +109,10 @@ def vocabAvailVersions(context):
     return SimpleVocabulary(terms)
 
 
-directlyProvides(vocabAvailVersions, IContextSourceBinder)
+directlyProvides(vocabavailversions, IContextSourceBinder)
 
 
-def vocabAvailPlatforms(context):
+def vocabavailplatforms(context):
     """ pick up the list of platforms from parent """
     from collective.templates.tlcenter import ITLCenter
     while context is not None and not ITLCenter.providedBy(context):
@@ -128,13 +129,15 @@ def vocabAvailPlatforms(context):
     return SimpleVocabulary(terms)
 
 
-directlyProvides(vocabAvailPlatforms, IContextSourceBinder)
+directlyProvides(vocabavailplatforms, IContextSourceBinder)
+
 
 def isNotEmptyCategory(value):
     if not value:
         raise Invalid(u'You have to choose at least one category for your '
                       u'project.')
     return True
+
 
 @provider(IContextAwareDefaultFactory)
 def legal_declaration_title(context):
@@ -159,7 +162,6 @@ class ITLProject(model.Schema):
             u"'Optional Further File Upload'.")
     )
 
-
     dexteritytextindexer.searchable('title')
     title = schema.TextLine(
         title=_(u"Title"),
@@ -173,7 +175,6 @@ class ITLProject(model.Schema):
         title=_(u"Project Summary"),
     )
 
-
     dexteritytextindexer.searchable('details')
     primary('details')
     details = RichText(
@@ -186,7 +187,7 @@ class ITLProject(model.Schema):
         title=_(u'License of the uploaded file'),
         description=_(
             u"Please mark one or more licenses you publish your release."),
-        value_type=schema.Choice(source=vocabAvailLicenses),
+        value_type=schema.Choice(source=vocabavaillicenses),
         required=True,
     )
 
@@ -218,7 +219,7 @@ class ITLProject(model.Schema):
         description=_(
             u"Please select the appropriate categories (one or more) for "
             u"your project."),
-        value_type=schema.Choice(source=vocabCategories),
+        value_type=schema.Choice(source=vocabcategories),
         constraint=isNotEmptyCategory,
         required=True
     )
@@ -226,7 +227,7 @@ class ITLProject(model.Schema):
     contactAddress = schema.TextLine(
         title=_(u"Contact email-address"),
         description=_(u"Contact email-address for the project."),
-        constraint=validateEmail
+        constraint=validateemail
     )
 
     screenshot = NamedBlobImage(
@@ -235,7 +236,7 @@ class ITLProject(model.Schema):
             u"Add a screenshot by clicking the 'Browse' button. You could "
             u"provide an image of the file format 'png', 'gif' or 'jpg'."),
         required=True,
-        constraint=validateImageextension
+        constraint=validateimageextension
     )
 
     releasenumber = schema.TextLine(
@@ -247,14 +248,13 @@ class ITLProject(model.Schema):
         max_length=12,
     )
 
-
     directives.widget(compatibility_choice=CheckBoxFieldWidget)
     compatibility_choice = schema.List(
         title=_(u"Compatible With Versions Of The Product"),
         description=_(
             u"Please mark one or more program versions with which this "
             u"release is compatible with."),
-        value_type=schema.Choice(source=vocabAvailVersions),
+        value_type=schema.Choice(source=vocabavailversions),
         required=True,
         default=[]
     )
@@ -271,7 +271,7 @@ class ITLProject(model.Schema):
         description=_(
             u"Please mark one or more platforms with which the uploaded file "
             u"is compatible."),
-        value_type=schema.Choice(source=vocabAvailPlatforms),
+        value_type=schema.Choice(source=vocabavailplatforms),
         required=True,
         )
 
@@ -304,7 +304,7 @@ class ITLProject(model.Schema):
         description=_(
             u"Please mark one or more platforms with which the uploaded file "
             u"is compatible."),
-        value_type=schema.Choice(source=vocabAvailPlatforms),
+        value_type=schema.Choice(source=vocabavailplatforms),
         required=False,
     )
 
@@ -328,7 +328,7 @@ class ITLProject(model.Schema):
         description=_(
             u"Please mark one or more platforms with which the uploaded file "
             u"is compatible."),
-        value_type=schema.Choice(source=vocabAvailPlatforms),
+        value_type=schema.Choice(source=vocabavailplatforms),
         required=False,
     )
 
@@ -369,7 +369,6 @@ def noOSChosen(data):
             u"Please choose a compatible platform for the uploaded file."))
 
 
-
 class ValidateTLProjectUniqueness(validator.SimpleFieldValidator):
     # Validate site-wide uniqueness of project titles.
 
@@ -380,8 +379,8 @@ class ValidateTLProjectUniqueness(validator.SimpleFieldValidator):
         if value is not None:
             catalog = api.portal.get_tool(name='portal_catalog')
             results = catalog({'Title': quote_chars(value),
-                                'object_provides':
-                                    ITLProject.__identifier__, })
+                               'object_provides':
+                                   ITLProject.__identifier__, })
             contextUUID = IUUID(self.context, None)
             for result in results:
                 if result.UID != contextUUID:
@@ -394,12 +393,9 @@ validator.WidgetValidatorDiscriminators(
 )
 
 
-
-
 class TLProjectView(DefaultView):
     def canPublishContent(self):
         return checkPermission('cmf.ModifyPortalContent', self.context)
-
 
     def releaseLicense(self):
         catalog = api.portal.get_tool(name='portal_catalog')
@@ -414,7 +410,6 @@ class TLProjectView(DefaultView):
         idx_data = catalog.getIndexDataForUID(path)
         category = idx_data.get('getCategories')
         return (r for r in category)
-
 
     def releaseCompatibility(self):
         catalog = api.portal.get_tool(name='portal_catalog')
