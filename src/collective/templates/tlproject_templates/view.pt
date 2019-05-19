@@ -9,6 +9,10 @@
 
 <head>
     <metal:block fill-slot="top_slot">
+      <link rel="stylesheet" type="text/css"
+            tal:define="navroot context/@@plone_portal_state/navigation_root_url"
+            tal:attributes="href string:${navroot}/++resource++collective.templates/templatcenter.css"
+            />
 
         <tal:noborder condition="python:not user.has_permission('Modify portal content', context)">
             <tal:noborderset tal:define="dummy python:request.set('disable_border', 1)" />
@@ -129,7 +133,7 @@
                 <p>You can send a message to the author of the project and
                     give him feedback by following the following the following
                     link and fill in your information into the form:<br />
-                    <a class="pointer" tal:attributes="hrefsidebar
+                    <a class="pointer" tal:attributes="href
                             string:${context/portal_url}/@@mail-to-template-author">
                         Get in contact with the project author
                     </a>.
