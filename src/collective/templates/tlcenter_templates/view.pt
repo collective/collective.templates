@@ -9,7 +9,10 @@
 
 <head>
     <metal:block fill-slot="top_slot">
-
+      <link rel="stylesheet" type="text/css"
+            tal:define="navroot context/@@plone_portal_state/navigation_root_url"
+            tal:attributes="href string:${navroot}/++resource++collective.templates/templatcenter.css"
+            />
         <tal:noborder condition="python:not user.has_permission('Modify portal content', context)">
             <tal:noborderset tal:define="dummy python:request.set('disable_border', 1)" />
         </tal:noborder>
@@ -31,6 +34,7 @@
                         show_search_form view/show_search_form">
       <span tal:replace="structure context/@@authenticator/authenticator"/>
       <div class="row">
+        <div class="col-xs-12 col-sm-8">
             <div tal:condition="not: show_search_form">
                 <div class="" id="mostpopular">
                 <h2 i18n:translate="">Most Popular <span tal:content="context/product_title" i18n:name="product_title" /></h2>
@@ -202,6 +206,7 @@
                          </div>
                      </div>
                  </div>
+        </div>
                     <div class="col-xs-12 col-sm-4">
                 <div class="splash pullout" id="sidebar-downloads">
                         	<h1 tal:condition="context/product_title" i18n:translate="">
