@@ -369,6 +369,54 @@ def noOSChosen(data):
             u"Please choose a compatible platform for the uploaded file."))
 
 
+def notifyAboutNewProject(self, event):
+    if self.__parent__.contactForCenter is not None:
+        mailrecipient = str(self.__parent__.contactForCenter)
+    else:
+        mailrecipient = api.portal.get_registry_record('plone.email_from_address')
+    api.portal.send_email(
+        recipient=mailrecipient,
+        subject=(u"A Project with the title {} was added").format(self.title),
+        body="A member added a new project"
+    )
+
+
+def notifyProjectManager(self, event):
+    state = api.content.get_state(self)
+    if self.__parent__.contactForCenter is not None:
+        mailsender = str(self.__parent__.contactForCenter)
+    else:
+        mailsender = api.portal.get_registry_record('plone.email_from_address')
+    api.portal.send_email(
+        recipient=("{}").format(self.contactAddress),
+        sender=(u"{} <{}>").format('Admin of the Website', mailsender),
+        subject=(u"Your Project {}").format(self.title),
+        body=(
+            u"The status of your templates project changed. "
+            u"The new status is {}").format(state)
+    )
+
+
+def notifyAboutNewReviewlistentry(self, event):
+    state = api.content.get_state(self)
+    if self.__parent__.contactForCenter is not None:
+        mailrecipient = str(self.__parent__.contactForCenter)
+    else:
+        mailrecipient = api.portal.get_registry_record('plone.email_from_address')
+    if state == "pending":
+        api.portal.send_email(
+            recipient=mailrecipient,
+            subject=(
+                u"A Project with the title {} was added to the review "
+                u"list").format(self.title),
+            body="Please have a look at the review list and check if the "
+                 "project is ready for publication. \n"
+                 "\n"
+                 "Kind regards,\n"
+                 "The Admin of the Website"
+        )
+
+
 class ValidateTLProjectUniqueness(validator.SimpleFieldValidator):
     # Validate site-wide uniqueness of project titles.
 
