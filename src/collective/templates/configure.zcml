@@ -85,6 +85,22 @@
       provides=".mailtoauthor.IReCaptchaForm"
    />
 
+  <subscriber
+      for="collective.templates.tlproject.ITLProject
+               zope.lifecycleevent.interfaces.IObjectAddedEvent"
+    handler="collective.templates.tlproject.notifyAboutNewProject"
+    />
 
+  <subscriber
+    for="collective.templates.tlproject.ITLProject
+               Products.CMFCore.interfaces.IActionSucceededEvent"
+    handler="collective.templates.tlproject.notifyProjectManager"
+    />
+
+  <subscriber
+    for="collective.templates.tlproject.ITLProject
+               Products.CMFCore.interfaces.IActionSucceededEvent"
+    handler="collective.templates.tlproject.notifyAboutNewReviewlistentry"
+    />
 
 </configure>
