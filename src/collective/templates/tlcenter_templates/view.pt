@@ -219,7 +219,7 @@
                     </p>
                   <p>
                     <a class="pointer" tal:attributes="href string:${context/absolute_url}/++add++collective.templates.tlproject">
-                        <img src="++resource++tdf.templateuploadcenter/yellowarrow.png"  alt=""/> <span i18n:translate="">Submit your</span>
+                        <img src="++resource++collective.templates/yellowarrow.png"  alt=""/> <span i18n:translate="">Submit your</span>
                         <span tal:content="context/product_title | string:template_project" /> Project
                     </a>
                   </p>
