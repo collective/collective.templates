@@ -103,4 +103,10 @@
     handler="collective.templates.tlproject.notifyAboutNewReviewlistentry"
     />
 
+  <subscriber
+    for="collective.templates.tlcenter.ITLCenter
+               zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+    handler="collective.templates.notifications.notifiyAboutNewVersion"
+    />
+
 </configure>
