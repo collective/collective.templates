@@ -96,16 +96,18 @@
                               </tal:results>
                       </div>
                     </div>
+            </div>
 
-                 <div tal:condition="show_search_form">
-                     <div class="panetuc">
+
+        <div tal:condition="show_search_form">
+          <div class="panetl">
                          <h2 tal:condition="context/product_title" i18n:translate="">Search
                              <span tal:content="context/product_title" i18n:name="product_title" />
                          </h2>
                          <div tal:condition="context/information_oldversions">
                              <span tal:content="structure context/information_oldversions/output" />
                          </div>
-                         <div id="sort-by">
+            <div id="sort-by">
                              <form id="product_select" style="margin-bottom: 1em" tal:attributes="action string:${context/absolute_url}">
                                  <label class="hiddenStructure" i18n:translate="">Show</label>
                                  <select name="getCategories" onchange="this.form.submit()">
@@ -183,10 +185,7 @@
                                              </span>
                                              <div class="product-details">
                                                  <span class="product-leadin">
-                                                     <span tal:define="LatestReleaseDate project/view/latest_release_date;"
-                                                           tal:replace="python:toLocalizedTime(LatestReleaseDate , long_format=0)">
-                                                            Jan. 22, 2016
-                                                     </span>
+
                                                      <span i18n:translate="">in</span>
                                                      <span tal:replace="python:', '.join(result.getObject().category_choice)"></span>
                                            </span>
@@ -201,13 +200,11 @@
                                  </ul>
                                  <div metal:use-macro="here/batch_macros/macros/navigation" />
                              </tal:results>
-                         </div>
-
-                         </div>
-                     </div>
-                 </div>
         </div>
-                    <div class="col-xs-12 col-sm-4">
+          </div>
+        </div>
+                 </div>
+           <div class="col-xs-12 col-sm-4">
                 <div class="splash pullout" id="sidebar-downloads">
                         	<h1 tal:condition="context/product_title" i18n:translate="">
                                 <span tal:content="context/product_title" i18n:name="product_title" />
@@ -217,13 +214,12 @@
                     <p class="current-projects"><span i18n:translate="">Currently there are</span>
                             <span tal:content="view/tlproject_count" /> <span i18n:translate="">project(s) available.</span>
                     </p>
-                  <p>
-                    <a class="pointer" tal:attributes="href string:${context/absolute_url}/++add++collective.templates.tlproject">
+                    <p>
+                    <a class="pointer" tal:attributes="href string:${context/absolute_url}/++add++tdf.templateuploadcenter.tupproject">
                         <img src="++resource++collective.templates/yellowarrow.png"  alt=""/> <span i18n:translate="">Submit your</span>
                         <span tal:content="context/product_title | string:template_project" /> Project
                     </a>
-                  </p>
-
+                    </p>
                 </div>
                 <div tal:condition="not: isAnon" tal:replace="structure provider:plone.abovecontenttitle" />
                 <div id="mostrecent">
@@ -283,7 +279,8 @@
                     <p tal:content="structure context/product_description" />
                 </div>
             </div>
-      </div>
+        </div>
+
       </tal:main-macro>
 </metal:main>
 </body>
