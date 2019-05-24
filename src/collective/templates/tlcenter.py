@@ -240,6 +240,41 @@ class TLCenterView(BrowserView):
 
         return results
 
+    def get_products(self, category, version, sort_on, SearchableText=None):
+        self.catalog = api.portal.get_tool(name='portal_catalog')
+        # sort_on = 'positive_ratings'
+
+
+        contentFilter = {
+            'sort_on': sort_on,
+            'SearchableText': SearchableText,
+            'sort_order': 'reverse',
+            'portal_type': 'collective.templates.tlproject'
+                           }
+
+        if version != 'any':
+            # We ask to the indexed value on the project (aggregated from
+            # releases on creation/modify/delete of releases)
+            contentFilter['getCompatibility'] = version
+
+        if category:
+            contentFilter['getCategories'] = category
+
+        try:
+            return self.catalog(**contentFilter)
+        except ParseError:
+            return []
+
+
+    def munge_search_term(self, q):
+        for char in BAD_CHARS:
+            q = q.replace(char, ' ')
+        r = str(q.split())
+        r = " AND ".join(r)
+        r = quote_chars(r) + '*'
+        return r
+
+
     def show_search_form(self):
         return 'getCategories' in self.request.environ['QUERY_STRING']
 
