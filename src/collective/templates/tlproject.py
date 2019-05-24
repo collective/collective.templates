@@ -186,7 +186,8 @@ class ITLProject(model.Schema):
     licenses_choice = schema.List(
         title=_(u'License of the uploaded file'),
         description=_(
-            u"Please mark one or more licenses you publish your release."),
+            u"Please mark one or more licenses under which you publish "
+            u"your file(s)."),
         value_type=schema.Choice(source=vocabavaillicenses),
         required=True,
     )
@@ -253,7 +254,7 @@ class ITLProject(model.Schema):
         title=_(u"Compatible With Versions Of The Product"),
         description=_(
             u"Please mark one or more program versions with which this "
-            u"release is compatible with."),
+            u"uploaded file is compatible with."),
         value_type=schema.Choice(source=vocabavailversions),
         required=True,
         default=[]
@@ -292,7 +293,7 @@ class ITLProject(model.Schema):
 
     directives.mode(filetitlefield1='display')
     filetitlefield1 = schema.TextLine(
-        title=_(u"Second Release File"),
+        title=_(u"The first file you want to upload."),
         description=_(
             u"Here you could add an optional second file to your project, if "
             u"the files support different platforms.")
@@ -316,7 +317,7 @@ class ITLProject(model.Schema):
 
     directives.mode(filetitlefield2='display')
     filetitlefield2 = schema.TextLine(
-        title=_(u"Third Release File"),
+        title=_(u"The third file you want to upload.e"),
         description=_(
             u"Here you could add an optional third file to your project, if "
             u"the files support different platforms.")
@@ -342,7 +343,8 @@ class ITLProject(model.Schema):
 @invariant
 def licensenotchoosen(value):
     if not value.licenses_choice:
-        raise Invalid(_(u"Please choose a license for your release."))
+        raise Invalid(_(u"Please choose a license for the file(s) you want to"
+                        u"upload."))
 
 
 @invariant
@@ -350,7 +352,7 @@ def compatibilitynotchoosen(data):
     if not data.compatibility_choice:
         raise Invalid(_(
             u"Please choose one or more compatible product versions for "
-            u"your release."))
+            u"the file(s) you want to upload."))
 
 
 @invariant
@@ -358,7 +360,7 @@ def legaldeclarationaccepted(data):
     if data.accept_legal_declaration is not True:
         raise AcceptLegalDeclaration(
             _(
-                u"Please accept the Legal Declaration about your Release "
+                u"Please accept the Legal Declaration about your file(s) "
                 u"and your Uploaded File"))
 
 
