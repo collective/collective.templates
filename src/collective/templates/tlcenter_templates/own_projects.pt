@@ -16,6 +16,9 @@
         tal:define="results view/get_results;
                     Batch python:modules['Products.CMFPlone'].Batch;
                     b_size python:10;b_start python:0;b_start request/b_start | b_start;">
+  <p tal:condition="not: results">
+                                 <strong i18n:translate="">You currently have no projects on this site.</strong>
+                             </p>
 
     <tal:results condition="results" define="batch python:Batch(results, b_size, int(b_start), orphan=1);">
 
