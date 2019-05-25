@@ -109,4 +109,14 @@
     handler="collective.templates.notifications.notifiyAboutNewVersion"
     />
 
+  <browser:viewlet
+      name="ownprojects"
+      for="collective.templates.tlcenter.ITLCenter"
+      view="plone.app.layout.globals.interfaces.IViewView"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+      class="collective.templates.tlcenter.TLCenterOwnProjectsViewlet"
+      template="tlcenter_templates/own_projects.pt"
+      permission="zope2.View"
+      />
+
 </configure>
