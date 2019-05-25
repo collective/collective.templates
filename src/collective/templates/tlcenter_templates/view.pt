@@ -40,8 +40,8 @@
                 <h2 i18n:translate="">Most Popular <span tal:content="context/product_title" i18n:name="product_title" /></h2>
                   <div tal:define="results python:view.get_most_popular_products();
                                      Batch python:modules['Products.CMFPlone'].Batch;
-				                     b_size python:10;b_start python:0;b_start request/b_start | b_start;
-				                     ">
+				                             b_size python:10;b_start python:0;b_start request/b_start | b_start;
+				                             ">
 
                          <tal:results condition="results"
                                      define="batch python:Batch(results, b_size, int(b_start), orphan=1);">
@@ -49,12 +49,12 @@
                              <ul class="popularproducts">
                                  <li tal:repeat="result batch">
                                       <tal:entry
-						                define="project result/getObject;
-						                        url result/getURL;
-							                    projectURL project/absolute_url;
-							                    result_type result/portal_type;
-							                    zoomid   python:project.id.replace('.', '_');
-							                    screenshot   project/screenshot | nothing">
+						                                 define="project result/getObject;
+						                                         url result/getURL;
+							                                       projectURL project/absolute_url;
+							                                       result_type result/portal_type;
+							                                       zoomid   python:project.id.replace('.', '_');
+							                                       screenshot   project/screenshot | nothing">
 
                                           <h3 style="border-top: none">
                                               <a href="" tal:attributes="href projectURL;" 	tal:content="project/pretty_title_or_id">
@@ -74,7 +74,7 @@
                                                     <img tal:define="scales project/@@images;
                                                                      projectlogo project/@@images/project_logo;
                                                                      scale python:scales.scale('project_logo', 'tile')"
-                                                         tal:replace="structure python:scale and scale.tag(css_class='tupcenterprojectlogo') or None" />
+                                                         tal:replace="structure python:scale and scale.tag(css_class='tlcenterprojectlogo') or None" />
                                                 </span>
 
 
