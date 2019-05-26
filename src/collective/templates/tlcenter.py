@@ -243,18 +243,16 @@ class TLCenterView(BrowserView):
     def get_products(self, category, version, sort_on, SearchableText=None):
         self.catalog = api.portal.get_tool(name='portal_catalog')
         # sort_on = 'positive_ratings'
-
+        if SearchableText:
+            SearchableText = self.munge_search_term(SearchableText)
 
         contentFilter = {
             'sort_on': sort_on,
             'SearchableText': SearchableText,
             'sort_order': 'reverse',
-            'portal_type': 'collective.templates.tlproject'
-                           }
+            'portal_type': 'collective.templates.tlproject'}
 
         if version != 'any':
-            # We ask to the indexed value on the project (aggregated from
-            # releases on creation/modify/delete of releases)
             contentFilter['getCompatibility'] = version
 
         if category:
@@ -278,3 +276,15 @@ class TLCenterView(BrowserView):
     def show_search_form(self):
         return 'getCategories' in self.request.environ['QUERY_STRING']
 
+
+
+class TLCenterOwnProjectsViewlet(ViewletBase):
+
+    def get_results(self):
+        current_user = api.user.get_current()
+        pc = api.portal.get_tool('portal_catalog')
+        return pc.portal_catalog(
+            portal_type='collective.templates',
+            sort_on='Date',
+            sort_order='reverse',
+            Creator=str(current_user))
