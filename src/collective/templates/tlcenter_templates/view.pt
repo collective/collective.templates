@@ -131,7 +131,7 @@
                                      <option value="created" tal:attributes="selected    python:sort_on == 'created' and 'selected' or ''" i18n:translate="">Newest</option>
                                  </select>
                                  <input type="hidden" name="path" tal:attributes="value python:'/'.join(context.getPhysicalPath())" /> &nbsp;
-                                 <input type="hidden" name="portal_type" value="tdf.templateuploadcenter.tupproject" />
+                                 <input type="hidden" name="portal_type" value="collective.templates.tlproject" />
                                   <div class="input-group">
                                     <input class="searchPage form-control" name="SearchableText" type="text" size="25" title="Search Site" value=""
                                            tal:attributes="value SearchableText" />
@@ -181,7 +181,7 @@
                                                  <img tal:define="scales project/@@images;
                                                                   projectlogo project/@@images/project_logo;
                                                                   scale python:scales.scale('project_logo', 'tile')"
-                                                      tal:replace="structure python:scale and scale.tag(css_class='tupcenterprojectlogo') or None" />
+                                                      tal:replace="structure python:scale and scale.tag(css_class='tlcenterprojectlogo') or None" />
                                              </span>
                                              <div class="product-details">
                                                  <span class="product-leadin">
@@ -215,7 +215,7 @@
                             <span tal:content="view/tlproject_count" /> <span i18n:translate="">project(s) available.</span>
                     </p>
                     <p>
-                    <a class="pointer" tal:attributes="href string:${context/absolute_url}/++add++tdf.templateuploadcenter.tupproject">
+                    <a class="pointer" tal:attributes="href string:${context/absolute_url}/++add++collective.templates.tlproject">
                         <img src="++resource++collective.templates/yellowarrow.png"  alt=""/> <span i18n:translate="">Submit your</span>
                         <span tal:content="context/product_title | string:template_project" /> Project
                     </a>
