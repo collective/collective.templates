@@ -13,6 +13,7 @@ from zope import schema
 import re
 from zope.interface import Invalid
 from plone.supermodel.directives import primary
+import six
 
 MULTISPACE = u'\u3000'.encode('utf-8')
 BAD_CHARS = ('?', '-', '+', '*', MULTISPACE)
@@ -250,7 +251,8 @@ class TLCenterView(BrowserView):
             'sort_on': sort_on,
             'SearchableText': SearchableText,
             'sort_order': 'reverse',
-            'portal_type': 'collective.templates.tlproject'}
+            'portal_type': 'collective.templates.tlproject'
+            }
 
         if version != 'any':
             contentFilter['getCompatibility'] = version
@@ -266,8 +268,9 @@ class TLCenterView(BrowserView):
 
     def munge_search_term(self, q):
         for char in BAD_CHARS:
+            char = str(char)
             q = q.replace(char, ' ')
-        r = str(q.split())
+        r = q.split()
         r = " AND ".join(r)
         r = quote_chars(r) + '*'
         return r
