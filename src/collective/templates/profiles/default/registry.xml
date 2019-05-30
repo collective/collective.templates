@@ -1,5 +1,14 @@
 <?xml version="1.0"?>
 <registry>
 <!-- -*- extra stuff goes here -*- -->
+  <records prefix="plone.bundles/collective.templates"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="enabled">True</value>
+    <value key="csscompilation">++resource++collective.templates/templatecenter.css</value>
+
+    <value key="last_compilation">2019-11-26 00:00:00</value>
+    <value key="compile">False</value>
+    <value key="depends">plone</value>
+  </records>
 
 </registry>
