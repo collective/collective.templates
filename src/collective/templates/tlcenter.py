@@ -214,7 +214,7 @@ class TLCenterView(BrowserView):
         context = aq_inner(self.context)
         catalog = api.portal.get_tool(name='portal_catalog')
 
-        return len(catalog(portal_type=('collective.templates.tlproject'),
+        return len(catalog(portal_type='collective.templates.tlproject',
                            review_state='published'))
 
     def get_most_popular_products(self):
