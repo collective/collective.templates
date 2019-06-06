@@ -30,7 +30,6 @@ def validateEmail(value):
     return True
 
 
-
 class ITLCenter(model.Schema):
     """ A Templates Upload Center.
     """
@@ -44,7 +43,7 @@ class ITLCenter(model.Schema):
     )
 
     product_description = schema.Text(
-        title=_(u"Description of the features of templates")
+        title=_(u"Description of the features of templates"),
     )
 
     product_title = schema.TextLine(
@@ -83,13 +82,12 @@ class ITLCenter(model.Schema):
                                          'CC-BY-SA-v4 (Creative Commons '
                                          'Attribution-ShareAlike 4.0 '
                                          'International)',
-                                         'AL-v2 (Apache License Version 2.0)',
-                                         ],
+                                         'AL-v2 (Apache License Version 2.0)',],
                                      value_type=schema.TextLine())
 
     available_versions = schema.List(title=_(u"Available Versions"),
                                      default=['Product 1.0',
-                                     ],
+                                             ],
                                      value_type=schema.TextLine())
 
     available_platforms = schema.List(title=_(u"Available Platforms"),
