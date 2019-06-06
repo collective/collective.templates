@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from plone import api
 from collective.templates.tlcenter import ITLCenter
+from plone import api
 
 
 def notifiyAboutNewVersion(tlproject, event):

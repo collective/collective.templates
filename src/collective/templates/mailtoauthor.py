@@ -1,23 +1,22 @@
 # -*- coding: utf-8 -*-
+from Acquisition import aq_inner
+from collective.templates import _
+from plone import api
 from plone.autoform.form import AutoExtensibleForm
+from plone.formwidget.recaptcha.widget import ReCaptchaFieldWidget
+from Products.statusmessages.interfaces import IStatusMessage
+from z3c.form import button
+from z3c.form import field
+from z3c.form import form
+from zope import component
 from zope import interface
 from zope import schema
-from zope import component
-from z3c.form import form, button
-import re
-from zope.interface import Invalid
-from plone import api
-from Products.statusmessages.interfaces import IStatusMessage
-
-from collective.templates import _
-
-import logging
-from z3c.form import field
-
-from plone.formwidget.recaptcha.widget import ReCaptchaFieldWidget
-from Acquisition import aq_inner
 from zope.component import getMultiAdapter
 from zope.interface import implementer
+from zope.interface import Invalid
+
+import logging
+import re
 
 
 checkemail = re.compile(

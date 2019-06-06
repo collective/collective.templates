@@ -1,20 +1,21 @@
 # -*- coding: utf-8 -*-
-from collective.templates import _
 from Acquisition import aq_inner
+from collective.templates import _
 from plone import api
 from plone.app.layout.viewlets import ViewletBase
 from plone.app.multilingual.dx import directives
 from plone.app.textfield import RichText
 from plone.supermodel import model
+from plone.supermodel.directives import primary
 from Products.CMFPlone.browser.search import quote_chars
 from Products.Five import BrowserView
 from Products.ZCTextIndex.ParseTree import ParseError
 from zope import schema
 from zope.interface import Invalid
-from plone.supermodel.directives import primary
 
 import re
 import six
+
 
 MULTISPACE = u'\u3000'.encode('utf-8')
 BAD_CHARS = ('?', '-', '+', '*', MULTISPACE)
