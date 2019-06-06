@@ -82,7 +82,8 @@ class ITLCenter(model.Schema):
                                          'CC-BY-SA-v4 (Creative Commons '
                                          'Attribution-ShareAlike 4.0 '
                                          'International)',
-                                         'AL-v2 (Apache License Version 2.0)', ],
+                                         'AL-v2 (Apache License Version 2.0)',
+                                             ],
                                      value_type=schema.TextLine())
 
     available_versions = schema.List(title=_(u'Available Versions'),
@@ -102,19 +103,19 @@ class ITLCenter(model.Schema):
 
     model.fieldset('instructions',
                    label=u'Instructions',
-                   fields=['install_instructions', 'reporting_bugs', ])
+                   fields=['install_instructions', 'reporting_bugs' ])
 
     primary('install_instructions')
     install_instructions = RichText(
         title=_(u'Template Installation Instructions'),
         description=_(u'Please fill in the install instructions'),
-        required=False
+        required=False,
     )
 
     primary('reporting_bugs')
     reporting_bugs = RichText(
         title=_(u'Instruction how to report Bugs'),
-        required=False
+        required=False,
     )
 
     model.fieldset('disclaimer',
@@ -126,7 +127,7 @@ class ITLCenter(model.Schema):
     title_legaldisclaimer = schema.TextLine(
         title=_(u'Title for Legal Disclaimer and Limitations'),
         default=_(u'Legal Disclaimer and Limitations'),
-        required=False
+        required=False,
     )
 
     legal_disclaimer = schema.Text(
@@ -138,14 +139,14 @@ class ITLCenter(model.Schema):
         default=_(
             u'Fill in the legal disclaimer, that had to be accepted by the '
             u'project owner'),
-        required=False
+        required=False,
     )
 
     title_legaldownloaddisclaimer = schema.TextLine(
         title=_(
             u'Title of the Legal Disclaimer and Limitations for Downloads'),
         default=_(u'Legal Disclaimer And Limitations For Downloads'),
-        required=False
+        required=False,
     )
 
     primary('legal_downloaddisclaimer')
@@ -155,7 +156,7 @@ class ITLCenter(model.Schema):
             u'Enter any legal disclaimer and limitations for downloads that '
             u'should appear on each page for dowloadable files.'),
         default=_(u'Fill in the text for the legal download disclaimer'),
-        required=False
+        required=False,
     )
 
     primary('information_oldversions')
@@ -164,7 +165,7 @@ class ITLCenter(model.Schema):
         description=_(u'Enter an information about the search for older '
                       u'versions of the product, if they are not on the '
                       u'versions list (compatibility) anymore.'),
-        required=False
+        required=False,
     )
 
     model.fieldset('contactadresses',
@@ -179,7 +180,7 @@ class ITLCenter(model.Schema):
             u'Enter an email address for the communication with template '
             u'center manager and reviewer'),
         default='projects@foo.org',
-        constraint=validateEmail
+        constraint=validateEmail,
     )
 
 
@@ -234,7 +235,7 @@ class TLCenterView(BrowserView):
             'sort_on': sort_on,
             'sort_order': 'reverse',
             'review_state': 'published',
-            'portal_type': 'collective.templates.tlproject'
+            'portal_type': 'collective.templates.tlproject',
         }
 
         results = self.catalog(**contentFilter)
@@ -251,7 +252,7 @@ class TLCenterView(BrowserView):
             'sort_on': sort_on,
             'SearchableText': SearchableText,
             'sort_order': 'reverse',
-            'portal_type': 'collective.templates.tlproject'
+            'portal_type': 'collective.templates.tlproject',
         }
 
         if version != 'any':
