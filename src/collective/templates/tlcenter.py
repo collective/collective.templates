@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from collective.templates import _
 from Acquisition import aq_inner
 from plone import api
 from plone.app.layout.viewlets import ViewletBase
@@ -8,11 +9,11 @@ from plone.supermodel import model
 from Products.CMFPlone.browser.search import quote_chars
 from Products.Five import BrowserView
 from Products.ZCTextIndex.ParseTree import ParseError
-from collective.templates import _
 from zope import schema
-import re
 from zope.interface import Invalid
 from plone.supermodel.directives import primary
+
+import re
 import six
 
 MULTISPACE = u'\u3000'.encode('utf-8')
