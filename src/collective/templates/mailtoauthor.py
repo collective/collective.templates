@@ -33,7 +33,7 @@ def validateprojectname(value):
     catalog = api.portal.get_tool('portal_catalog')
     project = catalog(
         portal_type='collective.templates.tlproject',
-        Title=value
+        Title=value,
     )
 
     for brain in project[:1]:
@@ -50,7 +50,7 @@ class IReCaptchaForm(interface.Interface):
     captcha = schema.TextLine(
         title=u'ReCaptcha',
         description=u'',
-        required=False
+        required=False,
     )
 
 
@@ -65,32 +65,32 @@ class MailToAuthorSchema(interface.Interface):
 
     inquirerfirstname = schema.TextLine(
         title=_(u'Your First Name'),
-        description=_(u'Please fill in your first name(s)')
+        description=_(u'Please fill in your first name(s)'),
     )
 
     inquirerfamilyname = schema.TextLine(
         title=_(u'Your Family Name'),
-        description=_(u'Please fill in your familiy name')
+        description=_(u'Please fill in your familiy name'),
     )
 
     inquireremailaddress = schema.TextLine(
         title=_(u'Your Email Address'),
         description=_(u'Please fill in your email address.'),
-        constraint=validateemail
+        constraint=validateemail,
     )
 
     projectname = schema.TextLine(
         title=_(u'Project Name'),
         description=_(u'The name of the project, to which author you want '
                       u'to send feedback.'),
-        constraint=validateprojectname
+        constraint=validateprojectname,
     )
 
     inquiry = schema.Text(
         title=_(u'Your Message To The Author'),
         description=_(u'What is your message to the author of the project? '
                       u'Your message is limited to 1000 characters.'),
-        max_length=1000
+        max_length=1000,
     )
 
 
@@ -129,7 +129,7 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
         data, errors = self.extractData()
         captcha = getMultiAdapter(
             (aq_inner(self.context), self.request),
-            name='recaptcha'
+            name='recaptcha',
         )
 
         if errors:
@@ -140,11 +140,11 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
             logger.info('ReCaptcha validation passed.')
         else:
             logger.info(
-                'Please validate the recaptcha field before sending the form.'
+                'Please validate the recaptcha field before sending the form.',
             )
             IStatusMessage(self.request).addStatusMessage(
                 _(u'Please validate the recaptcha field before sending '
-                  u'the form.'), 'error'
+                  u'the form.'), 'error',
             )
             return
 
@@ -154,7 +154,7 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
         catalog = api.portal.get_tool('portal_catalog')
         project = catalog(
                       portal_type='collective.templates.tlproject',
-                      Title=data['projectname']
+                      Title=data['projectname'],
         )
 
         for brain in project[:1]:
@@ -171,7 +171,7 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
                                           data['inquirerfamilyname'],
                                           data['inquireremailaddress']),
             subject=(u'Your Project: {}').format(data['projectname']),
-            body=(u'{}').format(data['inquiry'])
+            body=(u'{}').format(data['inquiry']),
 
 
         )
@@ -181,7 +181,7 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
         IStatusMessage(self.request).addStatusMessage(
                 _(u'We send your message to the author of the project. It\'s '
                   u'on his choice, if he\'ll get back to you.'),
-                'info'
+                'info',
             )
 
         contextURL = self.context.absolute_url()
