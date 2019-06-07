@@ -83,7 +83,7 @@ class ITLCenter(model.Schema):
                                          'Attribution-ShareAlike 4.0 '
                                          'International)',
                                          'AL-v2 (Apache License Version 2.0)',
-                                         ],
+                                             ],
                                      value_type=schema.TextLine())
 
     available_versions = schema.List(title=_(u'Available Versions'),
@@ -212,7 +212,6 @@ class TLCenterView(BrowserView):
     def tlproject_count(self):
         """Return number of projects
         """
-        context = aq_inner(self.context)
         catalog = api.portal.get_tool(name='portal_catalog')
 
         return len(catalog(portal_type='collective.templates.tlproject',

@@ -6,7 +6,6 @@ from plone import api
 from plone.app.textfield import RichText
 from plone.autoform import directives
 from plone.dexterity.browser.view import DefaultView
-from plone.indexer.decorator import indexer
 from plone.namedfile.field import NamedBlobFile
 from plone.namedfile.field import NamedBlobImage
 from plone.supermodel import model
