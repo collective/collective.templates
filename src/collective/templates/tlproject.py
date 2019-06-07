@@ -142,6 +142,10 @@ def isNotEmptyCategory(value):
     return True
 
 
+class AcceptLegalDeclaration(Invalid):
+    __doc__ = _(u"It is necessary that you accept the Legal Declaration")
+
+
 @provider(IContextAwareDefaultFactory)
 def legal_declaration_title(context):
     return context.title_legaldisclaimer
@@ -286,13 +290,13 @@ class ITLProject(model.Schema):
         description=_(
             u'You need only to upload one file to your project. There are '
             u'options for further two file uploads if you want to provide '
-            u'files for different platforms.')
+            u'files for different platforms.'),
     )
 
     model.fieldset('fileset2',
                    label=u'Optional Further File Upload',
                    fields=['filetitlefield1', 'platform_choice1', 'file1',
-                           'filetitlefield2', 'platform_choice2', 'file2']
+                           'filetitlefield2', 'platform_choice2', 'file2'],
                    )
 
     directives.mode(filetitlefield1='display')
@@ -300,7 +304,7 @@ class ITLProject(model.Schema):
         title=_(u'The first file you want to upload.'),
         description=_(
             u'Here you could add an optional second file to your project, if '
-            u'the files support different platforms.')
+            u'the files support different platforms.'),
     )
 
     directives.widget(platform_choice1=CheckBoxFieldWidget)
@@ -324,7 +328,7 @@ class ITLProject(model.Schema):
         title=_(u'The third file you want to upload.e'),
         description=_(
             u'Here you could add an optional third file to your project, if '
-            u'the files support different platforms.')
+            u'the files support different platforms.'),
     )
 
     directives.widget(platform_choice2=CheckBoxFieldWidget)
