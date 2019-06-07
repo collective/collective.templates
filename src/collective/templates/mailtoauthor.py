@@ -178,17 +178,12 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
 
         # Redirect back to the front page with a status message
 
-        plone.api.portal.show_message(
+        api.portal.show_message(
             message=_(u'We send your message to the author of the project. It\'s '
                   u'on his choice, if he\'ll get back to you.'),
-            request=request,
+            request=self.request,
             type='info')
 
-        IStatusMessage(self.request).addStatusMessage(
-                _(u'We send your message to the author of the project. It\'s '
-                  u'on his choice, if he\'ll get back to you.'),
-                'info',
-            )
 
         contextURL = self.context.absolute_url()
         self.request.response.redirect(contextURL)
