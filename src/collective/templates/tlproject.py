@@ -163,7 +163,7 @@ class ITLProject(model.Schema):
             u'appropriate data for your project or choose one of the '
             u'options that are provided. You could upload one or more files '
             u'to your project on the register \'File Upload\' and '
-            u'\'Optional Further File Upload\'.')
+            u'\'Optional Further File Upload\'.'),
     )
 
     dexteritytextindexer.searchable('title')
@@ -171,7 +171,7 @@ class ITLProject(model.Schema):
         title=_(u'Title'),
         description=_(u'Project Title - minimum 5 and maximum 50 characters'),
         min_length=5,
-        max_length=50
+        max_length=50,
     )
 
     dexteritytextindexer.searchable('description')
@@ -183,7 +183,7 @@ class ITLProject(model.Schema):
     primary('details')
     details = RichText(
         title=_(u'Full Project Description'),
-        required=False
+        required=False,
     )
 
     directives.widget(licenses_choice=CheckBoxFieldWidget)
@@ -200,21 +200,21 @@ class ITLProject(model.Schema):
     title_declaration_legal = schema.TextLine(
         title=_(u''),
         required=False,
-        defaultFactory=legal_declaration_title
+        defaultFactory=legal_declaration_title,
     )
 
     directives.mode(declaration_legal='display')
     declaration_legal = schema.Text(
         title=_(u''),
         required=False,
-        defaultFactory=legal_declaration_text
+        defaultFactory=legal_declaration_text,
     )
 
     accept_legal_declaration = schema.Bool(
         title=_(u'Accept the above legal disclaimer'),
         description=_(
             u'Please declare that you accept the above legal disclaimer.'),
-        required=True
+        required=True,
     )
 
     dexteritytextindexer.searchable('category_choice')
@@ -226,13 +226,13 @@ class ITLProject(model.Schema):
             u'your project.'),
         value_type=schema.Choice(source=vocabcategories),
         constraint=isNotEmptyCategory,
-        required=True
+        required=True,
     )
 
     contactAddress = schema.TextLine(
         title=_(u'Contact email-address'),
         description=_(u'Contact email-address for the project.'),
-        constraint=validateemail
+        constraint=validateemail,
     )
 
     screenshot = NamedBlobImage(
@@ -241,7 +241,7 @@ class ITLProject(model.Schema):
             u'Add a screenshot by clicking the \'Browse\' button. You could '
             u'provide an image of the file format \'png\', \'gif\' or \'jpg\'.'),
         required=True,
-        constraint=validateimageextension
+        constraint=validateimageextension,
     )
 
     releasenumber = schema.TextLine(
@@ -261,7 +261,7 @@ class ITLProject(model.Schema):
             u'uploaded file is compatible with.'),
         value_type=schema.Choice(source=vocabavailversions),
         required=True,
-        default=[]
+        default=[],
     )
 
     file = NamedBlobFile(
@@ -271,14 +271,15 @@ class ITLProject(model.Schema):
     )
 
     directives.widget(platform_choice=CheckBoxFieldWidget)
-    platform_choice = schema.List(
+    platform_choice = schema.List\
+            (
         title=_(u'First uploaded file is compatible with the Platform(s)'),
         description=_(
             u'Please mark one or more platforms with which the uploaded file '
             u'is compatible.'),
         value_type=schema.Choice(source=vocabavailplatforms),
         required=True,
-        )
+            )
 
     directives.mode(filetitlefield='display')
     filetitlefield = schema.TextLine(
