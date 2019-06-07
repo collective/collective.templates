@@ -162,7 +162,7 @@ class ITLProject(model.Schema):
             u'register. Please go through this register and fill in the '
             u'appropriate data for your project or choose one of the '
             u'options that are provided. You could upload one or more files '
-            u'to your project on the register 'File Upload' and '
+            u'to your project on the register \'File Upload\' and '
             u'\'Optional Further File Upload\'.')
     )
 
