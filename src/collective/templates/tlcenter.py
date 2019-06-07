@@ -83,7 +83,7 @@ class ITLCenter(model.Schema):
                                          'Attribution-ShareAlike 4.0 '
                                          'International)',
                                          'AL-v2 (Apache License Version 2.0)',
-                                             ],
+                                         ],
                                      value_type=schema.TextLine())
 
     available_versions = schema.List(title=_(u'Available Versions'),
@@ -103,7 +103,7 @@ class ITLCenter(model.Schema):
 
     model.fieldset('instructions',
                    label=u'Instructions',
-                   fields=['install_instructions', 'reporting_bugs' ])
+                   fields=['install_instructions', 'reporting_bugs'])
 
     primary('install_instructions')
     install_instructions = RichText(
