@@ -275,14 +275,14 @@ class ITLProject(model.Schema):
 
     directives.widget(platform_choice=CheckBoxFieldWidget)
     platform_choice = schema.List\
-            (
-        title=_(u'First uploaded file is compatible with the Platform(s)'),
-        description=_(
-            u'Please mark one or more platforms with which the uploaded file '
-            u'is compatible.'),
-        value_type=schema.Choice(source=vocabavailplatforms),
-        required=True,
-            )
+        (
+            title=_(u'First uploaded file is compatible with the Platform(s)'),
+            description=_(
+                u'Please mark one or more platforms with which the uploaded '
+                u'file is compatible.'),
+            value_type=schema.Choice(source=vocabavailplatforms),
+            required=True,
+        )
 
     directives.mode(filetitlefield='display')
     filetitlefield = schema.TextLine(
@@ -386,7 +386,7 @@ def notifyAboutNewProject(self, event):
         mailrecipient = api.portal.get_registry_record('plone.email_from_address')
     api.portal.send_email(
         recipient=mailrecipient,
-        subject=(u'A Project with the title {} was added').format(self.title),
+        subject=(u'A Project with the title {0} was added').format(self.title),
         body='A member added a new project'
     )
 
@@ -398,12 +398,12 @@ def notifyProjectManager(self, event):
     else:
         mailsender = api.portal.get_registry_record('plone.email_from_address')
     api.portal.send_email(
-        recipient=('{}').format(self.contactAddress),
-        sender=(u'{} <{}>').format('Admin of the Website', mailsender),
-        subject=(u'Your Project {}').format(self.title),
+        recipient=('{0}').format(self.contactAddress),
+        sender=(u'{0} <{1}>').format('Admin of the Website', mailsender),
+        subject=(u'Your Project {0}').format(self.title),
         body=(
             u'The status of your templates project changed. '
-            u'The new status is {}').format(state),
+            u'The new status is {0}').format(state),
     )
 
 
@@ -423,7 +423,7 @@ def notifyAboutNewReviewlistentry(self, event):
                  'project is ready for publication. \n'
                  '\n'
                  'Kind regards,\n'
-                 'The Admin of the Website'
+                 'The Admin of the Website',
         )
 
 
@@ -438,7 +438,7 @@ class ValidateTLProjectUniqueness(validator.SimpleFieldValidator):
             catalog = api.portal.get_tool(name='portal_catalog')
             results = catalog({'Title': quote_chars(value),
                                'object_provides':
-                                   ITLProject.__identifier__, })
+                                   ITLProject.__identifier__})
             contextUUID = IUUID(self.context, None)
             for result in results:
                 if result.UID != contextUUID:
