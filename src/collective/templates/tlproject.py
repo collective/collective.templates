@@ -439,7 +439,7 @@ class ValidateTLProjectUniqueness(validator.SimpleFieldValidator):
             results = catalog({'Title': quote_chars(value),
                                'object_provides':
                                    ITLProject.__identifier__})
-            contextUUID = IUUID(self.context, None)
+            contextUUID = api.content.get_uuid(self.context)
             for result in results:
                 if result.UID != contextUUID:
                     raise Invalid(_(u'The project title is already in use.'))
