@@ -403,7 +403,7 @@ def notifyProjectManager(self, event):
         subject=(u'Your Project {}').format(self.title),
         body=(
             u'The status of your templates project changed. '
-            u'The new status is {}').format(state)
+            u'The new status is {}').format(state),
     )
 
 

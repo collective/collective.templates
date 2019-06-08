@@ -170,8 +170,8 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
             sender=(u'{} {} <{}>').format(data['inquirerfirstname'],
                                           data['inquirerfamilyname'],
                                           data['inquireremailaddress']),
-            subject=(u'Your Project: {}').format(data['projectname']),
-            body=(u'{}').format(data['inquiry']),
+            subject=(u'Your Project: {0}').format(data['projectname']),
+            body=(u'{0}').format(data['inquiry']),
 
 
         )
@@ -179,11 +179,10 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
         # Redirect back to the front page with a status message
 
         api.portal.show_message(
-            message=_(u'We send your message to the author of the project. It\'s '
-                  u'on his choice, if he\'ll get back to you.'),
+            message=_(u'We send your message to the author of the project. '
+                      u'It\'s on his choice, if he\'ll get back to you.'),
             request=self.request,
             type='info')
-
 
         contextURL = self.context.absolute_url()
         self.request.response.redirect(contextURL)
