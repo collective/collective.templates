@@ -10,7 +10,6 @@ from plone.namedfile.field import NamedBlobFile
 from plone.namedfile.field import NamedBlobImage
 from plone.supermodel import model
 from plone.supermodel.directives import primary
-from plone.uuid.interfaces import IUUID
 from Products.validation import V_REQUIRED
 from z3c.form import validator
 from z3c.form.browser.checkbox import CheckBoxFieldWidget
