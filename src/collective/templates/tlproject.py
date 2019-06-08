@@ -143,7 +143,7 @@ def isNotEmptyCategory(value):
 
 
 class AcceptLegalDeclaration(Invalid):
-    __doc__ = _(u"It is necessary that you accept the Legal Declaration")
+    __doc__ = _(u'It is necessary that you accept the Legal Declaration')
 
 
 @provider(IContextAwareDefaultFactory)
@@ -387,7 +387,7 @@ def notifyAboutNewProject(self, event):
     api.portal.send_email(
         recipient=mailrecipient,
         subject=(u'A Project with the title {0} was added').format(self.title),
-        body='A member added a new project'
+        body='A member added a new project',
     )
 
 
@@ -417,7 +417,7 @@ def notifyAboutNewReviewlistentry(self, event):
         api.portal.send_email(
             recipient=mailrecipient,
             subject=(
-                u'A Project with the title {} was added to the review '
+                u'A Project with the title {0} was added to the review '
                 u'list').format(self.title),
             body='Please have a look at the review list and check if the '
                  'project is ready for publication. \n'
