@@ -4,7 +4,6 @@ from collective.templates import _
 from plone import api
 from plone.autoform.form import AutoExtensibleForm
 from plone.formwidget.recaptcha.widget import ReCaptchaFieldWidget
-from Products.statusmessages.interfaces import IStatusMessage
 from z3c.form import button
 from z3c.form import field
 from z3c.form import form
