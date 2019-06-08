@@ -142,10 +142,12 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
             logger.info(
                 'Please validate the recaptcha field before sending the form.',
             )
-            IStatusMessage(self.request).addStatusMessage(
-                _(u'Please validate the recaptcha field before sending '
-                  u'the form.'), 'error',
-            )
+            api.portal.show_message(
+                message=_(
+                    u'Please validate the recaptcha field before sending '
+                    u'the form.'),
+                request=self.request,
+                type='error')
             return
 
         if api.portal.get_registry_record('plone.email_from_address') is not None:
