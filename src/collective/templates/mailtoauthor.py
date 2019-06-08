@@ -164,10 +164,10 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
             else:
                 projectemail = contactaddress
 
-        mailrecipient = (u'{}').format(projectemail)
+        mailrecipient = (u'{0}').format(projectemail)
         api.portal.send_email(
             recipient=mailrecipient,
-            sender=(u'{} {} <{}>').format(data['inquirerfirstname'],
+            sender=(u'{0} {1} <{2}>').format(data['inquirerfirstname'],
                                           data['inquirerfamilyname'],
                                           data['inquireremailaddress']),
             subject=(u'Your Project: {0}').format(data['projectname']),
