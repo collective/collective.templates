@@ -83,7 +83,7 @@ class ITLCenter(model.Schema):
                                          'Attribution-ShareAlike 4.0 '
                                          'International)',
                                          'AL-v2 (Apache License Version 2.0)',
-                                             ],
+                                         ],
                                      value_type=schema.TextLine())
 
     available_versions = schema.List(title=_(u'Available Versions'),
@@ -193,6 +193,7 @@ directives.languageindependent('available_platforms')
 class TLCenterView(BrowserView):
 
     def tlprojects(self):
+        from collective.templates.tlproject import ITLProject
         context = aq_inner(self.context)
         catalog = api.portal.get_tool(name='portal_catalog')
 
