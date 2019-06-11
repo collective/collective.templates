@@ -4,9 +4,9 @@ from plone import api
 
 
 def notifiyAboutNewVersion(tlproject, event):
-    if hasattr(event, 'descriptions') and event.descriptions:
+    if getattr(event, 'descriptions') and event.descriptions:
         for d in event.descriptions:
-            if hasattr(d, 'interface') and d.interface is ITLCenter and \
+            if getattr(d, 'interface') and d.interface is ITLCenter and \
                     'available_versions' in d.attributes:
                 users = api.user.get_users()
                 message = 'We added a new version of the product to the ' \
