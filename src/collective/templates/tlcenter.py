@@ -102,6 +102,13 @@ class ITLCenter(model.Schema):
                                                'UNIX (other)'],
                                       value_type=schema.TextLine())
 
+    allowed_fileextension = schema.TextLine(
+        title=_(u'Allowed File Extensions'),
+        description=_(u'Fill in the allowed file extensions, seperated by '
+                    u'a pipe \'|\'.'),
+        default=_(u'ott|OTT|ots|OTS|otp|OTP|otg|OTG'),
+        )
+
     model.fieldset('instructions',
                    label=u'Instructions',
                    fields=['install_instructions', 'reporting_bugs'])
