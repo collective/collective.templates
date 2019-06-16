@@ -154,6 +154,25 @@ def legal_declaration_text(context):
     return context.legal_disclaimer
 
 
+@provider(IContextAwareDefaultFactory)
+def allowedfileextensions(context):
+    return context.allowed_fileextension
+
+TEXTO = allowedfileextensions
+
+
+def validatetemplatefileextension(value):
+    pattern = r'^.*\.{0}'.format(TEXTO)
+    matches = re.compile(pattern).match
+    if not matches(value.filename):
+        raise Invalid(
+            u'You could only upload files with an allowed file extension. '
+            u'Please try again with to upload a file with the correct file'
+            u'extension.')
+    return True
+
+
+
 class ITLProject(model.Schema):
     directives.mode(information='display')
     information = schema.Text(
@@ -269,6 +288,7 @@ class ITLProject(model.Schema):
         title=_(u'The first file you want to upload.'),
         description=_(u'Please upload your file.'),
         required=True,
+        constraint=validatetemplatefileextension,
     )
 
     directives.widget(platform_choice=CheckBoxFieldWidget)
@@ -319,6 +339,7 @@ class ITLProject(model.Schema):
         title=_(u'The second file you want to upload (this is optional)'),
         description=_(u'Please upload your file.'),
         required=False,
+        constraint=validatetemplatefileextension,
     )
 
     directives.mode(filetitlefield2='display')
@@ -343,6 +364,7 @@ class ITLProject(model.Schema):
         title=_(u'The third file you want to upload (this is optional)'),
         description=_(u'Please upload your file.'),
         required=False,
+        constraint=validatetemplatefileextension,
     )
 
 
