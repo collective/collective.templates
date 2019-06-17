@@ -163,7 +163,7 @@ TEXTO = allowedfileextensions
 
 def validatetemplatefileextension(value):
     pattern = r'^.*\.{0}'.format(TEXTO)
-    matches = re.compile(pattern).match
+    matches = re.compile(pattern, re.IGNORECASE).match
     if not matches(value.filename):
         raise Invalid(
             u'You could only upload files with an allowed file extension. '
