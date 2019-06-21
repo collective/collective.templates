@@ -154,15 +154,11 @@ def legal_declaration_text(context):
     return context.legal_disclaimer
 
 
-@provider(IContextAwareDefaultFactory)
-def allowedfileextensions(context):
-    return context.allowed_fileextension
-
-TEXTO = allowedfileextensions
-
 
 def validatetemplatefileextension(value):
-    pattern = r'^.*\.{0}'.format(TEXTO)
+    catalog = api.portal.get_tool(name='portal_catalog')
+    result=catalog.uniqueValuesFor('allowedfileextensions')
+    pattern = r'^.*\.{0}'.format(result)
     matches = re.compile(pattern, re.IGNORECASE).match
     if not matches(value.filename):
         raise Invalid(

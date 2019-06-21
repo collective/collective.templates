@@ -17,4 +17,7 @@
         <indexed_attr value="contactAddress" />
     </index>
     <column value="getCategories" />
+  <index name="allowedfileextensions" meta_type="FieldIndex">
+    <indexed_attr value="allowed_fileextension" />
+  </index>
 </object>
