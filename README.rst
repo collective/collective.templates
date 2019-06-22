@@ -13,7 +13,15 @@ and give feedback to the template authors.
 Features
 --------
 
--
+- A template center with listing and display of template projects respectively to their rating,
+  a search form and a listing of the latest projects.
+- Template projects with the abbility to upload template files and replace them with newer ones.
+  The project page contains fields for product versions, categories, licenses and plattforms.
+- The user could send a message to the author of a template via a mail. The mail form uses a
+  recaptcha widget. The contact data of the author of the template will not be made public.
+- The file extensions of the uploaded templates will be checked. It is possible to set the
+  allowed file extensions distinct for the specific use case of the template center. They
+  could be dynamically changed at any time.
 
 
 Examples
