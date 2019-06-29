@@ -154,6 +154,10 @@ def legal_declaration_text(context):
     return context.legal_disclaimer
 
 
+@provider(IContextAwareDefaultFactory)
+def allowedtemplatefileextensions(context):
+    return context.allowed_fileextension
+
 
 def validatetemplatefileextension(value):
     catalog = api.portal.get_tool(name='portal_catalog')
@@ -280,6 +284,14 @@ class ITLProject(model.Schema):
         default=[],
     )
 
+    directives.mode(tfileextension='display')
+    tfileextension = schema.TextLine(
+        title=_(u'The following file extensions (listed separated by a pipe)'
+                u'are allowed for template files (upper case and lower case '
+                u'and mix of both):'),
+        defaultFactory=allowedtemplatefileextensions,
+    )
+
     file = NamedBlobFile(
         title=_(u'The first file you want to upload.'),
         description=_(u'Please upload your file.'),
@@ -309,13 +321,15 @@ class ITLProject(model.Schema):
 
     model.fieldset('fileset2',
                    label=u'Optional Further File Upload',
-                   fields=['filetitlefield1', 'platform_choice1', 'file1',
-                           'filetitlefield2', 'platform_choice2', 'file2'],
+                   fields=['filetitlefield1', 'platform_choice1',
+                           'tfileextension1', 'file1',
+                           'filetitlefield2', 'platform_choice2',
+                           'tfileextension2', 'file2'],
                    )
 
     directives.mode(filetitlefield1='display')
     filetitlefield1 = schema.TextLine(
-        title=_(u'The first file you want to upload.'),
+        title=_(u'The second file you want to upload.'),
         description=_(
             u'Here you could add an optional second file to your project, if '
             u'the files support different platforms.'),
@@ -329,6 +343,15 @@ class ITLProject(model.Schema):
             u'is compatible.'),
         value_type=schema.Choice(source=vocabavailplatforms),
         required=False,
+    )
+
+
+    directives.mode(tfileextension1='display')
+    tfileextension1 = schema.TextLine(
+        title=_(u'The following file extensions (listed separated by a pipe)'
+                u'are allowed for template files (upper case and lower case '
+                u'and mix of both):'),
+        defaultFactory=allowedtemplatefileextensions,
     )
 
     file1 = NamedBlobFile(
@@ -354,6 +377,15 @@ class ITLProject(model.Schema):
             u'is compatible.'),
         value_type=schema.Choice(source=vocabavailplatforms),
         required=False,
+    )
+
+
+    directives.mode(tfileextension2='display')
+    tfileextension2 = schema.TextLine(
+        title=_(u'The following file extensions (listed separated by a pipe)'
+                u'are allowed for template files (upper case and lower case '
+                u'and mix of both):'),
+        defaultFactory=allowedtemplatefileextensions,
     )
 
     file2 = NamedBlobFile(
