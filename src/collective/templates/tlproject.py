@@ -156,7 +156,7 @@ def legal_declaration_text(context):
 
 @provider(IContextAwareDefaultFactory)
 def allowedtemplatefileextensions(context):
-    return context.allowed_fileextension
+    return context.allowed_fileextension.replace("|", ", ")
 
 
 def validatetemplatefileextension(value):
@@ -286,9 +286,8 @@ class ITLProject(model.Schema):
 
     directives.mode(tfileextension='display')
     tfileextension = schema.TextLine(
-        title=_(u'The following file extensions (listed separated by a pipe)'
-                u'are allowed for template files (upper case and lower case '
-                u'and mix of both):'),
+        title=_(u'The following file extensions are allowed for template '
+                u'files (upper case and lower case and mix of both):'),
         defaultFactory=allowedtemplatefileextensions,
     )
 
@@ -348,9 +347,8 @@ class ITLProject(model.Schema):
 
     directives.mode(tfileextension1='display')
     tfileextension1 = schema.TextLine(
-        title=_(u'The following file extensions (listed separated by a pipe)'
-                u'are allowed for template files (upper case and lower case '
-                u'and mix of both):'),
+        title=_(u'The following file extensions are allowed for template '
+                u'files (upper case and lower case and mix of both):'),
         defaultFactory=allowedtemplatefileextensions,
     )
 
@@ -382,9 +380,8 @@ class ITLProject(model.Schema):
 
     directives.mode(tfileextension2='display')
     tfileextension2 = schema.TextLine(
-        title=_(u'The following file extensions (listed separated by a pipe)'
-                u'are allowed for template files (upper case and lower case '
-                u'and mix of both):'),
+        title=_(u'The following file extensions are allowed for template '
+                u'files (upper case and lower case and mix of both):'),
         defaultFactory=allowedtemplatefileextensions,
     )
 
