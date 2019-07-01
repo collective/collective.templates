@@ -106,7 +106,7 @@ class ITLCenter(model.Schema):
         title=_(u'Allowed File Extensions'),
         description=_(u'Fill in the allowed file extensions, seperated by '
                     u'a pipe \'|\'.'),
-        default=_(u'ott|OTT|ots|OTS|otp|OTP|otg|OTG'),
+        default=_(u'ott|ots|otp|otg'),
         )
 
     model.fieldset('instructions',
