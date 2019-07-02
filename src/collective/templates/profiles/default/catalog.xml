@@ -2,22 +2,25 @@
 <object name="portal_catalog">
   <!--<column value="my_meta_column"/>-->
   <index name="releaseLicense" meta_type="KeywordIndex">
-        <indexed_attr value="licenses_choice" />
-    </index>
-    <index name="acceptedLegalDeclaration" meta_type="FieldIndex">
-        <indexed_attr value="accept_legal_declaration" />
-    </index>
-    <index name="getCompatibility" meta_type="KeywordIndex">
-        <indexed_attr value="compatibility_choice" />
-    </index>
-    <index name="getCategories" meta_type="KeywordIndex">
-        <indexed_attr value="category_choice" />
-    </index>
-    <index name="projectcontact" meta_type="KeywordIndex">
-        <indexed_attr value="contactAddress" />
-    </index>
-    <column value="getCategories" />
+    <indexed_attr value="licenses_choice" />
+  </index>
+  <index name="acceptedLegalDeclaration" meta_type="FieldIndex">
+    <indexed_attr value="accept_legal_declaration" />
+  </index>
+  <index name="getCompatibility" meta_type="KeywordIndex">
+    <indexed_attr value="compatibility_choice" />
+  </index>
+  <index name="getCategories" meta_type="KeywordIndex">
+    <indexed_attr value="category_choice" />
+  </index>
+  <index name="projectcontact" meta_type="KeywordIndex">
+    <indexed_attr value="contactAddress" />
+  </index>
+  <column value="getCategories" />
   <index name="allowedfileextensions" meta_type="FieldIndex">
     <indexed_attr value="allowed_fileextension" />
+  </index>
+  <index name="allowedimageextensions" meta_type="FieldIndex">
+    <indexed_attr value="allowed_imageextension" />
   </index>
 </object>

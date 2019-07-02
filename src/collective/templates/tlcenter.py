@@ -109,6 +109,13 @@ class ITLCenter(model.Schema):
         default=_(u'ott|ots|otp|otg'),
         )
 
+    allowed_imageextension = schema.TextLine(
+        title=_(u'Allowed Image File Extension'),
+        description=_(u'Fill in the allowed image file extensions, seperated '
+                     u'by a pipe \'|\'.'),
+        default=_(u'png|gif|jpg'),
+        )
+
     model.fieldset('instructions',
                    label=u'Instructions',
                    fields=['install_instructions', 'reporting_bugs'])
