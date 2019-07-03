@@ -167,7 +167,20 @@ def validatetemplatefileextension(value):
     if not matches(value.filename):
         raise Invalid(
             u'You could only upload files with an allowed file extension. '
-            u'Please try again with to upload a file with the correct file'
+            u'Please try again to upload a file with the correct file'
+            u'extension.')
+    return True
+
+
+def validateimagefileextension(value):
+    catalog = api.portal.get_tool(name='portal_catalog')
+    result=catalog.uniqueValuesFor('allowedimageextensions')
+    pattern = r'^.*\.{0}'.format(result)
+    matches = re.compile(pattern, re.IGNORECASE).match
+    if not matches(value.filename):
+        raise Invalid(
+            u'You could only upload files with an allowed file extension. '
+            u'Please try again to upload a file with the correct file'
             u'extension.')
     return True
 
