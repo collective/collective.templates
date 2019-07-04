@@ -274,7 +274,7 @@ class ITLProject(model.Schema):
             u'Add a screenshot by clicking the \'Browse\' button. You could '
             u'provide an image of the file format \'png\', \'gif\' or \'jpg\'.'),
         required=True,
-        constraint=validateimageextension,
+        constraint=validateimagefileextension,
     )
 
     releasenumber = schema.TextLine(
