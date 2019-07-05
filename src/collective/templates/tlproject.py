@@ -158,6 +158,10 @@ def legal_declaration_text(context):
 def allowedtemplatefileextensions(context):
     return context.allowed_fileextension.replace("|", ", ")
 
+@provider(IContextAwareDefaultFactory)
+def allowedimagefileextensions(context):
+    return context.allowed_imageextension.replace("|", ",")
+
 
 def validatetemplatefileextension(value):
     catalog = api.portal.get_tool(name='portal_catalog')
@@ -266,6 +270,14 @@ class ITLProject(model.Schema):
         title=_(u'Contact email-address'),
         description=_(u'Contact email-address for the project.'),
         constraint=validateemail,
+    )
+
+
+    directives.mode(timageextension='display')
+    timageextension = schema.TextLine(
+        title=_(u'The following file extensions are allowed for screenshot '
+                u'files (upper case and lower case and mix of both):'),
+        defaultFactory=allowedimagefileextensions,
     )
 
     screenshot = NamedBlobImage(
