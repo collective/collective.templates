@@ -1,0 +1,585 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-07-05 20:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.templates\n"
+
+#: ./tlproject.py:238
+msgid ""
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:210
+msgid "${product_title}"
+msgstr ""
+
+#: ./tlproject.py:297
+msgid "1.0"
+msgstr ""
+
+#: ./profiles/default/types/collective.templates.tlproject.xml
+msgid "A Templates Project"
+msgstr ""
+
+#: ./profiles/default/types/collective.templates.tlcenter.xml
+msgid "A center for templates"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:278
+msgid "About"
+msgstr ""
+
+#: ./tlproject.py:251
+msgid "Accept the above legal disclaimer"
+msgstr ""
+
+#: ./tlproject.py:285
+msgid "Add a screenshot by clicking the 'Browse' button. You could provide an image of the file format 'png', 'gif' or 'jpg'."
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:114
+msgid "All categories"
+msgstr ""
+
+#: ./tlcenter.py:106
+msgid "Allowed File Extensions"
+msgstr ""
+
+#: ./tlcenter.py:113
+msgid "Allowed Image File Extension"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:124
+msgid "Any version"
+msgstr ""
+
+#: ./tlcenter.py:60
+msgid "Available Categories"
+msgstr ""
+
+#: ./tlproject_templates/view.pt:76
+msgid "Available Downloads"
+msgstr ""
+
+#: ./tlcenter.py:65
+msgid "Available Licenses"
+msgstr ""
+
+#: ./tlcenter.py:95
+msgid "Available Platforms"
+msgstr ""
+
+#: ./tlcenter.py:90
+msgid "Available Versions"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:254
+msgid "Browse"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:257
+msgid "Browse Templates by Category"
+msgstr ""
+
+#: ./mailtoauthor.py:190
+msgid "Cancel"
+msgstr ""
+
+#: ./tlproject_templates/view.pt:56
+msgid "Category/Categories"
+msgstr ""
+
+#: ./tlproject.py:260
+msgid "Choose your categories"
+msgstr ""
+
+#: ./tlproject_templates/view.pt:67
+msgid "Compatibility"
+msgstr ""
+
+#: ./tlproject.py:303
+msgid "Compatible With Versions Of The Product"
+msgstr ""
+
+#: ./tlproject.py:270
+msgid "Contact email-address"
+msgstr ""
+
+#: ./tlproject.py:271
+msgid "Contact email-address for the project."
+msgstr ""
+
+#: ./mailtoauthor.py:113
+msgid "Contact the project author and send your feedback"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:214
+msgid "Currently there are"
+msgstr ""
+
+#: ./tlcenter.py:42
+msgid "Description of the Templates Center"
+msgstr ""
+
+#: ./tlcenter.py:46
+msgid "Description of the features of templates"
+msgstr ""
+
+#: ./tlcenter.py:191
+msgid "EMail address for communication with the template center manager and reviewer"
+msgstr ""
+
+#: ./tlcenter.py:194
+msgid "Enter an email address for the communication with template center manager and reviewer"
+msgstr ""
+
+#: ./tlcenter.py:180
+msgid "Enter an information about the search for older versions of the product, if they are not on the versions list (compatibility) anymore."
+msgstr ""
+
+#: ./tlcenter.py:170
+msgid "Enter any legal disclaimer and limitations for downloads that should appear on each page for dowloadable files."
+msgstr ""
+
+#: ./tlcenter.py:150
+msgid "Enter the text of the legal disclaimer and limitations that should be displayed to the project creator and should be accepted by the owner of the project."
+msgstr ""
+
+#: ./tlproject_templates/view.pt:85
+msgid "File size:"
+msgstr ""
+
+#: ./tlcenter.py:107
+msgid "Fill in the allowed file extensions, seperated by a pipe '|'."
+msgstr ""
+
+#: ./tlcenter.py:114
+msgid "Fill in the allowed image file extensions, seperated by a pipe '|'."
+msgstr ""
+
+#: ./tlcenter.py:154
+msgid "Fill in the legal disclaimer, that had to be accepted by the project owner"
+msgstr ""
+
+#: ./tlcenter.py:173
+msgid "Fill in the text for the legal download disclaimer"
+msgstr ""
+
+#: ./tlproject.py:329
+msgid "First uploaded file is compatible with the Platform(s)"
+msgstr ""
+
+#: ./tlproject.py:222
+msgid "Full Project Description"
+msgstr ""
+
+#: ./tlproject.py:357
+msgid "Here you could add an optional second file to your project, if the files support different platforms."
+msgstr ""
+
+#: ./tlproject.py:390
+msgid "Here you could add an optional third file to your project, if the files support different platforms."
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:130
+msgid "Highest Rated"
+msgstr ""
+
+#: ./tlcenter_templates/own_projects.pt:49
+msgid "If you already created a new"
+msgstr ""
+
+#: ./tlproject.py:196
+msgid "Information"
+msgstr ""
+
+#: ./tlcenter.py:179
+msgid "Information About Search For Old Product Versions"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:270
+#: ./tlproject_templates/view.pt:128
+msgid "Install Instructions"
+msgstr ""
+
+#: ./configure.zcml:30
+msgid "Installs the collective.templates add-on."
+msgstr ""
+
+#: ./tlcenter.py:132
+msgid "Instruction how to report Bugs"
+msgstr ""
+
+#: ./mailtoauthor.py:27
+#: ./tlcenter.py:29
+#: ./tlproject.py:47
+msgid "Invalid email address"
+msgstr ""
+
+#: ./tlproject.py:144
+msgid "It is necessary that you accept the Legal Declaration"
+msgstr ""
+
+#: ./tlcenter.py:163
+msgid "Legal Disclaimer And Limitations For Downloads"
+msgstr ""
+
+#: ./tlcenter.py:144
+msgid "Legal Disclaimer and Limitations"
+msgstr ""
+
+#: ./tlproject.py:228
+msgid "License of the uploaded file"
+msgstr ""
+
+#: ./tlproject_templates/view.pt:62
+msgid "License(s)"
+msgstr ""
+
+#: ./mailtoauthor.py:112
+msgid "Mail To The Project Author"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:40
+msgid "Most Popular ${product_title}"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:226
+msgid "Most recent"
+msgstr ""
+
+#: ./tlcenter.py:38
+msgid "Name Of The Templates Center"
+msgstr ""
+
+#: ./tlcenter.py:51
+msgid "Name of the Template product, e.g. only Templates"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:131
+msgid "Newest"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:150
+msgid "No results were found."
+msgstr ""
+
+#: ./mailtoauthor.py:40
+msgid "Not a valid project name. Please retry."
+msgstr ""
+
+#: ./tlproject.py:440
+msgid "Please accept the Legal Declaration about your file(s) and your Uploaded File"
+msgstr ""
+
+#: ./tlproject.py:448
+msgid "Please choose a compatible platform for the uploaded file."
+msgstr ""
+
+#: ./tlproject.py:424
+msgid "Please choose a license for the file(s) you want toupload."
+msgstr ""
+
+#: ./tlproject.py:431
+msgid "Please choose one or more compatible product versions for the file(s) you want to upload."
+msgstr ""
+
+#: ./tlproject.py:252
+msgid "Please declare that you accept the above legal disclaimer."
+msgstr ""
+
+#: ./tlcenter.py:126
+msgid "Please fill in the install instructions"
+msgstr ""
+
+#: ./mailtoauthor.py:77
+msgid "Please fill in your email address."
+msgstr ""
+
+#: ./mailtoauthor.py:72
+msgid "Please fill in your familiy name"
+msgstr ""
+
+#: ./mailtoauthor.py:67
+msgid "Please fill in your first name(s)"
+msgstr ""
+
+#: ./tlproject_templates/view.pt:36
+msgid "Please make sure the relevant project information has been entered and submit your project for approval (publication)."
+msgstr ""
+
+#: ./tlproject.py:229
+msgid "Please mark one or more licenses under which you publish your file(s)."
+msgstr ""
+
+#: ./tlproject.py:330
+msgid "Please mark one or more platforms with which the uploaded file is compatible."
+msgstr ""
+
+#: ./tlproject.py:304
+msgid "Please mark one or more program versions with which this uploaded file is compatible with."
+msgstr ""
+
+#: ./tlproject.py:261
+msgid "Please select the appropriate categories (one or more) for your project."
+msgstr ""
+
+#: ./tlproject.py:321
+msgid "Please upload your file."
+msgstr ""
+
+#: ./mailtoauthor.py:144
+msgid "Please validate the recaptcha field before sending the form."
+msgstr ""
+
+#: ./mailtoauthor.py:82
+msgid "Project Name"
+msgstr ""
+
+#: ./tlproject_templates/view.pt:114
+msgid "Project Resources"
+msgstr ""
+
+#: ./tlproject.py:216
+msgid "Project Summary"
+msgstr ""
+
+#: ./tlproject.py:209
+msgid "Project Title - minimum 5 and maximum 50 characters"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:274
+msgid "Reporting Template-Bugs"
+msgstr ""
+
+#: ./tlproject_templates/view.pt:116
+msgid "Screenshot"
+msgstr ""
+
+#: ./tlproject.py:284
+msgid "Screenshot of the Tempate"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:139
+msgid "Search"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:105
+msgid "Search ${product_title}"
+msgstr ""
+
+#: ./tlproject.py:364
+msgid "Second uploaded file is compatible with the Platform(s)"
+msgstr ""
+
+#: ./mailtoauthor.py:125
+msgid "Send Email"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:112
+msgid "Show"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:127
+msgid "Sort On"
+msgstr ""
+
+#: ./tlcenter_templates/own_projects.pt:48
+msgid "Submit new"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:219
+msgid "Submit your"
+msgstr ""
+
+#: ./tlcenter.py:125
+msgid "Template Installation Instructions"
+msgstr ""
+
+#: ./tlcenter.py:50
+msgid "Template Product Name"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:212
+msgid "Templates"
+msgstr ""
+
+#: ./profiles/default/types/collective.templates.tlcenter.xml
+msgid "Templates Center"
+msgstr ""
+
+#: ./profiles/default/types/collective.templates.tlproject.xml
+msgid "Templates Project"
+msgstr ""
+
+#: ./tlcenter.py:149
+msgid "Text of the Legal Disclaimer and Limitations"
+msgstr ""
+
+#: ./tlcenter.py:169
+msgid "Text of the Legal Disclaimer and Limitations for Downlaods"
+msgstr ""
+
+#: ./tlproject.py:197
+msgid "The Dialog to create a new project consists of different register. Please go through this register and fill in the appropriate data for your project or choose one of the options that are provided. You could upload one or more files to your project on the register 'File Upload' and 'Optional Further File Upload'."
+msgstr ""
+
+#: ./tlproject.py:339
+msgid "The First File You Want To Upload"
+msgstr ""
+
+#: ./tlproject.py:320
+msgid "The first file you want to upload."
+msgstr ""
+
+#: ./tlproject.py:278
+msgid "The following file extensions are allowed for screenshot files (upper case and lower case and mix of both):"
+msgstr ""
+
+#: ./tlproject.py:314
+msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
+msgstr ""
+
+#: ./mailtoauthor.py:83
+msgid "The name of the project, to which author you want to send feedback."
+msgstr ""
+
+#: ./tlproject.py:515
+msgid "The project title is already in use."
+msgstr ""
+
+#: ./tlproject.py:381
+msgid "The second file you want to upload (this is optional)"
+msgstr ""
+
+#: ./tlproject.py:356
+msgid "The second file you want to upload."
+msgstr ""
+
+#: ./tlproject.py:414
+msgid "The third file you want to upload (this is optional)"
+msgstr ""
+
+#: ./tlproject.py:389
+msgid "The third file you want to upload.e"
+msgstr ""
+
+#: ./tlcenter_templates/own_projects.pt:13
+msgid "These are your projects on this site:"
+msgstr ""
+
+#: ./tlproject.py:397
+msgid "Third uploaded file is compatible with the Platform(s))"
+msgstr ""
+
+#: ./tlproject.py:208
+msgid "Title"
+msgstr ""
+
+#: ./tlcenter.py:143
+msgid "Title for Legal Disclaimer and Limitations"
+msgstr ""
+
+#: ./tlcenter.py:161
+msgid "Title of the Legal Disclaimer and Limitations for Downloads"
+msgstr ""
+
+#: ./configure.zcml:39
+msgid "Uninstalls the collective.templates add-on."
+msgstr ""
+
+#: ./tlproject.py:294
+msgid "Version Number of the Template File (up to twelf chars) which you upload in this project."
+msgstr ""
+
+#: ./tlproject.py:293
+msgid "Versions Number"
+msgstr ""
+
+#: ./mailtoauthor.py:182
+msgid "We send your message to the author of the project. It's on his choice, if he'll get back to you."
+msgstr ""
+
+#: ./mailtoauthor.py:90
+msgid "What is your message to the author of the project? Your message is limited to 1000 characters."
+msgstr ""
+
+#: ./tlcenter_templates/own_projects.pt:20
+msgid "You currently have no projects on this site."
+msgstr ""
+
+#: ./tlproject.py:340
+msgid "You need only to upload one file to your project. There are options for further two file uploads if you want to provide files for different platforms."
+msgstr ""
+
+#: ./mailtoauthor.py:76
+msgid "Your Email Address"
+msgstr ""
+
+#: ./mailtoauthor.py:71
+msgid "Your Family Name"
+msgstr ""
+
+#: ./mailtoauthor.py:66
+msgid "Your First Name"
+msgstr ""
+
+#: ./mailtoauthor.py:89
+msgid "Your Message To The Author"
+msgstr ""
+
+#: ./tlcenter_templates/own_projects.pt:12
+msgid "Your Own Projects"
+msgstr ""
+
+#: ./tlproject_templates/view.pt:42
+msgid "Your project has been submitted for publication and will be reviewed now. You will get an email, once the status of your project changed again."
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:255
+msgid "by Category"
+msgstr ""
+
+#: ./configure.zcml:30
+msgid "collective.templates"
+msgstr ""
+
+#: ./configure.zcml:39
+msgid "collective.templates (uninstall)"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:85
+msgid "in"
+msgstr ""
+
+#: ./tlcenter.py:109
+msgid "ott|ots|otp|otg"
+msgstr ""
+
+#: ./tlcenter_templates/own_projects.pt:51
+msgid "please submit your new"
+msgstr ""
+
+#: ./tlcenter.py:116
+msgid "png|gif|jpg"
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:215
+msgid "project(s) available."
+msgstr ""
+
+#: ./tlcenter_templates/view.pt:153
+msgid "projects matching your criteria."
+msgstr ""
