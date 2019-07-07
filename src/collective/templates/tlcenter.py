@@ -262,13 +262,19 @@ class TLCenterView(BrowserView):
         # sort_on = 'positive_ratings'
         if SearchableText:
             SearchableText = self.munge_search_term(SearchableText)
+            contentFilter = {
+                'sort_on': sort_on,
+                'SearchableText': SearchableText,
+                'sort_order': 'reverse',
+                'portal_type': 'collective.templates.tlproject',
+            }
 
-        contentFilter = {
-            'sort_on': sort_on,
-            'SearchableText': SearchableText,
-            'sort_order': 'reverse',
-            'portal_type': 'collective.templates.tlproject',
-        }
+        else:
+            contentFilter = {
+                'sort_on': sort_on,
+                'sort_order': 'reverse',
+                'portal_type': 'collective.templates.tlproject',
+            }
 
         if version != 'any':
             contentFilter['getCompatibility'] = version
