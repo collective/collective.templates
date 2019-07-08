@@ -386,7 +386,7 @@ class ITLProject(model.Schema):
 
     directives.mode(filetitlefield2='display')
     filetitlefield2 = schema.TextLine(
-        title=_(u'The third file you want to upload.e'),
+        title=_(u'The third file you want to upload'),
         description=_(
             u'Here you could add an optional third file to your project, if '
             u'the files support different platforms.'),
