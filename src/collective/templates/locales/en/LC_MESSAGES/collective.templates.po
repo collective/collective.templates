@@ -461,12 +461,12 @@ msgstr ""
 msgid "The second file you want to upload."
 msgstr ""
 
-#: ./tlproject.py:414
-msgid "The third file you want to upload (this is optional)"
+#: ./tlproject.py:389
+msgid "The third file you want to upload"
 msgstr ""
 
-#: ./tlproject.py:389
-msgid "The third file you want to upload.e"
+#: ./tlproject.py:414
+msgid "The third file you want to upload (this is optional)"
 msgstr ""
 
 #: ./tlcenter_templates/own_projects.pt:13
