@@ -26,18 +26,6 @@ from zope.schema.vocabulary import SimpleVocabulary
 import re
 
 
-checkfileextensionimage = re.compile(
-    r'^.*\.(png|PNG|gif|GIF|jpg|JPG)').match
-
-
-def validateimageextension(value):
-    if not checkfileextensionimage(value.filename):
-        raise Invalid(
-            u'You could only add images in the png, gif or jpg file format '
-            u'to your project.')
-    return True
-
-
 checkemail = re.compile(
     r'[a-zA-Z0-9._%-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4}').match
 
