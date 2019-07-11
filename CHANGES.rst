@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1,0a2 (unreleased)
+1.0a2 (unreleased)
 ------------------
 
 - Improve Manifest.in [Andreas Mantke]
