@@ -1,8 +1,13 @@
 Changelog
 =========
 
+1.0a3 (unreleased)
+------------------
 
-1.0a2 (unreleased)
+- Nothing changed yet.
+
+
+1.0a2 (2019-07-29)
 ------------------
 
 - Improve Manifest.in [Andreas Mantke]
