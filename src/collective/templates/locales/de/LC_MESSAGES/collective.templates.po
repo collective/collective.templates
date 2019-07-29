@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2019-07-09 16:47+0200\n"
+"PO-Revision-Date: 2019-07-29 12:13+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "${product_title}"
 msgstr "${product_title}"
 
-#: tlproject.py:297
+#: tlproject.py:285
 msgid "1.0"
 msgstr "1.0"
 
@@ -36,11 +36,11 @@ msgstr "Ein Center für Vorlagen"
 msgid "About"
 msgstr "Über"
 
-#: tlproject.py:251
+#: tlproject.py:239
 msgid "Accept the above legal disclaimer"
 msgstr "Akzeptieren Sie den obigen Haftungsausschlluss"
 
-#: tlproject.py:285
+#: tlproject.py:273
 msgid "Add a screenshot by clicking the 'Browse' button. You could provide an image of the file format 'png', 'gif' or 'jpg'."
 msgstr "Fügen Sie ein Bildschirmfoto durch Klicken auf den Schalter \"Durchsuchen\" hinzu. Sie können Grafiken in den Dateiformaten \"png\", \"gif\" oder \"jpg\" verwenden."
 
@@ -52,7 +52,7 @@ msgstr "Alle Kategorien"
 msgid "Allowed File Extensions"
 msgstr "Erlaubte Dateierweiterungen"
 
-#: tlcenter.py:113
+#: tlcenter.py:112
 msgid "Allowed Image File Extension"
 msgstr "Erlaubte Grafik-Dateierweiterungen"
 
@@ -96,7 +96,7 @@ msgstr "Abbrechen"
 msgid "Category/Categories"
 msgstr "Kategorie/Kategorien"
 
-#: tlproject.py:260
+#: tlproject.py:248
 msgid "Choose your categories"
 msgstr "Wählen Sie Ihre Kategorien"
 
@@ -104,15 +104,15 @@ msgstr "Wählen Sie Ihre Kategorien"
 msgid "Compatibility"
 msgstr "Kompatibilität"
 
-#: tlproject.py:303
+#: tlproject.py:291
 msgid "Compatible With Versions Of The Product"
 msgstr "Kompatibel mit den Produkt-Versionen"
 
-#: tlproject.py:270
+#: tlproject.py:258
 msgid "Contact email-address"
 msgstr "Kontakt-Email-Adresse"
 
-#: tlproject.py:271
+#: tlproject.py:259
 msgid "Contact email-address for the project."
 msgstr "Kontakt-Email-Adresse für das Projekt.."
 
@@ -132,23 +132,23 @@ msgstr "Beschreibung des Vorlagen-Centers"
 msgid "Description of the features of templates"
 msgstr "Beschreibung der Funktionen von Vorlagen"
 
-#: tlcenter.py:191
+#: tlcenter.py:189
 msgid "EMail address for communication with the template center manager and reviewer"
 msgstr "E-Mail-Adresse zur Kommunikation mit demTemplate-Center-Manager und -Reviewer"
 
-#: tlcenter.py:194
+#: tlcenter.py:192
 msgid "Enter an email address for the communication with template center manager and reviewer"
 msgstr "Fügen Sie eine E-Mail-Adresse für die Kommunikation mit dem Template-Center-Manager und -Reviewer ein"
 
-#: tlcenter.py:180
+#: tlcenter.py:178
 msgid "Enter an information about the search for older versions of the product, if they are not on the versions list (compatibility) anymore."
 msgstr "Fügen Sie eine Information über die Suche nach älteren Produkt-LibreOffice ein, sofern diese nicht mehr in der Versionsliste (Kompatibilität) sind."
 
-#: tlcenter.py:170
+#: tlcenter.py:168
 msgid "Enter any legal disclaimer and limitations for downloads that should appear on each page for dowloadable files."
 msgstr "Fügen Sie den Text der  rechtlichen Hinweise und Einschränkungen für Downloads ein, der auf jeder Seite für herunter ladbare Dateien erscheinen soll."
 
-#: tlcenter.py:150
+#: tlcenter.py:148
 msgid "Enter the text of the legal disclaimer and limitations that should be displayed to the project creator and should be accepted by the owner of the project."
 msgstr "Fügen Sie den Text der rechtlichen Hinweise und Einschränkungen ein, der dem Ersteller eines Projektes angezeigt und von dem Projekt-Eigentümer zu akzeptieren ist."
 
@@ -160,31 +160,31 @@ msgstr "Dateigröße:"
 msgid "Fill in the allowed file extensions, seperated by a pipe '|'."
 msgstr "Fügen Sie die erlaubten Datei-Erweiterungen ein, getrennt durch einen senkrechten Trennstrich '|'."
 
-#: tlcenter.py:114
+#: tlcenter.py:113
 msgid "Fill in the allowed image file extensions, seperated by a pipe '|'."
 msgstr "Fügen Sie die erlaubten Grafik-Datei-Erweiterungen ein, getrennt durch einen senkrechten Strich '|'."
 
-#: tlcenter.py:154
+#: tlcenter.py:152
 msgid "Fill in the legal disclaimer, that had to be accepted by the project owner"
 msgstr "Fügen Sie den Haftungsausschluss ein, der von den Projekteigentümern zu akzeptieren ist"
 
-#: tlcenter.py:173
+#: tlcenter.py:171
 msgid "Fill in the text for the legal download disclaimer"
 msgstr "Füllen Sie den Text für den Download-Haftungsausschluss ein"
 
-#: tlproject.py:329
+#: tlproject.py:317
 msgid "First uploaded file is compatible with the Platform(s)"
 msgstr "Die erste hochgeladene Datei ist kompatibel mit den Plattformen"
 
-#: tlproject.py:222
+#: tlproject.py:210
 msgid "Full Project Description"
 msgstr "Komplette Projekt-Beschreibung"
 
-#: tlproject.py:357
+#: tlproject.py:345
 msgid "Here you could add an optional second file to your project, if the files support different platforms."
 msgstr "Hier können Sie  eine optionale zweite Datei Ihrem Projekt hinzufügen, falls die Dateien unterschiedliche Plattformen unterstützen."
 
-#: tlproject.py:390
+#: tlproject.py:378
 msgid "Here you could add an optional third file to your project, if the files support different platforms."
 msgstr "Hier können Sie  eine optionale dritte Datei Ihrem Projekt hinzufügen, falls die Dateien unterschiedliche Plattformen unterstützen."
 
@@ -196,11 +196,11 @@ msgstr "Am höchsten bewertet"
 msgid "If you already created a new"
 msgstr "Falls Sie bereits ein neues"
 
-#: tlproject.py:196
+#: tlproject.py:184
 msgid "Information"
 msgstr "Information"
 
-#: tlcenter.py:179
+#: tlcenter.py:177
 msgid "Information About Search For Old Product Versions"
 msgstr "Information zur Suche nach älteren Produkt-Versionen"
 
@@ -212,27 +212,27 @@ msgstr "Installationsanleitung"
 msgid "Installs the collective.templates add-on."
 msgstr "Installiert das collective.templates Add-on."
 
-#: tlcenter.py:132
+#: tlcenter.py:130
 msgid "Instruction how to report Bugs"
 msgstr "Anleitung, wie ein Fehler gemeldet wird"
 
-#: mailtoauthor.py:27 tlcenter.py:29 tlproject.py:47
+#: mailtoauthor.py:27 tlcenter.py:29 tlproject.py:35
 msgid "Invalid email address"
 msgstr "Ungültige Email-Adresse"
 
-#: tlproject.py:144
+#: tlproject.py:132
 msgid "It is necessary that you accept the Legal Declaration"
 msgstr "Es ist erforderlich, dass Sie den Haftungsausschluss akzeptieren"
 
-#: tlcenter.py:163
+#: tlcenter.py:161
 msgid "Legal Disclaimer And Limitations For Downloads"
 msgstr "Rechtliche Hinweise und Einschränkungen für das Herunterladen"
 
-#: tlcenter.py:144
+#: tlcenter.py:142
 msgid "Legal Disclaimer and Limitations"
 msgstr "Rechtliche Hinweise und Einschränkungen"
 
-#: tlproject.py:228
+#: tlproject.py:216
 msgid "License of the uploaded file"
 msgstr "Lizenz der hochgeladenen Datei"
 
@@ -272,27 +272,27 @@ msgstr "Keine Ergebnisse gefunden."
 msgid "Not a valid project name. Please retry."
 msgstr "Kein gültiger Projektname. Bitte versuchen Sie es nochmals."
 
-#: tlproject.py:440
+#: tlproject.py:428
 msgid "Please accept the Legal Declaration about your file(s) and your Uploaded File"
 msgstr "Bitte akzeptieren Sie den Haftungsausschluss für ihre Datei(en) und  Ihre hochgeladenen Datei"
 
-#: tlproject.py:448
+#: tlproject.py:436
 msgid "Please choose a compatible platform for the uploaded file."
 msgstr "Bitte wählen Sie eine zu der hochgeladenen Datei kompatible Plattform."
 
-#: tlproject.py:424
+#: tlproject.py:412
 msgid "Please choose a license for the file(s) you want toupload."
 msgstr "Bitte wählen Sie eine Lizenz für die Datei(en), die Sie hochladen wollen."
 
-#: tlproject.py:431
+#: tlproject.py:419
 msgid "Please choose one or more compatible product versions for the file(s) you want to upload."
 msgstr "Bitte wählen Sie eine oder mehrere kompatible Produktversionen für die Datei(en), die Sie hochladen wollen."
 
-#: tlproject.py:252
+#: tlproject.py:240
 msgid "Please declare that you accept the above legal disclaimer."
 msgstr "Bitte erklären Sie, dass Sie den obigen Haftungsausschluss akzeptieren."
 
-#: tlcenter.py:126
+#: tlcenter.py:124
 msgid "Please fill in the install instructions"
 msgstr "Bitte füllen Sie die Installationsanweisungen ein"
 
@@ -312,23 +312,23 @@ msgstr "Bitte tragen Sie Ihre(n) Vornamen ein."
 msgid "Please make sure the relevant project information has been entered and submit your project for approval (publication)."
 msgstr "Bitte stellen Sie sicher, dass die relevanten Projekt-Informationen eingetragen sind und übermitteln Sie Ihr Projekt zur Prüfung (Veröffentlichung)."
 
-#: tlproject.py:229
+#: tlproject.py:217
 msgid "Please mark one or more licenses under which you publish your file(s)."
 msgstr "Bitte markieren Sie eine oder mehrere Lizenzen, unter denen Sie die Datei(en) veröffentlichen wollen."
 
-#: tlproject.py:330
+#: tlproject.py:318
 msgid "Please mark one or more platforms with which the uploaded file is compatible."
 msgstr "Bitte markieren Sie eine oder mehrere Plattformen, mit denen die hochgeladene Datei kompatibel ist."
 
-#: tlproject.py:304
+#: tlproject.py:292
 msgid "Please mark one or more program versions with which this uploaded file is compatible with."
 msgstr "Bitte markieren Sie eine oder mehrere Programm-Versionen, mit denen dieses Release kompatibel ist."
 
-#: tlproject.py:261
+#: tlproject.py:249
 msgid "Please select the appropriate categories (one or more) for your project."
 msgstr "Bitte wählen Sie eine passende Kategorie (eine oder mehrere) für ihre Projekt."
 
-#: tlproject.py:321
+#: tlproject.py:309
 msgid "Please upload your file."
 msgstr "Bitte laden Sie Ihre Datei hoch."
 
@@ -344,11 +344,11 @@ msgstr "Projekt-Name"
 msgid "Project Resources"
 msgstr "Projekt Ressourcen"
 
-#: tlproject.py:216
+#: tlproject.py:204
 msgid "Project Summary"
 msgstr "Projekt-Zusammenfassung"
 
-#: tlproject.py:209
+#: tlproject.py:197
 msgid "Project Title - minimum 5 and maximum 50 characters"
 msgstr "Projekt-Titel  - mindestens 5 und höchstens 50 Zeichen"
 
@@ -360,7 +360,7 @@ msgstr "Vorlagen-Bugs melden"
 msgid "Screenshot"
 msgstr "Bildschirmfoto"
 
-#: tlproject.py:284
+#: tlproject.py:272
 msgid "Screenshot of the Tempate"
 msgstr "Bildschirmfoto der Vorlage"
 
@@ -372,7 +372,7 @@ msgstr "Suchen"
 msgid "Search ${product_title}"
 msgstr "Suche ${product_title}"
 
-#: tlproject.py:364
+#: tlproject.py:352
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr "Die zweite hochgeladene Datei ist kompatibel mit den Plattformen"
 
@@ -396,7 +396,7 @@ msgstr "Übermittele neue"
 msgid "Submit your"
 msgstr "Übermitteln Sie Ihre"
 
-#: tlcenter.py:125
+#: tlcenter.py:123
 msgid "Template Installation Instructions"
 msgstr "Installationsanleitung für Vorlagen"
 
@@ -416,31 +416,31 @@ msgstr "Vorlagen-Center"
 msgid "Templates Project"
 msgstr "Ein Vorlagen Projekt"
 
-#: tlcenter.py:149
+#: tlcenter.py:147
 msgid "Text of the Legal Disclaimer and Limitations"
 msgstr "Text der rechtlichen Hinweise und -begrenzungen"
 
-#: tlcenter.py:169
+#: tlcenter.py:167
 msgid "Text of the Legal Disclaimer and Limitations for Downlaods"
 msgstr "Text der rechtlichen Hinweise und -begrenzungen für Downloads"
 
-#: tlproject.py:197
+#: tlproject.py:185
 msgid "The Dialog to create a new project consists of different register. Please go through this register and fill in the appropriate data for your project or choose one of the options that are provided. You could upload one or more files to your project on the register 'File Upload' and 'Optional Further File Upload'."
 msgstr "Der Dialog zum Erstellen eines neuen Projektes besteht aus verschiedenen Registern. Bitte gehen Sie durch diese Register und tragen Sie die entsprechenden Daten für Ihr Projekt ein oder wählen Sie aus den verfügbaren Optionen. Sie können eine oder mehrere Dateien zu Ihrem Projekt auf den Registern 'File Upload' und 'Optional Further File Upload' hochladen."
 
-#: tlproject.py:339
+#: tlproject.py:327
 msgid "The First File You Want To Upload"
 msgstr "Die erste Datei, die Sie hochladen wollen"
 
-#: tlproject.py:320
+#: tlproject.py:308
 msgid "The first file you want to upload."
 msgstr "Die erste Datei, die Sie hochladen wollen."
 
-#: tlproject.py:278
+#: tlproject.py:266
 msgid "The following file extensions are allowed for screenshot files (upper case and lower case and mix of both):"
 msgstr "Die folgenden Dateierweiterungen sind für Bildschirmfoto-Dateien erlaubt (Groß- und Kleinschreibung und ein Mix aus beiden):"
 
-#: tlproject.py:314
+#: tlproject.py:302
 msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
 msgstr "Die folgenden Dateierweiterungen sind für Vorlagen-Dateien erlaubt (Groß- und Kleinschreibung und ein Mix aus beiden):"
 
@@ -448,23 +448,23 @@ msgstr "Die folgenden Dateierweiterungen sind für Vorlagen-Dateien erlaubt (Gro
 msgid "The name of the project, to which author you want to send feedback."
 msgstr "Der Name des Projekts, dessen Autor Sie Feedback senden wollen."
 
-#: tlproject.py:515
+#: tlproject.py:503
 msgid "The project title is already in use."
 msgstr "Der Projekt-Titel wird bereits verwendet."
 
-#: tlproject.py:381
+#: tlproject.py:369
 msgid "The second file you want to upload (this is optional)"
 msgstr "Die zweite Datei, die Sie hochladen wollen (dies ist optional)."
 
-#: tlproject.py:356
+#: tlproject.py:344
 msgid "The second file you want to upload."
 msgstr "Die zweite Datei, die Sie hochladen wollen."
 
-#: tlproject.py:389
+#: tlproject.py:377
 msgid "The third file you want to upload"
 msgstr "Die dritte Datei, die Sie hochladen wollen"
 
-#: tlproject.py:414
+#: tlproject.py:402
 msgid "The third file you want to upload (this is optional)"
 msgstr "Die dritte Datei, die Sie hochladen wollen (dies ist optional)"
 
@@ -472,19 +472,19 @@ msgstr "Die dritte Datei, die Sie hochladen wollen (dies ist optional)"
 msgid "These are your projects on this site:"
 msgstr "Dies sind Ihre Projekte auf dieser Seite:"
 
-#: tlproject.py:397
+#: tlproject.py:385
 msgid "Third uploaded file is compatible with the Platform(s))"
 msgstr "Die dritte hochgeladene Datei ist kompatibel mit den Plattformen"
 
-#: tlproject.py:208
+#: tlproject.py:196
 msgid "Title"
 msgstr "Titel"
 
-#: tlcenter.py:143
+#: tlcenter.py:141
 msgid "Title for Legal Disclaimer and Limitations"
 msgstr "Titel für rechtliche Hinweise und Einschränkungen"
 
-#: tlcenter.py:161
+#: tlcenter.py:159
 msgid "Title of the Legal Disclaimer and Limitations for Downloads"
 msgstr "Titel für rechtliche Hinweise und Einschränkungen für Downloads"
 
@@ -492,11 +492,11 @@ msgstr "Titel für rechtliche Hinweise und Einschränkungen für Downloads"
 msgid "Uninstalls the collective.templates add-on."
 msgstr "Deinstalliert das collective.templates Add-on."
 
-#: tlproject.py:294
+#: tlproject.py:282
 msgid "Version Number of the Template File (up to twelf chars) which you upload in this project."
 msgstr "Version-Nummer der Vorlagen-Datei (bis zu zwölf Zeichen), die Sie zu diesem Projekt hochladen wollen."
 
-#: tlproject.py:293
+#: tlproject.py:281
 msgid "Versions Number"
 msgstr "Version-Nummer"
 
@@ -512,7 +512,7 @@ msgstr "Wie lautet Ihre Nachricht an den Projekt-Autor? Ihre Nachricht ist auf 1
 msgid "You currently have no projects on this site."
 msgstr "Sie haben aktuell keine Projekte auf dieser Seite."
 
-#: tlproject.py:340
+#: tlproject.py:328
 msgid "You need only to upload one file to your project. There are options for further two file uploads if you want to provide files for different platforms."
 msgstr "Sie brauchen nur eine Datei zu Ihrem Projekt hochladen. Es bestehen Möglichkeiten für das Hochladen von zwei weiteren Dateien, falls Sie Dateien für andere Plattformen zur Verfügung stellen wollen."
 
@@ -556,17 +556,9 @@ msgstr "collective.templates (deinstallierenl)"
 msgid "in"
 msgstr "in"
 
-#: tlcenter.py:109
-msgid "ott|ots|otp|otg"
-msgstr "ott|ots|otp|otg"
-
 #: tlcenter_templates/own_projects.pt:51
 msgid "please submit your new"
 msgstr "bitte übermitteln Sie Ihre neue"
-
-#: tlcenter.py:116
-msgid "png|gif|jpg"
-msgstr "png|gif|jpg"
 
 #: tlcenter_templates/view.pt:215
 msgid "project(s) available."
