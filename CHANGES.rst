@@ -7,6 +7,9 @@ Changelog
 
 - Improve Manifest.in [Andreas Mantke]
 - Remove replaced functions from the tlproject module [Andreas Mantke]
+- Remove default values for allowed file extensions [Andreas Mantke]
+- Use only the first value of the catalog search result tuple
+  for the pattern of the regular expression [Andreas Mantke]
 
 
 1.0a1 (2019-07-09)
