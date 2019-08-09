@@ -13,6 +13,7 @@ from zope import schema
 from zope.component import getMultiAdapter
 from zope.interface import implementer
 from zope.interface import Invalid
+from Products.CMFPlone.utils import safe_unicode
 
 import logging
 import re
@@ -24,7 +25,7 @@ checkemail = re.compile(
 
 def validateemail(value):
     if not checkemail(value):
-        raise Invalid(_(u'Invalid email address'))
+        raise Invalid(_(safe_unicode('Invalid email address')))
     return True
 
 
@@ -37,7 +38,8 @@ def validateprojectname(value):
 
     for brain in project[:1]:
         if brain.Title is None:
-            raise Invalid(_(u'Not a valid project name. Please retry.'))
+            raise Invalid(_(safe_unicode('Not a valid project name. '
+                                         'Please retry.')))
         return True
 
 
@@ -47,14 +49,14 @@ logger = logging.getLogger(__name__)
 class IReCaptchaForm(interface.Interface):
 
     captcha = schema.TextLine(
-        title=u'ReCaptcha',
-        description=u'',
+        title=safe_unicode('ReCaptcha'),
+        description=safe_unicode(''),
         required=False,
     )
 
 
 class ReCaptcha(object):
-    captcha = u''
+    captcha = safe_unicode('')
 
     def __init__(self, context):
         self.context = context
@@ -63,32 +65,33 @@ class ReCaptcha(object):
 class MailToAuthorSchema(interface.Interface):
 
     inquirerfirstname = schema.TextLine(
-        title=_(u'Your First Name'),
-        description=_(u'Please fill in your first name(s)'),
+        title=_(safe_unicode('Your First Name')),
+        description=_(safe_unicode('Please fill in your first name(s)')),
     )
 
     inquirerfamilyname = schema.TextLine(
-        title=_(u'Your Family Name'),
-        description=_(u'Please fill in your familiy name'),
+        title=_(safe_unicode('Your Family Name')),
+        description=_(safe_unicode('Please fill in your familiy name')),
     )
 
     inquireremailaddress = schema.TextLine(
-        title=_(u'Your Email Address'),
-        description=_(u'Please fill in your email address.'),
+        title=_(safe_unicode('Your Email Address')),
+        description=_(safe_unicode('Please fill in your email address.')),
         constraint=validateemail,
     )
 
     projectname = schema.TextLine(
-        title=_(u'Project Name'),
-        description=_(u'The name of the project, to which author you want '
-                      u'to send feedback.'),
+        title=_(safe_unicode('Project Name')),
+        description=_(safe_unicode('The name of the project, to which '
+                                   'author you want to send feedback.')),
         constraint=validateprojectname,
     )
 
     inquiry = schema.Text(
-        title=_(u'Your Message To The Author'),
-        description=_(u'What is your message to the author of the project? '
-                      u'Your message is limited to 1000 characters.'),
+        title=_(safe_unicode('Your Message To The Author')),
+        description=_(safe_unicode('What is your message to the author '
+                                   'of the project? Your message is '
+                                   'limited to 1000 characters.')),
         max_length=1000,
     )
 
@@ -109,8 +112,9 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
     schema = MailToAuthorSchema
     form_name = 'authormail_form'
 
-    label = _(u'Mail To The Project Author')
-    description = _(u'Contact the project author and send your feedback')
+    label = _(safe_unicode('Mail To The Project Author'))
+    description = _(safe_unicode('Contact the project author and send '
+                                 'your feedback'))
 
     fields = field.Fields(MailToAuthorSchema, IReCaptchaForm)
     fields['captcha'].widgetFactory = ReCaptchaFieldWidget
@@ -122,7 +126,7 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
         # call the base class version - this is very important!
         super(MailToAuthorForm, self).update()
 
-    @button.buttonAndHandler(_(u'Send Email'))
+    @button.buttonAndHandler(_(safe_unicode('Send Email')))
     def handleApply(self, action):
         data, errors = self.extractData()
         captcha = getMultiAdapter(
@@ -142,8 +146,8 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
             )
             api.portal.show_message(
                 message=_(
-                    u'Please validate the recaptcha field before sending '
-                    u'the form.'),
+                    safe_unicode('Please validate the recaptcha field '
+                                 'before sending the form.')),
                 request=self.request,
                 type='error')
             return
@@ -164,14 +168,16 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
             else:
                 projectemail = contactaddress
 
-        mailrecipient = (u'{0}').format(projectemail)
+        mailrecipient = (safe_unicode('{0}')).format(projectemail)
         api.portal.send_email(
             recipient=mailrecipient,
-            sender=(u'{0} {1} <{2}>').format(data['inquirerfirstname'],
+            sender=(safe_unicode('{0} {1} <{2}>')).format(
+                                          data['inquirerfirstname'],
                                           data['inquirerfamilyname'],
                                           data['inquireremailaddress']),
-            subject=(u'Your Project: {0}').format(data['projectname']),
-            body=(u'{0}').format(data['inquiry']),
+            subject=(safe_unicode('Your Project: {0}')).format(
+                                          data['projectname']),
+            body=(safe_unicode('{0}')).format(data['inquiry']),
 
 
         )
@@ -179,15 +185,16 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
         # Redirect back to the front page with a status message
 
         api.portal.show_message(
-            message=_(u'We send your message to the author of the project. '
-                      u'It\'s on his choice, if he\'ll get back to you.'),
+            message=_(safe_unicode('We send your message to the author of '
+                                   'the project. It\'s on his choice, '
+                                   'if he\'ll get back to you.')),
             request=self.request,
             type='info')
 
         contextURL = self.context.absolute_url()
         self.request.response.redirect(contextURL)
 
-    @button.buttonAndHandler(_(u'Cancel'))
+    @button.buttonAndHandler(_(safe_unicode('Cancel')))
     def handleCancel(self, action):
         """User cancelled. Redirect back to the front page.
             """
