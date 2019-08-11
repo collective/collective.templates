@@ -4,7 +4,10 @@ Changelog
 1.0a3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Change the tag for rendering a RichText field in the template
+  view page template [Andreas Mantke]
+- Use safe_unicode util for strings in the mailtoauthor
+  form [Andreas Mantke]
 
 
 1.0a2 (2019-07-29)
