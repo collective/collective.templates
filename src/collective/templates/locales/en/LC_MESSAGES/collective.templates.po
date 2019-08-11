@@ -86,7 +86,7 @@ msgstr ""
 msgid "Browse Templates by Category"
 msgstr ""
 
-#: ./mailtoauthor.py:190
+#: ./mailtoauthor.py:197
 msgid "Cancel"
 msgstr ""
 
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Contact email-address for the project."
 msgstr ""
 
-#: ./mailtoauthor.py:113
+#: ./mailtoauthor.py:116
 msgid "Contact the project author and send your feedback"
 msgstr ""
 
@@ -215,7 +215,7 @@ msgstr ""
 msgid "Instruction how to report Bugs"
 msgstr ""
 
-#: ./mailtoauthor.py:27
+#: ./mailtoauthor.py:28
 #: ./tlcenter.py:29
 #: ./tlproject.py:35
 msgid "Invalid email address"
@@ -241,7 +241,7 @@ msgstr ""
 msgid "License(s)"
 msgstr ""
 
-#: ./mailtoauthor.py:112
+#: ./mailtoauthor.py:115
 msgid "Mail To The Project Author"
 msgstr ""
 
@@ -269,7 +269,7 @@ msgstr ""
 msgid "No results were found."
 msgstr ""
 
-#: ./mailtoauthor.py:40
+#: ./mailtoauthor.py:41
 msgid "Not a valid project name. Please retry."
 msgstr ""
 
@@ -297,15 +297,15 @@ msgstr ""
 msgid "Please fill in the install instructions"
 msgstr ""
 
-#: ./mailtoauthor.py:77
+#: ./mailtoauthor.py:79
 msgid "Please fill in your email address."
 msgstr ""
 
-#: ./mailtoauthor.py:72
+#: ./mailtoauthor.py:74
 msgid "Please fill in your familiy name"
 msgstr ""
 
-#: ./mailtoauthor.py:67
+#: ./mailtoauthor.py:69
 msgid "Please fill in your first name(s)"
 msgstr ""
 
@@ -333,11 +333,11 @@ msgstr ""
 msgid "Please upload your file."
 msgstr ""
 
-#: ./mailtoauthor.py:144
+#: ./mailtoauthor.py:148
 msgid "Please validate the recaptcha field before sending the form."
 msgstr ""
 
-#: ./mailtoauthor.py:82
+#: ./mailtoauthor.py:84
 msgid "Project Name"
 msgstr ""
 
@@ -377,7 +377,7 @@ msgstr ""
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr ""
 
-#: ./mailtoauthor.py:125
+#: ./mailtoauthor.py:129
 msgid "Send Email"
 msgstr ""
 
@@ -445,7 +445,7 @@ msgstr ""
 msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
 msgstr ""
 
-#: ./mailtoauthor.py:83
+#: ./mailtoauthor.py:85
 msgid "The name of the project, to which author you want to send feedback."
 msgstr ""
 
@@ -501,11 +501,11 @@ msgstr ""
 msgid "Versions Number"
 msgstr ""
 
-#: ./mailtoauthor.py:182
+#: ./mailtoauthor.py:188
 msgid "We send your message to the author of the project. It's on his choice, if he'll get back to you."
 msgstr ""
 
-#: ./mailtoauthor.py:90
+#: ./mailtoauthor.py:92
 msgid "What is your message to the author of the project? Your message is limited to 1000 characters."
 msgstr ""
 
@@ -517,19 +517,19 @@ msgstr ""
 msgid "You need only to upload one file to your project. There are options for further two file uploads if you want to provide files for different platforms."
 msgstr ""
 
-#: ./mailtoauthor.py:76
+#: ./mailtoauthor.py:78
 msgid "Your Email Address"
 msgstr ""
 
-#: ./mailtoauthor.py:71
+#: ./mailtoauthor.py:73
 msgid "Your Family Name"
 msgstr ""
 
-#: ./mailtoauthor.py:66
+#: ./mailtoauthor.py:68
 msgid "Your First Name"
 msgstr ""
 
-#: ./mailtoauthor.py:89
+#: ./mailtoauthor.py:91
 msgid "Your Message To The Author"
 msgstr ""
 
