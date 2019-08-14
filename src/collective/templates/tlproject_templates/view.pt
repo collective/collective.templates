@@ -52,7 +52,7 @@
                      <div tal:content="structure context/@@rate-if-you-dare" />
                      <p class="documentDescription"><span tal:content="context/description" /></p>
                      <h2 tal:condition="context/details" class="documentSecondHeading">Project Description</h2>
-                     <p class="documentDescription" tal:content="structure context/details/output" />
+                     <p class="documentDescription" tal:content="structure view/w/details/render" />
                      <h3 i18n:translate="">Category/Categories</h3>
                    <p>
                          <tal:loop repeat="releasecategories categories">
