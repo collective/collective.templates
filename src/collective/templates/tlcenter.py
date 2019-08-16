@@ -35,7 +35,7 @@ class ITLCenter(model.Schema):
     """
 
     title = schema.TextLine(
-        title=_(u'Name Of The Templates Center'),
+        title=_(u'Name of the Templates Center'),
     )
 
     description = schema.Text(
@@ -103,13 +103,13 @@ class ITLCenter(model.Schema):
                                       value_type=schema.TextLine())
 
     allowed_fileextension = schema.TextLine(
-        title=_(u'Allowed File Extensions'),
+        title=_(u'Allowed file extensions'),
         description=_(u'Fill in the allowed file extensions, seperated by '
                     u'a pipe \'|\'.'),
         )
 
     allowed_imageextension = schema.TextLine(
-        title=_(u'Allowed Image File Extension'),
+        title=_(u'Allowed image file extension'),
         description=_(u'Fill in the allowed image file extensions, seperated '
                      u'by a pipe \'|\'.'),
         )
@@ -120,7 +120,7 @@ class ITLCenter(model.Schema):
 
     primary('install_instructions')
     install_instructions = RichText(
-        title=_(u'Template Installation Instructions'),
+        title=_(u'Template installation instructions'),
         description=_(u'Please fill in the install instructions'),
         required=False,
     )
@@ -174,7 +174,7 @@ class ITLCenter(model.Schema):
 
     primary('information_oldversions')
     information_oldversions = RichText(
-        title=_(u'Information About Search For Old Product Versions'),
+        title=_(u'Information about search for old product versions'),
         description=_(u'Enter an information about the search for older '
                       u'versions of the product, if they are not on the '
                       u'versions list (compatibility) anymore.'),
@@ -182,7 +182,7 @@ class ITLCenter(model.Schema):
     )
 
     model.fieldset('contactadresses',
-                   label=u'Special Email Adresses',
+                   label=u'Special email adresses',
                    fields=['contactForCenter'])
 
     contactForCenter = schema.ASCIILine(
