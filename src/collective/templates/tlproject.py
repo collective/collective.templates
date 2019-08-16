@@ -207,7 +207,7 @@ class ITLProject(model.Schema):
     dexteritytextindexer.searchable('details')
     primary('details')
     details = RichText(
-        title=_(u'Full Project Description'),
+        title=_(u'Full project description'),
         required=False,
     )
 
@@ -269,7 +269,7 @@ class ITLProject(model.Schema):
     )
 
     screenshot = NamedBlobImage(
-        title=_(u'Screenshot of the Tempate'),
+        title=_(u'Screenshot of the Template'),
         description=_(
             u'Add a screenshot by clicking the \'Browse\' button. You could '
             u'provide an image of the file format \'png\', \'gif\' or \'jpg\'.'),
@@ -288,7 +288,7 @@ class ITLProject(model.Schema):
 
     directives.widget(compatibility_choice=CheckBoxFieldWidget)
     compatibility_choice = schema.List(
-        title=_(u'Compatible With Versions Of The Product'),
+        title=_(u'Compatible with versions of the product'),
         description=_(
             u'Please mark one or more program versions with which this '
             u'uploaded file is compatible with.'),
@@ -324,7 +324,7 @@ class ITLProject(model.Schema):
 
     directives.mode(filetitlefield='display')
     filetitlefield = schema.TextLine(
-        title=_(u'The First File You Want To Upload'),
+        title=_(u'The first file you want to upload'),
         description=_(
             u'You need only to upload one file to your project. There are '
             u'options for further two file uploads if you want to provide '
