@@ -6,6 +6,8 @@ Changelog
 
 - Fix rendering for DefaultView of projects [Andreas Mantke]
 - Fix regular expressions for validation of file extensions [Andreas Mantke]
+- Update localization template and localization files and add
+  translation into German for further strings [Andreas Mantke]
 
 
 1.0a3 (2019-08-11)
