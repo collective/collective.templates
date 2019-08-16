@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-08-11 09:56+0000\n"
+"POT-Creation-Date: 2019-08-16 15:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,11 +54,11 @@ msgid "All categories"
 msgstr ""
 
 #: ./tlcenter.py:106
-msgid "Allowed File Extensions"
+msgid "Allowed file extensions"
 msgstr ""
 
 #: ./tlcenter.py:112
-msgid "Allowed Image File Extension"
+msgid "Allowed image file extension"
 msgstr ""
 
 #: ./tlcenter_templates/view.pt:124
@@ -110,7 +110,7 @@ msgid "Compatibility"
 msgstr ""
 
 #: ./tlproject.py:291
-msgid "Compatible With Versions Of The Product"
+msgid "Compatible with versions of the product"
 msgstr ""
 
 #: ./tlproject.py:258
@@ -182,7 +182,7 @@ msgid "First uploaded file is compatible with the Platform(s)"
 msgstr ""
 
 #: ./tlproject.py:210
-msgid "Full Project Description"
+msgid "Full project description"
 msgstr ""
 
 #: ./tlproject.py:345
@@ -206,7 +206,7 @@ msgid "Information"
 msgstr ""
 
 #: ./tlcenter.py:177
-msgid "Information About Search For Old Product Versions"
+msgid "Information about search for old product versions"
 msgstr ""
 
 #: ./tlcenter_templates/view.pt:270
@@ -260,12 +260,12 @@ msgstr ""
 msgid "Most recent"
 msgstr ""
 
-#: ./tlcenter.py:38
-msgid "Name Of The Templates Center"
-msgstr ""
-
 #: ./tlcenter.py:51
 msgid "Name of the Template product, e.g. only Templates"
+msgstr ""
+
+#: ./tlcenter.py:38
+msgid "Name of the Templates Center"
 msgstr ""
 
 #: ./tlcenter_templates/view.pt:131
@@ -369,7 +369,7 @@ msgid "Screenshot"
 msgstr ""
 
 #: ./tlproject.py:272
-msgid "Screenshot of the Tempate"
+msgid "Screenshot of the Template"
 msgstr ""
 
 #: ./tlcenter_templates/view.pt:139
@@ -404,12 +404,12 @@ msgstr ""
 msgid "Submit your"
 msgstr ""
 
-#: ./tlcenter.py:123
-msgid "Template Installation Instructions"
-msgstr ""
-
 #: ./tlcenter.py:50
 msgid "Template Product Name"
+msgstr ""
+
+#: ./tlcenter.py:123
+msgid "Template installation instructions"
 msgstr ""
 
 #: ./tlcenter_templates/view.pt:212
@@ -437,7 +437,7 @@ msgid "The Dialog to create a new project consists of different register. Please
 msgstr ""
 
 #: ./tlproject.py:327
-msgid "The First File You Want To Upload"
+msgid "The first file you want to upload"
 msgstr ""
 
 #: ./tlproject.py:308
