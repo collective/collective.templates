@@ -4,7 +4,8 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix rendering for DefaultView of projects [Andreas Mantke]
+- Fix regular expressions for validation of file extensions [Andreas Mantke]
 
 
 1.0a3 (2019-08-11)
