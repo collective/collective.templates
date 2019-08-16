@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0a4 (unreleased)
+1.0a4 (2019-08-16)
 ------------------
 
 - Fix rendering for DefaultView of projects [Andreas Mantke]
