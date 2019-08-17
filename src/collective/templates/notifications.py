@@ -25,7 +25,8 @@ def notifiyAboutNewVersion(tlproject, event):
                     mailaddress = f.getProperty('email')
                     api.portal.send_email(
                         recipient=mailaddress,
-                        sender='noreply@libreoffice.org',
+                        sender=api.portal.get_registry_record(
+                            'plone.email_from_address'),
                         subject='New Version of the Product Added',
                         body=message,
                     )
