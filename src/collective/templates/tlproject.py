@@ -183,12 +183,12 @@ class ITLProject(model.Schema):
     information = schema.Text(
         title=_(u'Information'),
         description=_(
-            u'The Dialog to create a new project consists of different '
-            u'register. Please go through this register and fill in the '
-            u'appropriate data for your project or choose one of the '
-            u'options that are provided. You could upload one or more files '
-            u'to your project on the register \'File Upload\' and '
-            u'\'Optional Further File Upload\'.'),
+            u"The Dialog to create a new project consists of different "
+            u"register. Please go through this register and fill in the "
+            u"appropriate data for your project or choose one of the "
+            u"options that are provided. You could upload one or more files "
+            u"to your project on the register 'File Upload' and "
+            u"'Optional Further File Upload'."),
     )
 
     dexteritytextindexer.searchable('title')
@@ -270,9 +270,9 @@ class ITLProject(model.Schema):
     screenshot = NamedBlobImage(
         title=_(u'Screenshot of the Template'),
         description=_(
-            u'Add a screenshot by clicking the \'Browse\' button. You could '
-            u'provide an image of the file format \'png\', \'gif\' or '
-            u'\'jpg\'.'),
+            u"Add a screenshot by clicking the 'Browse' button. You could "
+            u"provide an image of the file format 'png', 'gif' or "
+            u"'jpg'."),
         required=True,
         constraint=validateimagefileextension,
     )
@@ -313,12 +313,12 @@ class ITLProject(model.Schema):
 
     directives.widget(platform_choice=CheckBoxFieldWidget)
     platform_choice = schema.List(
-            title=_(u'First uploaded file is compatible with the Platform(s)'),
-            description=_(
-                u'Please mark one or more platforms with which the uploaded '
-                u'file is compatible.'),
-            value_type=schema.Choice(source=vocabavailplatforms),
-            required=True,
+        title=_(u'First uploaded file is compatible with the Platform(s)'),
+        description=_(
+            u'Please mark one or more platforms with which the uploaded '
+            u'file is compatible.'),
+        value_type=schema.Choice(source=vocabavailplatforms),
+        required=True,
         )
 
     directives.mode(filetitlefield='display')
