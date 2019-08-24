@@ -183,10 +183,10 @@ class ITLProject(model.Schema):
     information = schema.Text(
         title=_(u'Information'),
         description=_(
-            u"The Dialog to create a new project consists of different "
-            u"register. Please go through this register and fill in the "
-            u"appropriate data for your project or choose one of the "
-            u"options that are provided. You could upload one or more files "
+            u'The Dialog to create a new project consists of different '
+            u'register. Please go through this register and fill in the '
+            u'appropriate data for your project or choose one of the '
+            u'options that are provided. You could upload one or more files '
             u"to your project on the register 'File Upload' and "
             u"'Optional Further File Upload'."),
     )
@@ -319,7 +319,7 @@ class ITLProject(model.Schema):
             u'file is compatible.'),
         value_type=schema.Choice(source=vocabavailplatforms),
         required=True,
-        )
+    )
 
     directives.mode(filetitlefield='display')
     filetitlefield = schema.TextLine(

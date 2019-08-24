@@ -104,13 +104,13 @@ class ITLCenter(model.Schema):
 
     allowed_fileextension = schema.TextLine(
         title=_(u'Allowed file extensions'),
-        description=_(u"Fill in the allowed file extensions, seperated by "
+        description=_(u'Fill in the allowed file extensions, seperated by '
                       u"a pipe '|'."),
     )
 
     allowed_imageextension = schema.TextLine(
         title=_(u'Allowed image file extension'),
-        description=_(u"Fill in the allowed image file extensions, seperated "
+        description=_(u'Fill in the allowed image file extensions, seperated '
                       u"by a pipe '|'."),
     )
 
