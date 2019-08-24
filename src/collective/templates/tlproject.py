@@ -146,6 +146,7 @@ def legal_declaration_text(context):
 def allowedtemplatefileextensions(context):
     return context.allowed_fileextension.replace("|", ", ")
 
+
 @provider(IContextAwareDefaultFactory)
 def allowedimagefileextensions(context):
     return context.allowed_imageextension.replace("|", ",")
@@ -153,7 +154,7 @@ def allowedimagefileextensions(context):
 
 def validatetemplatefileextension(value):
     catalog = api.portal.get_tool(name='portal_catalog')
-    result=catalog.uniqueValuesFor('allowedfileextensions')
+    result = catalog.uniqueValuesFor('allowedfileextensions')
     pattern = r'^.*\.({0})'.format(result[0])
     matches = re.compile(pattern, re.IGNORECASE).match
     if not matches(value.filename):
@@ -166,7 +167,7 @@ def validatetemplatefileextension(value):
 
 def validateimagefileextension(value):
     catalog = api.portal.get_tool(name='portal_catalog')
-    result=catalog.uniqueValuesFor('allowedimageextensions')
+    result = catalog.uniqueValuesFor('allowedimageextensions')
     pattern = r'^.*\.({0})'.format(result[0])
     matches = re.compile(pattern, re.IGNORECASE).match
     if not matches(value.filename):
@@ -175,7 +176,6 @@ def validateimagefileextension(value):
             u'Please try again to upload a file with the correct file'
             u'extension.')
     return True
-
 
 
 class ITLProject(model.Schema):
@@ -260,7 +260,6 @@ class ITLProject(model.Schema):
         constraint=validateemail,
     )
 
-
     directives.mode(timageextension='display')
     timageextension = schema.TextLine(
         title=_(u'The following file extensions are allowed for screenshot '
@@ -272,7 +271,8 @@ class ITLProject(model.Schema):
         title=_(u'Screenshot of the Template'),
         description=_(
             u'Add a screenshot by clicking the \'Browse\' button. You could '
-            u'provide an image of the file format \'png\', \'gif\' or \'jpg\'.'),
+            u'provide an image of the file format \'png\', \'gif\' or '
+            u'\'jpg\'.'),
         required=True,
         constraint=validateimagefileextension,
     )
@@ -312,8 +312,7 @@ class ITLProject(model.Schema):
     )
 
     directives.widget(platform_choice=CheckBoxFieldWidget)
-    platform_choice = schema.List\
-        (
+    platform_choice = schema.List(
             title=_(u'First uploaded file is compatible with the Platform(s)'),
             description=_(
                 u'Please mark one or more platforms with which the uploaded '
@@ -357,7 +356,6 @@ class ITLProject(model.Schema):
         required=False,
     )
 
-
     directives.mode(tfileextension1='display')
     tfileextension1 = schema.TextLine(
         title=_(u'The following file extensions are allowed for template '
@@ -389,7 +387,6 @@ class ITLProject(model.Schema):
         value_type=schema.Choice(source=vocabavailplatforms),
         required=False,
     )
-
 
     directives.mode(tfileextension2='display')
     tfileextension2 = schema.TextLine(
@@ -441,7 +438,8 @@ def notifyAboutNewProject(self, event):
     if self.__parent__.contactForCenter is not None:
         mailrecipient = str(self.__parent__.contactForCenter)
     else:
-        mailrecipient = api.portal.get_registry_record('plone.email_from_address')
+        mailrecipient = api.portal.get_registry_record(
+            'plone.email_from_address')
     api.portal.send_email(
         recipient=mailrecipient,
         subject=(u'A Project with the title {0} was added').format(self.title),
@@ -470,7 +468,8 @@ def notifyAboutNewReviewlistentry(self, event):
     if self.__parent__.contactForCenter is not None:
         mailrecipient = str(self.__parent__.contactForCenter)
     else:
-        mailrecipient = api.portal.get_registry_record('plone.email_from_address')
+        mailrecipient = api.portal.get_registry_record(
+            'plone.email_from_address')
     if state == 'pending':
         api.portal.send_email(
             recipient=mailrecipient,
