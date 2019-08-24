@@ -242,7 +242,6 @@ class TLCenterView(BrowserView):
         return catalog(**contentFilter)
 
     def get_newest_products(self):
-        self.catalog = api.portal.get_tool(name='portal_catalog')
         sort_on = 'created'
         contentFilter = {
             'sort_on': sort_on,
@@ -251,12 +250,11 @@ class TLCenterView(BrowserView):
             'portal_type': 'collective.templates.tlproject',
         }
 
-        results = self.catalog(**contentFilter)
+        results = api.content.find(**contentFilter)
 
         return results
 
     def get_products(self, category, version, sort_on, SearchableText=None):
-        self.catalog = api.portal.get_tool(name='portal_catalog')
         # sort_on = 'positive_ratings'
         if SearchableText:
             SearchableText = self.munge_search_term(SearchableText)
@@ -281,7 +279,7 @@ class TLCenterView(BrowserView):
             contentFilter['getCategories'] = category
 
         try:
-            return self.catalog(**contentFilter)
+            return api.content.find(**contentFilter)
         except ParseError:
             return []
 
