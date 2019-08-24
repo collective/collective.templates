@@ -4,16 +4,16 @@ from collective.templates import _
 from plone import api
 from plone.autoform.form import AutoExtensibleForm
 from plone.formwidget.recaptcha.widget import ReCaptchaFieldWidget
+from Products.CMFPlone.utils import safe_unicode
 from z3c.form import button
 from z3c.form import field
 from z3c.form import form
-from zope.component import adapter
 from zope import interface
 from zope import schema
+from zope.component import adapter
 from zope.component import getMultiAdapter
 from zope.interface import implementer
 from zope.interface import Invalid
-from Products.CMFPlone.utils import safe_unicode
 
 import logging
 import re
