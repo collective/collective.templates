@@ -144,12 +144,12 @@ def legal_declaration_text(context):
 
 @provider(IContextAwareDefaultFactory)
 def allowedtemplatefileextensions(context):
-    return context.allowed_fileextension.replace("|", ", ")
+    return context.allowed_fileextension.replace('|', ', ')
 
 
 @provider(IContextAwareDefaultFactory)
 def allowedimagefileextensions(context):
-    return context.allowed_imageextension.replace("|", ",")
+    return context.allowed_imageextension.replace('|', ',')
 
 
 def validatetemplatefileextension(value):

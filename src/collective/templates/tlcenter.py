@@ -102,17 +102,19 @@ class ITLCenter(model.Schema):
                                                'UNIX (other)'],
                                       value_type=schema.TextLine())
 
-    allowed_fileextension = schema.TextLine(
+    allowed_fileextension = schema.TextLine
+    (
         title=_(u'Allowed file extensions'),
-        description=_(u'Fill in the allowed file extensions, seperated by '
-                      u'a pipe \'|\'.'),
-        )
+        description=_(u"Fill in the allowed file extensions, seperated by "
+                      u"a pipe '|'."),
+    )
 
-    allowed_imageextension = schema.TextLine(
+    allowed_imageextension = schema.TextLine
+    (
         title=_(u'Allowed image file extension'),
-        description=_(u'Fill in the allowed image file extensions, seperated '
-                      u'by a pipe \'|\'.'),
-        )
+        description=_(u"Fill in the allowed image file extensions, seperated "
+                      u"by a pipe '|'."),
+    )
 
     model.fieldset('instructions',
                    label=u'Instructions',
