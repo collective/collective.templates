@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-08-16 15:20+0000\n"
+"POT-Creation-Date: 2019-08-24 18:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Accept the above legal disclaimer"
 msgstr ""
 
-#: ./tlproject.py:273
+#: ./tlproject.py:272
 msgid "Add a screenshot by clicking the 'Browse' button. You could provide an image of the file format 'png', 'gif' or 'jpg'."
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr ""
 msgid "Browse Templates by Category"
 msgstr ""
 
-#: ./mailtoauthor.py:197
+#: ./mailtoauthor.py:199
 msgid "Cancel"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgstr ""
 msgid "Fill in the text for the legal download disclaimer"
 msgstr ""
 
-#: ./tlproject.py:317
+#: ./tlproject.py:316
 msgid "First uploaded file is compatible with the Platform(s)"
 msgstr ""
 
@@ -185,11 +185,11 @@ msgstr ""
 msgid "Full project description"
 msgstr ""
 
-#: ./tlproject.py:345
+#: ./tlproject.py:344
 msgid "Here you could add an optional second file to your project, if the files support different platforms."
 msgstr ""
 
-#: ./tlproject.py:378
+#: ./tlproject.py:376
 msgid "Here you could add an optional third file to your project, if the files support different platforms."
 msgstr ""
 
@@ -280,19 +280,19 @@ msgstr ""
 msgid "Not a valid project name. Please retry."
 msgstr ""
 
-#: ./tlproject.py:428
+#: ./tlproject.py:425
 msgid "Please accept the Legal Declaration about your file(s) and your Uploaded File"
 msgstr ""
 
-#: ./tlproject.py:436
+#: ./tlproject.py:433
 msgid "Please choose a compatible platform for the uploaded file."
 msgstr ""
 
-#: ./tlproject.py:412
+#: ./tlproject.py:409
 msgid "Please choose a license for the file(s) you want toupload."
 msgstr ""
 
-#: ./tlproject.py:419
+#: ./tlproject.py:416
 msgid "Please choose one or more compatible product versions for the file(s) you want to upload."
 msgstr ""
 
@@ -324,7 +324,7 @@ msgstr ""
 msgid "Please mark one or more licenses under which you publish your file(s)."
 msgstr ""
 
-#: ./tlproject.py:318
+#: ./tlproject.py:317
 msgid "Please mark one or more platforms with which the uploaded file is compatible."
 msgstr ""
 
@@ -368,7 +368,7 @@ msgstr ""
 msgid "Screenshot"
 msgstr ""
 
-#: ./tlproject.py:272
+#: ./tlproject.py:271
 msgid "Screenshot of the Template"
 msgstr ""
 
@@ -380,7 +380,7 @@ msgstr ""
 msgid "Search ${product_title}"
 msgstr ""
 
-#: ./tlproject.py:352
+#: ./tlproject.py:351
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr ""
 
@@ -436,7 +436,7 @@ msgstr ""
 msgid "The Dialog to create a new project consists of different register. Please go through this register and fill in the appropriate data for your project or choose one of the options that are provided. You could upload one or more files to your project on the register 'File Upload' and 'Optional Further File Upload'."
 msgstr ""
 
-#: ./tlproject.py:327
+#: ./tlproject.py:326
 msgid "The first file you want to upload"
 msgstr ""
 
@@ -444,7 +444,7 @@ msgstr ""
 msgid "The first file you want to upload."
 msgstr ""
 
-#: ./tlproject.py:266
+#: ./tlproject.py:265
 msgid "The following file extensions are allowed for screenshot files (upper case and lower case and mix of both):"
 msgstr ""
 
@@ -456,23 +456,23 @@ msgstr ""
 msgid "The name of the project, to which author you want to send feedback."
 msgstr ""
 
-#: ./tlproject.py:503
+#: ./tlproject.py:502
 msgid "The project title is already in use."
 msgstr ""
 
-#: ./tlproject.py:369
+#: ./tlproject.py:367
 msgid "The second file you want to upload (this is optional)"
 msgstr ""
 
-#: ./tlproject.py:344
+#: ./tlproject.py:343
 msgid "The second file you want to upload."
 msgstr ""
 
-#: ./tlproject.py:377
+#: ./tlproject.py:375
 msgid "The third file you want to upload"
 msgstr ""
 
-#: ./tlproject.py:402
+#: ./tlproject.py:399
 msgid "The third file you want to upload (this is optional)"
 msgstr ""
 
@@ -480,7 +480,7 @@ msgstr ""
 msgid "These are your projects on this site:"
 msgstr ""
 
-#: ./tlproject.py:385
+#: ./tlproject.py:383
 msgid "Third uploaded file is compatible with the Platform(s))"
 msgstr ""
 
@@ -508,7 +508,7 @@ msgstr ""
 msgid "Versions Number"
 msgstr ""
 
-#: ./mailtoauthor.py:188
+#: ./mailtoauthor.py:190
 msgid "We send your message to the author of the project. It's on his choice, if he'll get back to you."
 msgstr ""
 
@@ -520,7 +520,7 @@ msgstr ""
 msgid "You currently have no projects on this site."
 msgstr ""
 
-#: ./tlproject.py:328
+#: ./tlproject.py:327
 msgid "You need only to upload one file to your project. There are options for further two file uploads if you want to provide files for different platforms."
 msgstr ""
 
