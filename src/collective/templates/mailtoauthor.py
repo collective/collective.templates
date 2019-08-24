@@ -159,8 +159,8 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
 
         catalog = api.portal.get_tool('portal_catalog')
         project = catalog(
-                      portal_type='collective.templates.tlproject',
-                      Title=data['projectname'],
+            portal_type='collective.templates.tlproject',
+            Title=data['projectname'],
         )
 
         for brain in project[:1]:
@@ -174,11 +174,11 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
         api.portal.send_email(
             recipient=mailrecipient,
             sender=(safe_unicode('{0} {1} <{2}>')).format(
-                                          data['inquirerfirstname'],
-                                          data['inquirerfamilyname'],
-                                          data['inquireremailaddress']),
+                data['inquirerfirstname'],
+                data['inquirerfamilyname'],
+                data['inquireremailaddress']),
             subject=(safe_unicode('Your Project: {0}')).format(
-                                          data['projectname']),
+                data['projectname']),
             body=(safe_unicode('{0}')).format(data['inquiry']),
 
 
@@ -187,9 +187,9 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
         # Redirect back to the front page with a status message
 
         api.portal.show_message(
-            message=_(safe_unicode('We send your message to the author of '
-                                   'the project. It\'s on his choice, '
-                                   'if he\'ll get back to you.')),
+            message=_(safe_unicode("We send your message to the author of "
+                                   "the project. It's on his choice, "
+                                   "if he'll get back to you.")),
             request=self.request,
             type='info')
 
