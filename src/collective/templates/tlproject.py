@@ -211,6 +211,15 @@ class ITLProject(model.Schema):
         required=False,
     )
 
+    model.fieldset('legal',
+                   label='Legal',
+                   fields=['licenses_choice',
+                           'title_declaration_legal',
+                           'declaration_legal',
+                           'accept_legal_declaration',
+                           ],
+    )
+
     directives.widget(licenses_choice=CheckBoxFieldWidget)
     licenses_choice = schema.List(
         title=_(u'License of the uploaded file'),
@@ -242,6 +251,11 @@ class ITLProject(model.Schema):
         required=True,
     )
 
+    model.fieldset('category',
+                   label='Category / Categories',
+                   fields=['category_choice'],
+    )
+
     dexteritytextindexer.searchable('category_choice')
     directives.widget(category_choice=CheckBoxFieldWidget)
     category_choice = schema.List(
@@ -258,6 +272,13 @@ class ITLProject(model.Schema):
         title=_(u'Contact email-address'),
         description=_(u'Contact email-address for the project.'),
         constraint=validateemail,
+    )
+
+    model.fieldset('screenshot',
+                   label='Screenshot',
+                   fields=['timageextension',
+                           'screenshot'
+                           ],
     )
 
     directives.mode(timageextension='display')
@@ -286,6 +307,12 @@ class ITLProject(model.Schema):
         max_length=12,
     )
 
+    model.fieldset('compatibilty',
+                   label='Compatibility',
+                   fields=['compatibility_choice',
+                           ],
+    )
+
     directives.widget(compatibility_choice=CheckBoxFieldWidget)
     compatibility_choice = schema.List(
         title=_(u'Compatible with versions of the product'),
@@ -295,6 +322,25 @@ class ITLProject(model.Schema):
         value_type=schema.Choice(source=vocabavailversions),
         required=True,
         default=[],
+    )
+
+    model.fieldset('fileset1',
+                   label='File Upload',
+                   fields=['filetitlefield',
+                           'tfileextension',
+                           'file',
+                           'platform_choice',
+                           ],
+    )
+
+
+    directives.mode(filetitlefield='display')
+    filetitlefield = schema.TextLine(
+        title=_(u'The first file you want to upload'),
+        description=_(
+            u'You need only to upload one file to your project. There are '
+            u'options for further two file uploads if you want to provide '
+            u'files for different platforms.'),
     )
 
     directives.mode(tfileextension='display')
@@ -321,14 +367,6 @@ class ITLProject(model.Schema):
         required=True,
     )
 
-    directives.mode(filetitlefield='display')
-    filetitlefield = schema.TextLine(
-        title=_(u'The first file you want to upload'),
-        description=_(
-            u'You need only to upload one file to your project. There are '
-            u'options for further two file uploads if you want to provide '
-            u'files for different platforms.'),
-    )
 
     model.fieldset('fileset2',
                    label=u'Optional Further File Upload',
