@@ -218,7 +218,7 @@ class ITLProject(model.Schema):
                            'declaration_legal',
                            'accept_legal_declaration',
                            ],
-    )
+                   )
 
     directives.widget(licenses_choice=CheckBoxFieldWidget)
     licenses_choice = schema.List(
@@ -254,7 +254,7 @@ class ITLProject(model.Schema):
     model.fieldset('category',
                    label='Category / Categories',
                    fields=['category_choice'],
-    )
+                   )
 
     dexteritytextindexer.searchable('category_choice')
     directives.widget(category_choice=CheckBoxFieldWidget)
@@ -277,9 +277,9 @@ class ITLProject(model.Schema):
     model.fieldset('screenshot',
                    label='Screenshot',
                    fields=['timageextension',
-                           'screenshot'
+                           'screenshot',
                            ],
-    )
+                   )
 
     directives.mode(timageextension='display')
     timageextension = schema.TextLine(
@@ -311,7 +311,7 @@ class ITLProject(model.Schema):
                    label='Compatibility',
                    fields=['compatibility_choice',
                            ],
-    )
+                   )
 
     directives.widget(compatibility_choice=CheckBoxFieldWidget)
     compatibility_choice = schema.List(
@@ -331,8 +331,7 @@ class ITLProject(model.Schema):
                            'file',
                            'platform_choice',
                            ],
-    )
-
+                   )
 
     directives.mode(filetitlefield='display')
     filetitlefield = schema.TextLine(
@@ -366,7 +365,6 @@ class ITLProject(model.Schema):
         value_type=schema.Choice(source=vocabavailplatforms),
         required=True,
     )
-
 
     model.fieldset('fileset2',
                    label=u'Optional Further File Upload',
