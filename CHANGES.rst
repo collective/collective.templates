@@ -5,7 +5,12 @@ Changelog
 1.0a5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Pep8 and other code fixes [Andreas Mantke]
+- Change the sender of the messages to the portal email
+  address [Andreas Mantke]
+- Use api.content.find instead of api.portal.get_tool for
+  portal_catalog searches [Andreas Mantke]
+- Update localization files [Andreas Mantke]
 
 
 1.0a4 (2019-08-16)
