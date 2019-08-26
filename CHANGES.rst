@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0a6 (unreleased)
+1.0a6 (2019-08-26)
 ------------------
 
 - Improve the edit view of the tlcenter and the tlproject
