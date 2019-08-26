@@ -124,9 +124,9 @@ class ITLCenter(model.Schema):
     model.fieldset('instructions',
                    label=u'Instructions',
                    fields=['install_instructions',
-                   'reporting_bugs',
-                   'information_oldversions',
-                   ],
+                           'reporting_bugs',
+                           'information_oldversions',
+                           ],
                    )
 
     primary('install_instructions')
