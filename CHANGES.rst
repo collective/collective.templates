@@ -4,9 +4,8 @@ Changelog
 1.0a6 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
-
+- Improve the edit view of the tlcenter and the tlproject
+  with further register and reordered fields. [Andreas Mantke]
 
 
 1.0a5 (2019-08-25)
