@@ -102,6 +102,13 @@ class ITLCenter(model.Schema):
                                                'UNIX (other)'],
                                       value_type=schema.TextLine())
 
+    model.fieldset('allowedfileextensions',
+                   label='Allowed file extensions',
+                   fields=['allowed_fileextension',
+                           'allowed_imageextension',
+                           ],
+                   )
+
     allowed_fileextension = schema.TextLine(
         title=_(u'Allowed file extensions'),
         description=_(u'Fill in the allowed file extensions, seperated by '
@@ -116,7 +123,11 @@ class ITLCenter(model.Schema):
 
     model.fieldset('instructions',
                    label=u'Instructions',
-                   fields=['install_instructions', 'reporting_bugs'])
+                   fields=['install_instructions',
+                   'reporting_bugs',
+                   'information_oldversions',
+                   ],
+                   )
 
     primary('install_instructions')
     install_instructions = RichText(
