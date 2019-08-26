@@ -18,7 +18,7 @@ msgstr ""
 msgid "${product_title}"
 msgstr ""
 
-#: ./tlproject.py:285
+#: ./tlproject.py:306
 msgid "1.0"
 msgstr ""
 
@@ -34,11 +34,11 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: ./tlproject.py:239
+#: ./tlproject.py:248
 msgid "Accept the above legal disclaimer"
 msgstr ""
 
-#: ./tlproject.py:272
+#: ./tlproject.py:293
 msgid "Add a screenshot by clicking the 'Browse' button. You could provide an image of the file format 'png', 'gif' or 'jpg'."
 msgstr ""
 
@@ -46,11 +46,11 @@ msgstr ""
 msgid "All categories"
 msgstr ""
 
-#: ./tlcenter.py:106
+#: ./tlcenter.py:113
 msgid "Allowed file extensions"
 msgstr ""
 
-#: ./tlcenter.py:112
+#: ./tlcenter.py:119
 msgid "Allowed image file extension"
 msgstr ""
 
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Category/Categories"
 msgstr ""
 
-#: ./tlproject.py:248
+#: ./tlproject.py:262
 msgid "Choose your categories"
 msgstr ""
 
@@ -102,15 +102,15 @@ msgstr ""
 msgid "Compatibility"
 msgstr ""
 
-#: ./tlproject.py:291
+#: ./tlproject.py:318
 msgid "Compatible with versions of the product"
 msgstr ""
 
-#: ./tlproject.py:258
+#: ./tlproject.py:272
 msgid "Contact email-address"
 msgstr ""
 
-#: ./tlproject.py:259
+#: ./tlproject.py:273
 msgid "Contact email-address for the project."
 msgstr ""
 
@@ -130,23 +130,23 @@ msgstr ""
 msgid "Description of the features of templates"
 msgstr ""
 
-#: ./tlcenter.py:189
+#: ./tlcenter.py:200
 msgid "EMail address for communication with the template center manager and reviewer"
 msgstr ""
 
-#: ./tlcenter.py:192
+#: ./tlcenter.py:203
 msgid "Enter an email address for the communication with template center manager and reviewer"
 msgstr ""
 
-#: ./tlcenter.py:178
+#: ./tlcenter.py:189
 msgid "Enter an information about the search for older versions of the product, if they are not on the versions list (compatibility) anymore."
 msgstr ""
 
-#: ./tlcenter.py:168
+#: ./tlcenter.py:179
 msgid "Enter any legal disclaimer and limitations for downloads that should appear on each page for dowloadable files."
 msgstr ""
 
-#: ./tlcenter.py:148
+#: ./tlcenter.py:159
 msgid "Enter the text of the legal disclaimer and limitations that should be displayed to the project creator and should be accepted by the owner of the project."
 msgstr ""
 
@@ -154,23 +154,23 @@ msgstr ""
 msgid "File size:"
 msgstr ""
 
-#: ./tlcenter.py:107
+#: ./tlcenter.py:114
 msgid "Fill in the allowed file extensions, seperated by a pipe '|'."
 msgstr ""
 
-#: ./tlcenter.py:113
+#: ./tlcenter.py:120
 msgid "Fill in the allowed image file extensions, seperated by a pipe '|'."
 msgstr ""
 
-#: ./tlcenter.py:152
+#: ./tlcenter.py:163
 msgid "Fill in the legal disclaimer, that had to be accepted by the project owner"
 msgstr ""
 
-#: ./tlcenter.py:171
+#: ./tlcenter.py:182
 msgid "Fill in the text for the legal download disclaimer"
 msgstr ""
 
-#: ./tlproject.py:316
+#: ./tlproject.py:361
 msgid "First uploaded file is compatible with the Platform(s)"
 msgstr ""
 
@@ -178,11 +178,11 @@ msgstr ""
 msgid "Full project description"
 msgstr ""
 
-#: ./tlproject.py:344
+#: ./tlproject.py:380
 msgid "Here you could add an optional second file to your project, if the files support different platforms."
 msgstr ""
 
-#: ./tlproject.py:376
+#: ./tlproject.py:412
 msgid "Here you could add an optional third file to your project, if the files support different platforms."
 msgstr ""
 
@@ -198,7 +198,7 @@ msgstr ""
 msgid "Information"
 msgstr ""
 
-#: ./tlcenter.py:177
+#: ./tlcenter.py:188
 msgid "Information about search for old product versions"
 msgstr ""
 
@@ -211,7 +211,7 @@ msgstr ""
 msgid "Installs the collective.templates add-on."
 msgstr ""
 
-#: ./tlcenter.py:130
+#: ./tlcenter.py:141
 msgid "Instruction how to report Bugs"
 msgstr ""
 
@@ -225,15 +225,15 @@ msgstr ""
 msgid "It is necessary that you accept the Legal Declaration"
 msgstr ""
 
-#: ./tlcenter.py:161
+#: ./tlcenter.py:172
 msgid "Legal Disclaimer And Limitations For Downloads"
 msgstr ""
 
-#: ./tlcenter.py:142
+#: ./tlcenter.py:153
 msgid "Legal Disclaimer and Limitations"
 msgstr ""
 
-#: ./tlproject.py:216
+#: ./tlproject.py:225
 msgid "License of the uploaded file"
 msgstr ""
 
@@ -273,27 +273,27 @@ msgstr ""
 msgid "Not a valid project name. Please retry."
 msgstr ""
 
-#: ./tlproject.py:425
+#: ./tlproject.py:461
 msgid "Please accept the Legal Declaration about your file(s) and your Uploaded File"
 msgstr ""
 
-#: ./tlproject.py:433
+#: ./tlproject.py:469
 msgid "Please choose a compatible platform for the uploaded file."
 msgstr ""
 
-#: ./tlproject.py:409
+#: ./tlproject.py:445
 msgid "Please choose a license for the file(s) you want toupload."
 msgstr ""
 
-#: ./tlproject.py:416
+#: ./tlproject.py:452
 msgid "Please choose one or more compatible product versions for the file(s) you want to upload."
 msgstr ""
 
-#: ./tlproject.py:240
+#: ./tlproject.py:249
 msgid "Please declare that you accept the above legal disclaimer."
 msgstr ""
 
-#: ./tlcenter.py:124
+#: ./tlcenter.py:135
 msgid "Please fill in the install instructions"
 msgstr ""
 
@@ -313,23 +313,23 @@ msgstr ""
 msgid "Please make sure the relevant project information has been entered and submit your project for approval (publication)."
 msgstr ""
 
-#: ./tlproject.py:217
+#: ./tlproject.py:226
 msgid "Please mark one or more licenses under which you publish your file(s)."
 msgstr ""
 
-#: ./tlproject.py:317
+#: ./tlproject.py:362
 msgid "Please mark one or more platforms with which the uploaded file is compatible."
 msgstr ""
 
-#: ./tlproject.py:292
+#: ./tlproject.py:319
 msgid "Please mark one or more program versions with which this uploaded file is compatible with."
 msgstr ""
 
-#: ./tlproject.py:249
+#: ./tlproject.py:263
 msgid "Please select the appropriate categories (one or more) for your project."
 msgstr ""
 
-#: ./tlproject.py:309
+#: ./tlproject.py:354
 msgid "Please upload your file."
 msgstr ""
 
@@ -361,7 +361,7 @@ msgstr ""
 msgid "Screenshot"
 msgstr ""
 
-#: ./tlproject.py:271
+#: ./tlproject.py:292
 msgid "Screenshot of the Template"
 msgstr ""
 
@@ -373,7 +373,7 @@ msgstr ""
 msgid "Search ${product_title}"
 msgstr ""
 
-#: ./tlproject.py:351
+#: ./tlproject.py:387
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr ""
 
@@ -401,7 +401,7 @@ msgstr ""
 msgid "Template Product Name"
 msgstr ""
 
-#: ./tlcenter.py:123
+#: ./tlcenter.py:134
 msgid "Template installation instructions"
 msgstr ""
 
@@ -417,11 +417,11 @@ msgstr ""
 msgid "Templates Project"
 msgstr ""
 
-#: ./tlcenter.py:147
+#: ./tlcenter.py:158
 msgid "Text of the Legal Disclaimer and Limitations"
 msgstr ""
 
-#: ./tlcenter.py:167
+#: ./tlcenter.py:178
 msgid "Text of the Legal Disclaimer and Limitations for Downlaods"
 msgstr ""
 
@@ -429,19 +429,19 @@ msgstr ""
 msgid "The Dialog to create a new project consists of different register. Please go through this register and fill in the appropriate data for your project or choose one of the options that are provided. You could upload one or more files to your project on the register 'File Upload' and 'Optional Further File Upload'."
 msgstr ""
 
-#: ./tlproject.py:326
+#: ./tlproject.py:338
 msgid "The first file you want to upload"
 msgstr ""
 
-#: ./tlproject.py:308
+#: ./tlproject.py:353
 msgid "The first file you want to upload."
 msgstr ""
 
-#: ./tlproject.py:265
+#: ./tlproject.py:286
 msgid "The following file extensions are allowed for screenshot files (upper case and lower case and mix of both):"
 msgstr ""
 
-#: ./tlproject.py:302
+#: ./tlproject.py:347
 msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
 msgstr ""
 
@@ -449,23 +449,23 @@ msgstr ""
 msgid "The name of the project, to which author you want to send feedback."
 msgstr ""
 
-#: ./tlproject.py:502
+#: ./tlproject.py:538
 msgid "The project title is already in use."
 msgstr ""
 
-#: ./tlproject.py:367
+#: ./tlproject.py:403
 msgid "The second file you want to upload (this is optional)"
 msgstr ""
 
-#: ./tlproject.py:343
+#: ./tlproject.py:379
 msgid "The second file you want to upload."
 msgstr ""
 
-#: ./tlproject.py:375
+#: ./tlproject.py:411
 msgid "The third file you want to upload"
 msgstr ""
 
-#: ./tlproject.py:399
+#: ./tlproject.py:435
 msgid "The third file you want to upload (this is optional)"
 msgstr ""
 
@@ -473,7 +473,7 @@ msgstr ""
 msgid "These are your projects on this site:"
 msgstr ""
 
-#: ./tlproject.py:383
+#: ./tlproject.py:419
 msgid "Third uploaded file is compatible with the Platform(s))"
 msgstr ""
 
@@ -481,11 +481,11 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: ./tlcenter.py:141
+#: ./tlcenter.py:152
 msgid "Title for Legal Disclaimer and Limitations"
 msgstr ""
 
-#: ./tlcenter.py:159
+#: ./tlcenter.py:170
 msgid "Title of the Legal Disclaimer and Limitations for Downloads"
 msgstr ""
 
@@ -493,11 +493,11 @@ msgstr ""
 msgid "Uninstalls the collective.templates add-on."
 msgstr ""
 
-#: ./tlproject.py:282
+#: ./tlproject.py:303
 msgid "Version Number of the Template File (up to twelf chars) which you upload in this project."
 msgstr ""
 
-#: ./tlproject.py:281
+#: ./tlproject.py:302
 msgid "Versions Number"
 msgstr ""
 
@@ -513,7 +513,7 @@ msgstr ""
 msgid "You currently have no projects on this site."
 msgstr ""
 
-#: ./tlproject.py:327
+#: ./tlproject.py:339
 msgid "You need only to upload one file to your project. There are options for further two file uploads if you want to provide files for different platforms."
 msgstr ""
 

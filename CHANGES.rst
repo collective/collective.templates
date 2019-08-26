@@ -6,6 +6,7 @@ Changelog
 
 - Improve the edit view of the tlcenter and the tlproject
   with further register and reordered fields. [Andreas Mantke]
+- Update localization files [Andreas Mantke]
 
 
 1.0a5 (2019-08-25)
