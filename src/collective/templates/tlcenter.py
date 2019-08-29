@@ -312,7 +312,6 @@ class TLCenterOwnProjectsViewlet(ViewletBase):
     def get_results(self):
         current_user = api.user.get_current()
         pc = api.portal.get_tool('portal_catalog')
-        print = str(current_user)
         return pc.portal_catalog(
             portal_type='collective.templates.tlproject',
             sort_on='Date',
