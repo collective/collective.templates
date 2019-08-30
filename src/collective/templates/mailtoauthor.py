@@ -188,8 +188,8 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
 
         api.portal.show_message(
             message=_(safe_unicode('We send your message to the author of '
-                                   "the project. It's on his choice, "
-                                   "if he'll get back to you.")),
+                                   "the project. It's on her / his choice, "
+                                   "if she'll / he'll get back to you.")),
             request=self.request,
             type='info')
 
