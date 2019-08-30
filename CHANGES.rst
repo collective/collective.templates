@@ -4,8 +4,11 @@ Changelog
 1.0a7 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Fix the content type in the search for own projects in the
+  own projects viewlet [Andreas Mantke]
+- Improve the message to the sender of a author contact
+  form [Andreas Mantke]
+- Update localization files [Andreas Mantke]
 
 
 1.0a6 (2019-08-26)
