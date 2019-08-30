@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-08-26 16:44+0000\n"
+"POT-Creation-Date: 2019-08-30 18:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -509,7 +509,7 @@ msgid "Versions Number"
 msgstr ""
 
 #: ./mailtoauthor.py:190
-msgid "We send your message to the author of the project. It's on his choice, if he'll get back to you."
+msgid "We send your message to the author of the project. It's on her / his choice, if she'll / he'll get back to you."
 msgstr ""
 
 #: ./mailtoauthor.py:92

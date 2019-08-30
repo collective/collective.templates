@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2019-08-26 18:46+0200\n"
+"PO-Revision-Date: 2019-08-30 20:06+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -501,8 +501,8 @@ msgid "Versions Number"
 msgstr "Version-Nummer"
 
 #: mailtoauthor.py:190
-msgid "We send your message to the author of the project. It's on his choice, if he'll get back to you."
-msgstr "Wir senden Ihre Nachricht an den Projekt-Autor. Es ist seine Entscheidung, ob er sich bei Ihnen meldet."
+msgid "We send your message to the author of the project. It's on her / his choice, if she'll / he'll get back to you."
+msgstr "Wir senden Ihre Nachricht an den Projekt-Autor. Es ist ihre / seine Entscheidung, ob sie / er sich bei Ihnen meldet."
 
 #: mailtoauthor.py:92
 msgid "What is your message to the author of the project? Your message is limited to 1000 characters."
