@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0a7 (unreleased)
+1.0a7 (2019-08-30)
 ------------------
 
 - Fix the content type in the search for own projects in the
