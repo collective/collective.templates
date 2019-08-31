@@ -48,6 +48,10 @@ setup(
         'plone.api>=1.8.4',
         'plone.restapi',
         'plone.app.dexterity',
+        'collective.dexteritytextindexer',
+        'Products.validation',
+        'cioppino.twothumbs',
+        'plone.formwidget.recaptcha',
     ],
     extras_require={
         'test': [
@@ -58,10 +62,6 @@ setup(
             'plone.testing>=5.0.0',
             'plone.app.contenttypes',
             'plone.app.robotframework[debug]',
-            'collective.dexteritytextindexer',
-            'Products.validation',
-            'cioppino.twothumbs',
-            'plone.formwidget.recaptcha',
         ],
     },
     entry_points="""
