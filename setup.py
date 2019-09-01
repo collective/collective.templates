@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='collective.templates',
-    version='1.0a8',
+    version='1.0a9',
     description="Plone add-on to host document templates",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
