@@ -4,8 +4,10 @@ Changelog
 1.0a8 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Activate include dependencies in configure.zcml [Andreas Mantke]
+- Remove Travis test for Plone 4.3 [Andreas Mantke]
+- Send notifications about a new product version only to the
+  project email address instead of all users of the site [Andreas Mantke]
 
 
 1.0a7 (2019-08-30)
