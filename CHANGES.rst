@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0a8 (unreleased)
+1.0a8 (2019-09-01)
 ------------------
 
 - Activate include dependencies in configure.zcml [Andreas Mantke]
