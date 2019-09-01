@@ -23,4 +23,7 @@
   <index name="allowedimageextensions" meta_type="FieldIndex">
     <indexed_attr value="allowed_imageextension" />
   </index>
+  <index name="templateprojectmail" meta_type="FieldIndex">
+    <indexed_attr value="contactAddress" />
+  </index>
 </object>
