@@ -14,7 +14,7 @@
     <indexed_attr value="category_choice" />
   </index>
   <index name="projectcontact" meta_type="KeywordIndex">
-    <indexed_attr value="contactAddress" />
+    <indexed_attr value="templatecontactAddress" />
   </index>
   <column value="getCategories" />
   <index name="allowedfileextensions" meta_type="FieldIndex">
@@ -24,6 +24,6 @@
     <indexed_attr value="allowed_imageextension" />
   </index>
   <index name="templateprojectmail" meta_type="FieldIndex">
-    <indexed_attr value="contactAddress" />
+    <indexed_attr value="templatecontactAddress" />
   </index>
 </object>
