@@ -5,8 +5,9 @@ Changelog
 1.0a9 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Made additions to travis.yml to get the robot test running
+  successfully [Andreas Mantke]
+- Update the Readme and add more features of the add-on [Andreas Mantke]
 
 
 1.0a8 (2019-09-01)
