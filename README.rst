@@ -15,8 +15,16 @@ Features
 
 - A template center with listing and display of template projects respectively to their rating,
   a search form and a listing of the latest projects.
+- The template center edit form contains fields to set the title of the center and the name of
+  the templates, add a description of the center, set a choice of categories, platforms, lizenses
+  and versions of the product (for which the templates are). There are also fields to set the
+  allowed file extensions of the template files and the image files (e.g. screenshots).
 - Template projects with the abbility to upload template files and replace them with newer ones.
-  The project page contains fields for product versions, categories, licenses and plattforms.
+  The edit form of the project contains fields to choose the product versions, categories,
+  licenses and plattforms.
+- The add-on send message once a new project was added. It push a message too, once a project
+  was submitted for publication. It send an email to the project contact address for every
+  change in the workflow status of the project.
 - The user could send a message to the author of a template via a mail. The mail form uses a
   recaptcha widget. The contact data of the author of the template will not be made public.
 - The file extensions of the uploaded templates will be checked. It is possible to set the
@@ -34,7 +42,8 @@ This add-on can be seen in action at the following sites:
 Documentation
 -------------
 
-Full documentation for end users can be found in the "docs" folder, and is also available online at
+Full documentation for end users isn't available yet, but will be available
+soon in the "docs" folder
 
 
 Translations
@@ -42,7 +51,7 @@ Translations
 
 This product has been translated into
 
--
+- German
 
 
 Installation
@@ -66,14 +75,13 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/collective.templates/issues
 - Source Code: https://github.com/collective/collective.templates
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support
 -------
 
 If you are having issues, please let us know.
-We have a mailing list located at:
+Please create an issue in the project issue tracker (see above).
 
 
 License
