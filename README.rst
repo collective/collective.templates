@@ -30,6 +30,9 @@ Features
 - The file extensions of the uploaded templates will be checked. It is possible to set the
   allowed file extensions distinct for the specific use case of the template center. They
   could be dynamically changed at any time.
+- The add-on sends messages to the project contact email on every edit of the template
+  center's product versions field (thus the contributors could potentially add this new
+  product version to their project).
 
 
 Examples
