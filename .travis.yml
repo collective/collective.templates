@@ -5,10 +5,6 @@ cache:
   directories:
   - eggs
   - downloads
-dist: xenial
-addons:
-  packages:
-    - firefox-geckodriver
 python:
   - "2.7"
 matrix:
@@ -39,9 +35,9 @@ install:
   - bin/buildout -N -t 3 code-analysis:return-status-codes=True
 
 before_script:
-#  - wget "https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz"
-#  - tar xfz geckodriver-v0.24.0-linux64.tar.gz
-#  - sudo mv geckodriver /usr/local/bin
+  - wget "https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz"
+  - tar xfz geckodriver-v0.24.0-linux64.tar.gz
+  - sudo mv geckodriver /usr/local/bin
   - 'export DISPLAY=:99.0'
   - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
   - sleep 3
