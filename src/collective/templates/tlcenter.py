@@ -15,6 +15,7 @@ from zope.interface import Invalid
 
 import re
 
+
 MULTISPACE = u'\u3000'.encode('utf-8')
 BAD_CHARS = ('?', '-', '+', '*', MULTISPACE)
 
@@ -61,8 +62,7 @@ class ITLCenter(model.Schema):
                                      value_type=schema.TextLine())
 
     available_licenses = schema.List(title=_(u'Available Licenses'),
-                                     default=
-                                     [
+                                     default=[
                                      'GNU-GPL-v2 (GNU General Public'
                                      'License Version 2)',
                                      'GNU-GPL-v3+ (General Public License'
@@ -81,8 +81,7 @@ class ITLCenter(model.Schema):
                                      'CC-BY-SA-v4 (Creative Commons'
                                      'Attribution-ShareAlike 4.0 '
                                      'International)',
-                                     'AL-v2 (Apache License Version 2.0)',
-                                     ],
+                                     'AL-v2 (Apache License Version 2.0)',],
                                      value_type=schema.TextLine())
 
     available_versions = schema.List(title=_(u'Available Versions'),
