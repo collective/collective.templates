@@ -42,3 +42,8 @@ reports/
 !.gitkeep
 !.travis.yml
 !src/collective
+.directory/
+docs/_build/*
+docs/Makefile
+docs/make.bat
+
