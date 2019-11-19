@@ -4,12 +4,12 @@ from plone import api
 
 
 def notifiyAboutNewVersion(tlproject, event):
-    if getattr(event, 'descriptions') and event.descriptions:
+    if hasattr(event, 'descriptions') and event.descriptions:  # noqa
         for d in event.descriptions:
-            if getattr(d, 'interface') and d.interface is ITLCenter and \
-                    'available_versions' in d.attributes:
+            if hasattr(d, 'interface') and d.interface is ITLCenter and 'available_versions' in d.attributes:  # noqa
                 catalog = api.portal.get_tool(name='portal_catalog')
-                projectemail = catalog.uniqueValuesFor('templateprojectcontact')
+                projectemail = catalog.uniqueValuesFor(
+                    'templateprojectcontact')
                 message = 'We added a new version of the product to the ' \
                           'list.\n Please add this version to your ' \
                           'template project(s), if it is (they ' \
