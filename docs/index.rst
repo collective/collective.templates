@@ -9,3 +9,5 @@ User documentation
 
    source/installation.rst
    source/addnewtemplatecenter.rst
+   source/addnewtemplateproject.rst
+   source/publishtemplateproject.rst
