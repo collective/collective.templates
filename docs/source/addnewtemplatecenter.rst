@@ -1,5 +1,5 @@
 Add A New Template Center To Your Plone Site
-##########################################
+############################################
 
 I assume you want to add the center to the Plone site root ('Home'). Therefor go to this site root and
 choose from the Plone menu on the left 'Add new'. You get in this menu an entry to create a new
@@ -12,7 +12,7 @@ choose from the Plone menu on the left 'Add new'. You get in this menu an entry 
 Click on this entry and you get the form below. This is the edit form to create and configure a new
 Template Center in your Plone site.
 
-.. image:: images/template_center_form01.png
+.. image:: images/template_center_form1.png
    :width: 600
 
 

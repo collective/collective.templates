@@ -1,3 +1,6 @@
+Publish A Template Project
+##########################
+
 Once the project owner has finished the edits in the form and save it, she / he
 could submit the template project for publication. This could be done within
 the menubar on the left side. She / he had to click on the menu entry

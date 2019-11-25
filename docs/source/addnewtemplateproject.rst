@@ -62,7 +62,7 @@ file(s). It is possible to check more than one license for a template
 filee(s). This declaration need to be in accordance with the license
 declaration inside the template file(s) (if there is one).
 
-.. image:: images/addon_release_form2.png
+.. image:: images/template_project_form2.png
    :width: 600
 
 There is also a read-only form field which contains the text of the legal
@@ -92,7 +92,7 @@ The allowed file extensions are displayed next to the button to call
 the file dialog. The Plone site administrator choose this allowed file
 extensions within the 'Template Center'.
 
-.. image:: images/addon_project_form4.png
+.. image:: images/template_project_form4.png
    :width: 600
 
 
@@ -104,7 +104,7 @@ release is compatible with. The list of program versions will be created by
 the site admin within the 'Template Center'. It is possible to choose
 multiple program versions for the template file(s) compatibility.
 
-.. image:: images/addon_release_form5.png
+.. image:: images/template_project_form5.png
    :width: 600
 
 
@@ -114,7 +114,7 @@ The Sixth Register 'File Upload'
 This register is the place to upload the template file and declare which
 platform it is compatible with.
 
-.. image:: images/addon_release_form6.png
+.. image:: images/template_project_form6.png
    :width: 600
 
 If there are versions of the template file for different platforms (e.g. one
