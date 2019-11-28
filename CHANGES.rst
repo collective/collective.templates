@@ -2,10 +2,14 @@ Changelog
 =========
 
 
-1.0b1 (unreleased)
+1.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Complete user documentation [Andreas Mantke]
+- Flake8 fixes [Andreas Mantke]
+- Add a custom.css for creating documentation in HTML file
+  format [Andresa Mantke]
+- Update Manifest.in [Andreas Mantke]
 
 
 1.0b0 (2019-09-10)
