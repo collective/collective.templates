@@ -10,6 +10,7 @@ Changelog
 - Add a custom.css for creating documentation in HTML file
   format [Andresa Mantke]
 - Update Manifest.in [Andreas Mantke]
+- Update localization files [Andreas Mantke]
 
 
 1.0b0 (2019-09-10)

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2019-08-30 20:06+0200\n"
+"PO-Revision-Date: 2019-11-28 21:25+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,557 +16,554 @@ msgstr ""
 "Language: de\n"
 "X-Generator: Poedit 2.2.1\n"
 
-#: ./tlcenter_templates/view.pt:210
+#: tlcenter_templates/view.pt:210
 msgid "${product_title}"
 msgstr "${product_title}"
 
-#: ./tlproject.py:306
+#: tlproject.py:306
 msgid "1.0"
 msgstr "1.0"
 
-#: ./profiles/default/types/collective.templates.tlproject.xml
+#: profiles/default/types/collective.templates.tlproject.xml
 msgid "A Templates Project"
 msgstr "Ein Vorlagen Projekt"
 
-#: ./profiles/default/types/collective.templates.tlcenter.xml
+#: profiles/default/types/collective.templates.tlcenter.xml
 msgid "A center for templates"
 msgstr "Ein Center für Vorlagen"
 
-#: ./tlcenter_templates/view.pt:278
+#: tlcenter_templates/view.pt:278
 msgid "About"
 msgstr "Über"
 
-#: ./tlproject.py:248
+#: tlproject.py:248
 msgid "Accept the above legal disclaimer"
 msgstr "Akzeptieren Sie den obigen Haftungsausschlluss"
 
-#: ./tlproject.py:293
+#: tlproject.py:293
 msgid "Add a screenshot by clicking the 'Browse' button. You could provide an image of the file format 'png', 'gif' or 'jpg'."
 msgstr "Fügen Sie ein Bildschirmfoto durch Klicken auf den Schalter \"Durchsuchen\" hinzu. Sie können Grafiken in den Dateiformaten \"png\", \"gif\" oder \"jpg\" verwenden."
 
-#: ./tlcenter_templates/view.pt:114
+#: tlcenter_templates/view.pt:114
 msgid "All categories"
 msgstr "Alle Kategorien"
 
-#: ./tlcenter.py:113
+#: tlcenter.py:110
 msgid "Allowed file extensions"
 msgstr "Erlaubte Dateierweiterungen"
 
-#: ./tlcenter.py:119
+#: tlcenter.py:116
 msgid "Allowed image file extension"
 msgstr "Erlaubte Grafik-Dateierweiterungen"
 
-#: ./tlcenter_templates/view.pt:124
+#: tlcenter_templates/view.pt:124
 msgid "Any version"
 msgstr "Jede Version"
 
-#: ./tlcenter.py:60
+#: tlcenter.py:59
 msgid "Available Categories"
 msgstr "Verfügbare Kategorien"
 
-#: ./tlproject_templates/view.pt:76
+#: tlproject_templates/view.pt:76
 msgid "Available Downloads"
 msgstr "Verfügbare Downloads"
 
-#: ./tlcenter.py:65
+#: tlcenter.py:64
 msgid "Available Licenses"
 msgstr "Verfügbare Lizenzen"
 
-#: ./tlcenter.py:95
+#: tlcenter.py:92
 msgid "Available Platforms"
 msgstr "Verfügbare Plattformen"
 
-#: ./tlcenter.py:90
+#: tlcenter.py:87
 msgid "Available Versions"
 msgstr "Verfügbare Versionen"
 
-#: ./tlcenter_templates/view.pt:254
+#: tlcenter_templates/view.pt:254
 msgid "Browse"
 msgstr "Suchen"
 
-#: ./tlcenter_templates/view.pt:257
+#: tlcenter_templates/view.pt:257
 msgid "Browse Templates by Category"
 msgstr "Suchen von Vorlagen nach Kategorie"
 
-#: ./mailtoauthor.py:199
+#: mailtoauthor.py:199
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: ./tlproject_templates/view.pt:56
+#: tlproject_templates/view.pt:56
 msgid "Category/Categories"
 msgstr "Kategorie/Kategorien"
 
-#: ./tlproject.py:262
+#: tlproject.py:262
 msgid "Choose your categories"
 msgstr "Wählen Sie Ihre Kategorien"
 
-#: ./tlproject_templates/view.pt:67
+#: tlproject_templates/view.pt:67
 msgid "Compatibility"
 msgstr "Kompatibilität"
 
-#: ./tlproject.py:318
+#: tlproject.py:318
 msgid "Compatible with versions of the product"
 msgstr "Kompatibel mit den Produkt-Versionen"
 
-#: ./tlproject.py:272
+#: tlproject.py:272
 msgid "Contact email-address"
 msgstr "Kontakt-Email-Adresse"
 
-#: ./tlproject.py:273
+#: tlproject.py:273
 msgid "Contact email-address for the project."
 msgstr "Kontakt-Email-Adresse für das Projekt.."
 
-#: ./mailtoauthor.py:116
+#: mailtoauthor.py:116
 msgid "Contact the project author and send your feedback"
 msgstr "Kontaktieren Sie den Projekt-Autoren und senden Sie Feedback"
 
-#: ./tlcenter_templates/view.pt:214
+#: tlcenter_templates/view.pt:214
 msgid "Currently there are"
 msgstr "Aktuell sind hier"
 
-#: ./tlcenter.py:42
+#: tlcenter.py:41
 msgid "Description of the Templates Center"
 msgstr "Beschreibung des Vorlagen-Centers"
 
-#: ./tlcenter.py:46
+#: tlcenter.py:45
 msgid "Description of the features of templates"
 msgstr "Beschreibung der Funktionen von Vorlagen"
 
-#: ./tlcenter.py:200
+#: tlcenter.py:197
 msgid "EMail address for communication with the template center manager and reviewer"
 msgstr "E-Mail-Adresse zur Kommunikation mit demTemplate-Center-Manager und -Reviewer"
 
-#: ./tlcenter.py:203
+#: tlcenter.py:200
 msgid "Enter an email address for the communication with template center manager and reviewer"
 msgstr "Fügen Sie eine E-Mail-Adresse für die Kommunikation mit dem Template-Center-Manager und -Reviewer ein"
 
-#: ./tlcenter.py:189
+#: tlcenter.py:186
 msgid "Enter an information about the search for older versions of the product, if they are not on the versions list (compatibility) anymore."
 msgstr "Fügen Sie eine Information über die Suche nach älteren Produkt-LibreOffice ein, sofern diese nicht mehr in der Versionsliste (Kompatibilität) sind."
 
-#: ./tlcenter.py:179
+#: tlcenter.py:176
 msgid "Enter any legal disclaimer and limitations for downloads that should appear on each page for dowloadable files."
 msgstr "Fügen Sie den Text der  rechtlichen Hinweise und Einschränkungen für Downloads ein, der auf jeder Seite für herunter ladbare Dateien erscheinen soll."
 
-#: ./tlcenter.py:159
+#: tlcenter.py:156
 msgid "Enter the text of the legal disclaimer and limitations that should be displayed to the project creator and should be accepted by the owner of the project."
 msgstr "Fügen Sie den Text der rechtlichen Hinweise und Einschränkungen ein, der dem Ersteller eines Projektes angezeigt und von dem Projekt-Eigentümer zu akzeptieren ist."
 
-#: ./tlproject_templates/view.pt:85
+#: tlproject_templates/view.pt:85
 msgid "File size:"
 msgstr "Dateigröße:"
 
-#: ./tlcenter.py:114
+#: tlcenter.py:111
 msgid "Fill in the allowed file extensions, seperated by a pipe '|'."
 msgstr "Fügen Sie die erlaubten Datei-Erweiterungen ein, getrennt durch einen senkrechten Trennstrich '|'."
 
-#: ./tlcenter.py:120
+#: tlcenter.py:117
 msgid "Fill in the allowed image file extensions, seperated by a pipe '|'."
 msgstr "Fügen Sie die erlaubten Grafik-Datei-Erweiterungen ein, getrennt durch einen senkrechten Strich '|'."
 
-#: ./tlcenter.py:163
+#: tlcenter.py:160
 msgid "Fill in the legal disclaimer, that had to be accepted by the project owner"
 msgstr "Fügen Sie den Haftungsausschluss ein, der von den Projekteigentümern zu akzeptieren ist"
 
-#: ./tlcenter.py:182
+#: tlcenter.py:179
 msgid "Fill in the text for the legal download disclaimer"
 msgstr "Füllen Sie den Text für den Download-Haftungsausschluss ein"
 
-#: ./tlproject.py:361
+#: tlproject.py:361
 msgid "First uploaded file is compatible with the Platform(s)"
 msgstr "Die erste hochgeladene Datei ist kompatibel mit den Plattformen"
 
-#: ./tlproject.py:210
+#: tlproject.py:210
 msgid "Full project description"
 msgstr "Komplette Projekt-Beschreibung"
 
-#: ./tlproject.py:380
+#: tlproject.py:380
 msgid "Here you could add an optional second file to your project, if the files support different platforms."
 msgstr "Hier können Sie  eine optionale zweite Datei Ihrem Projekt hinzufügen, falls die Dateien unterschiedliche Plattformen unterstützen."
 
-#: ./tlproject.py:412
+#: tlproject.py:412
 msgid "Here you could add an optional third file to your project, if the files support different platforms."
 msgstr "Hier können Sie  eine optionale dritte Datei Ihrem Projekt hinzufügen, falls die Dateien unterschiedliche Plattformen unterstützen."
 
-#: ./tlcenter_templates/view.pt:130
+#: tlcenter_templates/view.pt:130
 msgid "Highest Rated"
 msgstr "Am höchsten bewertet"
 
-#: ./tlcenter_templates/own_projects.pt:49
+#: tlcenter_templates/own_projects.pt:49
 msgid "If you already created a new"
 msgstr "Falls Sie bereits ein neues"
 
-#: ./tlproject.py:184
+#: tlproject.py:184
 msgid "Information"
 msgstr "Information"
 
-#: ./tlcenter.py:188
+#: tlcenter.py:185
 msgid "Information about search for old product versions"
 msgstr "Information zur Suche nach älteren Produkt-Versionen"
 
-#: ./tlcenter_templates/view.pt:270
-#: ./tlproject_templates/view.pt:128
+#: tlcenter_templates/view.pt:270 tlproject_templates/view.pt:128
 msgid "Install Instructions"
 msgstr "Installationsanleitung"
 
-#: ./configure.zcml:30
+#: configure.zcml:30
 msgid "Installs the collective.templates add-on."
 msgstr "Installiert das collective.templates Add-on."
 
-#: ./tlcenter.py:141
+#: tlcenter.py:138
 msgid "Instruction how to report Bugs"
 msgstr "Anleitung, wie ein Fehler gemeldet wird"
 
-#: ./mailtoauthor.py:28
-#: ./tlcenter.py:29
-#: ./tlproject.py:35
+#: mailtoauthor.py:28 tlcenter.py:28 tlproject.py:35
 msgid "Invalid email address"
 msgstr "Ungültige Email-Adresse"
 
-#: ./tlproject.py:132
+#: tlproject.py:132
 msgid "It is necessary that you accept the Legal Declaration"
 msgstr "Es ist erforderlich, dass Sie den Haftungsausschluss akzeptieren"
 
-#: ./tlcenter.py:172
+#: tlcenter.py:169
 msgid "Legal Disclaimer And Limitations For Downloads"
 msgstr "Rechtliche Hinweise und Einschränkungen für das Herunterladen"
 
-#: ./tlcenter.py:153
+#: tlcenter.py:150
 msgid "Legal Disclaimer and Limitations"
 msgstr "Rechtliche Hinweise und Einschränkungen"
 
-#: ./tlproject.py:225
+#: tlproject.py:225
 msgid "License of the uploaded file"
 msgstr "Lizenz der hochgeladenen Datei"
 
-#: ./tlproject_templates/view.pt:62
+#: tlproject_templates/view.pt:62
 msgid "License(s)"
 msgstr "Lizenz(en)"
 
-#: ./mailtoauthor.py:115
+#: mailtoauthor.py:115
 msgid "Mail To The Project Author"
 msgstr "E-Mail an den Projekt-Autor"
 
-#: ./tlcenter_templates/view.pt:40
+#: tlcenter_templates/view.pt:40
 msgid "Most Popular ${product_title}"
 msgstr "Beliebteste ${product_title}"
 
-#: ./tlcenter_templates/view.pt:226
+#: tlcenter_templates/view.pt:226
 msgid "Most recent"
 msgstr "Aktuellste"
 
-#: ./tlcenter.py:51
+#: tlcenter.py:50
 msgid "Name of the Template product, e.g. only Templates"
 msgstr "Name des Vorlagen-Produkts, z.B.. nur Vorlagen"
 
-#: ./tlcenter.py:38
+#: tlcenter.py:37
 msgid "Name of the Templates Center"
 msgstr "Name des Vorlagen-Center"
 
-#: ./tlcenter_templates/view.pt:131
+#: tlcenter_templates/view.pt:131
 msgid "Newest"
 msgstr "Neueste"
 
-#: ./tlcenter_templates/view.pt:150
+#: tlcenter_templates/view.pt:150
 msgid "No results were found."
 msgstr "Keine Ergebnisse gefunden."
 
-#: ./mailtoauthor.py:41
+#: mailtoauthor.py:41
 msgid "Not a valid project name. Please retry."
 msgstr "Kein gültiger Projektname. Bitte versuchen Sie es nochmals."
 
-#: ./tlproject.py:461
+#: tlproject.py:461
 msgid "Please accept the Legal Declaration about your file(s) and your Uploaded File"
 msgstr "Bitte akzeptieren Sie den Haftungsausschluss für ihre Datei(en) und  Ihre hochgeladenen Datei"
 
-#: ./tlproject.py:469
+#: tlproject.py:469
 msgid "Please choose a compatible platform for the uploaded file."
 msgstr "Bitte wählen Sie eine zu der hochgeladenen Datei kompatible Plattform."
 
-#: ./tlproject.py:445
+#: tlproject.py:445
 msgid "Please choose a license for the file(s) you want toupload."
 msgstr "Bitte wählen Sie eine Lizenz für die Datei(en), die Sie hochladen wollen."
 
-#: ./tlproject.py:452
+#: tlproject.py:452
 msgid "Please choose one or more compatible product versions for the file(s) you want to upload."
 msgstr "Bitte wählen Sie eine oder mehrere kompatible Produktversionen für die Datei(en), die Sie hochladen wollen."
 
-#: ./tlproject.py:249
+#: tlproject.py:249
 msgid "Please declare that you accept the above legal disclaimer."
 msgstr "Bitte erklären Sie, dass Sie den obigen Haftungsausschluss akzeptieren."
 
-#: ./tlcenter.py:135
+#: tlcenter.py:132
 msgid "Please fill in the install instructions"
 msgstr "Bitte füllen Sie die Installationsanweisungen ein"
 
-#: ./mailtoauthor.py:79
+#: mailtoauthor.py:79
 msgid "Please fill in your email address."
 msgstr "Bitte tragen Sie Ihre E-Mail-Adresse ein."
 
-#: ./mailtoauthor.py:74
+#: mailtoauthor.py:74
 msgid "Please fill in your familiy name"
 msgstr "Bitte tragen Sie Ihren Familiennamen ein"
 
-#: ./mailtoauthor.py:69
+#: mailtoauthor.py:69
 msgid "Please fill in your first name(s)"
 msgstr "Bitte tragen Sie Ihre(n) Vornamen ein."
 
-#: ./tlproject_templates/view.pt:36
+#: tlproject_templates/view.pt:36
 msgid "Please make sure the relevant project information has been entered and submit your project for approval (publication)."
 msgstr "Bitte stellen Sie sicher, dass die relevanten Projekt-Informationen eingetragen sind und übermitteln Sie Ihr Projekt zur Prüfung (Veröffentlichung)."
 
-#: ./tlproject.py:226
+#: tlproject.py:226
 msgid "Please mark one or more licenses under which you publish your file(s)."
 msgstr "Bitte markieren Sie eine oder mehrere Lizenzen, unter denen Sie die Datei(en) veröffentlichen wollen."
 
-#: ./tlproject.py:362
+#: tlproject.py:362
 msgid "Please mark one or more platforms with which the uploaded file is compatible."
 msgstr "Bitte markieren Sie eine oder mehrere Plattformen, mit denen die hochgeladene Datei kompatibel ist."
 
-#: ./tlproject.py:319
+#: tlproject.py:319
 msgid "Please mark one or more program versions with which this uploaded file is compatible with."
 msgstr "Bitte markieren Sie eine oder mehrere Programm-Versionen, mit denen dieses Release kompatibel ist."
 
-#: ./tlproject.py:263
+#: tlproject.py:263
 msgid "Please select the appropriate categories (one or more) for your project."
 msgstr "Bitte wählen Sie eine passende Kategorie (eine oder mehrere) für ihre Projekt."
 
-#: ./tlproject.py:354
+#: tlproject.py:354
 msgid "Please upload your file."
 msgstr "Bitte laden Sie Ihre Datei hoch."
 
-#: ./mailtoauthor.py:148
+#: mailtoauthor.py:148
 msgid "Please validate the recaptcha field before sending the form."
 msgstr "Bitte validieren Sie das Recaptcha-Feld, bevor Sie das Formular absenden."
 
-#: ./mailtoauthor.py:84
+#: mailtoauthor.py:84
 msgid "Project Name"
 msgstr "Projekt-Name"
 
-#: ./tlproject_templates/view.pt:114
+#: tlproject_templates/view.pt:114
 msgid "Project Resources"
 msgstr "Projekt Ressourcen"
 
-#: ./tlproject.py:204
+#: tlproject.py:204
 msgid "Project Summary"
 msgstr "Projekt-Zusammenfassung"
 
-#: ./tlproject.py:197
+#: tlproject.py:197
 msgid "Project Title - minimum 5 and maximum 50 characters"
 msgstr "Projekt-Titel  - mindestens 5 und höchstens 50 Zeichen"
 
-#: ./tlcenter_templates/view.pt:274
+#: tlcenter_templates/view.pt:274
 msgid "Reporting Template-Bugs"
 msgstr "Vorlagen-Bugs melden"
 
-#: ./tlproject_templates/view.pt:116
+#: tlproject_templates/view.pt:116
 msgid "Screenshot"
 msgstr "Bildschirmfoto"
 
-#: ./tlproject.py:292
+#: tlproject.py:292
 msgid "Screenshot of the Template"
 msgstr "Bildschirmfoto der Vorlage"
 
-#: ./tlcenter_templates/view.pt:139
+#: tlcenter_templates/view.pt:139
 msgid "Search"
 msgstr "Suchen"
 
-#: ./tlcenter_templates/view.pt:105
+#: tlcenter_templates/view.pt:105
 msgid "Search ${product_title}"
 msgstr "Suche ${product_title}"
 
-#: ./tlproject.py:387
+#: tlproject.py:387
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr "Die zweite hochgeladene Datei ist kompatibel mit den Plattformen"
 
-#: ./mailtoauthor.py:129
+#: mailtoauthor.py:129
 msgid "Send Email"
 msgstr "E-Mail senden"
 
-#: ./tlcenter_templates/view.pt:112
+#: tlcenter_templates/view.pt:112
 msgid "Show"
 msgstr "Anzeigen"
 
-#: ./tlcenter_templates/view.pt:127
+#: tlcenter_templates/view.pt:127
 msgid "Sort On"
 msgstr "Sortieren nach"
 
-#: ./tlcenter_templates/own_projects.pt:48
+#: tlcenter_templates/own_projects.pt:48
 msgid "Submit new"
 msgstr "Übermittele neue"
 
-#: ./tlcenter_templates/view.pt:219
+#: tlcenter_templates/view.pt:219
 msgid "Submit your"
 msgstr "Übermitteln Sie Ihre"
 
-#: ./tlcenter.py:50
+#: tlcenter.py:49
 msgid "Template Product Name"
 msgstr "Vorlagen-Produktname"
 
-#: ./tlcenter.py:134
+#: tlcenter.py:131
 msgid "Template installation instructions"
 msgstr "Installationsanleitung für Vorlagen"
 
-#: ./tlcenter_templates/view.pt:212
+#: tlcenter_templates/view.pt:212
 msgid "Templates"
 msgstr "Vorlagen"
 
-#: ./profiles/default/types/collective.templates.tlcenter.xml
+#: profiles/default/types/collective.templates.tlcenter.xml
 msgid "Templates Center"
 msgstr "Vorlagen-Center"
 
-#: ./profiles/default/types/collective.templates.tlproject.xml
+#: profiles/default/types/collective.templates.tlproject.xml
 msgid "Templates Project"
 msgstr "Ein Vorlagen Projekt"
 
-#: ./tlcenter.py:158
+#: tlcenter.py:155
 msgid "Text of the Legal Disclaimer and Limitations"
 msgstr "Text der rechtlichen Hinweise und -begrenzungen"
 
-#: ./tlcenter.py:178
+#: tlcenter.py:175
 msgid "Text of the Legal Disclaimer and Limitations for Downlaods"
 msgstr "Text der rechtlichen Hinweise und -begrenzungen für Downloads"
 
-#: ./tlproject.py:185
+#: tlproject.py:185
 msgid "The Dialog to create a new project consists of different register. Please go through this register and fill in the appropriate data for your project or choose one of the options that are provided. You could upload one or more files to your project on the register 'File Upload' and 'Optional Further File Upload'."
 msgstr "Der Dialog zum Erstellen eines neuen Projektes besteht aus verschiedenen Registern. Bitte gehen Sie durch diese Register und tragen Sie die entsprechenden Daten für Ihr Projekt ein oder wählen Sie aus den verfügbaren Optionen. Sie können eine oder mehrere Dateien zu Ihrem Projekt auf den Registern 'File Upload' und 'Optional Further File Upload' hochladen."
 
-#: ./tlproject.py:338
+#: tlproject.py:338
 msgid "The first file you want to upload"
 msgstr "Die erste Datei, die Sie hochladen wollen"
 
-#: ./tlproject.py:353
+#: tlproject.py:353
 msgid "The first file you want to upload."
 msgstr "Die erste Datei, die Sie hochladen wollen."
 
-#: ./tlproject.py:286
+#: tlproject.py:286
 msgid "The following file extensions are allowed for screenshot files (upper case and lower case and mix of both):"
 msgstr "Die folgenden Dateierweiterungen sind für Bildschirmfoto-Dateien erlaubt (Groß- und Kleinschreibung und ein Mix aus beiden):"
 
-#: ./tlproject.py:347
+#: tlproject.py:347
 msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
 msgstr "Die folgenden Dateierweiterungen sind für Vorlagen-Dateien erlaubt (Groß- und Kleinschreibung und ein Mix aus beiden):"
 
-#: ./mailtoauthor.py:85
+#: mailtoauthor.py:85
 msgid "The name of the project, to which author you want to send feedback."
 msgstr "Der Name des Projekts, dessen Autor Sie Feedback senden wollen."
 
-#: ./tlproject.py:538
+#: tlproject.py:538
 msgid "The project title is already in use."
 msgstr "Der Projekt-Titel wird bereits verwendet."
 
-#: ./tlproject.py:403
+#: tlproject.py:403
 msgid "The second file you want to upload (this is optional)"
 msgstr "Die zweite Datei, die Sie hochladen wollen (dies ist optional)."
 
-#: ./tlproject.py:379
+#: tlproject.py:379
 msgid "The second file you want to upload."
 msgstr "Die zweite Datei, die Sie hochladen wollen."
 
-#: ./tlproject.py:411
+#: tlproject.py:411
 msgid "The third file you want to upload"
 msgstr "Die dritte Datei, die Sie hochladen wollen"
 
-#: ./tlproject.py:435
+#: tlproject.py:435
 msgid "The third file you want to upload (this is optional)"
 msgstr "Die dritte Datei, die Sie hochladen wollen (dies ist optional)"
 
-#: ./tlcenter_templates/own_projects.pt:13
+#: tlcenter_templates/own_projects.pt:13
 msgid "These are your projects on this site:"
 msgstr "Dies sind Ihre Projekte auf dieser Seite:"
 
-#: ./tlproject.py:419
+#: tlproject.py:419
 msgid "Third uploaded file is compatible with the Platform(s))"
 msgstr "Die dritte hochgeladene Datei ist kompatibel mit den Plattformen"
 
-#: ./tlproject.py:196
+#: tlproject.py:196
 msgid "Title"
 msgstr "Titel"
 
-#: ./tlcenter.py:152
+#: tlcenter.py:149
 msgid "Title for Legal Disclaimer and Limitations"
 msgstr "Titel für rechtliche Hinweise und Einschränkungen"
 
-#: ./tlcenter.py:170
+#: tlcenter.py:167
 msgid "Title of the Legal Disclaimer and Limitations for Downloads"
 msgstr "Titel für rechtliche Hinweise und Einschränkungen für Downloads"
 
-#: ./configure.zcml:39
+#: configure.zcml:39
 msgid "Uninstalls the collective.templates add-on."
 msgstr "Deinstalliert das collective.templates Add-on."
 
-#: ./tlproject.py:303
+#: tlproject.py:303
 msgid "Version Number of the Template File (up to twelf chars) which you upload in this project."
 msgstr "Version-Nummer der Vorlagen-Datei (bis zu zwölf Zeichen), die Sie zu diesem Projekt hochladen wollen."
 
-#: ./tlproject.py:302
+#: tlproject.py:302
 msgid "Versions Number"
 msgstr "Version-Nummer"
 
-#: ./mailtoauthor.py:190
+#: mailtoauthor.py:190
 msgid "We send your message to the author of the project. It's on her / his choice, if she'll / he'll get back to you."
 msgstr "Wir senden Ihre Nachricht an den Projekt-Autor. Es ist ihre / seine Entscheidung, ob sie / er sich bei Ihnen meldet."
 
-#: ./mailtoauthor.py:92
+#: mailtoauthor.py:92
 msgid "What is your message to the author of the project? Your message is limited to 1000 characters."
 msgstr "Wie lautet Ihre Nachricht an den Projekt-Autor? Ihre Nachricht ist auf 1000 Zeichen begrenzt."
 
-#: ./tlcenter_templates/own_projects.pt:20
+#: tlcenter_templates/own_projects.pt:20
 msgid "You currently have no projects on this site."
 msgstr "Sie haben aktuell keine Projekte auf dieser Seite."
 
-#: ./tlproject.py:339
+#: tlproject.py:339
 msgid "You need only to upload one file to your project. There are options for further two file uploads if you want to provide files for different platforms."
 msgstr "Sie brauchen nur eine Datei zu Ihrem Projekt hochladen. Es bestehen Möglichkeiten für das Hochladen von zwei weiteren Dateien, falls Sie Dateien für andere Plattformen zur Verfügung stellen wollen."
 
-#: ./mailtoauthor.py:78
+#: mailtoauthor.py:78
 msgid "Your Email Address"
 msgstr "Ihre E-Mail-Adresse"
 
-#: ./mailtoauthor.py:73
+#: mailtoauthor.py:73
 msgid "Your Family Name"
 msgstr "Ihr Familienname"
 
-#: ./mailtoauthor.py:68
+#: mailtoauthor.py:68
 msgid "Your First Name"
 msgstr "Ihr Vorname"
 
-#: ./mailtoauthor.py:91
+#: mailtoauthor.py:91
 msgid "Your Message To The Author"
 msgstr "Ihre Nachricht an den Autor"
 
-#: ./tlcenter_templates/own_projects.pt:12
+#: tlcenter_templates/own_projects.pt:12
 msgid "Your Own Projects"
 msgstr "Ihre eigenen Projekte"
 
-#: ./tlproject_templates/view.pt:42
+#: tlproject_templates/view.pt:42
 msgid "Your project has been submitted for publication and will be reviewed now. You will get an email, once the status of your project changed again."
 msgstr "Ihr Projekt wurde zur Veröffentlichung übermittelt und wird nun geprüft. Sie bekommen eine Email, sobald sich der Status Ihres Projektes erneut ändert."
 
-#: ./tlcenter_templates/view.pt:255
+#: tlcenter_templates/view.pt:255
 msgid "by Category"
 msgstr "nach Kategorie"
 
-#: ./configure.zcml:30
+#: configure.zcml:30
 msgid "collective.templates"
 msgstr "collective.templates"
 
-#: ./configure.zcml:39
+#: configure.zcml:39
 msgid "collective.templates (uninstall)"
 msgstr "collective.templates (deinstallierenl)"
 
-#: ./tlcenter_templates/view.pt:85
+#: tlcenter_templates/view.pt:85
 msgid "in"
 msgstr "in"
 
-#: ./tlcenter_templates/own_projects.pt:51
+#: tlcenter_templates/own_projects.pt:51
 msgid "please submit your new"
 msgstr "bitte übermitteln Sie Ihre neue"
 
-#: ./tlcenter_templates/view.pt:215
+#: tlcenter_templates/view.pt:215
 msgid "project(s) available."
 msgstr "Projekte verfügbar."
 
-#: ./tlcenter_templates/view.pt:153
+#: tlcenter_templates/view.pt:153
 msgid "projects matching your criteria."
 msgstr "Projekte entsprechen Ihren Kritierien."

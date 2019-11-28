@@ -46,11 +46,11 @@ msgstr ""
 msgid "All categories"
 msgstr ""
 
-#: ./tlcenter.py:113
+#: ./tlcenter.py:110
 msgid "Allowed file extensions"
 msgstr ""
 
-#: ./tlcenter.py:119
+#: ./tlcenter.py:116
 msgid "Allowed image file extension"
 msgstr ""
 
@@ -58,7 +58,7 @@ msgstr ""
 msgid "Any version"
 msgstr ""
 
-#: ./tlcenter.py:60
+#: ./tlcenter.py:59
 msgid "Available Categories"
 msgstr ""
 
@@ -66,15 +66,15 @@ msgstr ""
 msgid "Available Downloads"
 msgstr ""
 
-#: ./tlcenter.py:65
+#: ./tlcenter.py:64
 msgid "Available Licenses"
 msgstr ""
 
-#: ./tlcenter.py:95
+#: ./tlcenter.py:92
 msgid "Available Platforms"
 msgstr ""
 
-#: ./tlcenter.py:90
+#: ./tlcenter.py:87
 msgid "Available Versions"
 msgstr ""
 
@@ -122,31 +122,31 @@ msgstr ""
 msgid "Currently there are"
 msgstr ""
 
-#: ./tlcenter.py:42
+#: ./tlcenter.py:41
 msgid "Description of the Templates Center"
 msgstr ""
 
-#: ./tlcenter.py:46
+#: ./tlcenter.py:45
 msgid "Description of the features of templates"
 msgstr ""
 
-#: ./tlcenter.py:200
+#: ./tlcenter.py:197
 msgid "EMail address for communication with the template center manager and reviewer"
 msgstr ""
 
-#: ./tlcenter.py:203
+#: ./tlcenter.py:200
 msgid "Enter an email address for the communication with template center manager and reviewer"
 msgstr ""
 
-#: ./tlcenter.py:189
+#: ./tlcenter.py:186
 msgid "Enter an information about the search for older versions of the product, if they are not on the versions list (compatibility) anymore."
 msgstr ""
 
-#: ./tlcenter.py:179
+#: ./tlcenter.py:176
 msgid "Enter any legal disclaimer and limitations for downloads that should appear on each page for dowloadable files."
 msgstr ""
 
-#: ./tlcenter.py:159
+#: ./tlcenter.py:156
 msgid "Enter the text of the legal disclaimer and limitations that should be displayed to the project creator and should be accepted by the owner of the project."
 msgstr ""
 
@@ -154,19 +154,19 @@ msgstr ""
 msgid "File size:"
 msgstr ""
 
-#: ./tlcenter.py:114
+#: ./tlcenter.py:111
 msgid "Fill in the allowed file extensions, seperated by a pipe '|'."
 msgstr ""
 
-#: ./tlcenter.py:120
+#: ./tlcenter.py:117
 msgid "Fill in the allowed image file extensions, seperated by a pipe '|'."
 msgstr ""
 
-#: ./tlcenter.py:163
+#: ./tlcenter.py:160
 msgid "Fill in the legal disclaimer, that had to be accepted by the project owner"
 msgstr ""
 
-#: ./tlcenter.py:182
+#: ./tlcenter.py:179
 msgid "Fill in the text for the legal download disclaimer"
 msgstr ""
 
@@ -198,7 +198,7 @@ msgstr ""
 msgid "Information"
 msgstr ""
 
-#: ./tlcenter.py:188
+#: ./tlcenter.py:185
 msgid "Information about search for old product versions"
 msgstr ""
 
@@ -211,12 +211,12 @@ msgstr ""
 msgid "Installs the collective.templates add-on."
 msgstr ""
 
-#: ./tlcenter.py:141
+#: ./tlcenter.py:138
 msgid "Instruction how to report Bugs"
 msgstr ""
 
 #: ./mailtoauthor.py:28
-#: ./tlcenter.py:29
+#: ./tlcenter.py:28
 #: ./tlproject.py:35
 msgid "Invalid email address"
 msgstr ""
@@ -225,11 +225,11 @@ msgstr ""
 msgid "It is necessary that you accept the Legal Declaration"
 msgstr ""
 
-#: ./tlcenter.py:172
+#: ./tlcenter.py:169
 msgid "Legal Disclaimer And Limitations For Downloads"
 msgstr ""
 
-#: ./tlcenter.py:153
+#: ./tlcenter.py:150
 msgid "Legal Disclaimer and Limitations"
 msgstr ""
 
@@ -253,11 +253,11 @@ msgstr ""
 msgid "Most recent"
 msgstr ""
 
-#: ./tlcenter.py:51
+#: ./tlcenter.py:50
 msgid "Name of the Template product, e.g. only Templates"
 msgstr ""
 
-#: ./tlcenter.py:38
+#: ./tlcenter.py:37
 msgid "Name of the Templates Center"
 msgstr ""
 
@@ -293,7 +293,7 @@ msgstr ""
 msgid "Please declare that you accept the above legal disclaimer."
 msgstr ""
 
-#: ./tlcenter.py:135
+#: ./tlcenter.py:132
 msgid "Please fill in the install instructions"
 msgstr ""
 
@@ -397,11 +397,11 @@ msgstr ""
 msgid "Submit your"
 msgstr ""
 
-#: ./tlcenter.py:50
+#: ./tlcenter.py:49
 msgid "Template Product Name"
 msgstr ""
 
-#: ./tlcenter.py:134
+#: ./tlcenter.py:131
 msgid "Template installation instructions"
 msgstr ""
 
@@ -417,11 +417,11 @@ msgstr ""
 msgid "Templates Project"
 msgstr ""
 
-#: ./tlcenter.py:158
+#: ./tlcenter.py:155
 msgid "Text of the Legal Disclaimer and Limitations"
 msgstr ""
 
-#: ./tlcenter.py:178
+#: ./tlcenter.py:175
 msgid "Text of the Legal Disclaimer and Limitations for Downlaods"
 msgstr ""
 
@@ -481,11 +481,11 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: ./tlcenter.py:152
+#: ./tlcenter.py:149
 msgid "Title for Legal Disclaimer and Limitations"
 msgstr ""
 
-#: ./tlcenter.py:170
+#: ./tlcenter.py:167
 msgid "Title of the Legal Disclaimer and Limitations for Downloads"
 msgstr ""
 
