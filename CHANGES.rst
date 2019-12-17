@@ -5,8 +5,9 @@ Changelog
 1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Add information about buildout entries and update documentation
+  in HTML and PDF file format. [Andreas Mantke]
+- Add versions to test_plone52.cfg [Andreas Mantke]
 
 
 1.0 (2019-11-30)
