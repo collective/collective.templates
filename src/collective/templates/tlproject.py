@@ -519,6 +519,7 @@ def notifyAboutNewReviewlistentry(self, event):
                  'The Admin of the Website',
         )
 
+
 def textmodified_project(self, event):
     state = api.content.get_state(self)
     if (self.__parent__.contactForCenter) is not None:
