@@ -519,6 +519,33 @@ def notifyAboutNewReviewlistentry(self, event):
                  'The Admin of the Website',
         )
 
+def textmodified_project(self, event):
+    state = api.content.get_state(self)
+    if (self.__parent__.contactForCenter) is not None:
+        mailrecipient = str(self.__parent__.contactForCenter)
+    else:
+        mailrecipient = api.portal.get_registry_record(
+            'plone.email_from_address')
+    if state == 'published':
+        if self.details is not None:
+            detailed_description = self.details.output
+        else:
+            detailed_description = None
+
+        api.portal.send_email(
+            recipient=mailrecipient,
+            sender=(u'{0} <{1}>').format(
+                'Admin of the Website', mailrecipient),
+            subject=(u'The content of the project {0} has '
+                     u'changed').format(self.title),
+            body=(u'The content of the project {0} has changed. Here you get '
+                  u'the text of the description field of the '
+                  u"project: \n'{1}\n\nand this is the text of the "
+                  u"details field:\n{2}'").format(self.title,
+                                                  self.description,
+                                                  detailed_description),
+        )
+
 
 class ValidateTLProjectUniqueness(validator.SimpleFieldValidator):
     # Validate site-wide uniqueness of project titles.

@@ -109,6 +109,12 @@
     handler="collective.templates.notifications.notifiyAboutNewVersion"
     />
 
+  <subscriber
+    for="collective.templates.tlproject.ITLProject
+         zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+    handler="collective.templates.tlproject.textmodified_project"
+    />
+
   <browser:viewlet
       name="ownprojects"
       for="collective.templates.tlcenter.ITLCenter"
