@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2019-11-28 21:25+0100\n"
+"PO-Revision-Date: 2020-03-25 15:15+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -88,7 +88,7 @@ msgstr "Suchen"
 msgid "Browse Templates by Category"
 msgstr "Suchen von Vorlagen nach Kategorie"
 
-#: mailtoauthor.py:199
+#: mailtoauthor.py:200 mailtoprojectowner.py:193
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -108,6 +108,10 @@ msgstr "Kompatibilität"
 msgid "Compatible with versions of the product"
 msgstr "Kompatibel mit den Produkt-Versionen"
 
+#: tlcenter_templates/view.pt:282
+msgid "Contact a Project Author"
+msgstr "Einen Projekt-Autor kontaktieren"
+
 #: tlproject.py:272
 msgid "Contact email-address"
 msgstr "Kontakt-Email-Adresse"
@@ -116,9 +120,13 @@ msgstr "Kontakt-Email-Adresse"
 msgid "Contact email-address for the project."
 msgstr "Kontakt-Email-Adresse für das Projekt.."
 
-#: mailtoauthor.py:116
+#: mailtoauthor.py:117
 msgid "Contact the project author and send your feedback"
 msgstr "Kontaktieren Sie den Projekt-Autoren und senden Sie Feedback"
+
+#: mailtoprojectowner.py:110
+msgid "Contact the project owner and send your feedback"
+msgstr "Kontaktieren des Projekt-Eigentümers und übermitteln Sie Ihr Feedback"
 
 #: tlcenter_templates/view.pt:214
 msgid "Currently there are"
@@ -216,7 +224,7 @@ msgstr "Installiert das collective.templates Add-on."
 msgid "Instruction how to report Bugs"
 msgstr "Anleitung, wie ein Fehler gemeldet wird"
 
-#: mailtoauthor.py:28 tlcenter.py:28 tlproject.py:35
+#: mailtoauthor.py:29 mailtoprojectowner.py:31 tlcenter.py:28
 msgid "Invalid email address"
 msgstr "Ungültige Email-Adresse"
 
@@ -240,9 +248,13 @@ msgstr "Lizenz der hochgeladenen Datei"
 msgid "License(s)"
 msgstr "Lizenz(en)"
 
-#: mailtoauthor.py:115
+#: mailtoauthor.py:116
 msgid "Mail To The Project Author"
 msgstr "E-Mail an den Projekt-Autor"
+
+#: mailtoprojectowner.py:109
+msgid "Mail To The Project Owner"
+msgstr "E-Mail an den Projekt-Eigentümer"
 
 #: tlcenter_templates/view.pt:40
 msgid "Most Popular ${product_title}"
@@ -268,7 +280,7 @@ msgstr "Neueste"
 msgid "No results were found."
 msgstr "Keine Ergebnisse gefunden."
 
-#: mailtoauthor.py:41
+#: mailtoauthor.py:42
 msgid "Not a valid project name. Please retry."
 msgstr "Kein gültiger Projektname. Bitte versuchen Sie es nochmals."
 
@@ -296,15 +308,15 @@ msgstr "Bitte erklären Sie, dass Sie den obigen Haftungsausschluss akzeptieren.
 msgid "Please fill in the install instructions"
 msgstr "Bitte füllen Sie die Installationsanweisungen ein"
 
-#: mailtoauthor.py:79
+#: mailtoauthor.py:80 mailtoprojectowner.py:73
 msgid "Please fill in your email address."
 msgstr "Bitte tragen Sie Ihre E-Mail-Adresse ein."
 
-#: mailtoauthor.py:74
+#: mailtoauthor.py:75 mailtoprojectowner.py:68
 msgid "Please fill in your familiy name"
 msgstr "Bitte tragen Sie Ihren Familiennamen ein"
 
-#: mailtoauthor.py:69
+#: mailtoauthor.py:70 mailtoprojectowner.py:63
 msgid "Please fill in your first name(s)"
 msgstr "Bitte tragen Sie Ihre(n) Vornamen ein."
 
@@ -332,11 +344,11 @@ msgstr "Bitte wählen Sie eine passende Kategorie (eine oder mehrere) für ihre 
 msgid "Please upload your file."
 msgstr "Bitte laden Sie Ihre Datei hoch."
 
-#: mailtoauthor.py:148
+#: mailtoauthor.py:149 mailtoprojectowner.py:142
 msgid "Please validate the recaptcha field before sending the form."
 msgstr "Bitte validieren Sie das Recaptcha-Feld, bevor Sie das Formular absenden."
 
-#: mailtoauthor.py:84
+#: mailtoauthor.py:85 mailtoprojectowner.py:78
 msgid "Project Name"
 msgstr "Projekt-Name"
 
@@ -376,7 +388,7 @@ msgstr "Suche ${product_title}"
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr "Die zweite hochgeladene Datei ist kompatibel mit den Plattformen"
 
-#: mailtoauthor.py:129
+#: mailtoauthor.py:130 mailtoprojectowner.py:123
 msgid "Send Email"
 msgstr "E-Mail senden"
 
@@ -444,11 +456,11 @@ msgstr "Die folgenden Dateierweiterungen sind für Bildschirmfoto-Dateien erlaub
 msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
 msgstr "Die folgenden Dateierweiterungen sind für Vorlagen-Dateien erlaubt (Groß- und Kleinschreibung und ein Mix aus beiden):"
 
-#: mailtoauthor.py:85
+#: mailtoauthor.py:86 mailtoprojectowner.py:79
 msgid "The name of the project, to which author you want to send feedback."
 msgstr "Der Name des Projekts, dessen Autor Sie Feedback senden wollen."
 
-#: tlproject.py:538
+#: tlproject.py:566
 msgid "The project title is already in use."
 msgstr "Der Projekt-Titel wird bereits verwendet."
 
@@ -500,13 +512,21 @@ msgstr "Version-Nummer der Vorlagen-Datei (bis zu zwölf Zeichen), die Sie zu di
 msgid "Versions Number"
 msgstr "Version-Nummer"
 
-#: mailtoauthor.py:190
+#: mailtoauthor.py:191 mailtoprojectowner.py:184
 msgid "We send your message to the author of the project. It's on her / his choice, if she'll / he'll get back to you."
 msgstr "Wir senden Ihre Nachricht an den Projekt-Autor. Es ist ihre / seine Entscheidung, ob sie / er sich bei Ihnen meldet."
 
-#: mailtoauthor.py:92
+#: mailtoauthor.py:93 mailtoprojectowner.py:86
 msgid "What is your message to the author of the project? Your message is limited to 1000 characters."
 msgstr "Wie lautet Ihre Nachricht an den Projekt-Autor? Ihre Nachricht ist auf 1000 Zeichen begrenzt."
+
+#: tlcenter_templates/view.pt:286
+msgid "You can send a message to the author of the project and give him feedback by following the link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project author </a>.<br /> You could instead go to the page of the project and use the mail form linked from that page."
+msgstr "Sie können eine Nachricht an den Projekt-Autor senden und ihm Feedback geben, indem sie dem Link folgen und Ihre Informationen in das Formular eintragen::<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Kommen Sie in Kontakt mit dem Projekt-Autor </a>.<br />Sie können stattdessen auch auf die Projekt-Seite gehen und das dort verlinkte E-Mail-Formular verwenden."
+
+#: tlproject_templates/view.pt:136
+msgid "You can send a message to the author of the project and give him feedback by following the link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project owner </a>"
+msgstr "Sie können eine Nachricht an den Projekt-Autor senden und ihm Feedback geben, indem sie dem Link folgen und Ihre Informationen in das Formular eintragen::<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Kommen Sie in Kontakt mit dem Projekt-Autor </a>."
 
 #: tlcenter_templates/own_projects.pt:20
 msgid "You currently have no projects on this site."
@@ -516,19 +536,19 @@ msgstr "Sie haben aktuell keine Projekte auf dieser Seite."
 msgid "You need only to upload one file to your project. There are options for further two file uploads if you want to provide files for different platforms."
 msgstr "Sie brauchen nur eine Datei zu Ihrem Projekt hochladen. Es bestehen Möglichkeiten für das Hochladen von zwei weiteren Dateien, falls Sie Dateien für andere Plattformen zur Verfügung stellen wollen."
 
-#: mailtoauthor.py:78
+#: mailtoauthor.py:79 mailtoprojectowner.py:72
 msgid "Your Email Address"
 msgstr "Ihre E-Mail-Adresse"
 
-#: mailtoauthor.py:73
+#: mailtoauthor.py:74 mailtoprojectowner.py:67
 msgid "Your Family Name"
 msgstr "Ihr Familienname"
 
-#: mailtoauthor.py:68
+#: mailtoauthor.py:69 mailtoprojectowner.py:62
 msgid "Your First Name"
 msgstr "Ihr Vorname"
 
-#: mailtoauthor.py:91
+#: mailtoauthor.py:92 mailtoprojectowner.py:85
 msgid "Your Message To The Author"
 msgstr "Ihre Nachricht an den Autor"
 

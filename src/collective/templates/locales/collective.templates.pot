@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-03-25 13:56+0000\n"
+"POT-Creation-Date: 2020-03-25 14:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -538,12 +538,12 @@ msgstr ""
 msgid "What is your message to the author of the project? Your message is limited to 1000 characters."
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:287
-msgid "You can send a message to the author of the project and give him feedback by following the following the following link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project author </a>.<br /> You could instead go to the page of the project and use the mail form linked from that page."
+#: ./tlcenter_templates/view.pt:286
+msgid "You can send a message to the author of the project and give him feedback by following the link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project author </a>.<br /> You could instead go to the page of the project and use the mail form linked from that page."
 msgstr ""
 
 #: ./tlproject_templates/view.pt:136
-msgid "You can send a message to the author of the project and give him feedback by following the following the following link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project owner </a>"
+msgid "You can send a message to the author of the project and give him feedback by following the link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project owner </a>"
 msgstr ""
 
 #: ./tlcenter_templates/own_projects.pt:20
