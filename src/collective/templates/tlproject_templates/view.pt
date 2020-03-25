@@ -130,7 +130,7 @@
                      </div>
                      <div class="authorcontact">
                 <h2>Contact The Author</h2>
-                <p>You can send a message to the author of the project and
+                <p i18n:translate="">You can send a message to the author of the project and
                     give him feedback by following the following the following
                     link and fill in your information into the form:<br />
                   <a class="pointer" tal:attributes="href
