@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.1 (unreleased)
-------------------
+1.1 (2020-03-25)
+----------------
 
 - Add information about buildout entries and update documentation
   in HTML and PDF file format. [Andreas Mantke]
