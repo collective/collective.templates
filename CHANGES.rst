@@ -8,6 +8,12 @@ Changelog
 - Add information about buildout entries and update documentation
   in HTML and PDF file format. [Andreas Mantke]
 - Add versions to test_plone52.cfg [Andreas Mantke]
+- Add a messaging to the admin or a special address for the
+  edits of published project to prevent from misuse [Andreas Mantke]
+- Improve the mail to template author form and add a new module for a
+  contact with the project owner, add a link to the mail forms from
+  template project respective the template center view. [Andreas Mantke]
+- Update localization files [Andreas Mantke]
 
 
 1.0 (2019-11-30)
