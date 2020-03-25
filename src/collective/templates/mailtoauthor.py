@@ -14,6 +14,7 @@ from zope.component import adapter
 from zope.component import getMultiAdapter
 from zope.interface import implementer
 from zope.interface import Invalid
+from plone.z3cform.layout import wrap_form
 
 import logging
 import re
@@ -202,3 +203,5 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
             """
         contextURL = self.context.absolute_url()
         self.request.response.redirect(contextURL)
+
+ReCaptchaForm = wrap_form(MailToAuthorForm)

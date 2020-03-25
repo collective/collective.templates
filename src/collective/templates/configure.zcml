@@ -75,7 +75,7 @@
   <browser:page
         for="Products.CMFCore.interfaces.ISiteRoot"
         name="mail-to-template-author"
-        class="collective.templates.mailtoauthor.MailToAuthorForm"
+        class="collective.templates.mailtoauthor.ReCaptchaForm"
         permission="zope2.View"
         />
 
@@ -85,6 +85,21 @@
       provides=".mailtoauthor.IReCaptchaForm"
    />
 
+
+  <adapter factory="collective.templates.mailtoprojectowner.MailToProjectOwnerAdapter"/>
+
+  <browser:page
+        for="collective.templates.tlproject.ITLProject"
+        name="contact-template-project-owner"
+        class="collective.templates.mailtoprojectowner.ReCaptchaForm"
+        permission="zope2.View"
+        />
+
+  <adapter
+      factory=".mailtoprojectowner.ReCaptcha"
+      for="collective.templates.tlproject.ITLProject"
+      provides=".mailtoprojectowner.IReCaptchaForm"
+   />
   <subscriber
       for="collective.templates.tlproject.ITLProject
                zope.lifecycleevent.interfaces.IObjectAddedEvent"
