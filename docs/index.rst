@@ -12,3 +12,4 @@ User documentation
    source/addnewtemplateproject.rst
    source/publishtemplateproject.rst
    source/messaging.rst
+   source/contacttotemplateproject.rst
