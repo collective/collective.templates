@@ -1,0 +1,137 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Messaging &#8212; collective.templates 1.2 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contact To A Template Project" href="contacttotemplateproject.html" />
+    <link rel="prev" title="Publish A Template Project" href="publishtemplateproject.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="messaging">
+<h1>Messaging<a class="headerlink" href="#messaging" title="Permalink to this headline">¶</a></h1>
+<p>The collective.template Plone add-on use some of the Plone messaging
+implementations to create messages to the site admin, reviewers and the
+owner / creator of teplate projects.</p>
+<div class="section" id="messages-to-the-site-admininstrator-administrator">
+<h2>Messages To The Site-Admininstrator / Administrator<a class="headerlink" href="#messages-to-the-site-admininstrator-administrator" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The site-administrator / admiinstrator get an e-mail once a new
+template project have been added to the template center.</li>
+<li>If the project owner submit her / his project for publication, the
+site-administrator / administrator get an e-mail about this event.</li>
+</ul>
+<p>If the form field ‘contactForCenter’ in the templaten center contains an
+e-mail address the above messages will be send to this address. Otherwise
+the e-mail goes to the e-mail address of the Plone site.</p>
+</div>
+<div class="section" id="messages-to-the-project-owner">
+<h2>Messages To The Project Owner<a class="headerlink" href="#messages-to-the-project-owner" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Once a workflow status of his project(s) change the project owner will get a
+message (e-mail) which inform her / him about this new status.</li>
+<li>Once the site-administrator / administrator of the Plone site adds a new
+product version to the form field ‘Available Versions’ the owner of a
+project will get an e-mail to inform her / him about this event. The message
+ask the owner to update the versions list of his
+project(s).</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">collective.templates</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addnewtemplatecenter.html">Add A New Template Center To Your Plone Site</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addnewtemplateproject.html">Add A New Template Project To The Template Center</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addnewtemplateproject.html#the-second-register-legal">The Second Register ‘Legal’</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publishtemplateproject.html">Publish A Template Project</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Messaging</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#messages-to-the-site-admininstrator-administrator">Messages To The Site-Admininstrator / Administrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#messages-to-the-project-owner">Messages To The Project Owner</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contacttotemplateproject.html">Contact To A Template Project</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="publishtemplateproject.html" title="previous chapter">Publish A Template Project</a></li>
+      <li>Next: <a href="contacttotemplateproject.html" title="next chapter">Contact To A Template Project</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Andreas Mantke.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/messaging.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
