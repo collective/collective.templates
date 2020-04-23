@@ -5,7 +5,9 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add information about getting in contact with project owners/main
+  contacts to the documentation and update the user documentation in
+  html and pdf file format [Andreas Mantke]
 
 
 1.1 (2020-03-25)
