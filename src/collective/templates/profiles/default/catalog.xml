@@ -29,4 +29,7 @@
   <index name="publicemail" meta_type="FieldIndex">
     <indexed_attr value="make_template_contact_address_public" />
   </index>
+  <index name="publicname" meta_type="FieldIndex">
+    <indexed_attr value="display_user_name" />
+  </index>
 </object>

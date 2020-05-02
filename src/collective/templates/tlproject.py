@@ -283,6 +283,15 @@ class ITLProject(model.Schema):
         required=True,
     )
 
+    display_user_name = schema.Choice(
+        title=_(u'Project Author Published?'),
+        description=_(u'Please decide if your name '
+                      u'should be displayed on the project website.'),
+        vocabulary=yesnochoice,
+        required=True,
+    )
+
+
     model.fieldset('screenshot',
                    label='Screenshot',
                    fields=['timageextension',
@@ -612,3 +621,10 @@ class TLProjectView(DefaultView):
         idx_data = catalog.getIndexDataForUID(path)
         public_email = idx_data.get('publicemail')
         return (public_email)
+
+    def name_public(self):
+        catalog = api.portal.get_tool(name='portal_catalog')
+        path = '/'.join(self.context.getPhysicalPath())
+        idx_data = catalog.getIndexDataForUID(path)
+        public_name = idx_data.get('publicname')
+        return (public_name)
