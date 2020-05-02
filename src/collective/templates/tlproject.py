@@ -2,6 +2,7 @@
 from collective import dexteritytextindexer
 from collective.templates import _
 from collective.templates import quote_chars
+from collective.templates.common import yesnochoice
 from plone import api
 from plone.app.textfield import RichText
 from plone.autoform import directives
@@ -272,6 +273,14 @@ class ITLProject(model.Schema):
         title=_(u'Contact email-address'),
         description=_(u'Contact email-address for the project.'),
         constraint=validateemail,
+    )
+
+    make_template_contact_address_public = schema.Choice(
+        title=_(u'Email Published?'),
+        description=_(u'Please decide if your email address '
+                      u'should be displayed on the project website.'),
+        vocabulary=yesnochoice,
+        required=True,
     )
 
     model.fieldset('screenshot',
@@ -596,3 +605,4 @@ class TLProjectView(DefaultView):
         idx_data = catalog.getIndexDataForUID(path)
         compatibility = idx_data.get('getCompatibility')
         return (r for r in compatibility)
+
