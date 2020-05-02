@@ -291,7 +291,6 @@ class ITLProject(model.Schema):
         required=True,
     )
 
-
     model.fieldset('screenshot',
                    label='Screenshot',
                    fields=['timageextension',
