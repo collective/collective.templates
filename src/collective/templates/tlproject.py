@@ -605,3 +605,10 @@ class TLProjectView(DefaultView):
         idx_data = catalog.getIndexDataForUID(path)
         compatibility = idx_data.get('getCompatibility')
         return (r for r in compatibility)
+
+    def email_public(self):
+        catalog = api.portal.get_tool(name='portal_catalog')
+        path = '/'.join(self.context.getPhysicalPath())
+        idx_data = catalog.getIndexDataForUID(path)
+        public_email = idx_data.get('publicemail')
+        return (public_email)
