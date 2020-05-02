@@ -26,4 +26,7 @@
   <index name="templateprojectmail" meta_type="FieldIndex">
     <indexed_attr value="templatecontactAddress" />
   </index>
+  <index name="publicemail" meta_type="FieldIndex">
+    <indexed_attr value="make_template_contact_address_public" />
+  </index>
 </object>
