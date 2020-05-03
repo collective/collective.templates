@@ -8,6 +8,12 @@ Changelog
 - Add information about getting in contact with project owners/main
   contacts to the documentation and update the user documentation in
   html and pdf file format [Andreas Mantke]
+- Add fields to choose if the e-mail address and / or the name of the
+  project owner should be displayed on the project page and index the
+  selection in the portal_catalog. Create a catalog query to get the
+  appropriate value from the catalog and use it to manage the display
+  of the data on the project website. [Andreas Mantke]
+- Update localization files and localization into German [Andreas Mantke]
 
 
 1.1 (2020-03-25)
