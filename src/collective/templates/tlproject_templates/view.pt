@@ -30,6 +30,7 @@
                                                           compatibility view/releaseCompatibility;
                                                           categories view/projectCategory;
                                                           emailpublic view/email_public;
+                                                          namepublic view/name_public;
                                                           review_state python:wf_tool.getInfoFor( here, 'review_state', '');">
 
         <span tal:replace="structure context/@@authenticator/authenticator"/>
@@ -125,9 +126,24 @@
                              </div>
                          </div>
                      </div>
+                     <div tal:condition="python: namepublic == 1 and emailpublic == 1">
+                     <h3 i18n:translate="">Project Owner And Contact</h3>
+                     </div>
+                     <div tal:condition="python: namepublic == 1 and emailpublic != 1">
+                     <h3 i18n:translate="">Project Owner</h3>
+                     </div>
+                     <div tal:condition="python: namepublic != 1 and emailpublic == 1">
+                     <h3 i18n:translate="">Project Contact</h3>
+                     </div>
+                     <div tal:condition="python: namepublic != 0">
+                     <p i18n:translate="">The project owner is the user:
+                     <span tal:content="python: context.getOwner()" />
+                     </p>
+                     </div>
                      <div tal:condition="python: emailpublic != 0">
-                     <h3 i18n:translate="">Project E-Mail Address</h3>
+                     <p i18n:translate="">The project e-mail address is:
                      <span tal:content="context/templatecontactAddress" />
+                     </p>
                      </div>
                      <div class="tlcenterprojectinstallinstructions" tal:condition="context/install_instructions">
                          <h3 i18n:translate="">Install Instructions</h3>
