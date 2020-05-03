@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2020-03-25 15:15+0100\n"
+"PO-Revision-Date: 2020-05-03 16:17+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "${product_title}"
 msgstr "${product_title}"
 
-#: tlproject.py:306
+#: tlproject.py:323
 msgid "1.0"
 msgstr "1.0"
 
@@ -36,11 +36,11 @@ msgstr "Ein Center für Vorlagen"
 msgid "About"
 msgstr "Über"
 
-#: tlproject.py:248
+#: tlproject.py:249
 msgid "Accept the above legal disclaimer"
 msgstr "Akzeptieren Sie den obigen Haftungsausschlluss"
 
-#: tlproject.py:293
+#: tlproject.py:310
 msgid "Add a screenshot by clicking the 'Browse' button. You could provide an image of the file format 'png', 'gif' or 'jpg'."
 msgstr "Fügen Sie ein Bildschirmfoto durch Klicken auf den Schalter \"Durchsuchen\" hinzu. Sie können Grafiken in den Dateiformaten \"png\", \"gif\" oder \"jpg\" verwenden."
 
@@ -64,7 +64,7 @@ msgstr "Jede Version"
 msgid "Available Categories"
 msgstr "Verfügbare Kategorien"
 
-#: tlproject_templates/view.pt:76
+#: tlproject_templates/view.pt:78
 msgid "Available Downloads"
 msgstr "Verfügbare Downloads"
 
@@ -92,19 +92,19 @@ msgstr "Suchen von Vorlagen nach Kategorie"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: tlproject_templates/view.pt:56
+#: tlproject_templates/view.pt:58
 msgid "Category/Categories"
 msgstr "Kategorie/Kategorien"
 
-#: tlproject.py:262
+#: tlproject.py:263
 msgid "Choose your categories"
 msgstr "Wählen Sie Ihre Kategorien"
 
-#: tlproject_templates/view.pt:67
+#: tlproject_templates/view.pt:69
 msgid "Compatibility"
 msgstr "Kompatibilität"
 
-#: tlproject.py:318
+#: tlproject.py:335
 msgid "Compatible with versions of the product"
 msgstr "Kompatibel mit den Produkt-Versionen"
 
@@ -112,11 +112,11 @@ msgstr "Kompatibel mit den Produkt-Versionen"
 msgid "Contact a Project Author"
 msgstr "Einen Projekt-Autor kontaktieren"
 
-#: tlproject.py:272
+#: tlproject.py:273
 msgid "Contact email-address"
 msgstr "Kontakt-Email-Adresse"
 
-#: tlproject.py:273
+#: tlproject.py:274
 msgid "Contact email-address for the project."
 msgstr "Kontakt-Email-Adresse für das Projekt.."
 
@@ -144,6 +144,10 @@ msgstr "Beschreibung der Funktionen von Vorlagen"
 msgid "EMail address for communication with the template center manager and reviewer"
 msgstr "E-Mail-Adresse zur Kommunikation mit demTemplate-Center-Manager und -Reviewer"
 
+#: tlproject.py:279
+msgid "Email Published?"
+msgstr "E-Mail veröffentlicht?"
+
 #: tlcenter.py:200
 msgid "Enter an email address for the communication with template center manager and reviewer"
 msgstr "Fügen Sie eine E-Mail-Adresse für die Kommunikation mit dem Template-Center-Manager und -Reviewer ein"
@@ -160,7 +164,7 @@ msgstr "Fügen Sie den Text der  rechtlichen Hinweise und Einschränkungen für 
 msgid "Enter the text of the legal disclaimer and limitations that should be displayed to the project creator and should be accepted by the owner of the project."
 msgstr "Fügen Sie den Text der rechtlichen Hinweise und Einschränkungen ein, der dem Ersteller eines Projektes angezeigt und von dem Projekt-Eigentümer zu akzeptieren ist."
 
-#: tlproject_templates/view.pt:85
+#: tlproject_templates/view.pt:87
 msgid "File size:"
 msgstr "Dateigröße:"
 
@@ -180,19 +184,19 @@ msgstr "Fügen Sie den Haftungsausschluss ein, der von den Projekteigentümern z
 msgid "Fill in the text for the legal download disclaimer"
 msgstr "Füllen Sie den Text für den Download-Haftungsausschluss ein"
 
-#: tlproject.py:361
+#: tlproject.py:378
 msgid "First uploaded file is compatible with the Platform(s)"
 msgstr "Die erste hochgeladene Datei ist kompatibel mit den Plattformen"
 
-#: tlproject.py:210
+#: tlproject.py:211
 msgid "Full project description"
 msgstr "Komplette Projekt-Beschreibung"
 
-#: tlproject.py:380
+#: tlproject.py:397
 msgid "Here you could add an optional second file to your project, if the files support different platforms."
 msgstr "Hier können Sie  eine optionale zweite Datei Ihrem Projekt hinzufügen, falls die Dateien unterschiedliche Plattformen unterstützen."
 
-#: tlproject.py:412
+#: tlproject.py:429
 msgid "Here you could add an optional third file to your project, if the files support different platforms."
 msgstr "Hier können Sie  eine optionale dritte Datei Ihrem Projekt hinzufügen, falls die Dateien unterschiedliche Plattformen unterstützen."
 
@@ -204,7 +208,7 @@ msgstr "Am höchsten bewertet"
 msgid "If you already created a new"
 msgstr "Falls Sie bereits ein neues"
 
-#: tlproject.py:184
+#: tlproject.py:185
 msgid "Information"
 msgstr "Information"
 
@@ -212,7 +216,7 @@ msgstr "Information"
 msgid "Information about search for old product versions"
 msgstr "Information zur Suche nach älteren Produkt-Versionen"
 
-#: tlcenter_templates/view.pt:270 tlproject_templates/view.pt:128
+#: tlcenter_templates/view.pt:270 tlproject_templates/view.pt:149
 msgid "Install Instructions"
 msgstr "Installationsanleitung"
 
@@ -228,7 +232,7 @@ msgstr "Anleitung, wie ein Fehler gemeldet wird"
 msgid "Invalid email address"
 msgstr "Ungültige Email-Adresse"
 
-#: tlproject.py:132
+#: tlproject.py:133
 msgid "It is necessary that you accept the Legal Declaration"
 msgstr "Es ist erforderlich, dass Sie den Haftungsausschluss akzeptieren"
 
@@ -240,11 +244,11 @@ msgstr "Rechtliche Hinweise und Einschränkungen für das Herunterladen"
 msgid "Legal Disclaimer and Limitations"
 msgstr "Rechtliche Hinweise und Einschränkungen"
 
-#: tlproject.py:225
+#: tlproject.py:226
 msgid "License of the uploaded file"
 msgstr "Lizenz der hochgeladenen Datei"
 
-#: tlproject_templates/view.pt:62
+#: tlproject_templates/view.pt:64
 msgid "License(s)"
 msgstr "Lizenz(en)"
 
@@ -276,6 +280,10 @@ msgstr "Name des Vorlagen-Center"
 msgid "Newest"
 msgstr "Neueste"
 
+#: common.py:8
+msgid "No"
+msgstr "Nein"
+
 #: tlcenter_templates/view.pt:150
 msgid "No results were found."
 msgstr "Keine Ergebnisse gefunden."
@@ -284,23 +292,31 @@ msgstr "Keine Ergebnisse gefunden."
 msgid "Not a valid project name. Please retry."
 msgstr "Kein gültiger Projektname. Bitte versuchen Sie es nochmals."
 
-#: tlproject.py:461
+#: tlproject.py:478
 msgid "Please accept the Legal Declaration about your file(s) and your Uploaded File"
 msgstr "Bitte akzeptieren Sie den Haftungsausschluss für ihre Datei(en) und  Ihre hochgeladenen Datei"
 
-#: tlproject.py:469
+#: tlproject.py:486
 msgid "Please choose a compatible platform for the uploaded file."
 msgstr "Bitte wählen Sie eine zu der hochgeladenen Datei kompatible Plattform."
 
-#: tlproject.py:445
+#: tlproject.py:462
 msgid "Please choose a license for the file(s) you want toupload."
 msgstr "Bitte wählen Sie eine Lizenz für die Datei(en), die Sie hochladen wollen."
 
-#: tlproject.py:452
+#: tlproject.py:469
 msgid "Please choose one or more compatible product versions for the file(s) you want to upload."
 msgstr "Bitte wählen Sie eine oder mehrere kompatible Produktversionen für die Datei(en), die Sie hochladen wollen."
 
-#: tlproject.py:249
+#: tlproject.py:280
+msgid "Please decide if your email address should be displayed on the project website."
+msgstr "Bitte entscheiden Sie, ob Ihre E-Mail-Adresse auf der Projekt-Webseite angezeigt werden soll."
+
+#: tlproject.py:288
+msgid "Please decide if your name should be displayed on the project website."
+msgstr "Bitte entscheiden Sie, ob Ihr Name auf der Projekt-Webseite angezeigt werden soll."
+
+#: tlproject.py:250
 msgid "Please declare that you accept the above legal disclaimer."
 msgstr "Bitte erklären Sie, dass Sie den obigen Haftungsausschluss akzeptieren."
 
@@ -320,27 +336,27 @@ msgstr "Bitte tragen Sie Ihren Familiennamen ein"
 msgid "Please fill in your first name(s)"
 msgstr "Bitte tragen Sie Ihre(n) Vornamen ein."
 
-#: tlproject_templates/view.pt:36
+#: tlproject_templates/view.pt:38
 msgid "Please make sure the relevant project information has been entered and submit your project for approval (publication)."
 msgstr "Bitte stellen Sie sicher, dass die relevanten Projekt-Informationen eingetragen sind und übermitteln Sie Ihr Projekt zur Prüfung (Veröffentlichung)."
 
-#: tlproject.py:226
+#: tlproject.py:227
 msgid "Please mark one or more licenses under which you publish your file(s)."
 msgstr "Bitte markieren Sie eine oder mehrere Lizenzen, unter denen Sie die Datei(en) veröffentlichen wollen."
 
-#: tlproject.py:362
+#: tlproject.py:379
 msgid "Please mark one or more platforms with which the uploaded file is compatible."
 msgstr "Bitte markieren Sie eine oder mehrere Plattformen, mit denen die hochgeladene Datei kompatibel ist."
 
-#: tlproject.py:319
+#: tlproject.py:336
 msgid "Please mark one or more program versions with which this uploaded file is compatible with."
 msgstr "Bitte markieren Sie eine oder mehrere Programm-Versionen, mit denen dieses Release kompatibel ist."
 
-#: tlproject.py:263
+#: tlproject.py:264
 msgid "Please select the appropriate categories (one or more) for your project."
 msgstr "Bitte wählen Sie eine passende Kategorie (eine oder mehrere) für ihre Projekt."
 
-#: tlproject.py:354
+#: tlproject.py:371
 msgid "Please upload your file."
 msgstr "Bitte laden Sie Ihre Datei hoch."
 
@@ -348,19 +364,35 @@ msgstr "Bitte laden Sie Ihre Datei hoch."
 msgid "Please validate the recaptcha field before sending the form."
 msgstr "Bitte validieren Sie das Recaptcha-Feld, bevor Sie das Formular absenden."
 
+#: tlproject.py:287
+msgid "Project Author Published?"
+msgstr "Projekt-Autor veröffentlicht?"
+
+#: tlproject_templates/view.pt:136
+msgid "Project Contact"
+msgstr "Projekt-Kontakt"
+
 #: mailtoauthor.py:85 mailtoprojectowner.py:78
 msgid "Project Name"
 msgstr "Projekt-Name"
 
-#: tlproject_templates/view.pt:114
+#: tlproject_templates/view.pt:133
+msgid "Project Owner"
+msgstr "Projekt-Eigentümer"
+
+#: tlproject_templates/view.pt:130
+msgid "Project Owner And Contact"
+msgstr "Projekt-Eigentümer und Kontakt"
+
+#: tlproject_templates/view.pt:116
 msgid "Project Resources"
 msgstr "Projekt Ressourcen"
 
-#: tlproject.py:204
+#: tlproject.py:205
 msgid "Project Summary"
 msgstr "Projekt-Zusammenfassung"
 
-#: tlproject.py:197
+#: tlproject.py:198
 msgid "Project Title - minimum 5 and maximum 50 characters"
 msgstr "Projekt-Titel  - mindestens 5 und höchstens 50 Zeichen"
 
@@ -368,11 +400,11 @@ msgstr "Projekt-Titel  - mindestens 5 und höchstens 50 Zeichen"
 msgid "Reporting Template-Bugs"
 msgstr "Vorlagen-Bugs melden"
 
-#: tlproject_templates/view.pt:116
+#: tlproject_templates/view.pt:118
 msgid "Screenshot"
 msgstr "Bildschirmfoto"
 
-#: tlproject.py:292
+#: tlproject.py:309
 msgid "Screenshot of the Template"
 msgstr "Bildschirmfoto der Vorlage"
 
@@ -384,7 +416,7 @@ msgstr "Suchen"
 msgid "Search ${product_title}"
 msgstr "Suche ${product_title}"
 
-#: tlproject.py:387
+#: tlproject.py:404
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr "Die zweite hochgeladene Datei ist kompatibel mit den Plattformen"
 
@@ -436,23 +468,23 @@ msgstr "Text der rechtlichen Hinweise und -begrenzungen"
 msgid "Text of the Legal Disclaimer and Limitations for Downlaods"
 msgstr "Text der rechtlichen Hinweise und -begrenzungen für Downloads"
 
-#: tlproject.py:185
+#: tlproject.py:186
 msgid "The Dialog to create a new project consists of different register. Please go through this register and fill in the appropriate data for your project or choose one of the options that are provided. You could upload one or more files to your project on the register 'File Upload' and 'Optional Further File Upload'."
 msgstr "Der Dialog zum Erstellen eines neuen Projektes besteht aus verschiedenen Registern. Bitte gehen Sie durch diese Register und tragen Sie die entsprechenden Daten für Ihr Projekt ein oder wählen Sie aus den verfügbaren Optionen. Sie können eine oder mehrere Dateien zu Ihrem Projekt auf den Registern 'File Upload' und 'Optional Further File Upload' hochladen."
 
-#: tlproject.py:338
+#: tlproject.py:355
 msgid "The first file you want to upload"
 msgstr "Die erste Datei, die Sie hochladen wollen"
 
-#: tlproject.py:353
+#: tlproject.py:370
 msgid "The first file you want to upload."
 msgstr "Die erste Datei, die Sie hochladen wollen."
 
-#: tlproject.py:286
+#: tlproject.py:303
 msgid "The following file extensions are allowed for screenshot files (upper case and lower case and mix of both):"
 msgstr "Die folgenden Dateierweiterungen sind für Bildschirmfoto-Dateien erlaubt (Groß- und Kleinschreibung und ein Mix aus beiden):"
 
-#: tlproject.py:347
+#: tlproject.py:364
 msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
 msgstr "Die folgenden Dateierweiterungen sind für Vorlagen-Dateien erlaubt (Groß- und Kleinschreibung und ein Mix aus beiden):"
 
@@ -460,23 +492,31 @@ msgstr "Die folgenden Dateierweiterungen sind für Vorlagen-Dateien erlaubt (Gro
 msgid "The name of the project, to which author you want to send feedback."
 msgstr "Der Name des Projekts, dessen Autor Sie Feedback senden wollen."
 
-#: tlproject.py:566
+#: tlproject_templates/view.pt:145
+msgid "The project e-mail address is: <span>${DYNAMIC_CONTENT}</span>"
+msgstr "Die Projekt-E-Mail-Adresse ist: <span>${DYNAMIC_CONTENT}</span>"
+
+#: tlproject_templates/view.pt:140
+msgid "The project owner is the user: <span>${DYNAMIC_CONTENT}</span>"
+msgstr "Der Projekt-Eigentümer ist der Benutzer: <span>${DYNAMIC_CONTENT}</span>"
+
+#: tlproject.py:583
 msgid "The project title is already in use."
 msgstr "Der Projekt-Titel wird bereits verwendet."
 
-#: tlproject.py:403
+#: tlproject.py:420
 msgid "The second file you want to upload (this is optional)"
 msgstr "Die zweite Datei, die Sie hochladen wollen (dies ist optional)."
 
-#: tlproject.py:379
+#: tlproject.py:396
 msgid "The second file you want to upload."
 msgstr "Die zweite Datei, die Sie hochladen wollen."
 
-#: tlproject.py:411
+#: tlproject.py:428
 msgid "The third file you want to upload"
 msgstr "Die dritte Datei, die Sie hochladen wollen"
 
-#: tlproject.py:435
+#: tlproject.py:452
 msgid "The third file you want to upload (this is optional)"
 msgstr "Die dritte Datei, die Sie hochladen wollen (dies ist optional)"
 
@@ -484,11 +524,11 @@ msgstr "Die dritte Datei, die Sie hochladen wollen (dies ist optional)"
 msgid "These are your projects on this site:"
 msgstr "Dies sind Ihre Projekte auf dieser Seite:"
 
-#: tlproject.py:419
+#: tlproject.py:436
 msgid "Third uploaded file is compatible with the Platform(s))"
 msgstr "Die dritte hochgeladene Datei ist kompatibel mit den Plattformen"
 
-#: tlproject.py:196
+#: tlproject.py:197
 msgid "Title"
 msgstr "Titel"
 
@@ -504,11 +544,11 @@ msgstr "Titel für rechtliche Hinweise und Einschränkungen für Downloads"
 msgid "Uninstalls the collective.templates add-on."
 msgstr "Deinstalliert das collective.templates Add-on."
 
-#: tlproject.py:303
+#: tlproject.py:320
 msgid "Version Number of the Template File (up to twelf chars) which you upload in this project."
 msgstr "Version-Nummer der Vorlagen-Datei (bis zu zwölf Zeichen), die Sie zu diesem Projekt hochladen wollen."
 
-#: tlproject.py:302
+#: tlproject.py:319
 msgid "Versions Number"
 msgstr "Version-Nummer"
 
@@ -520,19 +560,23 @@ msgstr "Wir senden Ihre Nachricht an den Projekt-Autor. Es ist ihre / seine Ents
 msgid "What is your message to the author of the project? Your message is limited to 1000 characters."
 msgstr "Wie lautet Ihre Nachricht an den Projekt-Autor? Ihre Nachricht ist auf 1000 Zeichen begrenzt."
 
+#: common.py:9
+msgid "Yes"
+msgstr "Ja"
+
 #: tlcenter_templates/view.pt:286
 msgid "You can send a message to the author of the project and give him feedback by following the link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project author </a>.<br /> You could instead go to the page of the project and use the mail form linked from that page."
 msgstr "Sie können eine Nachricht an den Projekt-Autor senden und ihm Feedback geben, indem sie dem Link folgen und Ihre Informationen in das Formular eintragen::<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Kommen Sie in Kontakt mit dem Projekt-Autor </a>.<br />Sie können stattdessen auch auf die Projekt-Seite gehen und das dort verlinkte E-Mail-Formular verwenden."
 
-#: tlproject_templates/view.pt:136
+#: tlproject_templates/view.pt:157
 msgid "You can send a message to the author of the project and give him feedback by following the link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project owner </a>"
-msgstr "Sie können eine Nachricht an den Projekt-Autor senden und ihm Feedback geben, indem sie dem Link folgen und Ihre Informationen in das Formular eintragen::<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Kommen Sie in Kontakt mit dem Projekt-Autor </a>."
+msgstr "Sie können eine Nachricht an den Projekt-Autor senden und ihm Feedback geben, indem sie dem Link folgen und Ihre Informationen in das Formular eintragen:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Kommen Sie in Kontakt mit dem Projekt-Autor </a>."
 
 #: tlcenter_templates/own_projects.pt:20
 msgid "You currently have no projects on this site."
 msgstr "Sie haben aktuell keine Projekte auf dieser Seite."
 
-#: tlproject.py:339
+#: tlproject.py:356
 msgid "You need only to upload one file to your project. There are options for further two file uploads if you want to provide files for different platforms."
 msgstr "Sie brauchen nur eine Datei zu Ihrem Projekt hochladen. Es bestehen Möglichkeiten für das Hochladen von zwei weiteren Dateien, falls Sie Dateien für andere Plattformen zur Verfügung stellen wollen."
 
@@ -556,7 +600,7 @@ msgstr "Ihre Nachricht an den Autor"
 msgid "Your Own Projects"
 msgstr "Ihre eigenen Projekte"
 
-#: tlproject_templates/view.pt:42
+#: tlproject_templates/view.pt:44
 msgid "Your project has been submitted for publication and will be reviewed now. You will get an email, once the status of your project changed again."
 msgstr "Ihr Projekt wurde zur Veröffentlichung übermittelt und wird nun geprüft. Sie bekommen eine Email, sobald sich der Status Ihres Projektes erneut ändert."
 
