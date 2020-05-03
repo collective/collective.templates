@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2 (unreleased)
+1.2 (2020-05-03)
 ----------------
 
 - Add information about getting in contact with project owners/main
