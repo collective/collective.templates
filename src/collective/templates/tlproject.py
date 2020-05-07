@@ -276,7 +276,7 @@ class ITLProject(model.Schema):
     )
 
     make_template_contact_address_public = schema.Choice(
-        title=_(u'Email Published?'),
+        title=_(u'Email Public?'),
         description=_(u'Please decide if your email address '
                       u'should be displayed on the project website.'),
         vocabulary=yesnochoice,
@@ -284,7 +284,7 @@ class ITLProject(model.Schema):
     )
 
     display_user_name = schema.Choice(
-        title=_(u'Project Author Published?'),
+        title=_(u'Project Author Public?'),
         description=_(u'Please decide if your name '
                       u'should be displayed on the project website.'),
         vocabulary=yesnochoice,
