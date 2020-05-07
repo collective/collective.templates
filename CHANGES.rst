@@ -2,10 +2,15 @@ Changelog
 =========
 
 
-1.3 (unreleased)
+1.2.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix strings in tlproject module [Andreas Mantke]
+- Change tests about publication of project owner
+  name and contact e-mail in the tlproject view template
+  to more secure and explicit expression [Andreas Mantke]
+- Update localization files and German localization of
+  new strings [Andreas Mantke]
 
 
 1.2 (2020-05-03)
