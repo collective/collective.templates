@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-05-03 09:43+0000\n"
+"POT-Creation-Date: 2020-05-07 17:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,7 +151,7 @@ msgid "EMail address for communication with the template center manager and revi
 msgstr ""
 
 #: ./tlproject.py:279
-msgid "Email Published?"
+msgid "Email Public?"
 msgstr ""
 
 #: ./tlcenter.py:200
@@ -378,7 +378,7 @@ msgid "Please validate the recaptcha field before sending the form."
 msgstr ""
 
 #: ./tlproject.py:287
-msgid "Project Author Published?"
+msgid "Project Author Public?"
 msgstr ""
 
 #: ./tlproject_templates/view.pt:136

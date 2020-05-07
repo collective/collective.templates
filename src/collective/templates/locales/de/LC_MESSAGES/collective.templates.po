@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2020-05-03 16:17+0200\n"
+"PO-Revision-Date: 2020-05-07 19:56+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -145,8 +145,8 @@ msgid "EMail address for communication with the template center manager and revi
 msgstr "E-Mail-Adresse zur Kommunikation mit demTemplate-Center-Manager und -Reviewer"
 
 #: tlproject.py:279
-msgid "Email Published?"
-msgstr "E-Mail veröffentlicht?"
+msgid "Email Public?"
+msgstr "E-Mail veröffentlichen?"
 
 #: tlcenter.py:200
 msgid "Enter an email address for the communication with template center manager and reviewer"
@@ -365,8 +365,8 @@ msgid "Please validate the recaptcha field before sending the form."
 msgstr "Bitte validieren Sie das Recaptcha-Feld, bevor Sie das Formular absenden."
 
 #: tlproject.py:287
-msgid "Project Author Published?"
-msgstr "Projekt-Autor veröffentlicht?"
+msgid "Project Author Public?"
+msgstr "Projekt-Autor veröffentlichen?"
 
 #: tlproject_templates/view.pt:136
 msgid "Project Contact"
