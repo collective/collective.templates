@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.2.1 (unreleased)
-----------------
+1.2.1 (2020-05-07)
+------------------
 
 - Fix strings in tlproject module [Andreas Mantke]
 - Change tests about publication of project owner
