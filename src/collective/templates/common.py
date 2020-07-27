@@ -25,8 +25,8 @@ def validateemail(value):
 
 
 def allowedtemplatefileextensions():
-    return api.portal.get_registry_record('collectivetemplates.allowed_addonfileextension').replace('|', ', ')
+    return api.portal.get_registry_record('collectivetemplates.allowed_templatefileextension').replace('|', ', ')
 
 
 def allowedtempimageextensions():
-    return api.portal.get_registry_record('collectivetemplates.allowed_apimageextension').replace('|', ', ')
+    return api.portal.get_registry_record('collectivetemplates.allowed_tempimageextension').replace('|', ', ')

@@ -61,13 +61,13 @@ class ICollectivetemplatesControlPanel(Interface):
                            ],
                    )
 
-    allowed_fileextension = schema.TextLine(
-        title=_(safe_unicode('Allowed file extensions')),
+    allowed_templatefileextension = schema.TextLine(
+        title=_(safe_unicode('Allowed template file extensions')),
         description=_(safe_unicode('Fill in the allowed file extensions, seperated by '
                                    "a pipe '|'.")),
     )
 
-    allowed_imageextension = schema.TextLine(
+    allowed_tempimageextension = schema.TextLine(
         title=_(safe_unicode('Allowed image file extension')),
         description=_(safe_unicode('Fill in the allowed image file extensions, seperated '
                                    "by a pipe '|'.")),
