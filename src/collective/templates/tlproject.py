@@ -2,6 +2,7 @@
 from collective import dexteritytextindexer
 from collective.templates import _
 from collective.templates import quote_chars
+from collective.templates.common import validateemail
 from collective.templates.common import yesnochoice
 from plone import api
 from plone.app.textfield import RichText
@@ -26,16 +27,6 @@ from zope.schema.vocabulary import SimpleTerm
 from zope.schema.vocabulary import SimpleVocabulary
 
 import re
-
-
-checkemail = re.compile(
-    r'[a-zA-Z0-9._%-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4}').match
-
-
-def validateemail(value):
-    if not checkemail(value):
-        raise Invalid(_(u'Invalid email address'))
-    return True
 
 
 def vocabavaillicenses(context):

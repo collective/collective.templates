@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from Acquisition import aq_inner
 from collective.templates import _
+from collective.templates.common import validateemail
 from plone import api
 from plone.app.layout.viewlets import ViewletBase
 from plone.app.multilingual.dx import directives
@@ -12,22 +13,10 @@ from Products.CMFPlone.utils import safe_unicode
 from Products.Five import BrowserView
 from Products.ZCTextIndex.ParseTree import ParseError
 from zope import schema
-from zope.interface import Invalid
-
-import re
 
 
 MULTISPACE = u'\u3000'.encode('utf-8')
 BAD_CHARS = ('?', '-', '+', '*', MULTISPACE)
-
-checkEmail = re.compile(
-    r'[a-zA-Z0-9._%-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4}').match
-
-
-def validateEmail(value):
-    if not checkEmail(value):
-        raise Invalid(_(safe_unicode('Invalid email address')))
-    return True
 
 
 class ITLCenter(model.Schema):
@@ -205,7 +194,7 @@ class ITLCenter(model.Schema):
             u'Enter an email address for the communication with template '
             u'center manager and reviewer'),
         default='projects@foo.org',
-        constraint=validateEmail,
+        constraint=validateemail,
     )
 
 
