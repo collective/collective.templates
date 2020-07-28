@@ -140,4 +140,22 @@
       permission="zope2.View"
       />
 
+
+  <utility
+      name="Templatecategories"
+      component=".vocabularies.CategoriesVocabularyFactory" />
+
+  <utility
+      name="Templatelicenses"
+      component=".vocabularies.LicensesVocabularyFactory" />
+
+  <utility
+      name="Templateversions"
+      component=".vocabularies.VersionsVocabularyFactory" />
+
+  <utility
+      name="Templateplatforms"
+      component=".vocabularies.PlatformVocabularyFactory" />
+
+
 </configure>
