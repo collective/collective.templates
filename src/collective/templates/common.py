@@ -8,7 +8,6 @@ from zope.schema.vocabulary import SimpleVocabulary
 
 import re
 
-
 yesnochoice = SimpleVocabulary(
     [SimpleTerm(value=0, title=_(safe_unicode('No'))),
      SimpleTerm(value=1, title=_(safe_unicode('Yes')))],
@@ -54,3 +53,11 @@ def validateimagefileextension(value):
             'Please try again to upload a file with the correct file'
             'extension.'))
     return True
+
+
+def legaldeclarationtitle():
+    return api.portal.get_registry_record('collectivetemplates.title_legaldisclaimer')
+
+
+def legaldeclarationtext():
+    return api.portal.get_registry_record('collectivetemplates.legal_disclaimer')
