@@ -119,7 +119,7 @@ class ITLProject(model.Schema):
     dexteritytextindexer.searchable('category_choice')
     directives.widget(category_choice=CheckBoxFieldWidget)
     category_choice = schema.List(
-        title=_(safe_unicode('Coose your categories')),
+        title=_(safe_unicode('Choose your categories')),
         description=_(safe_unicode(
             'Please select the appropriate categories (one or more) for '
             'your project.')),
