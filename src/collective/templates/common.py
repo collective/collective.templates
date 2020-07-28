@@ -8,6 +8,7 @@ from zope.schema.vocabulary import SimpleVocabulary
 
 import re
 
+
 yesnochoice = SimpleVocabulary(
     [SimpleTerm(value=0, title=_(safe_unicode('No'))),
      SimpleTerm(value=1, title=_(safe_unicode('Yes')))],
