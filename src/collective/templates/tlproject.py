@@ -2,7 +2,13 @@
 from collective import dexteritytextindexer
 from collective.templates import _
 from collective.templates import quote_chars
+from collective.templates.common import allowedtempimageextensions
+from collective.templates.common import allowedtemplatefileextensions
+from collective.templates.common import legaldeclarationtext
+from collective.templates.common import legaldeclarationtitle
 from collective.templates.common import validateemail
+from collective.templates.common import validateimagefileextension
+from collective.templates.common import validatetemplatefileextension
 from collective.templates.common import yesnochoice
 from plone import api
 from plone.app.textfield import RichText
@@ -17,101 +23,8 @@ from Products.validation import V_REQUIRED  # noqa
 from z3c.form import validator
 from z3c.form.browser.checkbox import CheckBoxFieldWidget
 from zope import schema
-from zope.interface import directlyProvides
 from zope.interface import Invalid
 from zope.interface import invariant
-from zope.interface import provider
-from zope.schema.interfaces import IContextAwareDefaultFactory
-from zope.schema.interfaces import IContextSourceBinder
-from zope.schema.vocabulary import SimpleTerm
-from zope.schema.vocabulary import SimpleVocabulary
-
-import re
-
-
-def vocabavaillicenses(context):
-    """ pick up licenses list from parent """
-    from collective.templates.tlcenter import ITLCenter
-    while context is not None and not ITLCenter.providedBy(context):
-        # context = aq_parent(aq_inner(context))
-        context = context.__parent__
-
-    license_list = []
-    if context is not None and context.available_licenses:
-        license_list = context.available_licenses
-    terms = []
-    for value in license_list:
-        terms.append(SimpleTerm(value, token=value.encode('unicode_escape'),
-                                title=value))
-    return SimpleVocabulary(terms)
-
-
-directlyProvides(vocabavaillicenses, IContextSourceBinder)
-
-
-def vocabcategories(context):
-    # For add forms
-
-    # For other forms edited or displayed
-    from collective.templates.tlcenter import ITLCenter
-    while context is not None and not ITLCenter.providedBy(context):
-        # context = aq_parent(aq_inner(context))
-        context = context.__parent__
-
-    category_list = []
-    if context is not None and context.available_category:
-        category_list = context.available_category
-
-    terms = []
-    for value in category_list:
-        terms.append(SimpleTerm(value, token=value.encode('unicode_escape'),
-                                title=value))
-
-    return SimpleVocabulary(terms)
-
-
-directlyProvides(vocabcategories, IContextSourceBinder)
-
-
-def vocabavailversions(context):
-    """ pick up the program versions list from parent """
-    from collective.templates.tlcenter import ITLCenter
-    while context is not None and not ITLCenter.providedBy(context):
-        # context = aq_parent(aq_inner(context))
-        context = context.__parent__
-
-    versions_list = []
-    if context is not None and context.available_versions:
-        versions_list = context.available_versions
-
-    terms = []
-    for value in versions_list:
-        terms.append(SimpleTerm(value, token=value.encode('unicode_escape'),
-                                title=value))
-    return SimpleVocabulary(terms)
-
-
-directlyProvides(vocabavailversions, IContextSourceBinder)
-
-
-def vocabavailplatforms(context):
-    """ pick up the list of platforms from parent """
-    from collective.templates.tlcenter import ITLCenter
-    while context is not None and not ITLCenter.providedBy(context):
-        # context = aq_parent(aq_inner(context))
-        context = context.__parent__
-
-    platforms_list = []
-    if context is not None and context.available_platforms:
-        platforms_list = context.available_platforms
-    terms = []
-    for value in platforms_list:
-        terms.append(SimpleTerm(value, token=value.encode('unicode_escape'),
-                                title=value))
-    return SimpleVocabulary(terms)
-
-
-directlyProvides(vocabavailplatforms, IContextSourceBinder)
 
 
 def isNotEmptyCategory(value):
@@ -123,52 +36,6 @@ def isNotEmptyCategory(value):
 
 class AcceptLegalDeclaration(Invalid):
     __doc__ = _(u'It is necessary that you accept the Legal Declaration')
-
-
-@provider(IContextAwareDefaultFactory)
-def legal_declaration_title(context):
-    return context.title_legaldisclaimer
-
-
-@provider(IContextAwareDefaultFactory)
-def legal_declaration_text(context):
-    return context.legal_disclaimer
-
-
-@provider(IContextAwareDefaultFactory)
-def allowedtemplatefileextensions(context):
-    return context.allowed_fileextension.replace('|', ', ')
-
-
-@provider(IContextAwareDefaultFactory)
-def allowedimagefileextensions(context):
-    return context.allowed_imageextension.replace('|', ',')
-
-
-def validatetemplatefileextension(value):
-    catalog = api.portal.get_tool(name='portal_catalog')
-    result = catalog.uniqueValuesFor('allowedfileextensions')
-    pattern = r'^.*\.({0})'.format(result[0])
-    matches = re.compile(pattern, re.IGNORECASE).match
-    if not matches(value.filename):
-        raise Invalid(safe_unicode(
-            'You could only upload files with an allowed file extension. '
-            'Please try again to upload a file with the correct file'
-            'extension.'))
-    return True
-
-
-def validateimagefileextension(value):
-    catalog = api.portal.get_tool(name='portal_catalog')
-    result = catalog.uniqueValuesFor('allowedimageextensions')
-    pattern = r'^.*\.({0})'.format(result[0])
-    matches = re.compile(pattern, re.IGNORECASE).match
-    if not matches(value.filename):
-        raise Invalid(safe_unicode(
-            'You could only upload files with an allowed file extension. '
-            'Please try again to upload a file with the correct file'
-            'extension.'))
-    return True
 
 
 class ITLProject(model.Schema):
@@ -219,7 +86,7 @@ class ITLProject(model.Schema):
         description=_(safe_unicode(
             'Please mark one or more licenses under which you publish '
             'your file(s).')),
-        value_type=schema.Choice(source=vocabavaillicenses),
+        value_type=schema.Choice(source='Templatelicenses'),
         required=True,
     )
 
@@ -227,14 +94,14 @@ class ITLProject(model.Schema):
     title_declaration_legal = schema.TextLine(
         title=_(safe_unicode('')),
         required=False,
-        defaultFactory=legal_declaration_title,
+        defaultFactory=legaldeclarationtitle,
     )
 
     directives.mode(declaration_legal='display')
     declaration_legal = schema.Text(
         title=_(safe_unicode('')),
         required=False,
-        defaultFactory=legal_declaration_text,
+        defaultFactory=legaldeclarationtext,
     )
 
     accept_legal_declaration = schema.Bool(
@@ -256,7 +123,7 @@ class ITLProject(model.Schema):
         description=_(safe_unicode(
             'Please select the appropriate categories (one or more) for '
             'your project.')),
-        value_type=schema.Choice(source=vocabcategories),
+        value_type=schema.Choice(source='Templatecategories'),
         constraint=isNotEmptyCategory,
         required=True,
     )
@@ -297,7 +164,7 @@ class ITLProject(model.Schema):
         title=_(safe_unicode(
             'The following file extensions are allowed for screenshot '
             'files (upper case and lower case and mix of both):')),
-        defaultFactory=allowedimagefileextensions,
+        defaultFactory=allowedtempimageextensions,
     )
 
     screenshot = NamedBlobImage(
@@ -331,7 +198,7 @@ class ITLProject(model.Schema):
         description=_(safe_unicode(
             'Please mark one or more program versions with which this '
             'uploaded file is compatible with.')),
-        value_type=schema.Choice(source=vocabavailversions),
+        value_type=schema.Choice(source='Templateversions'),
         required=True,
         default=[],
     )
@@ -375,7 +242,7 @@ class ITLProject(model.Schema):
         description=_(safe_unicode(
             'Please mark one or more platforms with which the uploaded '
             'file is compatible.')),
-        value_type=schema.Choice(source=vocabavailplatforms),
+        value_type=schema.Choice(source='Templateplatforms'),
         required=True,
     )
 
@@ -401,7 +268,7 @@ class ITLProject(model.Schema):
         description=_(safe_unicode(
             'Please mark one or more platforms with which the uploaded file '
             'is compatible.')),
-        value_type=schema.Choice(source=vocabavailplatforms),
+        value_type=schema.Choice(source='Templateplatforms'),
         required=False,
     )
 
@@ -434,7 +301,7 @@ class ITLProject(model.Schema):
         description=_(safe_unicode(
             'Please mark one or more platforms with which the uploaded file '
             'is compatible.')),
-        value_type=schema.Choice(source=vocabavailplatforms),
+        value_type=schema.Choice(source='Templateplatforms'),
         required=False,
     )
 
