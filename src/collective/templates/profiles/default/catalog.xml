@@ -17,12 +17,6 @@
     <indexed_attr value="templatecontactAddress" />
   </index>
   <column value="getCategories" />
-  <index name="allowedfileextensions" meta_type="FieldIndex">
-    <indexed_attr value="allowed_fileextension" />
-  </index>
-  <index name="allowedimageextensions" meta_type="FieldIndex">
-    <indexed_attr value="allowed_imageextension" />
-  </index>
   <index name="templateprojectmail" meta_type="FieldIndex">
     <indexed_attr value="templatecontactAddress" />
   </index>
