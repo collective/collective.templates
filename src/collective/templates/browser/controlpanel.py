@@ -65,12 +65,14 @@ class ICollectivetemplatesControlPanel(Interface):
         title=_(safe_unicode('Allowed template file extensions')),
         description=_(safe_unicode('Fill in the allowed file extensions, seperated by '
                                    "a pipe '|'.")),
+        default=safe_unicode('ott|ots|otp|otg'),
     )
 
     allowed_tempimageextension = schema.TextLine(
         title=_(safe_unicode('Allowed image file extension')),
         description=_(safe_unicode('Fill in the allowed image file extensions, seperated '
                                    "by a pipe '|'.")),
+        default=safe_unicode('jpg|jpeg|png|gif'),
     )
 
     model.fieldset('disclaimer',
