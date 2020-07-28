@@ -120,6 +120,12 @@ class TLCenterView(BrowserView):
                        path='/'.join(context.getPhysicalPath()),
                        sort_order='sortable_title')
 
+    def category_names(self):
+        return list(api.portal.get_registry_record('collectivetemplates.available_category'))
+
+    def version_names(self):
+        return list(api.portal.get_registry_record('collectivetemplates.available_versions'))
+
     def get_latest_program_release(self):
         versions = list(self.context.available_versions)
         versions.sort(reverse=True)
