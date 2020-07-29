@@ -24,7 +24,7 @@ template center.
 
 
 Collective Templates Settings
-**************************
+*****************************
 
 Once you finished the modification of navigation settings you could scroll down a bit
 on the Site Settings page to the section for 'Add-on Configuration'. There you find a
