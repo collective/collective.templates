@@ -56,8 +56,8 @@ class ICollectivetemplatesControlPanel(Interface):
 
     model.fieldset('allowedfileextensions',
                    label=_(safe_unicode('Allowed file extensions')),
-                   fields=['allowed_fileextension',
-                           'allowed_imageextension',
+                   fields=['allowed_templatefileextension',
+                           'allowed_tempimageextension',
                            ],
                    )
 
