@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0 (unreleased)
+2.0 (2020-07-29)
 ----------------
 
 - Add a controlpanel and move configuration entries from the templatecenter
