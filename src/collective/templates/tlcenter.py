@@ -61,28 +61,6 @@ class ITLCenter(model.Schema):
         required=False,
     )
 
-    model.fieldset('disclaimer',
-                   label=_(safe_unicode('Legal Disclaimer')),
-                   fields=['title_legaldownloaddisclaimer',
-                           'legal_downloaddisclaimer'])
-
-    title_legaldownloaddisclaimer = schema.TextLine(
-        title=_(safe_unicode(
-            'Title of the Legal Disclaimer and Limitations for Downloads')),
-        default=_(safe_unicode('Legal Disclaimer And Limitations For Downloads')),
-        required=False,
-    )
-
-    primary('legal_downloaddisclaimer')
-    legal_downloaddisclaimer = RichText(
-        title=_(safe_unicode('Text of the Legal Disclaimer and Limitations for Downlaods')),
-        description=_(safe_unicode(
-            'Enter any legal disclaimer and limitations for downloads that '
-            'should appear on each page for dowloadable files.')),
-        default=_(safe_unicode('Fill in the text for the legal download disclaimer')),
-        required=False,
-    )
-
     primary('information_oldversions')
     information_oldversions = RichText(
         title=_(safe_unicode('Information about search for old product versions')),
