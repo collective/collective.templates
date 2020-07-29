@@ -493,3 +493,9 @@ class TLProjectView(DefaultView):
         idx_data = catalog.getIndexDataForUID(path)
         public_name = idx_data.get('publicname')
         return (public_name)
+
+    def title_download_disclaimer(self):
+        return api.portal.get_registry_record('collectivetemplates.title_legaldownloaddisclaimer')
+
+    def text_download_disclaimer(self):
+        return api.portal.get_registry_record('collectivetemplates.legal_downloaddisclaimer')

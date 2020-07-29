@@ -106,8 +106,8 @@
                      <span class="tlcenterplatform" tal:content="structure view/w/platform_choice2/render" /><br />
                      <span i18n:translate="">File size:</span> <span tal:content="python:context.file2.size /1024" /> kb
                  </p>
-                 <h4 class="tlcenterlegaldownload" tal:content="structure context/title_legaldownloaddisclaimer" />
-                 <div class="tlcenterlegaldownload" tal:content="structure context/legal_downloaddisclaimer/output" />
+                 <h4 class="tlcenterlegaldownload" tal:content="structure view/title_download_disclaimer" />
+                 <div class="tlcenterlegaldownload" tal:content="structure view/text_download_disclaimer" />
 
              </div>
            <div class="col-xs-12 col-sm-4">
