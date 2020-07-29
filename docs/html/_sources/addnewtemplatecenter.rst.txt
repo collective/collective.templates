@@ -17,17 +17,28 @@ Template Center in your Plone site.
 
 
 Fill in the fields in the edit form of the Template Center. All fields has a description of their expected values.
-Don't miss to go through the register of the edit form dialog. The fields on the register 'Allowed file extensions'
-need your input about the allowed file extensions for the templates and the image file extensions (screenshot).
-If there are different file extensions allowed for this file categories you could enter
-this file extensions seperated by a pipe into the form fields, e.g.: 'png|jpg' for image files.
+Don't miss to go through the register of the edit form dialog.
+
+The second register ('Instructions') (see screenshot below) holds some fields for instructions about installation of the templates, reporting template
+bugs and for an information text about searching for templates usable with older product versions. This text could
+be displayed, if the versions were removed from the listing of the configuration setting of this add-on.
+
+.. image:: images/template_center_form2.png
+   :width: 600
+
+The third register ('Special email addresses') (see screenshot below) has a field to set an address for messages to the template
+reviewer on the site.
+
+.. image:: images/template_center_form3.png
+   :width: 600
+
 Once you are finished with adding values to the edit form, save the form. If you missed to edit a form field,
 you will get an error message and could fill in the necessary information into the appropriate form field.
 
-Publish The New Add-on Center
-*****************************
+Publish The New Template Center
+*******************************
 
-Once you finished with the edit form of the Add-on Center and saved your changes you need to publish the center.
+Once you finished with the edit form of the Template Center and saved your changes you need to publish the center.
 You could do this by a click on the entry 'State: Private' in the menubar on the left site. Choose the entry 'Publish'
 and you are done.
 

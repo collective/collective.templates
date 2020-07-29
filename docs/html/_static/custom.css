@@ -1,1 +1,7 @@
-/* This file intentionally left blank. */
+div.bodywrapper{
+    margin: 0 0 0 260px;
+}
+
+div.sphinxsidebar{
+    width: 290px;
+}

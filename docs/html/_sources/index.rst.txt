@@ -12,6 +12,7 @@ Welcome to collective.templates's documentation!
 
 
    installation.rst
+   configuration.rst
    addnewtemplatecenter.rst
    addnewtemplateproject.rst
    publishtemplateproject.rst
