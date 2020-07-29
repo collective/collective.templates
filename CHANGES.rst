@@ -2,10 +2,21 @@ Changelog
 =========
 
 
-1.3 (unreleased)
+2.0 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add a controlpanel and move configuration entries from the templatecenter
+  module to this panel, create new vocabulary and functions from this
+  entries in the configuration registry instead of entries in the portal_catalog,
+  register vocabularies as named utilities in the configure.zcml file, use the
+  new functions (inside the common module) for the project creation / edit
+  form and their views as well as for the search feature of the template
+  center module. [Andreas Mantke]
+- Update localization files and German localization [Andreas Mantke]
+- Adapt the user documentation to the new functions and structure of the
+  add-on and create documentation in html and pdf file format [Andreas Mantke]
+- Use safe_unicode for unicode strings, make more labels translatable [Andreas Mantke]
+- Update README.rst [Andreas Mantke]
 
 
 1.2.1 (2020-05-07)
