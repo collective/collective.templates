@@ -148,7 +148,7 @@ msgstr ""
 msgid "Description of the features of templates"
 msgstr ""
 
-#: ./tlcenter.py:101
+#: ./tlcenter.py:79
 msgid "EMail address for communication with the template center manager and reviewer"
 msgstr ""
 
@@ -156,16 +156,15 @@ msgstr ""
 msgid "Email Public?"
 msgstr ""
 
-#: ./tlcenter.py:104
+#: ./tlcenter.py:82
 msgid "Enter an email address for the communication with template center manager and reviewer"
 msgstr ""
 
-#: ./tlcenter.py:89
+#: ./tlcenter.py:67
 msgid "Enter an information about the search for older versions of the product, if they are not on the versions list (compatibility) anymore."
 msgstr ""
 
 #: ./browser/controlpanel.py:111
-#: ./tlcenter.py:79
 msgid "Enter any legal disclaimer and limitations for downloads that should appear on each page for dowloadable files."
 msgstr ""
 
@@ -194,7 +193,6 @@ msgid "Fill in the legal disclaimer, that had to be accepted by the project owne
 msgstr ""
 
 #: ./browser/controlpanel.py:114
-#: ./tlcenter.py:82
 msgid "Fill in the text for the legal download disclaimer"
 msgstr ""
 
@@ -226,7 +224,7 @@ msgstr ""
 msgid "Information"
 msgstr ""
 
-#: ./tlcenter.py:88
+#: ./tlcenter.py:66
 msgid "Information about search for old product versions"
 msgstr ""
 
@@ -261,12 +259,7 @@ msgstr ""
 msgid "Legal"
 msgstr ""
 
-#: ./tlcenter.py:65
-msgid "Legal Disclaimer"
-msgstr ""
-
 #: ./browser/controlpanel.py:105
-#: ./tlcenter.py:72
 msgid "Legal Disclaimer And Limitations For Downloads"
 msgstr ""
 
@@ -469,7 +462,7 @@ msgstr ""
 msgid "Sort On"
 msgstr ""
 
-#: ./tlcenter.py:97
+#: ./tlcenter.py:75
 msgid "Special email adresses"
 msgstr ""
 
@@ -510,7 +503,6 @@ msgid "Text of the Legal Disclaimer and Limitations"
 msgstr ""
 
 #: ./browser/controlpanel.py:110
-#: ./tlcenter.py:78
 msgid "Text of the Legal Disclaimer and Limitations for Downlaods"
 msgstr ""
 
@@ -580,7 +572,6 @@ msgid "Title for Legal Disclaimer and Limitations"
 msgstr ""
 
 #: ./browser/controlpanel.py:103
-#: ./tlcenter.py:70
 msgid "Title of the Legal Disclaimer and Limitations for Downloads"
 msgstr ""
 
