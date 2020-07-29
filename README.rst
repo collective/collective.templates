@@ -13,12 +13,15 @@ and give feedback to the template authors.
 Features
 --------
 
+- The add-on has a cofiguration settings entry in the site administration yet. It's form
+  contains fields to set a choice of categories, platforms, licenses and versions of the
+  product (for which the templates are used). There are also fields to set the allowed file
+  extensions of the template files, the image files (e.g. screenshots, logos) and the
+  documentation.
 - A template center with listing and display of template projects respectively to their rating,
   a search form and a listing of the latest projects.
 - The template center edit form contains fields to set the title of the center and the name of
-  the templates, add a description of the center, set a choice of categories, platforms, lizenses
-  and versions of the product (for which the templates are). There are also fields to set the
-  allowed file extensions of the template files and the image files (e.g. screenshots).
+  the templates and add a description of the center.
 - Template projects with the abbility to upload template files and replace them with newer ones.
   The edit form of the project contains fields to choose the product versions, categories,
   licenses and plattforms.
