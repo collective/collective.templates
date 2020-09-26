@@ -61,7 +61,7 @@
       name="view"
       for="collective.templates.tlproject.ITLProject"
       class="collective.templates.tlproject.TLProjectView"
-      template="tlproject_templates/view.pt"
+      template="view_templates/tlproject_view.pt"
       permission="zope2.View"
       />
 
