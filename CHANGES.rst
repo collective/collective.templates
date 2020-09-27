@@ -5,7 +5,8 @@ Changelog
 2.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Reordering view templates and move them to one new folder [Andreas Mantke]
+- Update localization files [Andreas Mantke]
 
 
 2.0 (2020-07-29)
