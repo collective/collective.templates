@@ -14,7 +14,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./tlcenter_templates/view.pt:210
+#: ./view_templates/tlcenter_view.pt:210
 msgid "${product_title}"
 msgstr ""
 
@@ -30,7 +30,7 @@ msgstr ""
 msgid "A center for templates"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:278
+#: ./view_templates/tlcenter_view.pt:278
 msgid "About"
 msgstr ""
 
@@ -42,7 +42,7 @@ msgstr ""
 msgid "Add a screenshot by clicking the 'Browse' button. You could provide an image of the file format 'png', 'gif' or 'jpg'."
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:114
+#: ./view_templates/tlcenter_view.pt:114
 msgid "All categories"
 msgstr ""
 
@@ -58,7 +58,7 @@ msgstr ""
 msgid "Allowed template file extensions"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:124
+#: ./view_templates/tlcenter_view.pt:124
 msgid "Any version"
 msgstr ""
 
@@ -66,7 +66,7 @@ msgstr ""
 msgid "Available Categories"
 msgstr ""
 
-#: ./tlproject_templates/view.pt:78
+#: ./view_templates/tlproject_view.pt:78
 msgid "Available Downloads"
 msgstr ""
 
@@ -82,11 +82,11 @@ msgstr ""
 msgid "Available Versions"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:254
+#: ./view_templates/tlcenter_view.pt:254
 msgid "Browse"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:257
+#: ./view_templates/tlcenter_view.pt:257
 msgid "Browse Templates by Category"
 msgstr ""
 
@@ -99,7 +99,7 @@ msgstr ""
 msgid "Category / Categories"
 msgstr ""
 
-#: ./tlproject_templates/view.pt:58
+#: ./view_templates/tlproject_view.pt:58
 msgid "Category/Categories"
 msgstr ""
 
@@ -112,11 +112,11 @@ msgid "Comatible with versions of the product"
 msgstr ""
 
 #: ./tlproject.py:190
-#: ./tlproject_templates/view.pt:69
+#: ./view_templates/tlproject_view.pt:69
 msgid "Compatibility"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:282
+#: ./view_templates/tlcenter_view.pt:282
 msgid "Contact a Project Author"
 msgstr ""
 
@@ -136,7 +136,7 @@ msgstr ""
 msgid "Contact the project owner and send your feedback"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:214
+#: ./view_templates/tlcenter_view.pt:214
 msgid "Currently there are"
 msgstr ""
 
@@ -176,7 +176,7 @@ msgstr ""
 msgid "File Upload"
 msgstr ""
 
-#: ./tlproject_templates/view.pt:87
+#: ./view_templates/tlproject_view.pt:87
 msgid "File size:"
 msgstr ""
 
@@ -212,11 +212,11 @@ msgstr ""
 msgid "Here you could add an optional third file to your project, if the files support different platforms."
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:130
+#: ./view_templates/tlcenter_view.pt:130
 msgid "Highest Rated"
 msgstr ""
 
-#: ./tlcenter_templates/own_projects.pt:49
+#: ./view_templates/own_projects.pt:49
 msgid "If you already created a new"
 msgstr ""
 
@@ -228,8 +228,8 @@ msgstr ""
 msgid "Information about search for old product versions"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:270
-#: ./tlproject_templates/view.pt:149
+#: ./view_templates/tlcenter_view.pt:270
+#: ./view_templates/tlproject_view.pt:149
 msgid "Install Instructions"
 msgstr ""
 
@@ -271,7 +271,7 @@ msgstr ""
 msgid "License of the uploaded file"
 msgstr ""
 
-#: ./tlproject_templates/view.pt:64
+#: ./view_templates/tlproject_view.pt:64
 msgid "License(s)"
 msgstr ""
 
@@ -283,11 +283,11 @@ msgstr ""
 msgid "Mail To The Project Owner"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:40
+#: ./view_templates/tlcenter_view.pt:40
 msgid "Most Popular ${product_title}"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:226
+#: ./view_templates/tlcenter_view.pt:226
 msgid "Most recent"
 msgstr ""
 
@@ -299,7 +299,7 @@ msgstr ""
 msgid "Name of the Templates Center"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:131
+#: ./view_templates/tlcenter_view.pt:131
 msgid "Newest"
 msgstr ""
 
@@ -307,7 +307,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:150
+#: ./view_templates/tlcenter_view.pt:150
 msgid "No results were found."
 msgstr ""
 
@@ -366,7 +366,7 @@ msgstr ""
 msgid "Please fill in your first name(s)"
 msgstr ""
 
-#: ./tlproject_templates/view.pt:38
+#: ./view_templates/tlproject_view.pt:38
 msgid "Please make sure the relevant project information has been entered and submit your project for approval (publication)."
 msgstr ""
 
@@ -399,7 +399,7 @@ msgstr ""
 msgid "Project Author Public?"
 msgstr ""
 
-#: ./tlproject_templates/view.pt:136
+#: ./view_templates/tlproject_view.pt:136
 msgid "Project Contact"
 msgstr ""
 
@@ -408,15 +408,15 @@ msgstr ""
 msgid "Project Name"
 msgstr ""
 
-#: ./tlproject_templates/view.pt:133
+#: ./view_templates/tlproject_view.pt:133
 msgid "Project Owner"
 msgstr ""
 
-#: ./tlproject_templates/view.pt:130
+#: ./view_templates/tlproject_view.pt:130
 msgid "Project Owner And Contact"
 msgstr ""
 
-#: ./tlproject_templates/view.pt:116
+#: ./view_templates/tlproject_view.pt:116
 msgid "Project Resources"
 msgstr ""
 
@@ -428,20 +428,20 @@ msgstr ""
 msgid "Project Title - minimum 5 and maximum 50 characters"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:274
+#: ./view_templates/tlcenter_view.pt:274
 msgid "Reporting Template-Bugs"
 msgstr ""
 
 #: ./tlproject.py:156
-#: ./tlproject_templates/view.pt:118
+#: ./view_templates/tlproject_view.pt:118
 msgid "Screenshot"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:139
+#: ./view_templates/tlcenter_view.pt:139
 msgid "Search"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:105
+#: ./view_templates/tlcenter_view.pt:105
 msgid "Search ${product_title}"
 msgstr ""
 
@@ -454,11 +454,11 @@ msgstr ""
 msgid "Send Email"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:112
+#: ./view_templates/tlcenter_view.pt:112
 msgid "Show"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:127
+#: ./view_templates/tlcenter_view.pt:127
 msgid "Sort On"
 msgstr ""
 
@@ -470,11 +470,11 @@ msgstr ""
 msgid "Sreenshot of the Template"
 msgstr ""
 
-#: ./tlcenter_templates/own_projects.pt:48
+#: ./view_templates/own_projects.pt:48
 msgid "Submit new"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:219
+#: ./view_templates/tlcenter_view.pt:219
 msgid "Submit your"
 msgstr ""
 
@@ -486,7 +486,7 @@ msgstr ""
 msgid "Template installation instructions"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:212
+#: ./view_templates/tlcenter_view.pt:212
 msgid "Templates"
 msgstr ""
 
@@ -527,11 +527,11 @@ msgstr ""
 msgid "The name of the project, to which author you want to send feedback."
 msgstr ""
 
-#: ./tlproject_templates/view.pt:145
+#: ./view_templates/tlproject_view.pt:145
 msgid "The project e-mail address is: <span>${DYNAMIC_CONTENT}</span>"
 msgstr ""
 
-#: ./tlproject_templates/view.pt:140
+#: ./view_templates/tlproject_view.pt:140
 msgid "The project owner is the user: <span>${DYNAMIC_CONTENT}</span>"
 msgstr ""
 
@@ -555,7 +555,7 @@ msgstr ""
 msgid "The third file you want to upload (this is optional)"
 msgstr ""
 
-#: ./tlcenter_templates/own_projects.pt:13
+#: ./view_templates/own_projects.pt:13
 msgid "These are your projects on this site:"
 msgstr ""
 
@@ -601,15 +601,15 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:286
+#: ./view_templates/tlcenter_view.pt:286
 msgid "You can send a message to the author of the project and give him feedback by following the link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project author </a>.<br /> You could instead go to the page of the project and use the mail form linked from that page."
 msgstr ""
 
-#: ./tlproject_templates/view.pt:157
+#: ./view_templates/tlproject_view.pt:157
 msgid "You can send a message to the author of the project and give him feedback by following the link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project owner </a>"
 msgstr ""
 
-#: ./tlcenter_templates/own_projects.pt:20
+#: ./view_templates/own_projects.pt:20
 msgid "You currently have no projects on this site."
 msgstr ""
 
@@ -637,15 +637,15 @@ msgstr ""
 msgid "Your Message To The Author"
 msgstr ""
 
-#: ./tlcenter_templates/own_projects.pt:12
+#: ./view_templates/own_projects.pt:12
 msgid "Your Own Projects"
 msgstr ""
 
-#: ./tlproject_templates/view.pt:44
+#: ./view_templates/tlproject_view.pt:44
 msgid "Your project has been submitted for publication and will be reviewed now. You will get an email, once the status of your project changed again."
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:255
+#: ./view_templates/tlcenter_view.pt:255
 msgid "by Category"
 msgstr ""
 
@@ -657,18 +657,18 @@ msgstr ""
 msgid "collective.templates (uninstall)"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:85
+#: ./view_templates/tlcenter_view.pt:85
 msgid "in"
 msgstr ""
 
-#: ./tlcenter_templates/own_projects.pt:51
+#: ./view_templates/own_projects.pt:51
 msgid "please submit your new"
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:215
+#: ./view_templates/tlcenter_view.pt:215
 msgid "project(s) available."
 msgstr ""
 
-#: ./tlcenter_templates/view.pt:153
+#: ./view_templates/tlcenter_view.pt:153
 msgid "projects matching your criteria."
 msgstr ""
