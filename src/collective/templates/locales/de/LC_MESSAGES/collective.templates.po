@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2020-09-27 11:11+0200\n"
+"PO-Revision-Date: 2020-11-12 12:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr "Ein Vorlagen Projekt"
 msgid "A center for templates"
 msgstr "Ein Center für Vorlagen"
 
-#: view_templates/tlcenter_view.pt:278
+#: view_templates/tlcenter_view.pt:283
 msgid "About"
 msgstr "Über"
 
@@ -116,7 +116,7 @@ msgstr "Kompatibel mit den Produkt-Versionen"
 msgid "Compatibility"
 msgstr "Kompatibilität"
 
-#: view_templates/tlcenter_view.pt:282
+#: view_templates/tlcenter_view.pt:287
 msgid "Contact a Project Author"
 msgstr "Einen Projekt-Autor kontaktieren"
 
@@ -228,7 +228,7 @@ msgstr "Information"
 msgid "Information about search for old product versions"
 msgstr "Information zur Suche nach älteren Produkt-Versionen"
 
-#: view_templates/tlcenter_view.pt:270 view_templates/tlproject_view.pt:149
+#: view_templates/tlcenter_view.pt:275 view_templates/tlproject_view.pt:149
 msgid "Install Instructions"
 msgstr "Installationsanleitung"
 
@@ -420,7 +420,7 @@ msgstr "Projekt-Zusammenfassung"
 msgid "Project Title - minimum 5 and maximum 50 characters"
 msgstr "Projekt-Titel  - mindestens 5 und höchstens 50 Zeichen"
 
-#: view_templates/tlcenter_view.pt:274
+#: view_templates/tlcenter_view.pt:279
 msgid "Reporting Template-Bugs"
 msgstr "Vorlagen-Bugs melden"
 
@@ -588,7 +588,7 @@ msgstr "Wie lautet Ihre Nachricht an den Projekt-Autor? Ihre Nachricht ist auf 1
 msgid "Yes"
 msgstr "Ja"
 
-#: view_templates/tlcenter_view.pt:286
+#: view_templates/tlcenter_view.pt:291
 msgid "You can send a message to the author of the project and give him feedback by following the link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project author </a>.<br /> You could instead go to the page of the project and use the mail form linked from that page."
 msgstr "Sie können eine Nachricht an den Projekt-Autor senden und ihm Feedback geben, indem sie dem Link folgen und Ihre Informationen in das Formular eintragen::<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Kommen Sie in Kontakt mit dem Projekt-Autor </a>.<br />Sie können stattdessen auch auf die Projekt-Seite gehen und das dort verlinkte E-Mail-Formular verwenden."
 

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-09-27 09:07+0000\n"
+"POT-Creation-Date: 2020-11-12 11:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "A center for templates"
 msgstr ""
 
-#: ./view_templates/tlcenter_view.pt:278
+#: ./view_templates/tlcenter_view.pt:283
 msgid "About"
 msgstr ""
 
@@ -123,7 +123,7 @@ msgstr ""
 msgid "Compatibility"
 msgstr ""
 
-#: ./view_templates/tlcenter_view.pt:282
+#: ./view_templates/tlcenter_view.pt:287
 msgid "Contact a Project Author"
 msgstr ""
 
@@ -235,7 +235,7 @@ msgstr ""
 msgid "Information about search for old product versions"
 msgstr ""
 
-#: ./view_templates/tlcenter_view.pt:270
+#: ./view_templates/tlcenter_view.pt:275
 #: ./view_templates/tlproject_view.pt:149
 msgid "Install Instructions"
 msgstr ""
@@ -435,7 +435,7 @@ msgstr ""
 msgid "Project Title - minimum 5 and maximum 50 characters"
 msgstr ""
 
-#: ./view_templates/tlcenter_view.pt:274
+#: ./view_templates/tlcenter_view.pt:279
 msgid "Reporting Template-Bugs"
 msgstr ""
 
@@ -608,7 +608,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: ./view_templates/tlcenter_view.pt:286
+#: ./view_templates/tlcenter_view.pt:291
 msgid "You can send a message to the author of the project and give him feedback by following the link and fill in your information into the form:<br /> <a class=\"pointer\" href=\"${DYNAMIC_CONTENT}\"> Get in contact with the project author </a>.<br /> You could instead go to the page of the project and use the mail form linked from that page."
 msgstr ""
 
