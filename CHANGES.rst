@@ -5,7 +5,9 @@ Changelog
 2.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add listing of the number of projects per category to the sidebar of the
+  templatecenters view template [Andreas Mantke]
+- Update localization files [Andreas Mantke]
 
 
 2.1 (2020-09-27)
