@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.2 (unreleased)
+2.2 (2020-11-13)
 ----------------
 
 - Add listing of the number of projects per category to the sidebar of the
