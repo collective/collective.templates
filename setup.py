@@ -52,6 +52,7 @@ setup(
         'Products.validation',
         'cioppino.twothumbs',
         'plone.formwidget.recaptcha',
+        'plone.formwidget.hcaptcha',
     ],
     extras_require={
         'test': [
