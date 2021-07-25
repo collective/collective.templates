@@ -91,14 +91,14 @@
   <browser:page
         for="collective.templates.tlproject.ITLProject"
         name="contact-template-project-owner"
-        class="collective.templates.mailtoprojectowner.ReCaptchaForm"
+        class="collective.templates.mailtoprojectowner.HCaptchaForm"
         permission="zope2.View"
         />
 
   <adapter
-      factory=".mailtoprojectowner.ReCaptcha"
+      factory=".mailtoprojectowner.HCaptcha"
       for="collective.templates.tlproject.ITLProject"
-      provides=".mailtoprojectowner.IReCaptchaForm"
+      provides=".mailtoprojectowner.IHCaptchaForm"
    />
   <subscriber
       for="collective.templates.tlproject.ITLProject
