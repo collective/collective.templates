@@ -75,14 +75,14 @@
   <browser:page
         for="Products.CMFCore.interfaces.ISiteRoot"
         name="mail-to-template-author"
-        class="collective.templates.mailtoauthor.ReCaptchaForm"
+        class="collective.templates.mailtoauthor.HCaptchaForm"
         permission="zope2.View"
         />
 
   <adapter
-      factory=".mailtoauthor.ReCaptcha"
+      factory=".mailtoauthor.HCaptcha"
       for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
-      provides=".mailtoauthor.IReCaptchaForm"
+      provides=".mailtoauthor.IHCaptchaForm"
    />
 
 
