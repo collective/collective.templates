@@ -29,7 +29,7 @@ Features
   was submitted for publication. It send an email to the project contact address for every
   change in the workflow status of the project.
 - The user could send a message to the author of a template via a mail. The mail form uses a
-  recaptcha widget. The contact data of the author of the template will not be made public.
+  hcaptcha widget. The contact data of the author of the template will not be made public.
 - The file extensions of the uploaded templates will be checked. It is possible to set the
   allowed file extensions distinct for the specific use case of the template center. They
   could be dynamically changed at any time.
