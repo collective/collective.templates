@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2020-11-12 12:20+0100\n"
+"PO-Revision-Date: 2021-07-25 15:50+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -92,7 +92,7 @@ msgstr "Suchen"
 msgid "Browse Templates by Category"
 msgstr "Suchen von Vorlagen nach Kategorie"
 
-#: mailtoauthor.py:200 mailtoprojectowner.py:193
+#: mailtoauthor.py:197 mailtoprojectowner.py:189
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -128,11 +128,11 @@ msgstr "Kontakt-Email-Adresse"
 msgid "Contact email-address for the project."
 msgstr "Kontakt-Email-Adresse für das Projekt.."
 
-#: mailtoauthor.py:117
+#: mailtoauthor.py:114
 msgid "Contact the project author and send your feedback"
 msgstr "Kontaktieren Sie den Projekt-Autoren und senden Sie Feedback"
 
-#: mailtoprojectowner.py:110
+#: mailtoprojectowner.py:106
 msgid "Contact the project owner and send your feedback"
 msgstr "Kontaktieren des Projekt-Eigentümers und übermitteln Sie Ihr Feedback"
 
@@ -244,7 +244,7 @@ msgstr "Anleitung, wie ein Fehler gemeldet wird"
 msgid "Instructions"
 msgstr "Anleitungen"
 
-#: common.py:23 mailtoauthor.py:29 mailtoprojectowner.py:31
+#: common.py:22 mailtoauthor.py:26 mailtoprojectowner.py:27
 msgid "Invalid email address"
 msgstr "Ungültige Email-Adresse"
 
@@ -272,11 +272,11 @@ msgstr "Lizenz der hochgeladenen Datei"
 msgid "License(s)"
 msgstr "Lizenz(en)"
 
-#: mailtoauthor.py:116
+#: mailtoauthor.py:113
 msgid "Mail To The Project Author"
 msgstr "E-Mail an den Projekt-Autor"
 
-#: mailtoprojectowner.py:109
+#: mailtoprojectowner.py:105
 msgid "Mail To The Project Owner"
 msgstr "E-Mail an den Projekt-Eigentümer"
 
@@ -300,7 +300,7 @@ msgstr "Name des Vorlagen-Center"
 msgid "Newest"
 msgstr "Neueste"
 
-#: common.py:13
+#: common.py:12
 msgid "No"
 msgstr "Nein"
 
@@ -308,7 +308,7 @@ msgstr "Nein"
 msgid "No results were found."
 msgstr "Keine Ergebnisse gefunden."
 
-#: mailtoauthor.py:42
+#: mailtoauthor.py:39
 msgid "Not a valid project name. Please retry."
 msgstr "Kein gültiger Projektname. Bitte versuchen Sie es nochmals."
 
@@ -348,15 +348,15 @@ msgstr "Bitte erklären Sie, dass Sie den obigen Haftungsausschluss akzeptieren.
 msgid "Please fill in the install instructions"
 msgstr "Bitte füllen Sie die Installationsanweisungen ein"
 
-#: mailtoauthor.py:80 mailtoprojectowner.py:73
+#: mailtoauthor.py:77 mailtoprojectowner.py:69
 msgid "Please fill in your email address."
 msgstr "Bitte tragen Sie Ihre E-Mail-Adresse ein."
 
-#: mailtoauthor.py:75 mailtoprojectowner.py:68
+#: mailtoauthor.py:72 mailtoprojectowner.py:64
 msgid "Please fill in your familiy name"
 msgstr "Bitte tragen Sie Ihren Familiennamen ein"
 
-#: mailtoauthor.py:70 mailtoprojectowner.py:63
+#: mailtoauthor.py:67 mailtoprojectowner.py:59
 msgid "Please fill in your first name(s)"
 msgstr "Bitte tragen Sie Ihre(n) Vornamen ein."
 
@@ -384,9 +384,9 @@ msgstr "Bitte wählen Sie eine passende Kategorie (eine oder mehrere) für ihre 
 msgid "Please upload your file."
 msgstr "Bitte laden Sie Ihre Datei hoch."
 
-#: mailtoauthor.py:149 mailtoprojectowner.py:142
-msgid "Please validate the recaptcha field before sending the form."
-msgstr "Bitte validieren Sie das Recaptcha-Feld, bevor Sie das Formular absenden."
+#: mailtoauthor.py:146 mailtoprojectowner.py:138
+msgid "Please validate the hcaptcha field before sending the form."
+msgstr "Bitte validieren Sie das Hcaptcha-Feld, bevor Sie das Formular absenden."
 
 #: tlproject.py:147
 msgid "Project Author Public?"
@@ -396,7 +396,7 @@ msgstr "Projekt-Autor veröffentlichen?"
 msgid "Project Contact"
 msgstr "Projekt-Kontakt"
 
-#: mailtoauthor.py:85 mailtoprojectowner.py:78
+#: mailtoauthor.py:82 mailtoprojectowner.py:74
 msgid "Project Name"
 msgstr "Projekt-Name"
 
@@ -440,7 +440,7 @@ msgstr "Suche ${product_title}"
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr "Die zweite hochgeladene Datei ist kompatibel mit den Plattformen"
 
-#: mailtoauthor.py:130 mailtoprojectowner.py:123
+#: mailtoauthor.py:127 mailtoprojectowner.py:119
 msgid "Send Email"
 msgstr "E-Mail senden"
 
@@ -512,7 +512,7 @@ msgstr "Die folgenden Dateierweiterungen sind für Bildschirmfoto-Dateien erlaub
 msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
 msgstr "Die folgenden Dateierweiterungen sind für Vorlagen-Dateien erlaubt (Groß- und Kleinschreibung und ein Mix aus beiden):"
 
-#: mailtoauthor.py:86 mailtoprojectowner.py:79
+#: mailtoauthor.py:83 mailtoprojectowner.py:75
 msgid "The name of the project, to which author you want to send feedback."
 msgstr "Der Name des Projekts, dessen Autor Sie Feedback senden wollen."
 
@@ -576,15 +576,15 @@ msgstr "Version-Nummer der Vorlagen-Datei (bis zu zwölf Zeichen), die Sie zu di
 msgid "Versions Number"
 msgstr "Version-Nummer"
 
-#: mailtoauthor.py:191 mailtoprojectowner.py:184
+#: mailtoauthor.py:188 mailtoprojectowner.py:180
 msgid "We send your message to the author of the project. It's on her / his choice, if she'll / he'll get back to you."
 msgstr "Wir senden Ihre Nachricht an den Projekt-Autor. Es ist ihre / seine Entscheidung, ob sie / er sich bei Ihnen meldet."
 
-#: mailtoauthor.py:93 mailtoprojectowner.py:86
+#: mailtoauthor.py:90 mailtoprojectowner.py:82
 msgid "What is your message to the author of the project? Your message is limited to 1000 characters."
 msgstr "Wie lautet Ihre Nachricht an den Projekt-Autor? Ihre Nachricht ist auf 1000 Zeichen begrenzt."
 
-#: common.py:14
+#: common.py:13
 msgid "Yes"
 msgstr "Ja"
 
@@ -604,19 +604,19 @@ msgstr "Sie haben aktuell keine Projekte auf dieser Seite."
 msgid "You need only to upload one file to your project. There are options for further two file uploads if you want to provide files for different platforms."
 msgstr "Sie brauchen nur eine Datei zu Ihrem Projekt hochladen. Es bestehen Möglichkeiten für das Hochladen von zwei weiteren Dateien, falls Sie Dateien für andere Plattformen zur Verfügung stellen wollen."
 
-#: mailtoauthor.py:79 mailtoprojectowner.py:72
+#: mailtoauthor.py:76 mailtoprojectowner.py:68
 msgid "Your Email Address"
 msgstr "Ihre E-Mail-Adresse"
 
-#: mailtoauthor.py:74 mailtoprojectowner.py:67
+#: mailtoauthor.py:71 mailtoprojectowner.py:63
 msgid "Your Family Name"
 msgstr "Ihr Familienname"
 
-#: mailtoauthor.py:69 mailtoprojectowner.py:62
+#: mailtoauthor.py:66 mailtoprojectowner.py:58
 msgid "Your First Name"
 msgstr "Ihr Vorname"
 
-#: mailtoauthor.py:92 mailtoprojectowner.py:85
+#: mailtoauthor.py:89 mailtoprojectowner.py:81
 msgid "Your Message To The Author"
 msgstr "Ihre Nachricht an den Autor"
 
