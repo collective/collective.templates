@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from Acquisition import aq_inner
 from collective.templates import _
+from collective.templates.common import checkemail
 from plone import api
 from plone.autoform.form import AutoExtensibleForm
 from plone.formwidget.hcaptcha.widget import HCaptchaFieldWidget
@@ -17,11 +18,7 @@ from zope.interface import implementer
 from zope.interface import Invalid
 
 import logging
-import re
 
-
-checkemail = re.compile(
-    r'[a-zA-Z0-9._%-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4}').match
 
 
 def validateemail(value):
