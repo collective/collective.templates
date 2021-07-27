@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='collective.templates',
-    version='2.4.dev0',
+    version='3.0.dev0',
     description="Plone add-on to host document templates",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -52,6 +52,7 @@ setup(
         'Products.validation',
         'cioppino.twothumbs',
         'plone.formwidget.hcaptcha',
+        'collective.honeypot',
     ],
     extras_require={
         'test': [
