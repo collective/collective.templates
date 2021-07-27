@@ -8,6 +8,7 @@ from zope.schema.vocabulary import SimpleVocabulary
 
 import re
 
+
 yesnochoice = SimpleVocabulary(
     [SimpleTerm(value=0, title=_(safe_unicode('No'))),
      SimpleTerm(value=1, title=_(safe_unicode('Yes')))],
@@ -24,15 +25,18 @@ def validateemail(value):
 
 
 def allowedtemplatefileextensions():
-    return api.portal.get_registry_record('collectivetemplates.allowed_templatefileextension').replace('|', ', ')
+    return api.portal.get_registry_record(
+        'collectivetemplates.allowed_templatefileextension').replace('|', ', ')
 
 
 def allowedtempimageextensions():
-    return api.portal.get_registry_record('collectivetemplates.allowed_tempimageextension').replace('|', ', ')
+    return api.portal.get_registry_record(
+        'collectivetemplates.allowed_tempimageextension').replace('|', ', ')
 
 
 def validatetemplatefileextension(value):
-    result = str(api.portal.get_registry_record('collectivetemplates.allowed_templatefileextension'))
+    result = str(api.portal.get_registry_record(
+        'collectivetemplates.allowed_templatefileextension'))
     pattern = r'^.*\.({0})'.format(result[0])
     matches = re.compile(pattern, re.IGNORECASE).match
     if not matches(value.filename):
@@ -44,7 +48,8 @@ def validatetemplatefileextension(value):
 
 
 def validateimagefileextension(value):
-    result = str(api.portal.get_registry_record('collectivetemplates.allowed_tempimageextension'))
+    result = str(api.portal.get_registry_record(
+        'collectivetemplates.allowed_tempimageextension'))
     pattern = r'^.*\.({0})'.format(result[0])
     matches = re.compile(pattern, re.IGNORECASE).match
     if not matches(value.filename):
@@ -56,8 +61,10 @@ def validateimagefileextension(value):
 
 
 def legaldeclarationtitle():
-    return api.portal.get_registry_record('collectivetemplates.title_legaldisclaimer')
+    return api.portal.get_registry_record(
+        'collectivetemplates.title_legaldisclaimer')
 
 
 def legaldeclarationtext():
-    return api.portal.get_registry_record('collectivetemplates.legal_disclaimer')
+    return api.portal.get_registry_record(
+        'collectivetemplates.legal_disclaimer')
