@@ -5,7 +5,11 @@ Changelog
 2.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add PloneHotfix to the buildout [Andreas Mantke]
+- Migrate mail forms from plone.formwidget.recaptcha to
+  plone.formwidget.hcaptcha and revome the recaptcha
+  Plone add-on from the buildout [Andreas Mantke]
+- Add PrintingMailHost to the buildout [Andreas Mantke]
 
 
 2.2 (2020-11-13)
