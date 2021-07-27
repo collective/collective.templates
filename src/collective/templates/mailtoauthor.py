@@ -20,7 +20,6 @@ from zope.interface import Invalid
 import logging
 
 
-
 def validateemail(value):
     if not checkemail(value):
         raise Invalid(_(safe_unicode('Invalid email address')))
