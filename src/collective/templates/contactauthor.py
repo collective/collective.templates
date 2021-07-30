@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from collective.honeypot.z3cform.widget import HoneypotFieldWidget
 from collective.templates import _
 from collective.templates.common import checkemail
 from plone import api
@@ -8,13 +9,12 @@ from Products.CMFPlone.utils import safe_unicode
 from z3c.form import button
 from z3c.form import field
 from z3c.form import form
+from z3c.form import interfaces
 from zope import interface
 from zope import schema
 from zope.component import adapter
 from zope.interface import implementer
 from zope.interface import Invalid
-from collective.honeypot.z3cform.widget import HoneypotFieldWidget
-from z3c.form import interfaces
 
 import logging
 
@@ -61,7 +61,10 @@ class ContactAuthorSchema(interface.Interface):
     )
 
     # Keep field title empty so visitors do not see it.
-    projecttitle = schema.TextLine(title=u"", required=False)
+    projecttitle = schema.TextLine(
+        title=_(safe_unicode('')),
+        required=False
+    )
 
     projectname = schema.TextLine(
         title=_(safe_unicode('Project Name')),
@@ -117,7 +120,6 @@ class ContactAuthorForm(AutoExtensibleForm, form.Form):
         if errors:
             self.status = self.formErrorsMessage
             return
-
 
         if api.portal.get_registry_record(
                 'plone.email_from_address') is not None:
