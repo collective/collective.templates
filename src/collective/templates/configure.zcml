@@ -85,6 +85,17 @@
       provides=".mailtoauthor.IHCaptchaForm"
    />
 
+   <adapter factory="collective.templates.contactauthor.ContactAuthorAdapter"/>
+
+
+   <browser:page
+       for="Products.CMFCore.interfaces.ISiteRoot"
+        name="contact-template-author"
+        class="collective.templates.contactauthor.HoneypotForm"
+        permission="zope2.View"
+        />
+
+
 
   <adapter factory="collective.templates.mailtoprojectowner.MailToProjectOwnerAdapter"/>
 
