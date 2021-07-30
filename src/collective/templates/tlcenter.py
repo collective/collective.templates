@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from Acquisition import aq_inner
 from collective.templates import _
 from collective.templates.common import validateemail
 from plone import api
@@ -105,7 +104,7 @@ class TLCenterView(BrowserView):
         return list(api.portal.get_registry_record('collectivetemplates.available_versions'))
 
     def get_latest_program_release(self):
-        versions = list(self.context.available_versions)
+        versions = list(api.portal.get_registry_record('collectivetemplates.available_versions'))
         versions.sort(reverse=True)
         return versions[0]
 
