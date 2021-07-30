@@ -74,28 +74,23 @@
 
 
   <browser:page
-       for="Products.CMFCore.interfaces.ISiteRoot"
+        for="Products.CMFCore.interfaces.ISiteRoot"
         name="contact-template-author"
         class="collective.templates.contactauthor.HoneypotForm"
         permission="zope2.View"
         />
 
-
-
-  <adapter factory="collective.templates.mailtoprojectowner.MailToProjectOwnerAdapter"/>
+  <adapter
+      factory="collective.templates.contactprojectowner.ContactProjectOwnerAdapter"/>
 
   <browser:page
-        for="collective.templates.tlproject.ITLProject"
-        name="contact-template-project-owner"
-        class="collective.templates.mailtoprojectowner.HCaptchaForm"
-        permission="zope2.View"
-        />
-
-  <adapter
-      factory=".mailtoprojectowner.HCaptcha"
       for="collective.templates.tlproject.ITLProject"
-      provides=".mailtoprojectowner.IHCaptchaForm"
-   />
+      name="contact-template-project-owner"
+      class="collective.templates.contactprojectowner.HoneypotForm"
+      permission="zope2.View"
+      />
+
+
   <subscriber
       for="collective.templates.tlproject.ITLProject
                zope.lifecycleevent.interfaces.IObjectAddedEvent"
