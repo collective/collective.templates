@@ -90,8 +90,8 @@ msgstr ""
 msgid "Browse Templates by Category"
 msgstr ""
 
-#: ./mailtoauthor.py:197
-#: ./mailtoprojectowner.py:189
+#: ./contactauthor.py:168
+#: ./contactprojectowner.py:161
 msgid "Cancel"
 msgstr ""
 
@@ -128,11 +128,11 @@ msgstr ""
 msgid "Contact email-address for the project."
 msgstr ""
 
-#: ./mailtoauthor.py:114
+#: ./contactauthor.py:102
 msgid "Contact the project author and send your feedback"
 msgstr ""
 
-#: ./mailtoprojectowner.py:106
+#: ./contactprojectowner.py:95
 msgid "Contact the project owner and send your feedback"
 msgstr ""
 
@@ -140,15 +140,15 @@ msgstr ""
 msgid "Currently there are"
 msgstr ""
 
-#: ./tlcenter.py:30
+#: ./tlcenter.py:29
 msgid "Description of the Templates Center"
 msgstr ""
 
-#: ./tlcenter.py:34
+#: ./tlcenter.py:33
 msgid "Description of the features of templates"
 msgstr ""
 
-#: ./tlcenter.py:79
+#: ./tlcenter.py:78
 msgid "EMail address for communication with the template center manager and reviewer"
 msgstr ""
 
@@ -156,11 +156,11 @@ msgstr ""
 msgid "Email Public?"
 msgstr ""
 
-#: ./tlcenter.py:82
+#: ./tlcenter.py:81
 msgid "Enter an email address for the communication with template center manager and reviewer"
 msgstr ""
 
-#: ./tlcenter.py:67
+#: ./tlcenter.py:66
 msgid "Enter an information about the search for older versions of the product, if they are not on the versions list (compatibility) anymore."
 msgstr ""
 
@@ -224,7 +224,7 @@ msgstr ""
 msgid "Information"
 msgstr ""
 
-#: ./tlcenter.py:66
+#: ./tlcenter.py:65
 msgid "Information about search for old product versions"
 msgstr ""
 
@@ -237,17 +237,17 @@ msgstr ""
 msgid "Installs the collective.templates add-on."
 msgstr ""
 
-#: ./tlcenter.py:60
+#: ./tlcenter.py:59
 msgid "Instruction how to report Bugs"
 msgstr ""
 
-#: ./tlcenter.py:44
+#: ./tlcenter.py:43
 msgid "Instructions"
 msgstr ""
 
-#: ./common.py:22
-#: ./mailtoauthor.py:26
-#: ./mailtoprojectowner.py:27
+#: ./common.py:23
+#: ./contactauthor.py:24
+#: ./contactprojectowner.py:26
 msgid "Invalid email address"
 msgstr ""
 
@@ -275,11 +275,11 @@ msgstr ""
 msgid "License(s)"
 msgstr ""
 
-#: ./mailtoauthor.py:113
+#: ./contactauthor.py:101
 msgid "Mail To The Project Author"
 msgstr ""
 
-#: ./mailtoprojectowner.py:105
+#: ./contactprojectowner.py:94
 msgid "Mail To The Project Owner"
 msgstr ""
 
@@ -291,11 +291,11 @@ msgstr ""
 msgid "Most recent"
 msgstr ""
 
-#: ./tlcenter.py:39
+#: ./tlcenter.py:38
 msgid "Name of the Template product, e.g. only Templates"
 msgstr ""
 
-#: ./tlcenter.py:26
+#: ./tlcenter.py:25
 msgid "Name of the Templates Center"
 msgstr ""
 
@@ -303,7 +303,7 @@ msgstr ""
 msgid "Newest"
 msgstr ""
 
-#: ./common.py:12
+#: ./common.py:13
 msgid "No"
 msgstr ""
 
@@ -311,7 +311,7 @@ msgstr ""
 msgid "No results were found."
 msgstr ""
 
-#: ./mailtoauthor.py:39
+#: ./contactauthor.py:37
 msgid "Not a valid project name. Please retry."
 msgstr ""
 
@@ -347,22 +347,22 @@ msgstr ""
 msgid "Please declare that you accept the above legal disclaimer."
 msgstr ""
 
-#: ./tlcenter.py:54
+#: ./tlcenter.py:53
 msgid "Please fill in the install instructions"
 msgstr ""
 
-#: ./mailtoauthor.py:77
-#: ./mailtoprojectowner.py:69
+#: ./contactauthor.py:59
+#: ./contactprojectowner.py:52
 msgid "Please fill in your email address."
 msgstr ""
 
-#: ./mailtoauthor.py:72
-#: ./mailtoprojectowner.py:64
+#: ./contactauthor.py:54
+#: ./contactprojectowner.py:47
 msgid "Please fill in your familiy name"
 msgstr ""
 
-#: ./mailtoauthor.py:67
-#: ./mailtoprojectowner.py:59
+#: ./contactauthor.py:49
+#: ./contactprojectowner.py:42
 msgid "Please fill in your first name(s)"
 msgstr ""
 
@@ -390,11 +390,6 @@ msgstr ""
 msgid "Please upload your file."
 msgstr ""
 
-#: ./mailtoauthor.py:146
-#: ./mailtoprojectowner.py:138
-msgid "Please validate the hcaptcha field before sending the form."
-msgstr ""
-
 #: ./tlproject.py:147
 msgid "Project Author Public?"
 msgstr ""
@@ -403,8 +398,8 @@ msgstr ""
 msgid "Project Contact"
 msgstr ""
 
-#: ./mailtoauthor.py:82
-#: ./mailtoprojectowner.py:74
+#: ./contactauthor.py:70
+#: ./contactprojectowner.py:63
 msgid "Project Name"
 msgstr ""
 
@@ -449,8 +444,8 @@ msgstr ""
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr ""
 
-#: ./mailtoauthor.py:127
-#: ./mailtoprojectowner.py:119
+#: ./contactauthor.py:116
+#: ./contactprojectowner.py:109
 msgid "Send Email"
 msgstr ""
 
@@ -462,7 +457,7 @@ msgstr ""
 msgid "Sort On"
 msgstr ""
 
-#: ./tlcenter.py:75
+#: ./tlcenter.py:74
 msgid "Special email adresses"
 msgstr ""
 
@@ -478,11 +473,11 @@ msgstr ""
 msgid "Submit your"
 msgstr ""
 
-#: ./tlcenter.py:38
+#: ./tlcenter.py:37
 msgid "Template Product Name"
 msgstr ""
 
-#: ./tlcenter.py:53
+#: ./tlcenter.py:52
 msgid "Template installation instructions"
 msgstr ""
 
@@ -522,8 +517,8 @@ msgstr ""
 msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
 msgstr ""
 
-#: ./mailtoauthor.py:83
-#: ./mailtoprojectowner.py:75
+#: ./contactauthor.py:71
+#: ./contactprojectowner.py:64
 msgid "The name of the project, to which author you want to send feedback."
 msgstr ""
 
@@ -587,17 +582,17 @@ msgstr ""
 msgid "Versions Number"
 msgstr ""
 
-#: ./mailtoauthor.py:188
-#: ./mailtoprojectowner.py:180
+#: ./contactauthor.py:159
+#: ./contactprojectowner.py:152
 msgid "We send your message to the author of the project. It's on her / his choice, if she'll / he'll get back to you."
 msgstr ""
 
-#: ./mailtoauthor.py:90
-#: ./mailtoprojectowner.py:82
+#: ./contactauthor.py:78
+#: ./contactprojectowner.py:71
 msgid "What is your message to the author of the project? Your message is limited to 1000 characters."
 msgstr ""
 
-#: ./common.py:13
+#: ./common.py:14
 msgid "Yes"
 msgstr ""
 
@@ -617,23 +612,23 @@ msgstr ""
 msgid "You need only to upload one file to your project. There are options for further two file uploads if you want to provide files for different platforms."
 msgstr ""
 
-#: ./mailtoauthor.py:76
-#: ./mailtoprojectowner.py:68
+#: ./contactauthor.py:58
+#: ./contactprojectowner.py:51
 msgid "Your Email Address"
 msgstr ""
 
-#: ./mailtoauthor.py:71
-#: ./mailtoprojectowner.py:63
+#: ./contactauthor.py:53
+#: ./contactprojectowner.py:46
 msgid "Your Family Name"
 msgstr ""
 
-#: ./mailtoauthor.py:66
-#: ./mailtoprojectowner.py:58
+#: ./contactauthor.py:48
+#: ./contactprojectowner.py:41
 msgid "Your First Name"
 msgstr ""
 
-#: ./mailtoauthor.py:89
-#: ./mailtoprojectowner.py:81
+#: ./contactauthor.py:77
+#: ./contactprojectowner.py:70
 msgid "Your Message To The Author"
 msgstr ""
 
