@@ -63,7 +63,7 @@ class ContactAuthorSchema(interface.Interface):
     # Keep field title empty so visitors do not see it.
     projecttitle = schema.TextLine(
         title=_(safe_unicode('')),
-        required=False
+        required=False,
     )
 
     projectname = schema.TextLine(

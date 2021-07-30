@@ -58,7 +58,7 @@ class ContactProjectOwnerSchema(interface.Interface):
     # Keep field title empty so visitors do not see it.
     projecttitle = schema.TextLine(
         title=_(safe_unicode('')),
-        required=False
+        required=False,
     )
 
     projectname = schema.TextLine(
@@ -111,10 +111,6 @@ class ContactProjectOwnerForm(AutoExtensibleForm, form.Form):
     @button.buttonAndHandler(_(safe_unicode('Send Email')))
     def handleApply(self, action):
         data, errors = self.extractData()
-        captcha = getMultiAdapter(
-            (aq_inner(self.context), self.request),
-            name='hcaptcha',
-        )
 
         if errors:
             self.status = self.formErrorsMessage
