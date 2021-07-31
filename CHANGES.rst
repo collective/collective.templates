@@ -5,7 +5,9 @@ Changelog
 2.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix of the get_latest_program_release function
+  and remove not any more used import. [Andreas Mantke]
+- Update localization files [Andreas Mantke]
 
 
 2.3 (2021-07-27)
