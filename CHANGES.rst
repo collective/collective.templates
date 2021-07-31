@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.4 (unreleased)
+2.4 (2021-07-31)
 ----------------
 
 - Fix of the get_latest_program_release function
