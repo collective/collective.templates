@@ -88,15 +88,6 @@ class ITLCenter(model.Schema):
 
 class TLCenterView(BrowserView):
 
-    def tlprojects(self):
-        from collective.templates.tlproject import ITLProject
-        context = aq_inner(self.context)
-        catalog = api.portal.get_tool(name='portal_catalog')
-
-        return catalog(object_provides=ITLProject.__identifier__,
-                       path='/'.join(context.getPhysicalPath()),
-                       sort_order='sortable_title')
-
     def category_names(self):
         return list(api.portal.get_registry_record('collectivetemplates.available_category'))
 
