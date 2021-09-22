@@ -11,6 +11,7 @@ Changelog
 - Remove not used function tlprojects from the view of the
   tlcenter [Andreas Mantke]
 - Update localization files [Andreas Mantke]
+- Fix validation functions in the common module [Andreas Mantke]
 
 
 3.0 (2021-07-31)
