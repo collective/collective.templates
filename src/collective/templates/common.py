@@ -37,7 +37,7 @@ def allowedtempimageextensions():
 def validatetemplatefileextension(value):
     result = str(api.portal.get_registry_record(
         'collectivetemplates.allowed_templatefileextension'))
-    pattern = r'^.*\.({0})'.format(result[0])
+    pattern = r'^.*\.({0})'.format(result)
     matches = re.compile(pattern, re.IGNORECASE).match
     if not matches(value.filename):
         raise Invalid(safe_unicode(
@@ -50,7 +50,7 @@ def validatetemplatefileextension(value):
 def validateimagefileextension(value):
     result = str(api.portal.get_registry_record(
         'collectivetemplates.allowed_tempimageextension'))
-    pattern = r'^.*\.({0})'.format(result[0])
+    pattern = r'^.*\.({0})'.format(result)
     matches = re.compile(pattern, re.IGNORECASE).match
     if not matches(value.filename):
         raise Invalid(safe_unicode(
