@@ -5,7 +5,30 @@ Changelog
 2.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Use Products.PrintingMailHost 1.1.6 for compatibility with
+  Python 3.9 [Andreas Mantke]
+- Add Python 3.8 and 3.9 to the classifiers [Andreas Mantke]
+- Remove not used function tlprojects from the view of the
+  tlcenter [Andreas Mantke]
+- Update localization files [Andreas Mantke]
+
+
+3.0 (2021-07-31)
+----------------
+
+- Change the main release number to 3.x because this version
+  breakes compatibility due to move to honeypot instead of
+  captcha technology to protect mail forms. [Andreas Mantke]
+- Update README with information about honeypot technology
+  [Andreas Mantke]
+- Add contactauthor and contactprojectowner module with
+  honeypot technology to protect against robots, add
+  collective.honeypot to the requirements. [Andreas Mantke]
+- Add configuration for collective.honeypot to the
+  buildout script. [Andreas Mantke]
+- Remove mailtoauthor and mailtoprojectowner modules with
+  hcaptcha technology and plone.formwidget.hcaptcha from
+  the requirements. [Andreas Mantke]
 
 
 2.4 (2021-07-31)
