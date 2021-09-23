@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.5 (unreleased)
+2.5 (2021-09-23)
 ----------------
 
 - Use Products.PrintingMailHost 1.1.6 for compatibility with
