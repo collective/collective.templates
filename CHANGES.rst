@@ -38,6 +38,13 @@ Changelog
   the requirements. [Andreas Mantke]
 
 
+2.4 (2021-07-31)
+----------------
+
+- Fix of the get_latest_program_release function
+  and remove not any more used import. [Andreas Mantke]
+- Update localization files [Andreas Mantke]
+
 
 2.3 (2021-07-27)
 ----------------
