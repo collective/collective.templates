@@ -2,6 +2,12 @@ Changelog
 =========
 
 
+2.6 (unreleased)
+----------------
+
+- Nothing changed yet.
+
+
 2.5 (2021-09-23)
 ----------------
 
