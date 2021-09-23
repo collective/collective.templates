@@ -5,7 +5,10 @@ Changelog
 3.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- This release applied the changes, which where made with
+  release 2.5 upon release 2.4 to the release line 3.x. The
+  changes of release 3.1 were the same as listed for release
+  2.5 (see below) [Andreas Mantke]
 
 
 2.5 (2021-09-23)
