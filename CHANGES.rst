@@ -8,6 +8,18 @@ Changelog
 - Nothing changed yet.
 
 
+2.5 (2021-09-23)
+----------------
+
+- Use Products.PrintingMailHost 1.1.6 for compatibility with
+  Python 3.9 [Andreas Mantke]
+- Add Python 3.8 and 3.9 to the classifiers [Andreas Mantke]
+- Remove not used function tlprojects from the view of the
+  tlcenter [Andreas Mantke]
+- Update localization files [Andreas Mantke]
+- Fix validation functions in the common module [Andreas Mantke]
+
+
 3.0 (2021-07-31)
 ----------------
 
