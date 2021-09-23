@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-3.1 (unreleased)
+3.1 (2021-09-23)
 ----------------
 
 - This release applied the changes, which where made with
