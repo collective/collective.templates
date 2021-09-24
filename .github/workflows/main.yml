@@ -122,7 +122,8 @@ jobs:
         run: |
             pip2.7 install popt || pip2.7 install --user  popt
             grep  --include=output.xml -Rl  FAIL parts/test | xargs --no-run-if-empty -n 1 popt
-coveralls_finish:
+
+  coveralls_finish:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -130,4 +131,3 @@ coveralls_finish:
       uses: AndreMiras/coveralls-python-action@develop
       with:
         parallel-finished: true
-
