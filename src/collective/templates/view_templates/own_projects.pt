@@ -32,7 +32,7 @@
                                              screenshot   project/getScreenshot | nothing">
                             <h3 style="border-top: none">
                               <a href="" tal:attributes="href projectURL;" tal:content="project/pretty_title_or_id">
-								                <tal:comment replace="nothing">Template One</tal:comment>
+                                <tal:comment replace="nothing">Template One</tal:comment>
                               </a>
                             </h3>
                           </tal:entry>

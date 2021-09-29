@@ -40,8 +40,8 @@
                 <h2 i18n:translate="">Most Popular <span tal:content="context/product_title" i18n:name="product_title" /></h2>
                   <div tal:define="results python:view.get_most_popular_products();
                                      Batch python:modules['Products.CMFPlone'].Batch;
-				                             b_size python:10;b_start python:0;b_start request/b_start | b_start;
-				                             ">
+                                     b_size python:10;b_start python:0;b_start request/b_start | b_start;
+                                     ">
 
                          <tal:results condition="results"
                                      define="batch python:Batch(results, b_size, int(b_start), orphan=1);">
@@ -49,15 +49,15 @@
                              <ul class="popularproducts">
                                  <li tal:repeat="result batch">
                                       <tal:entry
-						                                 define="project result/getObject;
-						                                         url result/getURL;
-							                                       projectURL project/absolute_url;
-							                                       result_type result/portal_type;
-							                                       zoomid   python:project.id.replace('.', '_');
-							                                       screenshot   project/screenshot | nothing">
+                                             define="project result/getObject;
+                                                     url result/getURL;
+                                                     projectURL project/absolute_url;
+                                                     result_type result/portal_type;
+                                                     zoomid   python:project.id.replace('.', '_');
+                                                     screenshot   project/screenshot | nothing">
 
                                           <h3 style="border-top: none">
-                                              <a href="" tal:attributes="href projectURL;" 	tal:content="project/pretty_title_or_id">
+                                          <a href="" tal:attributes="href projectURL;" 	tal:content="project/pretty_title_or_id">
                                                   <tal:comment replace="nothing">Template One</tal:comment></a>
                                           </h3>
                                           <div tal:content="structure project/@@rate-if-you-dare" />
@@ -70,7 +70,7 @@
                                                     </a>
                                                 </div>
                                                 <span class="project-thumb"
-						                                          tal:condition="python: not screenshot and project.project_logo">
+                                                      tal:condition="python: not screenshot and project.project_logo">
                                                     <img tal:define="scales project/@@images;
                                                                      projectlogo project/@@images/project_logo;
                                                                      scale python:scales.scale('project_logo', 'tile')"
@@ -144,8 +144,8 @@
                          <div class="" id="categories"
                             tal:define="results python:view.get_products(currentCategory, currentVersion, sort_on, SearchableText);
                                         Batch python:modules['Products.CMFPlone'].Batch;
-				                        b_size python:10;b_start python:0;b_start request/b_start | b_start;
-				                        ">
+                                b_size python:10;b_start python:0;b_start request/b_start | b_start;
+                                ">
                              <p tal:condition="not: results">
                                  <strong i18n:translate="">No results were found.</strong>
                              </p>
@@ -159,10 +159,10 @@
                                          <tal:entry
                                                  define="project result/getObject;
                                                          url result/getURL;
-							                             projectURL project/absolute_url;
-							                             result_type result/portal_type;
-							                             zoomid   python:project.id.replace('.', '_');
-							                             screenshot   project/screenshot">
+                                           projectURL project/absolute_url;
+                                           result_type result/portal_type;
+                                           zoomid   python:project.id.replace('.', '_');
+                                           screenshot   project/screenshot">
                                              <h3 style="border-top: none">
                                                  <a href=""
                                                          tal:attributes="href projectURL;"
@@ -206,10 +206,10 @@
                  </div>
            <div class="col-xs-12 col-sm-4">
                 <div class="splash pullout" id="sidebar-downloads">
-                        	<h1 tal:condition="context/product_title" i18n:translate="">
+                          <h1 tal:condition="context/product_title" i18n:translate="">
                                 <span tal:content="context/product_title" i18n:name="product_title" />
                             </h1>
-                        	<h1 tal:condition="not:context/product_title" i18n:translate="">Templates</h1>
+                          <h1 tal:condition="not:context/product_title" i18n:translate="">Templates</h1>
                     <span tal:content="structure context/product_description | nothing"/>
                     <p class="current-projects"><span i18n:translate="">Currently there are</span>
                             <span tal:content="view/tlproject_count" /> <span i18n:translate="">project(s) available.</span>
@@ -227,18 +227,18 @@
                     <div class=""
                             tal:define="results python:view.get_newest_products();
                                         Batch python:modules['Products.CMFPlone'].Batch;
-				                        b_size python:5;b_start python:0;b_start request/b_start | b_start;
-				                        ">
+                                b_size python:5;b_start python:0;b_start request/b_start | b_start;
+                                ">
                         <tal:results condition="results"
                                      define="batch python:Batch(results, b_size, int(b_start), orphan=1);">
                             <ul class="newestproducts">
                                 <li tal:repeat="result batch">
                                     <tal:entry define="project result/getObject;
                                                        url result/getURL;
-							                                         projectURL project/absolute_url;
-							                                         result_type result/portal_type;
-							                                         zoomid   python:project.id.replace('.', '_');
-							                                         screenshot   project/screenshot | nothing">
+                                                       projectURL project/absolute_url;
+                                                       result_type result/portal_type;
+                                                       zoomid   python:project.id.replace('.', '_');
+                                                       screenshot   project/screenshot | nothing">
                                         <span style="border-top: none">
                                             <a href="" tal:attributes="href projectURL;" 	tal:content="project/pretty_title_or_id">
                                                 <tal:comment replace="nothing">Template One</tal:comment></a>
