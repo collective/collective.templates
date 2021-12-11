@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<object name="collective.templates.tlcenter" meta_type="Dexterity FTI"
+<object name="tlcenter" meta_type="Dexterity FTI"
         i18n:domain="collective.templates" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
     <!-- Basic metadata -->
@@ -10,7 +10,7 @@
     <property name="global_allow">True</property>
     <property name="filter_content_types">True</property>
     <property name="allowed_content_types">
-        <element value="collective.templates.tlproject" />
+        <element value="tlproject" />
     </property>
 
     <!-- schema interface -->

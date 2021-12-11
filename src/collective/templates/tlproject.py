@@ -218,6 +218,7 @@ class ITLProject(model.Schema):
             'You need only to upload one file to your project. There are '
             'options for further two file uploads if you want to provide '
             'files for different platforms.')),
+        required=False,
     )
 
     directives.mode(tfileextension='display')
