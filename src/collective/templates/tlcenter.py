@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from collective.templates import _
-from collective.templates.common import validateemail
 from plone import api
 from plone.app.layout.viewlets import ViewletBase
 from plone.app.textfield import RichText
+from plone.schema.email import Email
 from plone.supermodel import model
 from plone.supermodel.directives import primary
 from Products.CMFPlone.browser.search import quote_chars
@@ -74,7 +74,7 @@ class ITLCenter(model.Schema):
                    label=_(safe_unicode('Special email adresses')),
                    fields=['contactForCenter'])
 
-    contactForCenter = schema.ASCIILine(
+    contactForCenter = Email(
         title=_(safe_unicode(
             'EMail address for communication with the template center '
             'manager and reviewer')),
@@ -82,7 +82,6 @@ class ITLCenter(model.Schema):
             u'Enter an email address for the communication with template '
             u'center manager and reviewer'),
         default='projects@foo.org',
-        constraint=validateemail,
     )
 
 

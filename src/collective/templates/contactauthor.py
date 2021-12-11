@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from collective.honeypot.z3cform.widget import HoneypotFieldWidget
 from collective.templates import _
-from collective.templates.common import checkemail
 from plone import api
 from plone.autoform.form import AutoExtensibleForm
+from plone.schema.email import Email
 from plone.z3cform.layout import wrap_form
 from Products.CMFPlone.utils import safe_unicode
 from z3c.form import button
@@ -17,12 +17,6 @@ from zope.interface import implementer
 from zope.interface import Invalid
 
 import logging
-
-
-def validateemail(value):
-    if not checkemail(value):
-        raise Invalid(_(safe_unicode('Invalid email address')))
-    return True
 
 
 def validateprojectname(value):
@@ -54,10 +48,9 @@ class ContactAuthorSchema(interface.Interface):
         description=_(safe_unicode('Please fill in your familiy name')),
     )
 
-    inquireremailaddress = schema.TextLine(
+    inquireremailaddress = Email(
         title=_(safe_unicode('Your Email Address')),
         description=_(safe_unicode('Please fill in your email address.')),
-        constraint=validateemail,
     )
 
     # Keep field title empty so visitors do not see it.
