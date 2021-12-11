@@ -18,7 +18,7 @@ msgstr ""
 msgid "${product_title}"
 msgstr ""
 
-#: ./tlproject.py:185
+#: ./tlproject.py:184
 msgid "1.0"
 msgstr ""
 
@@ -38,7 +38,7 @@ msgstr ""
 msgid "Accept the above legal disclaimer"
 msgstr ""
 
-#: ./tlproject.py:172
+#: ./tlproject.py:171
 msgid "Add a screenshot by clicking the 'Browse' button. You could provide an image of the file format 'png', 'gif' or 'jpg'."
 msgstr ""
 
@@ -90,8 +90,8 @@ msgstr ""
 msgid "Browse Templates by Category"
 msgstr ""
 
-#: ./contactauthor.py:168
-#: ./contactprojectowner.py:161
+#: ./contactauthor.py:161
+#: ./contactprojectowner.py:154
 msgid "Cancel"
 msgstr ""
 
@@ -107,11 +107,11 @@ msgstr ""
 msgid "Choose your categories"
 msgstr ""
 
-#: ./tlproject.py:197
+#: ./tlproject.py:196
 msgid "Comatible with versions of the product"
 msgstr ""
 
-#: ./tlproject.py:190
+#: ./tlproject.py:189
 #: ./view_templates/tlproject_view.pt:69
 msgid "Compatibility"
 msgstr ""
@@ -128,11 +128,11 @@ msgstr ""
 msgid "Contact email-address for the project."
 msgstr ""
 
-#: ./contactauthor.py:102
+#: ./contactauthor.py:95
 msgid "Contact the project author and send your feedback"
 msgstr ""
 
-#: ./contactprojectowner.py:95
+#: ./contactprojectowner.py:88
 msgid "Contact the project owner and send your feedback"
 msgstr ""
 
@@ -152,7 +152,7 @@ msgstr ""
 msgid "EMail address for communication with the template center manager and reviewer"
 msgstr ""
 
-#: ./tlproject.py:138
+#: ./tlproject.py:137
 msgid "Email Public?"
 msgstr ""
 
@@ -172,7 +172,7 @@ msgstr ""
 msgid "Enter the text of the legal disclaimer and limitations that should be displayed to the project creator and should be accepted by the owner of the project."
 msgstr ""
 
-#: ./tlproject.py:207
+#: ./tlproject.py:206
 msgid "File Upload"
 msgstr ""
 
@@ -196,7 +196,7 @@ msgstr ""
 msgid "Fill in the text for the legal download disclaimer"
 msgstr ""
 
-#: ./tlproject.py:241
+#: ./tlproject.py:240
 msgid "First uploaded file is compatible with the Platform(s)"
 msgstr ""
 
@@ -204,11 +204,11 @@ msgstr ""
 msgid "Full project description"
 msgstr ""
 
-#: ./tlproject.py:260
+#: ./tlproject.py:259
 msgid "Here you could add an optional second file to your project, if the files support different platforms."
 msgstr ""
 
-#: ./tlproject.py:293
+#: ./tlproject.py:292
 msgid "Here you could add an optional third file to your project, if the files support different platforms."
 msgstr ""
 
@@ -245,12 +245,6 @@ msgstr ""
 msgid "Instructions"
 msgstr ""
 
-#: ./common.py:23
-#: ./contactauthor.py:24
-#: ./contactprojectowner.py:26
-msgid "Invalid email address"
-msgstr ""
-
 #: ./tlproject.py:38
 msgid "It is necessary that you accept the Legal Declaration"
 msgstr ""
@@ -275,11 +269,11 @@ msgstr ""
 msgid "License(s)"
 msgstr ""
 
-#: ./contactauthor.py:101
+#: ./contactauthor.py:94
 msgid "Mail To The Project Author"
 msgstr ""
 
-#: ./contactprojectowner.py:94
+#: ./contactprojectowner.py:87
 msgid "Mail To The Project Owner"
 msgstr ""
 
@@ -311,35 +305,35 @@ msgstr ""
 msgid "No results were found."
 msgstr ""
 
-#: ./contactauthor.py:37
+#: ./contactauthor.py:31
 msgid "Not a valid project name. Please retry."
 msgstr ""
 
-#: ./tlproject.py:250
+#: ./tlproject.py:249
 msgid "Optional Further File Upload"
 msgstr ""
 
-#: ./tlproject.py:344
+#: ./tlproject.py:343
 msgid "Please accept the Legal Declaration about your file(s) and your Uploaded File"
 msgstr ""
 
-#: ./tlproject.py:352
+#: ./tlproject.py:351
 msgid "Please choose a compatible platform for the uploaded file."
 msgstr ""
 
-#: ./tlproject.py:327
+#: ./tlproject.py:326
 msgid "Please choose a license for the file(s) you want toupload."
 msgstr ""
 
-#: ./tlproject.py:335
+#: ./tlproject.py:334
 msgid "Please choose one or more compatible product versions for the file(s) you want to upload."
 msgstr ""
 
-#: ./tlproject.py:139
+#: ./tlproject.py:138
 msgid "Please decide if your email address should be displayed on the project website."
 msgstr ""
 
-#: ./tlproject.py:148
+#: ./tlproject.py:147
 msgid "Please decide if your name should be displayed on the project website."
 msgstr ""
 
@@ -351,18 +345,18 @@ msgstr ""
 msgid "Please fill in the install instructions"
 msgstr ""
 
-#: ./contactauthor.py:59
-#: ./contactprojectowner.py:52
+#: ./contactauthor.py:53
+#: ./contactprojectowner.py:46
 msgid "Please fill in your email address."
 msgstr ""
 
-#: ./contactauthor.py:54
-#: ./contactprojectowner.py:47
+#: ./contactauthor.py:48
+#: ./contactprojectowner.py:41
 msgid "Please fill in your familiy name"
 msgstr ""
 
-#: ./contactauthor.py:49
-#: ./contactprojectowner.py:42
+#: ./contactauthor.py:43
+#: ./contactprojectowner.py:36
 msgid "Please fill in your first name(s)"
 msgstr ""
 
@@ -374,11 +368,11 @@ msgstr ""
 msgid "Please mark one or more licenses under which you publish your file(s)."
 msgstr ""
 
-#: ./tlproject.py:242
+#: ./tlproject.py:241
 msgid "Please mark one or more platforms with which the uploaded file is compatible."
 msgstr ""
 
-#: ./tlproject.py:198
+#: ./tlproject.py:197
 msgid "Please mark one or more program versions with which this uploaded file is compatible with."
 msgstr ""
 
@@ -386,11 +380,11 @@ msgstr ""
 msgid "Please select the appropriate categories (one or more) for your project."
 msgstr ""
 
-#: ./tlproject.py:234
+#: ./tlproject.py:233
 msgid "Please upload your file."
 msgstr ""
 
-#: ./tlproject.py:147
+#: ./tlproject.py:146
 msgid "Project Author Public?"
 msgstr ""
 
@@ -398,8 +392,8 @@ msgstr ""
 msgid "Project Contact"
 msgstr ""
 
-#: ./contactauthor.py:70
-#: ./contactprojectowner.py:63
+#: ./contactauthor.py:63
+#: ./contactprojectowner.py:56
 msgid "Project Name"
 msgstr ""
 
@@ -427,7 +421,7 @@ msgstr ""
 msgid "Reporting Template-Bugs"
 msgstr ""
 
-#: ./tlproject.py:156
+#: ./tlproject.py:155
 #: ./view_templates/tlproject_view.pt:118
 msgid "Screenshot"
 msgstr ""
@@ -440,12 +434,12 @@ msgstr ""
 msgid "Search ${product_title}"
 msgstr ""
 
-#: ./tlproject.py:267
+#: ./tlproject.py:266
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr ""
 
-#: ./contactauthor.py:116
-#: ./contactprojectowner.py:109
+#: ./contactauthor.py:109
+#: ./contactprojectowner.py:102
 msgid "Send Email"
 msgstr ""
 
@@ -461,7 +455,7 @@ msgstr ""
 msgid "Special email adresses"
 msgstr ""
 
-#: ./tlproject.py:171
+#: ./tlproject.py:170
 msgid "Sreenshot of the Template"
 msgstr ""
 
@@ -501,24 +495,24 @@ msgstr ""
 msgid "Text of the Legal Disclaimer and Limitations for Downlaods"
 msgstr ""
 
-#: ./tlproject.py:217
+#: ./tlproject.py:216
 msgid "The first file you want to upload"
 msgstr ""
 
-#: ./tlproject.py:233
+#: ./tlproject.py:232
 msgid "The first file you want to upload."
 msgstr ""
 
-#: ./tlproject.py:164
+#: ./tlproject.py:163
 msgid "The following file extensions are allowed for screenshot files (upper case and lower case and mix of both):"
 msgstr ""
 
-#: ./tlproject.py:226
+#: ./tlproject.py:225
 msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
 msgstr ""
 
-#: ./contactauthor.py:71
-#: ./contactprojectowner.py:64
+#: ./contactauthor.py:64
+#: ./contactprojectowner.py:57
 msgid "The name of the project, to which author you want to send feedback."
 msgstr ""
 
@@ -530,23 +524,23 @@ msgstr ""
 msgid "The project owner is the user: <span>${DYNAMIC_CONTENT}</span>"
 msgstr ""
 
-#: ./tlproject.py:449
+#: ./tlproject.py:448
 msgid "The project title is already in use."
 msgstr ""
 
-#: ./tlproject.py:284
+#: ./tlproject.py:283
 msgid "The second file you want to upload (this is optional)"
 msgstr ""
 
-#: ./tlproject.py:259
+#: ./tlproject.py:258
 msgid "The second file you want to upload."
 msgstr ""
 
-#: ./tlproject.py:292
+#: ./tlproject.py:291
 msgid "The third file you want to upload"
 msgstr ""
 
-#: ./tlproject.py:317
+#: ./tlproject.py:316
 msgid "The third file you want to upload (this is optional)"
 msgstr ""
 
@@ -554,7 +548,7 @@ msgstr ""
 msgid "These are your projects on this site:"
 msgstr ""
 
-#: ./tlproject.py:300
+#: ./tlproject.py:299
 msgid "Third uploaded file is compatible with the Platform(s))"
 msgstr ""
 
@@ -574,21 +568,21 @@ msgstr ""
 msgid "Uninstalls the collective.templates add-on."
 msgstr ""
 
-#: ./tlproject.py:182
+#: ./tlproject.py:181
 msgid "Version Number of the Template File (up to twelf chars) which you upload in this project."
 msgstr ""
 
-#: ./tlproject.py:181
+#: ./tlproject.py:180
 msgid "Versions Number"
 msgstr ""
 
-#: ./contactauthor.py:159
-#: ./contactprojectowner.py:152
+#: ./contactauthor.py:152
+#: ./contactprojectowner.py:145
 msgid "We send your message to the author of the project. It's on her / his choice, if she'll / he'll get back to you."
 msgstr ""
 
-#: ./contactauthor.py:78
-#: ./contactprojectowner.py:71
+#: ./contactauthor.py:71
+#: ./contactprojectowner.py:64
 msgid "What is your message to the author of the project? Your message is limited to 1000 characters."
 msgstr ""
 
@@ -608,27 +602,27 @@ msgstr ""
 msgid "You currently have no projects on this site."
 msgstr ""
 
-#: ./tlproject.py:218
+#: ./tlproject.py:217
 msgid "You need only to upload one file to your project. There are options for further two file uploads if you want to provide files for different platforms."
 msgstr ""
 
-#: ./contactauthor.py:58
-#: ./contactprojectowner.py:51
+#: ./contactauthor.py:52
+#: ./contactprojectowner.py:45
 msgid "Your Email Address"
 msgstr ""
 
-#: ./contactauthor.py:53
-#: ./contactprojectowner.py:46
+#: ./contactauthor.py:47
+#: ./contactprojectowner.py:40
 msgid "Your Family Name"
 msgstr ""
 
-#: ./contactauthor.py:48
-#: ./contactprojectowner.py:41
+#: ./contactauthor.py:42
+#: ./contactprojectowner.py:35
 msgid "Your First Name"
 msgstr ""
 
-#: ./contactauthor.py:77
-#: ./contactprojectowner.py:70
+#: ./contactauthor.py:70
+#: ./contactprojectowner.py:63
 msgid "Your Message To The Author"
 msgstr ""
 
