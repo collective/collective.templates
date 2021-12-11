@@ -6,7 +6,6 @@ from collective.templates.common import allowedtempimageextensions
 from collective.templates.common import allowedtemplatefileextensions
 from collective.templates.common import legaldeclarationtext
 from collective.templates.common import legaldeclarationtitle
-from collective.templates.common import validateemail
 from collective.templates.common import validateimagefileextension
 from collective.templates.common import validatetemplatefileextension
 from collective.templates.common import yesnochoice
@@ -16,6 +15,7 @@ from plone.autoform import directives
 from plone.dexterity.browser.view import DefaultView
 from plone.namedfile.field import NamedBlobFile
 from plone.namedfile.field import NamedBlobImage
+from plone.schema.email import Email
 from plone.supermodel import model
 from plone.supermodel.directives import primary
 from Products.CMFPlone.utils import safe_unicode
@@ -128,10 +128,9 @@ class ITLProject(model.Schema):
         required=True,
     )
 
-    templatecontactAddress = schema.TextLine(
+    templatecontactAddress = Email(
         title=_(safe_unicode('Contact email-address')),
         description=_(safe_unicode('Contact email-address for the project.')),
-        constraint=validateemail,
     )
 
     make_template_contact_address_public = schema.Choice(
