@@ -215,7 +215,7 @@
                             <span tal:content="view/tlproject_count" /> <span i18n:translate="">project(s) available.</span>
                     </p>
                     <p>
-                    <a class="pointer" tal:attributes="href string:${context/absolute_url}/++add++collective.templates.tlproject">
+                    <a class="pointer" tal:attributes="href string:${context/absolute_url}/++add++tlproject">
                         <img src="++resource++collective.templates/yellowarrow.png"  alt=""/> <span i18n:translate="">Submit your</span>
                         <span tal:content="context/product_title | string:template_project" /> Project
                     </a>
