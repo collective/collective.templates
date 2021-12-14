@@ -5,7 +5,26 @@ Changelog
 2.6 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Use Github actions and add a workflow script for building
+  and testing [Andreas Mantke]
+- Improve naming of the test-plone cfg-files [Andreas Mantke]
+- Use the schema field Email instead of a TextLine field
+  with an own constraint script [Andreas Mantke]
+- Rename the content types for template center and
+  template project for compatibility with the new Plone 6
+  frontend Volto [Andreas Mantke]
+- Rework of the views to work with the new naming of the
+  custom content types [Andresa Mantke]
+- Update localization files [Andreas Mantke]
+
+
+3.1 (2021-09-23)
+----------------
+
+- This release applied the changes, which where made with
+  release 2.5 upon release 2.4 to the release line 3.x. The
+  changes of release 3.1 were the same as listed for release
+  2.5 (see below) [Andreas Mantke]
 
 
 2.5 (2021-09-23)
