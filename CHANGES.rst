@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.6 (unreleased)
+2.6 (2021-12-15)
 ----------------
 
 - Use Github actions and add a workflow script for building
