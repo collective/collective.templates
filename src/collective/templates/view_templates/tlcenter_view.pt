@@ -131,7 +131,7 @@
                                      <option value="created" tal:attributes="selected    python:sort_on == 'created' and 'selected' or ''" i18n:translate="">Newest</option>
                                  </select>
                                  <input type="hidden" name="path" tal:attributes="value python:'/'.join(context.getPhysicalPath())" /> &nbsp;
-                                 <input type="hidden" name="portal_type" value="collective.templates.tlproject" />
+                                 <input type="hidden" name="portal_type" value="tlproject" />
                                   <div class="input-group">
                                     <input class="searchPage form-control" name="SearchableText" type="text" size="25" title="Search Site" value=""
                                            tal:attributes="value SearchableText" />
