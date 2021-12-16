@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-14 18:43+0000\n"
+"POT-Creation-Date: 2021-12-16 19:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -240,7 +240,7 @@ msgstr ""
 msgid "Install Instructions"
 msgstr ""
 
-#: ./configure.zcml:30
+#: ./configure.zcml:28
 msgid "Installs the collective.templates add-on."
 msgstr ""
 
@@ -576,7 +576,7 @@ msgstr ""
 msgid "Title of the Legal Disclaimer and Limitations for Downloads"
 msgstr ""
 
-#: ./configure.zcml:39
+#: ./configure.zcml:37
 msgid "Uninstalls the collective.templates add-on."
 msgstr ""
 
@@ -650,11 +650,11 @@ msgstr ""
 msgid "by Category"
 msgstr ""
 
-#: ./configure.zcml:30
+#: ./configure.zcml:28
 msgid "collective.templates"
 msgstr ""
 
-#: ./configure.zcml:39
+#: ./configure.zcml:37
 msgid "collective.templates (uninstall)"
 msgstr ""
 
