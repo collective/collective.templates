@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.7 (unreleased)
+2.7 (2021-12-16)
 ----------------
 
 - Fix renaming issues especially in functions in the modules
