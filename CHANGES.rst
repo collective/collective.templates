@@ -5,7 +5,10 @@ Changelog
 2.7 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix renaming issues especially in functions in the modules
+  mailtoauthor and mailtoprojectowner as well as the
+  tlcenter view [Andreas Mantke]
+- Update localization files [Andreas Mantke]
 
 
 2.6 (2021-12-15)
