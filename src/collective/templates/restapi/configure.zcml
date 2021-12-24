@@ -12,4 +12,12 @@
     permission="zope2.View"
     />
 
+  <plone:service
+    method="GET"
+    name="@projectlicenses"
+    for="collective.templates.tlproject.ITLProject"
+    factory=".getprojectmeta.Projectlicenses"
+    permission="zope2.View"
+    />
+
 </configure>
