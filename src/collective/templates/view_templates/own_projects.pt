@@ -32,7 +32,7 @@
                                              screenshot   project/getScreenshot | nothing">
                             <h3 style="border-top: none">
                               <a href="" tal:attributes="href projectURL;" tal:content="project/pretty_title_or_id">
-								                <tal:comment replace="nothing">Template One</tal:comment>
+                                <tal:comment replace="nothing">Template One</tal:comment>
                               </a>
                             </h3>
                           </tal:entry>
@@ -49,7 +49,7 @@
         <p><span i18n:translate="">If you already created a new</span>
             <span tal:replace="context/product_title">Template</span>,
             <span i18n:translate="">please submit your new</span> <br />
-          <a class="pointer"  tal:attributes="href string:${context/absolute_url}/++add++collective.templates.tlproject">
+          <a class="pointer"  tal:attributes="href string:${context/absolute_url}/++add++tlproject">
             <img src="++resource++collective.templates/yellowarrow.png" alt="" />
             <span tal:content="context/product_title | string:template_project" /> Project
           </a>

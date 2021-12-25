@@ -121,7 +121,7 @@
                                  <a class="discreet" tal:attributes="href string:${context/absolute_url}/@@images/screenshot/large">
                                      <img tal:define="scales context/@@images"
                                               tal:replace="structure python: scales.tag('screenshot',
-                                                     width=250, height=200, direction='down')" />
+                                                     width=250, height=200, mode='down')" />
                                  </a>
                              </div>
                          </div>

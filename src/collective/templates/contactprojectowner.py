@@ -114,7 +114,7 @@ class ContactProjectOwnerForm(AutoExtensibleForm, form.Form):
 
         catalog = api.portal.get_tool('portal_catalog')
         project = catalog(
-            portal_type='collective.templates.tlproject',
+            portal_type='tlproject',
             Title=data['projectname'],
         )
 

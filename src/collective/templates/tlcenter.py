@@ -107,7 +107,7 @@ class TLCenterView(BrowserView):
         """
         catalog = api.portal.get_tool(name='portal_catalog')
 
-        return len(catalog(portal_type='collective.templates.tlproject',
+        return len(catalog(portal_type='tlproject',
                            review_state='published'))
 
     def get_most_popular_products(self):
@@ -117,7 +117,7 @@ class TLCenterView(BrowserView):
             'sort_on': sort_on,
             'sort_order': 'reverse',
             'review_state': 'published',
-            'portal_type': 'collective.templates.tlproject'}
+            'portal_type': 'tlproject'}
         return catalog(**contentFilter)
 
     def get_newest_products(self):
@@ -126,7 +126,7 @@ class TLCenterView(BrowserView):
             'sort_on': sort_on,
             'sort_order': 'reverse',
             'review_state': 'published',
-            'portal_type': 'collective.templates.tlproject',
+            'portal_type': 'tlproject',
         }
 
         results = api.content.find(**contentFilter)
@@ -141,14 +141,14 @@ class TLCenterView(BrowserView):
                 'sort_on': sort_on,
                 'SearchableText': SearchableText,
                 'sort_order': 'reverse',
-                'portal_type': 'collective.templates.tlproject',
+                'portal_type': 'tlproject',
             }
 
         else:
             contentFilter = {
                 'sort_on': sort_on,
                 'sort_order': 'reverse',
-                'portal_type': 'collective.templates.tlproject',
+                'portal_type': 'tlproject',
             }
 
         if version != 'any':
@@ -181,7 +181,7 @@ class TLCenterOwnProjectsViewlet(ViewletBase):
         current_user = api.user.get_current()
         pc = api.portal.get_tool('portal_catalog')
         return pc.portal_catalog(
-            portal_type='collective.templates.tlproject',
+            portal_type='tlproject',
             sort_on='Date',
             sort_order='reverse',
             Creator=str(current_user))
