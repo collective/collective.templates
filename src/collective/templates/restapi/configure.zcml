@@ -27,4 +27,13 @@
     factory=".getprojectmeta.Releasecompatibility"
     permission="zope2.View"
     />
+
+  <plone:service
+    method="GET"
+    name="@emailpublic"
+    for="collective.templates.tlproject.ITLProject"
+    factory=".getprojectmeta.Emailpublic"
+    permission="zope2.View"
+    />
+
 </configure>
