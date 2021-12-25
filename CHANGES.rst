@@ -5,7 +5,48 @@ Changelog
 3.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- This release applied the changes, which where made with
+  release 2.6 to 2.8 upon release 2.5, to the release
+  line 3.x. The changes of release 3.2 were the same as
+  listed for the releases 2.6, 2.7 and 2.8 in total
+  (see for details the entries for this releases
+  below) [Andreas Mantke]
+
+
+2.8 (2021-12-25)
+----------------
+
+- Use mode instead of direction down for image rendering
+  on project view because of a Deprecation warning [Andreas Mantke]
+- Add restapi endpoints for portal_catalog search for
+  categories, release compatibility, licenses, email address
+  and name public [Andreas Mantke]
+- Update localization files [Andreas Mantke]
+
+
+2.7 (2021-12-16)
+----------------
+
+- Fix renaming issues especially in functions in the modules
+  mailtoauthor and mailtoprojectowner as well as the
+  tlcenter view [Andreas Mantke]
+- Update localization files [Andreas Mantke]
+
+
+2.6 (2021-12-15)
+----------------
+
+- Use Github actions and add a workflow script for building
+  and testing [Andreas Mantke]
+- Improve naming of the test-plone cfg-files [Andreas Mantke]
+- Use the schema field Email instead of a TextLine field
+  with an own constraint script [Andreas Mantke]
+- Rename the content types for template center and
+  template project for compatibility with the new Plone 6
+  frontend Volto [Andreas Mantke]
+- Rework of the views to work with the new naming of the
+  custom content types [Andresa Mantke]
+- Update localization files [Andreas Mantke]
 
 
 3.1 (2021-09-23)
