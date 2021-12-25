@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2021-12-11 15:09+0100\n"
+"PO-Revision-Date: 2021-12-25 18:47+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -196,7 +196,7 @@ msgstr "Fügen Sie den Haftungsausschluss ein, der von den Projekteigentümern z
 msgid "Fill in the text for the legal download disclaimer"
 msgstr "Füllen Sie den Text für den Download-Haftungsausschluss ein"
 
-#: tlproject.py:240
+#: tlproject.py:241
 msgid "First uploaded file is compatible with the Platform(s)"
 msgstr "Die erste hochgeladene Datei ist kompatibel mit den Plattformen"
 
@@ -204,11 +204,11 @@ msgstr "Die erste hochgeladene Datei ist kompatibel mit den Plattformen"
 msgid "Full project description"
 msgstr "Komplette Projekt-Beschreibung"
 
-#: tlproject.py:259
+#: tlproject.py:260
 msgid "Here you could add an optional second file to your project, if the files support different platforms."
 msgstr "Hier können Sie  eine optionale zweite Datei Ihrem Projekt hinzufügen, falls die Dateien unterschiedliche Plattformen unterstützen."
 
-#: tlproject.py:292
+#: tlproject.py:293
 msgid "Here you could add an optional third file to your project, if the files support different platforms."
 msgstr "Hier können Sie  eine optionale dritte Datei Ihrem Projekt hinzufügen, falls die Dateien unterschiedliche Plattformen unterstützen."
 
@@ -232,7 +232,7 @@ msgstr "Information zur Suche nach älteren Produkt-Versionen"
 msgid "Install Instructions"
 msgstr "Installationsanleitung"
 
-#: configure.zcml:30
+#: configure.zcml:31
 msgid "Installs the collective.templates add-on."
 msgstr "Installiert das collective.templates Add-on."
 
@@ -308,23 +308,23 @@ msgstr "Keine Ergebnisse gefunden."
 msgid "Not a valid project name. Please retry."
 msgstr "Kein gültiger Projektname. Bitte versuchen Sie es nochmals."
 
-#: tlproject.py:249
+#: tlproject.py:250
 msgid "Optional Further File Upload"
 msgstr "Optionale weitere Datei-Uploads"
 
-#: tlproject.py:343
+#: tlproject.py:344
 msgid "Please accept the Legal Declaration about your file(s) and your Uploaded File"
 msgstr "Bitte akzeptieren Sie den Haftungsausschluss für ihre Datei(en) und  Ihre hochgeladenen Datei"
 
-#: tlproject.py:351
+#: tlproject.py:352
 msgid "Please choose a compatible platform for the uploaded file."
 msgstr "Bitte wählen Sie eine zu der hochgeladenen Datei kompatible Plattform."
 
-#: tlproject.py:326
+#: tlproject.py:327
 msgid "Please choose a license for the file(s) you want toupload."
 msgstr "Bitte wählen Sie eine Lizenz für die Datei(en), die Sie hochladen wollen."
 
-#: tlproject.py:334
+#: tlproject.py:335
 msgid "Please choose one or more compatible product versions for the file(s) you want to upload."
 msgstr "Bitte wählen Sie eine oder mehrere kompatible Produktversionen für die Datei(en), die Sie hochladen wollen."
 
@@ -364,7 +364,7 @@ msgstr "Bitte stellen Sie sicher, dass die relevanten Projekt-Informationen eing
 msgid "Please mark one or more licenses under which you publish your file(s)."
 msgstr "Bitte markieren Sie eine oder mehrere Lizenzen, unter denen Sie die Datei(en) veröffentlichen wollen."
 
-#: tlproject.py:241
+#: tlproject.py:242
 msgid "Please mark one or more platforms with which the uploaded file is compatible."
 msgstr "Bitte markieren Sie eine oder mehrere Plattformen, mit denen die hochgeladene Datei kompatibel ist."
 
@@ -376,7 +376,7 @@ msgstr "Bitte markieren Sie eine oder mehrere Programm-Versionen, mit denen dies
 msgid "Please select the appropriate categories (one or more) for your project."
 msgstr "Bitte wählen Sie eine passende Kategorie (eine oder mehrere) für ihre Projekt."
 
-#: tlproject.py:233
+#: tlproject.py:234
 msgid "Please upload your file."
 msgstr "Bitte laden Sie Ihre Datei hoch."
 
@@ -428,7 +428,7 @@ msgstr "Suchen"
 msgid "Search ${product_title}"
 msgstr "Suche ${product_title}"
 
-#: tlproject.py:266
+#: tlproject.py:267
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr "Die zweite hochgeladene Datei ist kompatibel mit den Plattformen"
 
@@ -492,7 +492,7 @@ msgstr "Text der rechtlichen Hinweise und -begrenzungen für Downloads"
 msgid "The first file you want to upload"
 msgstr "Die erste Datei, die Sie hochladen wollen"
 
-#: tlproject.py:232
+#: tlproject.py:233
 msgid "The first file you want to upload."
 msgstr "Die erste Datei, die Sie hochladen wollen."
 
@@ -500,7 +500,7 @@ msgstr "Die erste Datei, die Sie hochladen wollen."
 msgid "The following file extensions are allowed for screenshot files (upper case and lower case and mix of both):"
 msgstr "Die folgenden Dateierweiterungen sind für Bildschirmfoto-Dateien erlaubt (Groß- und Kleinschreibung und ein Mix aus beiden):"
 
-#: tlproject.py:225
+#: tlproject.py:226
 msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
 msgstr "Die folgenden Dateierweiterungen sind für Vorlagen-Dateien erlaubt (Groß- und Kleinschreibung und ein Mix aus beiden):"
 
@@ -516,23 +516,23 @@ msgstr "Die Projekt-E-Mail-Adresse ist: <span>${DYNAMIC_CONTENT}</span>"
 msgid "The project owner is the user: <span>${DYNAMIC_CONTENT}</span>"
 msgstr "Der Projekt-Eigentümer ist der Benutzer: <span>${DYNAMIC_CONTENT}</span>"
 
-#: tlproject.py:448
+#: tlproject.py:449
 msgid "The project title is already in use."
 msgstr "Der Projekt-Titel wird bereits verwendet."
 
-#: tlproject.py:283
+#: tlproject.py:284
 msgid "The second file you want to upload (this is optional)"
 msgstr "Die zweite Datei, die Sie hochladen wollen (dies ist optional)."
 
-#: tlproject.py:258
+#: tlproject.py:259
 msgid "The second file you want to upload."
 msgstr "Die zweite Datei, die Sie hochladen wollen."
 
-#: tlproject.py:291
+#: tlproject.py:292
 msgid "The third file you want to upload"
 msgstr "Die dritte Datei, die Sie hochladen wollen"
 
-#: tlproject.py:316
+#: tlproject.py:317
 msgid "The third file you want to upload (this is optional)"
 msgstr "Die dritte Datei, die Sie hochladen wollen (dies ist optional)"
 
@@ -540,7 +540,7 @@ msgstr "Die dritte Datei, die Sie hochladen wollen (dies ist optional)"
 msgid "These are your projects on this site:"
 msgstr "Dies sind Ihre Projekte auf dieser Seite:"
 
-#: tlproject.py:299
+#: tlproject.py:300
 msgid "Third uploaded file is compatible with the Platform(s))"
 msgstr "Die dritte hochgeladene Datei ist kompatibel mit den Plattformen"
 
@@ -556,7 +556,7 @@ msgstr "Titel für rechtliche Hinweise und Einschränkungen"
 msgid "Title of the Legal Disclaimer and Limitations for Downloads"
 msgstr "Titel für rechtliche Hinweise und Einschränkungen für Downloads"
 
-#: configure.zcml:39
+#: configure.zcml:40
 msgid "Uninstalls the collective.templates add-on."
 msgstr "Deinstalliert das collective.templates Add-on."
 
@@ -624,11 +624,11 @@ msgstr "Ihr Projekt wurde zur Veröffentlichung übermittelt und wird nun geprü
 msgid "by Category"
 msgstr "nach Kategorie"
 
-#: configure.zcml:30
+#: configure.zcml:31
 msgid "collective.templates"
 msgstr "collective.templates"
 
-#: configure.zcml:39
+#: configure.zcml:40
 msgid "collective.templates (uninstall)"
 msgstr "collective.templates (deinstallierenl)"
 

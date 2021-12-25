@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-12-11 14:09+0000\n"
+"POT-Creation-Date: 2021-12-25 17:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,7 +205,7 @@ msgstr ""
 msgid "Fill in the text for the legal download disclaimer"
 msgstr ""
 
-#: ./tlproject.py:240
+#: ./tlproject.py:241
 msgid "First uploaded file is compatible with the Platform(s)"
 msgstr ""
 
@@ -213,11 +213,11 @@ msgstr ""
 msgid "Full project description"
 msgstr ""
 
-#: ./tlproject.py:259
+#: ./tlproject.py:260
 msgid "Here you could add an optional second file to your project, if the files support different platforms."
 msgstr ""
 
-#: ./tlproject.py:292
+#: ./tlproject.py:293
 msgid "Here you could add an optional third file to your project, if the files support different platforms."
 msgstr ""
 
@@ -242,7 +242,7 @@ msgstr ""
 msgid "Install Instructions"
 msgstr ""
 
-#: ./configure.zcml:30
+#: ./configure.zcml:31
 msgid "Installs the collective.templates add-on."
 msgstr ""
 
@@ -318,23 +318,23 @@ msgstr ""
 msgid "Not a valid project name. Please retry."
 msgstr ""
 
-#: ./tlproject.py:249
+#: ./tlproject.py:250
 msgid "Optional Further File Upload"
 msgstr ""
 
-#: ./tlproject.py:343
+#: ./tlproject.py:344
 msgid "Please accept the Legal Declaration about your file(s) and your Uploaded File"
 msgstr ""
 
-#: ./tlproject.py:351
+#: ./tlproject.py:352
 msgid "Please choose a compatible platform for the uploaded file."
 msgstr ""
 
-#: ./tlproject.py:326
+#: ./tlproject.py:327
 msgid "Please choose a license for the file(s) you want toupload."
 msgstr ""
 
-#: ./tlproject.py:334
+#: ./tlproject.py:335
 msgid "Please choose one or more compatible product versions for the file(s) you want to upload."
 msgstr ""
 
@@ -377,7 +377,7 @@ msgstr ""
 msgid "Please mark one or more licenses under which you publish your file(s)."
 msgstr ""
 
-#: ./tlproject.py:241
+#: ./tlproject.py:242
 msgid "Please mark one or more platforms with which the uploaded file is compatible."
 msgstr ""
 
@@ -389,7 +389,7 @@ msgstr ""
 msgid "Please select the appropriate categories (one or more) for your project."
 msgstr ""
 
-#: ./tlproject.py:233
+#: ./tlproject.py:234
 msgid "Please upload your file."
 msgstr ""
 
@@ -443,7 +443,7 @@ msgstr ""
 msgid "Search ${product_title}"
 msgstr ""
 
-#: ./tlproject.py:266
+#: ./tlproject.py:267
 msgid "Second uploaded file is compatible with the Platform(s)"
 msgstr ""
 
@@ -508,7 +508,7 @@ msgstr ""
 msgid "The first file you want to upload"
 msgstr ""
 
-#: ./tlproject.py:232
+#: ./tlproject.py:233
 msgid "The first file you want to upload."
 msgstr ""
 
@@ -516,7 +516,7 @@ msgstr ""
 msgid "The following file extensions are allowed for screenshot files (upper case and lower case and mix of both):"
 msgstr ""
 
-#: ./tlproject.py:225
+#: ./tlproject.py:226
 msgid "The following file extensions are allowed for template files (upper case and lower case and mix of both):"
 msgstr ""
 
@@ -533,23 +533,23 @@ msgstr ""
 msgid "The project owner is the user: <span>${DYNAMIC_CONTENT}</span>"
 msgstr ""
 
-#: ./tlproject.py:448
+#: ./tlproject.py:449
 msgid "The project title is already in use."
 msgstr ""
 
-#: ./tlproject.py:283
+#: ./tlproject.py:284
 msgid "The second file you want to upload (this is optional)"
 msgstr ""
 
-#: ./tlproject.py:258
+#: ./tlproject.py:259
 msgid "The second file you want to upload."
 msgstr ""
 
-#: ./tlproject.py:291
+#: ./tlproject.py:292
 msgid "The third file you want to upload"
 msgstr ""
 
-#: ./tlproject.py:316
+#: ./tlproject.py:317
 msgid "The third file you want to upload (this is optional)"
 msgstr ""
 
@@ -557,7 +557,7 @@ msgstr ""
 msgid "These are your projects on this site:"
 msgstr ""
 
-#: ./tlproject.py:299
+#: ./tlproject.py:300
 msgid "Third uploaded file is compatible with the Platform(s))"
 msgstr ""
 
@@ -573,7 +573,7 @@ msgstr ""
 msgid "Title of the Legal Disclaimer and Limitations for Downloads"
 msgstr ""
 
-#: ./configure.zcml:39
+#: ./configure.zcml:40
 msgid "Uninstalls the collective.templates add-on."
 msgstr ""
 
@@ -647,11 +647,11 @@ msgstr ""
 msgid "by Category"
 msgstr ""
 
-#: ./configure.zcml:30
+#: ./configure.zcml:31
 msgid "collective.templates"
 msgstr ""
 
-#: ./configure.zcml:39
+#: ./configure.zcml:40
 msgid "collective.templates (uninstall)"
 msgstr ""
 
