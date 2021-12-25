@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2021-12-16 20:47+0100\n"
+"PO-Revision-Date: 2021-12-25 11:25+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -232,7 +232,7 @@ msgstr "Information zur Suche nach älteren Produkt-Versionen"
 msgid "Install Instructions"
 msgstr "Installationsanleitung"
 
-#: configure.zcml:28
+#: configure.zcml:31
 msgid "Installs the collective.templates add-on."
 msgstr "Installiert das collective.templates Add-on."
 
@@ -560,7 +560,7 @@ msgstr "Titel für rechtliche Hinweise und Einschränkungen"
 msgid "Title of the Legal Disclaimer and Limitations for Downloads"
 msgstr "Titel für rechtliche Hinweise und Einschränkungen für Downloads"
 
-#: configure.zcml:37
+#: configure.zcml:40
 msgid "Uninstalls the collective.templates add-on."
 msgstr "Deinstalliert das collective.templates Add-on."
 
@@ -628,11 +628,11 @@ msgstr "Ihr Projekt wurde zur Veröffentlichung übermittelt und wird nun geprü
 msgid "by Category"
 msgstr "nach Kategorie"
 
-#: configure.zcml:28
+#: configure.zcml:31
 msgid "collective.templates"
 msgstr "collective.templates"
 
-#: configure.zcml:37
+#: configure.zcml:40
 msgid "collective.templates (uninstall)"
 msgstr "collective.templates (deinstallierenl)"
 
