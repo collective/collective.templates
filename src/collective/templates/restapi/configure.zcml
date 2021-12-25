@@ -1,0 +1,47 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml">
+
+
+  <plone:service
+    method="GET"
+    name="@projectcategories"
+    for="collective.templates.tlproject.ITLProject"
+    factory=".getprojectmeta.Projectcategories"
+    permission="zope2.View"
+    />
+
+  <plone:service
+    method="GET"
+    name="@projectlicenses"
+    for="collective.templates.tlproject.ITLProject"
+    factory=".getprojectmeta.Projectlicenses"
+    permission="zope2.View"
+    />
+
+  <plone:service
+    method="GET"
+    name="@releasecompatibility"
+    for="collective.templates.tlproject.ITLProject"
+    factory=".getprojectmeta.Releasecompatibility"
+    permission="zope2.View"
+    />
+
+  <plone:service
+    method="GET"
+    name="@emailpublic"
+    for="collective.templates.tlproject.ITLProject"
+    factory=".getprojectmeta.Emailpublic"
+    permission="zope2.View"
+    />
+
+  <plone:service
+    method="GET"
+    name="@namepublic"
+    for="collective.templates.tlproject.ITLProject"
+    factory=".getprojectmeta.Namepublic"
+    permission="zope2.View"
+    />
+
+</configure>
