@@ -38,3 +38,12 @@ class Emailpublic(Service):
         idx_data = catalog.getIndexDataForUID(path)
         public_email = idx_data.get('publicemail')
         return json_compatible(public_email)
+
+
+class Namepublic(Service):
+    def reply(self):
+        catalog = api.portal.get_tool(name='portal_catalog')
+        path = '/'.join(self.context.getPhysicalPath())
+        idx_data = catalog.getIndexDataForUID(path)
+        public_name = idx_data.get('publicname')
+        return json_compatible(public_name)

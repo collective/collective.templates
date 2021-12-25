@@ -36,4 +36,12 @@
     permission="zope2.View"
     />
 
+  <plone:service
+    method="GET"
+    name="@namepublic"
+    for="collective.templates.tlproject.ITLProject"
+    factory=".getprojectmeta.Namepublic"
+    permission="zope2.View"
+    />
+
 </configure>
