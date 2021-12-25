@@ -14,6 +14,9 @@ yesnochoice = SimpleVocabulary(
      SimpleTerm(value=1, title=_(safe_unicode('Yes')))],
 )
 
+checkemail = re.compile(
+    r'[a-zA-Z0-9._%-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4}').match
+
 
 def allowedtemplatefileextensions():
     return api.portal.get_registry_record(
