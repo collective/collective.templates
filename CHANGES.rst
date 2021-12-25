@@ -5,7 +5,12 @@ Changelog
 2.8 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Use mode instead of direction down for image rendering
+  on project view because of a Deprecation warning [Andreas Mantke]
+- Add restapi endpoints for portal_catalog search for
+  categories, release compatibility, licenses, email address
+  and name public [Andreas Mantke]
+- Update localization files [Andreas Mantke]
 
 
 2.7 (2021-12-16)
