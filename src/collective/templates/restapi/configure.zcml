@@ -20,4 +20,11 @@
     permission="zope2.View"
     />
 
+  <plone:service
+    method="GET"
+    name="@releasecompatibility"
+    for="collective.templates.tlproject.ITLProject"
+    factory=".getprojectmeta.Releasecompatibility"
+    permission="zope2.View"
+    />
 </configure>

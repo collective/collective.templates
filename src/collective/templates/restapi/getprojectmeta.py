@@ -20,3 +20,12 @@ class Projectlicenses(Service):
         idx_data = catalog.getIndexDataForUID(path)
         licenses = idx_data.get('releaseLicense')
         return json_compatible(licenses)
+
+
+class Releasecompatibility(Service):
+    def reply(self):
+        catalog = api.portal.get_tool(name='portal_catalog')
+        path = '/'.join(self.context.getPhysicalPath())
+        idx_data = catalog.getIndexDataForUID(path)
+        compatibility = idx_data.get('getCompatibility')
+        return json_compatible(compatibility)
