@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.8 (unreleased)
+2.8 (2021-12-25)
 ----------------
 
 - Use mode instead of direction down for image rendering
