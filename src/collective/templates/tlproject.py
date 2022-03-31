@@ -54,7 +54,8 @@ class ITLProject(model.Schema):
     dexteritytextindexer.searchable('title')
     title = schema.TextLine(
         title=_(safe_unicode('Title')),
-        description=_(safe_unicode('Project Title - minimum 5 and maximum 50 characters')),
+        description=_(safe_unicode(
+            'Project Title - minimum 5 and maximum 50 characters')),
         min_length=5,
         max_length=50,
     )
@@ -238,7 +239,8 @@ class ITLProject(model.Schema):
 
     directives.widget(platform_choice=CheckBoxFieldWidget)
     platform_choice = schema.List(
-        title=_(safe_unicode('First uploaded file is compatible with the Platform(s)')),
+        title=_(safe_unicode(
+            'First uploaded file is compatible with the Platform(s)')),
         description=_(safe_unicode(
             'Please mark one or more platforms with which the uploaded '
             'file is compatible.')),
@@ -264,7 +266,8 @@ class ITLProject(model.Schema):
 
     directives.widget(platform_choice1=CheckBoxFieldWidget)
     platform_choice1 = schema.List(
-        title=_(safe_unicode('Second uploaded file is compatible with the Platform(s)')),
+        title=_(safe_unicode(
+            'Second uploaded file is compatible with the Platform(s)')),
         description=_(safe_unicode(
             'Please mark one or more platforms with which the uploaded file '
             'is compatible.')),
@@ -281,7 +284,8 @@ class ITLProject(model.Schema):
     )
 
     file1 = NamedBlobFile(
-        title=_(safe_unicode('The second file you want to upload (this is optional)')),
+        title=_(safe_unicode(
+            'The second file you want to upload (this is optional)')),
         description=_(safe_unicode('Please upload your file.')),
         required=False,
         constraint=validatetemplatefileextension,
@@ -297,7 +301,8 @@ class ITLProject(model.Schema):
 
     directives.widget(platform_choice2=CheckBoxFieldWidget)
     platform_choice2 = schema.List(
-        title=_(safe_unicode('Third uploaded file is compatible with the Platform(s))')),
+        title=_(safe_unicode(
+            'Third uploaded file is compatible with the Platform(s))')),
         description=_(safe_unicode(
             'Please mark one or more platforms with which the uploaded file '
             'is compatible.')),
@@ -314,7 +319,8 @@ class ITLProject(model.Schema):
     )
 
     file2 = NamedBlobFile(
-        title=_(safe_unicode('The third file you want to upload (this is optional)')),
+        title=_(safe_unicode(
+            'The third file you want to upload (this is optional)')),
         description=_(safe_unicode('Please upload your file.')),
         required=False,
         constraint=validatetemplatefileextension,
@@ -361,7 +367,8 @@ def notifyAboutNewProject(self, event):
             'plone.email_from_address')
     api.portal.send_email(
         recipient=mailrecipient,
-        subject=(safe_unicode('A Project with the title {0} was added')).format(self.title),
+        subject=(safe_unicode(
+            'A Project with the title {0} was added')).format(self.title),
         body='A member added a new project',
     )
 
@@ -374,7 +381,8 @@ def notifyProjectManager(self, event):
         mailsender = api.portal.get_registry_record('plone.email_from_address')
     api.portal.send_email(
         recipient=('{0}').format(self.templatecontactAddress),
-        sender=(safe_unicode('{0} <{1}>')).format('Admin of the Website', mailsender),
+        sender=(safe_unicode(
+            '{0} <{1}>')).format('Admin of the Website', mailsender),
         subject=(safe_unicode('Your Project {0}')).format(self.title),
         body=(safe_unicode(
             'The status of your templates project changed. '
@@ -422,12 +430,14 @@ def textmodified_project(self, event):
                 'Admin of the Website', mailrecipient),
             subject=(safe_unicode('The content of the project {0} has '
                                   'changed')).format(self.title),
-            body=(safe_unicode('The content of the project {0} has changed. Here you get '
-                               'the text of the description field of the '
-                               "project: \n'{1}\n\nand this is the text of the "
-                               "details field:\n{2}'")).format(self.title,
-                                                               self.description,
-                                                               detailed_description),
+            body=(safe_unicode(
+                'The content of the project {0} has changed. Here you get '
+                'the text of the description field of the '
+                "project: \n'{1}\n\nand this is the text of the "
+                "details field:\n{2}'")).format(
+                self.title,
+                self.description,
+                detailed_description),
         )
 
 
@@ -446,7 +456,8 @@ class ValidateTLProjectUniqueness(validator.SimpleFieldValidator):
             contextUUID = api.content.get_uuid(self.context)
             for result in results:
                 if result.UID != contextUUID:
-                    raise Invalid(_(safe_unicode('The project title is already in use.')))
+                    raise Invalid(_(safe_unicode(
+                        'The project title is already in use.')))
 
 
 validator.WidgetValidatorDiscriminators(
@@ -495,7 +506,9 @@ class TLProjectView(DefaultView):
         return (public_name)
 
     def title_download_disclaimer(self):
-        return api.portal.get_registry_record('collectivetemplates.title_legaldownloaddisclaimer')
+        return api.portal.get_registry_record(
+            'collectivetemplates.title_legaldownloaddisclaimer')
 
     def text_download_disclaimer(self):
-        return api.portal.get_registry_record('collectivetemplates.legal_downloaddisclaimer')
+        return api.portal.get_registry_record(
+            'collectivetemplates.legal_downloaddisclaimer')

@@ -62,7 +62,8 @@ class ITLCenter(model.Schema):
 
     primary('information_oldversions')
     information_oldversions = RichText(
-        title=_(safe_unicode('Information about search for old product versions')),
+        title=_(safe_unicode('Information about search for old product '
+                             'versions')),
         description=_(safe_unicode(
             'Enter an information about the search for older '
             'versions of the product, if they are not on the '
@@ -88,13 +89,16 @@ class ITLCenter(model.Schema):
 class TLCenterView(BrowserView):
 
     def category_names(self):
-        return list(api.portal.get_registry_record('collectivetemplates.available_category'))
+        return list(api.portal.get_registry_record(
+            'collectivetemplates.available_category'))
 
     def version_names(self):
-        return list(api.portal.get_registry_record('collectivetemplates.available_versions'))
+        return list(api.portal.get_registry_record(
+            'collectivetemplates.available_versions'))
 
     def get_latest_program_release(self):
-        versions = list(api.portal.get_registry_record('collectivetemplates.available_versions'))
+        versions = list(api.portal.get_registry_record(
+            'collectivetemplates.available_versions'))
         versions.sort(reverse=True)
         return versions[0]
 
