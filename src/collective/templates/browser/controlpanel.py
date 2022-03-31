@@ -11,48 +11,45 @@ from zope.interface import Interface
 
 
 class ICollectivetemplatesControlPanel(Interface):
-    available_category = schema.Tuple(title=_(safe_unicode('Available Categories')),
-                                      default=('Business',
-                                               ),
-                                      value_type=schema.TextLine())
+    available_category = schema.Tuple(title=_(
+        safe_unicode('Available Categories')),
+            default=('Business',),
+            value_type=schema.TextLine())
 
-    available_licenses = schema.Tuple(title=_(safe_unicode('Available Licenses')),
-                                      default=(
-                                          'GNU-GPL-v2 (GNU General Public'
-                                          'License Version 2)',
-                                          'GNU-GPL-v3+ (General Public License'
-                                          'Version 3 and later)',
-                                          'LGPL-v2.1 (GNU Lesser General'
-                                          'Public License Version 2.1)',
-                                          'LGPL-v3+ (GNU Lesser General Public'
-                                          'License Version 3 and later)',
-                                          'BSD (BSD License (revised))',
-                                          'MPL-v1.1 (Mozilla Public License'
-                                          'Version 1.1)',
-                                          'MPL-v2.0+ (Mozilla Public License'
-                                          'Version 2.0 or later)',
-                                          'CC-by-sa-v3 (Creative Commons'
-                                          'Attribution-ShareAlike 3.0)',
-                                          'CC-BY-SA-v4 (Creative Commons'
-                                          'Attribution-ShareAlike 4.0 '
-                                          'International)',
-                                          'AL-v2 (Apache License Version 2.0)'),
-                                      value_type=schema.TextLine())
+    available_licenses = schema.Tuple(title=_(
+        safe_unicode('Available Licenses')),
+            default=(
+                'GNU-GPL-v2 (GNU General Public License Version 2)',
+                'GNU-GPL-v3+ (General Public License Version 3 and later)',
+                'LGPL-v2.1 (GNU Lesser General Public License Version 2.1)',
+                'LGPL-v3+ (GNU Lesser General Public License Version 3 '
+                'and later)',
+                'BSD (BSD License (revised))',
+                'MPL-v1.1 (Mozilla Public License'
+                'Version 1.1)',
+                'MPL-v2.0+ (Mozilla Public License Version 2.0 or later)',
+                'CC-by-sa-v3 (Creative Commons Attribution-ShareAlike 3.0)',
+                'CC-BY-SA-v4 (Creative Commons Attribution-ShareAlike 4.0 '
+                'International)',
+                'AL-v2 (Apache License Version 2.0)'),
+            value_type=schema.TextLine())
 
-    available_versions = schema.Tuple(title=_(safe_unicode('Available Versions')),
-                                      default=('Product 1.0',
-                                               ),
-                                      value_type=schema.TextLine())
+    available_versions = schema.Tuple(title=_(
+        safe_unicode('Available Versions')),
+            default=('Product 1.0',),
+            value_type=schema.TextLine())
 
-    available_platforms = schema.Tuple(title=_(safe_unicode('Available Platforms')),
-                                       default=('All platforms',
-                                                'Linux',
-                                                'Linux-x64',
-                                                'Mac OS X',
-                                                'Windows',
-                                                'BSD',
-                                                'UNIX (other)'),
-                                       value_type=schema.TextLine())
+    available_platforms = schema.Tuple(title=_(
+        safe_unicode('Available Platforms')),
+            default=(
+                'All platforms',
+                'Linux',
+                'Linux-x64',
+                'Mac OS X',
+                'Windows',
+                'BSD',
+                'UNIX (other)'),
+            value_type=schema.TextLine())
 
     model.fieldset('allowedfileextensions',
                    label=_(safe_unicode('Allowed file extensions')),
@@ -63,15 +60,17 @@ class ICollectivetemplatesControlPanel(Interface):
 
     allowed_templatefileextension = schema.TextLine(
         title=_(safe_unicode('Allowed template file extensions')),
-        description=_(safe_unicode('Fill in the allowed file extensions, seperated by '
-                                   "a pipe '|'.")),
+        description=_(safe_unicode(
+            'Fill in the allowed file extensions, seperated by '
+            "a pipe '|'.")),
         default=safe_unicode('ott|ots|otp|otg'),
     )
 
     allowed_tempimageextension = schema.TextLine(
         title=_(safe_unicode('Allowed image file extension')),
-        description=_(safe_unicode('Fill in the allowed image file extensions, seperated '
-                                   "by a pipe '|'.")),
+        description=_(safe_unicode(
+            'Fill in the allowed image file extensions, seperated '
+            "by a pipe '|'.")),
         default=safe_unicode('jpg|jpeg|png|gif'),
     )
 
@@ -102,16 +101,19 @@ class ICollectivetemplatesControlPanel(Interface):
     title_legaldownloaddisclaimer = schema.TextLine(
         title=_(safe_unicode(
             'Title of the Legal Disclaimer and Limitations for Downloads')),
-        default=_(safe_unicode('Legal Disclaimer And Limitations For Downloads')),
+        default=_(safe_unicode(
+            'Legal Disclaimer And Limitations For Downloads')),
         required=False,
     )
 
     legal_downloaddisclaimer = schema.Text(
-        title=_(safe_unicode('Text of the Legal Disclaimer and Limitations for Downlaods')),
+        title=_(safe_unicode(
+            'Text of the Legal Disclaimer and Limitations for Downlaods')),
         description=_(safe_unicode(
             'Enter any legal disclaimer and limitations for downloads that '
             'should appear on each page for dowloadable files.')),
-        default=_(safe_unicode('Fill in the text for the legal download disclaimer')),
+        default=_(safe_unicode(
+            'Fill in the text for the legal download disclaimer')),
         required=False,
     )
 
