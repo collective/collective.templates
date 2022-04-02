@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
+from collective.templates.interfaces import ICollectiveTemplatesLayer
 from collective.templates.testing import COLLECTIVE_TEMPLATES_INTEGRATION_TESTING  # noqa: E501
 from plone import api
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
+from plone.browserlayer import utils
 
 import unittest
 
@@ -34,9 +36,7 @@ class TestSetup(unittest.TestCase):
 
     def test_browserlayer(self):
         """Test that ICollectiveTemplatesLayer is registered."""
-        from collective.templates.interfaces import (
-            ICollectiveTemplatesLayer)
-        from plone.browserlayer import utils
+
         self.assertIn(
             ICollectiveTemplatesLayer,
             utils.registered_layers())
@@ -64,9 +64,6 @@ class TestUninstall(unittest.TestCase):
 
     def test_browserlayer_removed(self):
         """Test that ICollectiveTemplatesLayer is removed."""
-        from collective.templates.interfaces import \
-            ICollectiveTemplatesLayer
-        from plone.browserlayer import utils
         self.assertNotIn(
             ICollectiveTemplatesLayer,
             utils.registered_layers())
