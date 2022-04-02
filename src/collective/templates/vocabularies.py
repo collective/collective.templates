@@ -7,23 +7,27 @@ from zope.schema.interfaces import IVocabularyFactory
 
 @provider(IVocabularyFactory)
 def CategoriesVocabularyFactory(context):
-    values = api.portal.get_registry_record('collectivetemplates.available_category')
+    values = api.portal.get_registry_record(
+        'collectivetemplates.available_category')
     return safe_simplevocabulary_from_values(values)
 
 
 @provider(IVocabularyFactory)
 def LicensesVocabularyFactory(context):
-    values = api.portal.get_registry_record('collectivetemplates.available_licenses')
+    values = api.portal.get_registry_record(
+        'collectivetemplates.available_licenses')
     return safe_simplevocabulary_from_values(values)
 
 
 @provider(IVocabularyFactory)
 def VersionsVocabularyFactory(context):
-    values = api.portal.get_registry_record('collectivetemplates.available_versions')
+    values = api.portal.get_registry_record(
+        'collectivetemplates.available_versions')
     return safe_simplevocabulary_from_values(values)
 
 
 @provider(IVocabularyFactory)
 def PlatformVocabularyFactory(context):
-    values = api.portal.get_registry_record('collectivetemplates.available_platforms')
+    values = api.portal.get_registry_record(
+        'collectivetemplates.available_platforms')
     return safe_simplevocabulary_from_values(values)
