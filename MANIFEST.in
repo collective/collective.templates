@@ -1,5 +1,7 @@
 graft src/collective
-graft docs/html docs/source docs/source/images
+graft docs/html
+graft docs/source 
+graft docs/source/images
 include *.rst
 global-exclude *.pyc
 include *.GPL
