@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from collective import dexteritytextindexer
 from collective.templates import _
 from collective.templates import quote_chars
 from collective.templates.common import allowedtempimageextensions
@@ -10,6 +9,7 @@ from collective.templates.common import validateimagefileextension
 from collective.templates.common import validatetemplatefileextension
 from collective.templates.common import yesnochoice
 from plone import api
+from plone.app.dexterity.textindexer.directives import searchable
 from plone.app.textfield import RichText
 from plone.autoform import directives
 from plone.dexterity.browser.view import DefaultView
@@ -51,7 +51,7 @@ class ITLProject(model.Schema):
             "'Optional Further File Upload'.")),
     )
 
-    dexteritytextindexer.searchable('title')
+    searchable('title')
     title = schema.TextLine(
         title=_(safe_unicode('Title')),
         description=_(safe_unicode(
@@ -60,12 +60,12 @@ class ITLProject(model.Schema):
         max_length=50,
     )
 
-    dexteritytextindexer.searchable('description')
+    searchable('description')
     description = schema.Text(
         title=_(safe_unicode('Project Summary')),
     )
 
-    dexteritytextindexer.searchable('details')
+    searchable('details')
     primary('details')
     details = RichText(
         title=_(safe_unicode('Full project description')),
@@ -117,7 +117,7 @@ class ITLProject(model.Schema):
                    fields=['category_choice'],
                    )
 
-    dexteritytextindexer.searchable('category_choice')
+    searchable('category_choice')
     directives.widget(category_choice=CheckBoxFieldWidget)
     category_choice = schema.List(
         title=_(safe_unicode('Choose your categories')),
