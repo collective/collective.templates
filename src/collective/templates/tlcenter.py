@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 from collective.templates import _
 from plone import api
+from plone.base.utils import safe_text
 from plone.app.layout.viewlets import ViewletBase
 from plone.app.textfield import RichText
 from plone.schema.email import Email
 from plone.supermodel import model
 from plone.supermodel.directives import primary
 from Products.CMFPlone.browser.search import quote_chars
-from Products.CMFPlone.utils import safe_unicode
 from Products.Five import BrowserView
 from Products.ZCTextIndex.ParseTree import ParseError
 from zope import schema
@@ -22,25 +22,25 @@ class ITLCenter(model.Schema):
     """
 
     title = schema.TextLine(
-        title=_(safe_unicode('Name of the Templates Center')),
+        title=_(safe_text('Name of the Templates Center')),
     )
 
     description = schema.Text(
-        title=_(safe_unicode('Description of the Templates Center')),
+        title=_(safe_text('Description of the Templates Center')),
     )
 
     product_description = schema.Text(
-        title=_(safe_unicode('Description of the features of templates')),
+        title=_(safe_text('Description of the features of templates')),
     )
 
     product_title = schema.TextLine(
-        title=_(safe_unicode('Template Product Name')),
-        description=_(safe_unicode(
+        title=_(safe_text('Template Product Name')),
+        description=_(safe_text(
             'Name of the Template product, e.g. only Templates')),
     )
 
     model.fieldset('instructions',
-                   label=_(safe_unicode('Instructions')),
+                   label=_(safe_text('Instructions')),
                    fields=['install_instructions',
                            'reporting_bugs',
                            'information_oldversions',
@@ -49,22 +49,22 @@ class ITLCenter(model.Schema):
 
     primary('install_instructions')
     install_instructions = RichText(
-        title=_(safe_unicode('Template installation instructions')),
-        description=_(safe_unicode('Please fill in the install instructions')),
+        title=_(safe_text('Template installation instructions')),
+        description=_(safe_text('Please fill in the install instructions')),
         required=False,
     )
 
     primary('reporting_bugs')
     reporting_bugs = RichText(
-        title=_(safe_unicode('Instruction how to report Bugs')),
+        title=_(safe_text('Instruction how to report Bugs')),
         required=False,
     )
 
     primary('information_oldversions')
     information_oldversions = RichText(
-        title=_(safe_unicode('Information about search for old product '
+        title=_(safe_text('Information about search for old product '
                              'versions')),
-        description=_(safe_unicode(
+        description=_(safe_text(
             'Enter an information about the search for older '
             'versions of the product, if they are not on the '
             'versions list (compatibility) anymore.')),
@@ -72,11 +72,11 @@ class ITLCenter(model.Schema):
     )
 
     model.fieldset('contactadresses',
-                   label=_(safe_unicode('Special email adresses')),
+                   label=_(safe_text('Special email adresses')),
                    fields=['contactForCenter'])
 
     contactForCenter = Email(
-        title=_(safe_unicode(
+        title=_(safe_text(
             'EMail address for communication with the template center '
             'manager and reviewer')),
         description=_(
