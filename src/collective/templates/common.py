@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from collective.templates import _
 from plone import api
-from Products.CMFPlone.utils import safe_unicode
+from plone.base.utils import safe_text
 from zope.interface import Invalid
 from zope.schema.vocabulary import SimpleTerm
 from zope.schema.vocabulary import SimpleVocabulary
@@ -10,8 +10,8 @@ import re
 
 
 yesnochoice = SimpleVocabulary(
-    [SimpleTerm(value=0, title=_(safe_unicode('No'))),
-     SimpleTerm(value=1, title=_(safe_unicode('Yes')))],
+    [SimpleTerm(value=0, title=_(safe_text('No'))),
+     SimpleTerm(value=1, title=_(safe_text('Yes')))],
 )
 
 checkemail = re.compile(
@@ -34,7 +34,7 @@ def validatetemplatefileextension(value):
     pattern = r'^.*\.({0})'.format(result)
     matches = re.compile(pattern, re.IGNORECASE).match
     if not matches(value.filename):
-        raise Invalid(safe_unicode(
+        raise Invalid(safe_text(
             'You could only upload files with an allowed file extension. '
             'Please try again to upload a file with the correct file'
             'extension.'))
@@ -47,7 +47,7 @@ def validateimagefileextension(value):
     pattern = r'^.*\.({0})'.format(result)
     matches = re.compile(pattern, re.IGNORECASE).match
     if not matches(value.filename):
-        raise Invalid(safe_unicode(
+        raise Invalid(safe_text(
             'You could only upload files with an allowed file extension. '
             'Please try again to upload a file with the correct file'
             'extension.'))
