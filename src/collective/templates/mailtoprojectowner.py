@@ -64,8 +64,9 @@ class MailToProjectOwnerSchema(interface.Interface):
 
     projectname = schema.TextLine(
         title=_(safe_text('Project Name')),
-        description=_(safe_text('The name of the project, to which '
-                                   'author you want to send feedback.')),
+        description=_(safe_text(
+            'The name of the project, to which '
+            'author you want to send feedback.')),
         defaultFactory=getprojectname,
     )
 

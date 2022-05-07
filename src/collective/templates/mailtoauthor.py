@@ -73,15 +73,17 @@ class MailToAuthorSchema(interface.Interface):
     projectname = schema.TextLine(
         title=_(safe_text('Project Name')),
         description=_(safe_text(
-            'The name of the project, to which author you want to send feedback.')),
+            'The name of the project, to which author you '
+            'want to send feedback.')),
         constraint=validateprojectname,
     )
 
     inquiry = schema.Text(
         title=_(safe_text('Your Message To The Author')),
         description=_(safe_text(
-            'What is your message to the author of the project? Your message is '
-            'limited to 1000 characters.')),
+            'What is your message to the author of the '
+            'project? Your message is limited to '
+            '1000 characters.')),
         max_length=1000,
     )
 
