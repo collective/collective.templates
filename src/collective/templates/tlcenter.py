@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from collective.templates import _
 from plone import api
-from plone.base.utils import safe_text
 from plone.app.layout.viewlets import ViewletBase
 from plone.app.textfield import RichText
+from plone.base.utils import safe_text
 from plone.schema.email import Email
 from plone.supermodel import model
 from plone.supermodel.directives import primary
@@ -62,8 +62,8 @@ class ITLCenter(model.Schema):
 
     primary('information_oldversions')
     information_oldversions = RichText(
-        title=_(safe_text('Information about search for old product '
-                             'versions')),
+        title=_(safe_text(
+            'Information about search for old product versions')),
         description=_(safe_text(
             'Enter an information about the search for older '
             'versions of the product, if they are not on the '
@@ -79,9 +79,9 @@ class ITLCenter(model.Schema):
         title=_(safe_text(
             'EMail address for communication with the template center '
             'manager and reviewer')),
-        description=_(
-            u'Enter an email address for the communication with template '
-            u'center manager and reviewer'),
+        description=_(safe_text(
+            'Enter an email address for the communication with template '
+            'center manager and reviewer')),
         default='projects@foo.org',
     )
 

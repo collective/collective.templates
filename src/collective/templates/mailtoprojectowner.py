@@ -71,9 +71,10 @@ class MailToProjectOwnerSchema(interface.Interface):
 
     inquiry = schema.Text(
         title=_(safe_text('Your Message To The Author')),
-        description=_(safe_text('What is your message to the author '
-                                   'of the project? Your message is '
-                                   'limited to 1000 characters.')),
+        description=_(safe_text(
+            'What is your message to the author '
+            'of the project? Your message is '
+            'limited to 1000 characters.')),
         max_length=1000,
     )
 
@@ -95,8 +96,8 @@ class MailToProjectOwnerForm(AutoExtensibleForm, form.Form):
     form_name = 'projectownermail_form'
 
     label = _(safe_text('Mail To The Project Owner'))
-    description = _(safe_text('Contact the project owner and send '
-                                 'your feedback'))
+    description = _(safe_text(
+        'Contact the project owner and send your feedback'))
 
     fields = field.Fields(MailToProjectOwnerSchema, IHCaptchaForm)
     fields['captcha'].widgetFactory = HCaptchaFieldWidget
@@ -128,8 +129,9 @@ class MailToProjectOwnerForm(AutoExtensibleForm, form.Form):
             )
             api.portal.show_message(
                 message=_(
-                    safe_text('Please validate the hcaptcha field '
-                                 'before sending the form.')),
+                    safe_text(
+                        'Please validate the hcaptcha field '
+                        'before sending the form.')),
                 request=self.request,
                 type='error')
             return
@@ -169,9 +171,10 @@ class MailToProjectOwnerForm(AutoExtensibleForm, form.Form):
         # Redirect back to the front page with a status message
 
         api.portal.show_message(
-            message=_(safe_text('We send your message to the author of '
-                                   "the project. It's on her / his choice, "
-                                   "if she'll / he'll get back to you.")),
+            message=_(safe_text(
+                'We send your message to the author of '
+                "the project. It's on her / his choice, "
+                "if she'll / he'll get back to you.")),
             request=self.request,
             type='info')
 

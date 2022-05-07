@@ -428,8 +428,8 @@ def textmodified_project(self, event):
             recipient=mailrecipient,
             sender=(u'{0} <{1}>').format(
                 'Admin of the Website', mailrecipient),
-            subject=(safe_text('The content of the project {0} has '
-                                  'changed')).format(self.title),
+            subject=(safe_text(
+                'The content of the project {0} has changed')).format(self.title),
             body=(safe_text(
                 'The content of the project {0} has changed. Here you get '
                 'the text of the description field of the '

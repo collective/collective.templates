@@ -29,8 +29,8 @@ def validateprojectname(value):
 
     for brain in project[:1]:
         if brain.Title is None:
-            raise Invalid(_(safe_text('Not a valid project name. '
-                                         'Please retry.')))
+            raise Invalid(_(safe_text(
+                'Not a valid project name. Please retry.')))
         return True
 
 
@@ -72,16 +72,16 @@ class MailToAuthorSchema(interface.Interface):
 
     projectname = schema.TextLine(
         title=_(safe_text('Project Name')),
-        description=_(safe_text('The name of the project, to which '
-                                   'author you want to send feedback.')),
+        description=_(safe_text(
+            'The name of the project, to which author you want to send feedback.')),
         constraint=validateprojectname,
     )
 
     inquiry = schema.Text(
         title=_(safe_text('Your Message To The Author')),
-        description=_(safe_text('What is your message to the author '
-                                   'of the project? Your message is '
-                                   'limited to 1000 characters.')),
+        description=_(safe_text(
+            'What is your message to the author of the project? Your message is '
+            'limited to 1000 characters.')),
         max_length=1000,
     )
 
@@ -103,8 +103,8 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
     form_name = 'authormail_form'
 
     label = _(safe_text('Mail To The Project Author'))
-    description = _(safe_text('Contact the project author and send '
-                                 'your feedback'))
+    description = _(safe_text(
+        'Contact the project author and send your feedback'))
 
     fields = field.Fields(MailToAuthorSchema, IHCaptchaForm)
     fields['captcha'].widgetFactory = HCaptchaFieldWidget
@@ -136,8 +136,9 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
             )
             api.portal.show_message(
                 message=_(
-                    safe_text('Please validate the hcaptcha field '
-                                 'before sending the form.')),
+                    safe_text(
+                        'Please validate the hcaptcha field '
+                        'before sending the form.')),
                 request=self.request,
                 type='error')
             return
@@ -177,9 +178,10 @@ class MailToAuthorForm(AutoExtensibleForm, form.Form):
         # Redirect back to the front page with a status message
 
         api.portal.show_message(
-            message=_(safe_text('We send your message to the author of '
-                                   "the project. It's on her / his choice, "
-                                   "if she'll / he'll get back to you.")),
+            message=_(safe_text(
+                'We send your message to the author of '
+                "the project. It's on her / his choice, "
+                "if she'll / he'll get back to you.")),
             request=self.request,
             type='info')
 
