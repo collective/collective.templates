@@ -27,10 +27,27 @@ from zope.interface import Invalid
 from zope.interface import invariant
 
 
+
 def isNotEmptyCategory(value):
     if not value:
-        raise Invalid(u'You have to choose at least one category for your '
-                      u'project.')
+        raise Invalid(safe_text('You have to choose at least one category for your '
+                      'project.'))
+    return True
+
+def isNotEmptyCompatibility(value):
+    if not value:
+        raise Invalid(safe_text('You have to choose at least one product your release is compatible with.'))
+    return True
+
+def isNotEmptyLicense(value):
+    if not value:
+        raise Invalid(safe_text('You have to choose at least one license for your project.'))
+    return True
+
+def isNotEmptyOS(value):
+    if not value:
+        raise Invalid(safe_text('You have to choose at least one Operating System your'
+                                'release is compatible with.'))
     return True
 
 
@@ -88,6 +105,7 @@ class ITLProject(model.Schema):
             'Please mark one or more licenses under which you publish '
             'your file(s).')),
         value_type=schema.Choice(source='Templatelicenses'),
+        constraint=isNotEmptyLicense,
         required=True,
     )
 
@@ -200,7 +218,7 @@ class ITLProject(model.Schema):
             'uploaded file is compatible with.')),
         value_type=schema.Choice(source='Templateversions'),
         required=True,
-        default=[],
+        constraint=isNotEmptyCompatibility,
     )
 
     model.fieldset('fileset1',
@@ -245,6 +263,7 @@ class ITLProject(model.Schema):
             'Please mark one or more platforms with which the uploaded '
             'file is compatible.')),
         value_type=schema.Choice(source='Templateplatforms'),
+        constraint=isNotEmptyOS,
         required=True,
     )
 
@@ -327,21 +346,6 @@ class ITLProject(model.Schema):
     )
 
 
-@invariant
-def licensenotchoosen(value):
-    if not value.licenses_choice:
-        raise Invalid(_(safe_text(
-            'Please choose a license for the file(s) you want to'
-            'upload.')))
-
-
-@invariant
-def compatibilitynotchoosen(data):
-    if not data.compatibility_choice:
-        raise Invalid(_(safe_text(
-            'Please choose one or more compatible product versions for '
-            'the file(s) you want to upload.')))
-
 
 @invariant
 def legaldeclarationaccepted(data):
@@ -350,13 +354,6 @@ def legaldeclarationaccepted(data):
             _(safe_text(
                 'Please accept the Legal Declaration about your file(s) '
                 'and your Uploaded File')))
-
-
-@invariant
-def noOSChosen(data):
-    if data.file is not None and data.platform_choice == []:
-        raise Invalid(_(safe_text(
-            'Please choose a compatible platform for the uploaded file.')))
 
 
 def notifyAboutNewProject(self, event):
