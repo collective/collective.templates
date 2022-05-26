@@ -327,36 +327,36 @@ class ITLProject(model.Schema):
     )
 
 
-@invariant
-def licensenotchoosen(value):
-    if not value.licenses_choice:
-        raise Invalid(_(safe_text(
-            'Please choose a license for the file(s) you want to'
-            'upload.')))
+    @invariant
+    def licensenotchoosen(value):
+        if not value.licenses_choice:
+            raise Invalid(_(safe_text(
+                'Please choose a license for the file(s) you want to'
+                'upload.')))
 
 
-@invariant
-def compatibilitynotchoosen(data):
-    if not data.compatibility_choice:
-        raise Invalid(_(safe_text(
-            'Please choose one or more compatible product versions for '
-            'the file(s) you want to upload.')))
+    @invariant
+    def compatibilitynotchoosen(data):
+        if not data.compatibility_choice:
+            raise Invalid(_(safe_text(
+                'Please choose one or more compatible product versions for '
+                'the file(s) you want to upload.')))
 
 
-@invariant
-def legaldeclarationaccepted(data):
-    if data.accept_legal_declaration is not True:
-        raise AcceptLegalDeclaration(
-            _(safe_text(
-                'Please accept the Legal Declaration about your file(s) '
-                'and your Uploaded File')))
+    @invariant
+    def legaldeclarationaccepted(data):
+        if data.accept_legal_declaration is not True:
+            raise AcceptLegalDeclaration(
+                _(safe_text(
+                    'Please accept the Legal Declaration about your file(s) '
+                    'and your Uploaded File')))
 
 
-@invariant
-def noOSChosen(data):
-    if data.file is not None and data.platform_choice == []:
-        raise Invalid(_(safe_text(
-            'Please choose a compatible platform for the uploaded file.')))
+    @invariant
+    def noOSChosen(data):
+        if data.file is not None and data.platform_choice == []:
+            raise Invalid(_(safe_text(
+                'Please choose a compatible platform for the uploaded file.')))
 
 
 def notifyAboutNewProject(self, event):
