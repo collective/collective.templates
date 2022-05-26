@@ -326,14 +326,12 @@ class ITLProject(model.Schema):
         constraint=validatetemplatefileextension,
     )
 
-
     @invariant
     def licensenotchoosen(value):
         if not value.licenses_choice:
             raise Invalid(_(safe_unicode(
                 'Please choose a license for the file(s) you want to'
                 'upload.')))
-
 
     @invariant
     def compatibilitynotchoosen(data):
@@ -342,7 +340,6 @@ class ITLProject(model.Schema):
                 'Please choose one or more compatible product versions for '
                 'the file(s) you want to upload.')))
 
-
     @invariant
     def legaldeclarationaccepted(data):
         if data.accept_legal_declaration is not True:
@@ -350,7 +347,6 @@ class ITLProject(model.Schema):
                 _(safe_unicode(
                     'Please accept the Legal Declaration about your file(s) '
                     'and your Uploaded File')))
-
 
     @invariant
     def noOSChosen(data):
