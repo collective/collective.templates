@@ -8,7 +8,6 @@ Changelog
 - Nothing changed yet.
 
 
-
 2.8 (2021-12-25)
 ----------------
 
